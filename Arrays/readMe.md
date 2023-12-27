@@ -3,6 +3,7 @@
 ## Table of Content
 1. [704. Binary Search](#704)
 2. [27. Remove Element](#27)
+3. [54. Spiral Matrix](#54)
 
 ## 704. Binary Search <a name='704'></a>
 <a href="https://leetcode.com/problems/binary-search/description/" target="_blank">704. Binary Search</a>
@@ -149,6 +150,77 @@ def main():
     print("New length:", new_length2)
     print("Modified List:", nums2[:new_length2]) 
 
+
+if __name__ == "__main__":
+    main()
+```
+## 54. Spiral Matrix <a name="54"></a>
+<a href="https://leetcode.com/problems/spiral-matrix/description/" target="_blank">54. Spiral Matrix</a>
+Given an m x n matrix, return all elements of the matrix in spiral order.
+
+### Example 1
+
+Input:
+matrix = 
+[[1, 2, 3],
+[4, 5, 6],
+[7, 8, 9]]
+
+Output:
+[1, 2, 3, 6, 9, 8, 7, 4, 5]
+
+### Example 2
+
+Input: matrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12]]
+Output: [1,2,3,4,8,12,11,10,9,5,6,7]
+
+
+### Constraints
+
+- `m == matrix.length`
+- `n == matrix[i].length`
+- `1 <= m, n <= 10`
+- `-100 <= matrix[i][j] <= 100`
+
+```python
+from typing import List
+
+class Solution:
+    def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
+        directions = ((0, 1), (1, 0), (0, -1), (-1, 0))
+        rows, cols = len(matrix), len(matrix[0])
+
+        row = col = direct_index = 0
+        visited = set()
+        res = []
+
+        if not matrix:
+            return res
+
+        for _ in range(rows * cols):
+            res.append(matrix[row][col])
+            visited.add((row, col))
+
+            next_row, next_col = row + directions[direct_index][0], col + directions[direct_index][1]
+
+            if not 0 <= next_row < rows or not 0 <= next_col < cols or (next_row, next_col) in visited:
+                direct_index = (direct_index + 1) % 4
+
+            row += directions[direct_index][0]
+            col += directions[direct_index][1]
+
+        return res
+
+def main():
+    matrix = [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9]
+    ]
+
+    solution = Solution()
+    result = solution.spiralOrder(matrix)
+    print(result)
 
 if __name__ == "__main__":
     main()
