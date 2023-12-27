@@ -4,6 +4,7 @@
 1. [704. Binary Search](#704)
 2. [27. Remove Element](#27)
 3. [54. Spiral Matrix](#54)
+4. [59. Spiral Matrix II](#59)
 
 ## 704. Binary Search <a name='704'></a>
 <a href="https://leetcode.com/problems/binary-search/description/" target="_blank">704. Binary Search</a>
@@ -226,3 +227,26 @@ def main():
 if __name__ == "__main__":
     main()
 ```
+
+## 59. Spiral Matrix II<a name="59"></a>
+<a href="https://leetcode.com/problems/spiral-matrix-ii/" target="_blank">59. Spiral Matrix II</a>
+
+Given a positive integer n, generate an n x n matrix filled with elements from 1 to n2 in spiral order.
+
+### Example 1
+
+Input: n = 3
+Output: [[1,2,3],[8,9,4],[7,6,5]]
+
+Output:
+[1, 2, 3, 6, 9, 8, 7, 4, 5]
+
+### Example 2
+
+Input: n = 1
+Output: [[1]]
+
+
+### Constraints
+
+- `1 <= n <= 20`
