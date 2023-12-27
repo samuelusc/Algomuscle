@@ -277,11 +277,10 @@ class Solution:
         return matrix
 
 def main():
-    n = 3  # Change n to the desired value
+    n = 3  
     solution = Solution()
     result = solution.generateMatrix(n)
     
-    # Print the generated matrix
     for row in result:
         print(row)
 
