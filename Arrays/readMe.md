@@ -31,7 +31,8 @@ Explanation: 2 does not exist in `nums` so return -1
 - All the integers in `nums` are unique.
 - `nums` is sorted in ascending order.
 
-<code>
+<pre>
+
 from typing import List
 
 class Solution:
@@ -64,4 +65,5 @@ def main():
 
 if __name__ == "__main__":
     main()
-</code>
+
+</pre>
