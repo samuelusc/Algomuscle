@@ -5,7 +5,7 @@
 2. [27. Remove Element](#27)
 
 ## 704. Binary Search <a name='704'></a>
-<a href="https://leetcode.com/problems/binary-search/description/" target="_blank">LeetCode Binary Search Problem</a>
+<a href="https://leetcode.com/problems/binary-search/description/" target="_blank">704. Binary Search</a>
 
 Given an array of integers `nums` which is sorted in ascending order, and an integer `target`, write a function to search `target` in `nums`. If `target` exists, then return its index. Otherwise, return -1.
 
@@ -68,7 +68,7 @@ if __name__ == "__main__":
 
 
 ## 27. Remove Element <a name="27"></a>
-<a href="https://leetcode.com/problems/remove-element/description/" target="_blank">LeetCode Remove Element Problem</a>
+<a href="https://leetcode.com/problems/remove-element/description/" target="_blank">27.Remove Element</a>
 
 Given an integer array `nums` and an integer `val`, remove all occurrences of `val` in `nums` in-place. The order of the elements may be changed. Then return the number of elements in `nums` which are not equal to `val`.
 
@@ -131,7 +131,6 @@ class Solution:
         return slow
 
 def main():
-    # Create an instance of the Solution class
     solution = Solution()
 
     # Test case 1
