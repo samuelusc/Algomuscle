@@ -250,3 +250,41 @@ Output: [[1]]
 ### Constraints
 
 - `1 <= n <= 20`
+
+```python
+from typing import List
+
+class Solution:
+    def generateMatrix(self, n: int) -> List[List[int]]:
+        matrix = [[0] * n for _ in range(n)]
+        directions = ((0, 1), (1, 0), (0, -1), (-1, 0))
+
+        visited = set()
+        row = col = index = 0
+
+        for value in range(1, n * n + 1):
+            matrix[row][col] = value
+
+            visited.add((row, col))
+
+            next_row, next_col = row + directions[index][0], col + directions[index][1]
+            if not 0 <= next_row < n or not 0 <= next_col < n or (next_row, next_col) in visited:
+                index = (index + 1) % 4
+
+            row += directions[index][0]
+            col += directions[index][1]
+
+        return matrix
+
+def main():
+    n = 3  # Change n to the desired value
+    solution = Solution()
+    result = solution.generateMatrix(n)
+    
+    # Print the generated matrix
+    for row in result:
+        print(row)
+
+if __name__ == "__main__":
+    main()
+```
