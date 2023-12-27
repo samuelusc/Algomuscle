@@ -5,7 +5,7 @@
 2. [27. Remove Element](#27)
 
 ## 704. Binary Search <a name='704'></a>
-[leetcode link](https://leetcode.com/problems/binary-search/description/)
+<a href="https://leetcode.com/problems/binary-search/description/" target="_blank">LeetCode Binary Search Problem</a>
 # Binary Search in Sorted Array
 
 Given an array of integers `nums` which is sorted in ascending order, and an integer `target`, write a function to search `target` in `nums`. If `target` exists, then return its index. Otherwise, return -1.
