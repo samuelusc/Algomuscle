@@ -1,22 +1,36 @@
 class Solution:
     def generateMatrix(self, n: int) -> List[List[int]]:
-        if n==1:
+        if n == 1:
             return [[1]]
         
-        matrix = [[0]* n for _ in range(n)]
-        directions = ((0,1),(1,0),(0,-1),(-1,0))
-        row, col,index = 0,0,0
+        matrix = [[0] * n for _ in range(n)]
+        loop, mid = n//2, n//2
+        startx,starty = 0,0
+        count = 1
 
-        for value in range(1,n*n+1):
+        for offset in range(1, loop + 1):
             
-            matrix[row][col] = value            
-            x,y = directions[index]
-            next_row,next_col = row + x, col + y
+            for j in range(starty, n-offset):
+                matrix[startx][j] = count
+                count += 1
 
-            if not 0<= next_row < n or not 0 <= next_col < n or matrix[next_row][next_col] > 0:
-                index = (index + 1) % 4
-            
-            x,y = directions[index]
-            row,col = row + x, col + y
+            for i in range(startx, n-offset):
+                matrix[i][n-offset] = count
+                count += 1
+
+            for j in range(n-offset, starty, -1):
+                matrix[n-offset][j] = count
+                count += 1
+
+            for i in range(n-offset, startx, -1):
+                matrix[i][starty] = count
+                count += 1
+
+            startx += 1
+            starty += 1
         
-        return matrix
+        if n % 2 != 0:
+            matrix[mid][mid] = count
+
+        return matrix  
+
