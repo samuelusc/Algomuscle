@@ -17,5 +17,5 @@
 | 209       | [Minimum Size Subarray Sum](https://github.com/samuelusc/Algomuscle/tree/main/0209-minimum-size-subarray-sum) | [Python](https://github.com/samuelusc/Algomuscle/blob/main/0209-minimum-size-subarray-sum/0209-minimum-size-subarray-sum.py) | Medium     | Two pointer approach    |
 | 59        | [Spiral Matrix II](https://github.com/samuelusc/Algomuscle/tree/main/0059-spiral-matrix-ii) | [Python](https://github.com/samuelusc/Algomuscle/blob/main/0059-spiral-matrix-ii/0059-spiral-matrix-ii.py) | Medium     | Use four directions instead of multiple for loop |
 | 23        | [Merge k Sorted Lists](https://github.com/samuelusc/Algomuscle/tree/main/0023-merge-k-sorted-lists) | [Python](https://github.com/samuelusc/Algomuscle/blob/main/0023-merge-k-sorted-lists/0023-merge-k-sorted-lists.py) | Hard    | Use heap to solve the question |
-| 88       | [Merge Sorted Array](https://github.com/samuelusc/Algomuscle/tree/main/0088-merge-sorted-array) | [Python](https://github.com/samuelusc/Algomuscle/blob/main/0088-merge-sorted-array/0088-merge-sorted-array.py) | Hard    | two pointer + |
+| 88       | [Merge Sorted Array](https://github.com/samuelusc/Algomuscle/tree/main/0088-merge-sorted-array) | [Python](https://github.com/samuelusc/Algomuscle/blob/main/0088-merge-sorted-array/0088-merge-sorted-array.py) | Easy    | two pointer + |
 
