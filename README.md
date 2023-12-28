@@ -1,7 +1,3 @@
-# Train You Algorithm Muscles Every Day!
-
-# Daliy Progress Log
-
 # Train Your Algorithm Muscles Every Day!
 
 ## Daily Progress Log
