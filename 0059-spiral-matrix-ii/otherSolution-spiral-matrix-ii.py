@@ -1,3 +1,4 @@
+#only work for square matrix
 class Solution:
     def generateMatrix(self, n: int) -> List[List[int]]:
         if n == 1:
