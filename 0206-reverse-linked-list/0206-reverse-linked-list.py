@@ -11,7 +11,7 @@ class Solution:
         dummy_node = ListNode()
         cur_node = head
 
-        #不断读取现在的节点    
+        # Continously read the current node   
         while cur_node:
             # Save the link to the rest of the list in temp_next
             temp_next = cur_node.next
