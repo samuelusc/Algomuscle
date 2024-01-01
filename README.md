@@ -38,7 +38,7 @@
 | 160       | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/description/) | [Two Pointer - Python](https://github.com/samuelusc/Algomuscle/blob/main/0160-intersection-of-two-linked-lists/0160-intersection-of-two-linked-lists.py), [Hashtable - Python](https://github.com/samuelusc/Algomuscle/blob/main/0160-intersection-of-two-linked-lists/hashTable-0160-intersection-of-two-linked-lists.py) | Easy       |  Linked List, Two Pointer, Hash Table     | Two Pointer: T: O(n) S:O(1), Hashtable: T:O(n), S: O(n) |       |
 | 142       | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/description/) | [HashTable - Python](https://github.com/samuelusc/Algomuscle/blob/main/0142-linked-list-cycle-ii/setV-0142-linked-list-cycle-ii.py), [Two Pointer - Python](https://github.com/samuelusc/Algomuscle/blob/main/0142-linked-list-cycle-ii/twoP-0142-linked-list-cycle-ii.py) | Medium       |  Linked List, Hash Table, Two Pointer      | Hash Table: T: O(n), S: O(n), Two Pointer: T:O(n),S:O(1) |       |
 
-**Day 5 - 12/31/2023**
+**Day 6 - 12/31/2023**
 
 | Question# | Title                                           | Solution                                                                                               | Difficulty | Topics | Complexity                                | Nodes |
 |-----------|-------------------------------------------------|--------------------------------------------------------------------------------------------------------|------------|--------|-------------------------------------------|-------|
