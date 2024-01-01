@@ -3,6 +3,7 @@ class Solution:
         hashTable = dict()
         res = set()
         for num in nums1:
+            
             hashTable[num] = hashTable.get(num, 0) + 1
 
         for num in nums2:
