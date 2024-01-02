@@ -4,3 +4,4 @@ class Solution:
         # Subtracting Counters will only retain positive counts
         # and remove negative and zero counts
         return not Counter(ransomNote) - Counter(magazine)
+        # return Counter(ransomNote) <= Counter(magazine)
