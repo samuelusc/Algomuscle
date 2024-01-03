@@ -47,6 +47,12 @@ class Solution:
             right -= 1
 
 ```
+**Complexity Analysis:**
+
+- *`Time Complexity`*:
+O(n)
+- *`Space Complexity`*:
+O(1)
 
 #### My Solution 2：_`Slicing`_
 ```python
@@ -71,5 +77,6 @@ class Solution:
 **Complexity Analysis:**
 
 - *`Time Complexity`*:
-* Solution 1: O(n)
+O(n)
 - *`Space Complexity`*:
+O(1)
