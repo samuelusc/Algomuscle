@@ -1,4 +1,4 @@
-# Day08(_01/02/2024_) : String Part 1 
+# Day 8(_01/02/2024_) : String Part 1 
 
 ## Contents
 * [344.Reverse String](#344)
