@@ -226,7 +226,7 @@ anumberbnumbercnumber
 ### Solving approach:
 循环读取每一个letter, 用 char.isdigit() 确认是否数字，如果True 就 text + “number”, 否则 text + char
 
-#### My Solution 1：_`xxx`_
+#### My Solution 1：_`for + isdigit()`_
 ```python
 class Solution:
     def convertNumber(self, s: str)->str:
