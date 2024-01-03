@@ -10,7 +10,7 @@ class Solution:
         # s[:] = reversed(s)  with iterable parameter
         # s.reverse() no parameter in ()
 
-        # reverse(0 can only be used with lists and reveses the element of the list in place
+        # reverse can only be used with lists and reveses the element of the list in place
         # reversed can work with any iterable(lists, tuples, strings,etc). It doesn't modify the original iterable instead
         # it creates a reverse iterator 
 
