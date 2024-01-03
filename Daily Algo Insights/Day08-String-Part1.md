@@ -55,7 +55,7 @@ class Solution:
         """
         Do not return anything, modify s in-place instead.
         """
-        # slicing T:O(n) S:O(1)
+
         s[:] = s[::-1]
 
         # reversed V.S reverse
@@ -71,5 +71,5 @@ class Solution:
 **Complexity Analysis:**
 
 - *`Time Complexity`*:
-
+* Solution 1: O(n)
 - *`Space Complexity`*:
