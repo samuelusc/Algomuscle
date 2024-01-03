@@ -206,6 +206,7 @@ O(n)
 
 ## 54 替换数字<a name="54"></a>
 <a href="https://programmercarl.com/kama54.%E6%9B%BF%E6%8D%A2%E6%95%B0%E5%AD%97.html#%E6%80%9D%E8%B7%AF" target="_blank">54.替换数字</a>
+
 给定一个字符串 s，它包含小写字母和数字字符，请编写一个函数，将字符串中的字母字符保持不变，而将每个数字字符替换为number。 例如，对于输入字符串 "a1b2c3"，函数应该将其转换为 "anumberbnumbercnumber"。
 #### 输入描述
 输入一个字符串 s,s 仅包含小写字母和数字字符。
