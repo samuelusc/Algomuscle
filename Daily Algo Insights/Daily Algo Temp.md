@@ -6,7 +6,7 @@
 #### Question Description:
 
 
-#### Problem-solving approach:
+#### Solving approach:
 
 
 #### My Solution：
