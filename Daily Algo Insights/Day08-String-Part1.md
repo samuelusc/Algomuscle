@@ -80,3 +80,138 @@ class Solution:
 O(n)
 - *`Space Complexity`*:
 O(1)
+
+<h2 id="541"><a href="https://leetcode.com/problems/reverse-string-ii">541. Reverse String II</a></h2><h3>Easy</h3><hr><p>Given a string <code>s</code> and an integer <code>k</code>, reverse the first <code>k</code> characters for every <code>2k</code> characters counting from the start of the string.</p>
+
+<p>If there are fewer than <code>k</code> characters left, reverse all of them. If there are less than <code>2k</code> but greater than or equal to <code>k</code> characters, then reverse the first <code>k</code> characters and leave the other as original.</p>
+
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
+<pre><strong>Input:</strong> s = "abcdefg", k = 2
+<strong>Output:</strong> "bacdfeg"
+</pre><p><strong class="example">Example 2:</strong></p>
+<pre><strong>Input:</strong> s = "abcd", k = 2
+<strong>Output:</strong> "bacd"
+</pre>
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= s.length &lt;= 10<sup>4</sup></code></li>
+	<li><code>s</code> consists of only lowercase English letters.</li>
+	<li><code>1 &lt;= k &lt;= 10<sup>4</sup></code></li>
+</ul>
+
+### Solving approach:
+1. right: left + k ， 用于反转。 left: left + 2*k 作为步长。 再用left < s 长度
+2. 最开始写时，没有意识到slicing的索引可以超过他的长度。所以用两个if 处理边界问题， 再用for loop 去循环处理2k以上长度的s。
+3. 直接用一个for loop 设定步长2*k, 每一次反转i+k ->使用 reversed[i:i+k]
+ 
+
+#### My Solution 1：_`Two Pointers + Slicing`_
+```python
+class Solution:
+    def reverseStr(self, s: str, k: int) -> str:
+        # Initialize a left pointer to track the start of each 2k segment.
+        left = 0
+
+
+        while left < len(s):
+
+            # Calculate the right boundary for the k characters to be reversed.
+            right = left + k
+            
+            # Reverse the k characters starting from 'left' and ending at 'right'.
+            # Concatenate it with the non-reversed parts of the string.
+            s = s[:left] + s[left:right][::-1] + s[right:]
+
+            # Move the left pointer forward by 2k to process the next segment.
+            left = left + 2 * k
+        
+        # Return the modified string after processing all segments.
+        return s
+
+# T: O(n^2/k) S: O(n)
+
+# each iteration process 2k and run n/2k. at each iteration to process slicing and string will be O(n). In total it's about O(n^2/k)
+
+```
+
+- *`Time Complexity`*:
+O(n^2/k) Each iteration process 2k and run n/2k. at each iteration to process slicing and string will be O(n). In total it's about O(n^2/k)
+
+- *`Space Complexity`*:
+O(n)
+
+#### My Solution 2：_`xxx`_
+```python
+# T: O(n), S: O(n)
+class Solution:
+    def reverseStr(self, s: str, k: int) -> str:
+        if len(s) < k:
+            # create new string and assign to s
+            return s[::-1]
+        
+        elif len(s) < 2*k:
+            return s[:k][::-1] + s[k:]
+
+        # convert string to list  
+        s = list(s)
+        for i in range(0,len(s), 2*k):
+                            
+            # If the remaining characters are less than k, reverse them and return the string
+            if len(s) - i < k:
+                
+                # Use join() to convert the list back to a string
+                return "".join(s[:i] + s[i:][::-1])
+            # Reverse the next k characters in place
+            s[i:i+k] = s[i:i+k][::-1]
+        
+        return "".join(s)
+# In Python, when you slice a string with an index that is beyond the string's actual length, 
+# Python will not throw an error. Instead, it will adapt to the situation and return as many characters as possible.
+```
+
+**Complexity Analysis:**
+
+- *`Time Complexity`*:
+
+- *`Space Complexity`*:
+
+#### My Solution 3：_`xxx`_
+```python
+class Solution:
+    def reverseStr(self, s: str, k: int) -> str:
+        text = list(s)
+
+        for i in range(0, len(text), 2*k):
+
+            #reverse first k 
+            #eventhough the lenght of remaining elements is less than k 
+            text[i:i+k] = reversed(text[i: i+k])
+        
+        return "".join(text)
+
+#T: O(n), S: O(n)
+
+```
+
+**Complexity Analysis:**
+
+- *`Time Complexity`*:
+O(n)
+
+- *`Space Complexity`*:
+O(n)
+
+#### My Solution 1：_`xxx`_
+```python
+
+
+```
+
+**Complexity Analysis:**
+
+- *`Time Complexity`*:
+
+- *`Space Complexity`*:
