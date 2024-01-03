@@ -28,7 +28,9 @@
 
 
 ### Solving approach:
-
+1. 可以使用two pointers，替换头和尾并依次增加指针。前提是type 要 mutable。
+2. 用slicing [::-1] 直接替换
+3. 可以用 s.reverse() 直接替换原列表或 text = reverse(s) 生成一个新列表
 
 #### My Solution 1：_`Two Pointers`_
 ```python
