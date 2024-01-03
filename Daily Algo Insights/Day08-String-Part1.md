@@ -226,12 +226,33 @@ anumberbnumbercnumber
 
 #### My Solution 1：_`xxx`_
 ```python
+class Solution:
+    def convertNumber(self, s: str)->str:
+        
+        text =''
+        
+        for char in s:
+            if char.isdigit():
+                text += "number"
+            
+            else:
+                text += char
+        
+        return text
+            
+        
+sol = Solution()
+s = input()
 
+res = sol.convertNumber(s)
+print(res)
 
 ```
 
 **Complexity Analysis:**
 
 - *`Time Complexity`*:
+O(n)
 
 - *`Space Complexity`*:
+O(n)
