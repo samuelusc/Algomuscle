@@ -30,7 +30,7 @@
 ### Solving approach:
 
 
-### My Solution：
+#### My Solution1：Two Pointers
 ```python
 class Solution:
     def reverseString(self, s: List[str]) -> None:
