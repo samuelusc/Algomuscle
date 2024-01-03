@@ -4,9 +4,9 @@
 ## Contents
 * [344.Reverse String](#344)
 * [541.Reverse StringII](#541)
-* [Kama 54](#54)
+* [54. 替换数字](#54)
 * [151. Reverse Words in a String](#151)
-* [Kama 55](#55)
+* [55.右旋字符串](#55)
 
 <h2 id="344"><a href="https://leetcode.com/problems/reverse-string">344. Reverse String</a></h2><h3>Easy</h3><hr><p>Write a function that reverses a string. The input string is given as an array of characters <code>s</code>.</p>
 
