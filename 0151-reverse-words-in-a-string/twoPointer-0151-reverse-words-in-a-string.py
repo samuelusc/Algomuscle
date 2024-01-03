@@ -10,5 +10,5 @@ class Solution:
         
         return " ".join(text)
 
-# T：O(n) 
+# T：O(n) where n is the length of "s"
 # S: O(n) where n is the length of "s"
