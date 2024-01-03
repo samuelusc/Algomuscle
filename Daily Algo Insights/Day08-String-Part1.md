@@ -4,7 +4,7 @@
 ## Contents
 * [344.Reverse String](#344)
 * [541.Reverse StringII](#541)
-* [54. 替换数字](#54)
+* [54.替换数字](#54)
 * [151. Reverse Words in a String](#151)
 * [55.右旋字符串](#55)
 
@@ -206,7 +206,7 @@ O(n)
 - *`Space Complexity`*:
 O(n)
 
-## 54 替换数字<a name="54"></a>
+## 54.替换数字<a name="54"></a>
 <a href="https://programmercarl.com/kama54.%E6%9B%BF%E6%8D%A2%E6%95%B0%E5%AD%97.html#%E6%80%9D%E8%B7%AF" target="_blank">54.替换数字</a>
 
 给定一个字符串 s，它包含小写字母和数字字符，请编写一个函数，将字符串中的字母字符保持不变，而将每个数字字符替换为number。 例如，对于输入字符串 "a1b2c3"，函数应该将其转换为 "anumberbnumbercnumber"。
@@ -349,7 +349,7 @@ O(n) where n is the length of "s"
 - *`Space Complexity`*:
 O(n) where n is the length of "s"
 
-## 55 右旋字符串<a name="55"></a>
+## 55.右旋字符串<a name="55"></a>
 <a href="https://programmercarl.com/kama55.%E5%8F%B3%E6%97%8B%E5%AD%97%E7%AC%A6%E4%B8%B2.html" target="_blank">55.右旋字符串</a>
 #### 题目描述
 字符串的右旋转操作是把字符串尾部的若干个字符转移到字符串的前面。给定一个字符串 s 和一个正整数 k，请编写一个函数，将字符串中的后面 k 个字符移到字符串的前面，实现字符串的右旋转操作。 
