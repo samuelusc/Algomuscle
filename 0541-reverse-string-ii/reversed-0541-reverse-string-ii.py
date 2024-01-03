@@ -9,3 +9,5 @@ class Solution:
             text[i:i+k] = reversed(text[i: i+k])
         
         return "".join(text)
+
+#T: O(n), S: O(n)
