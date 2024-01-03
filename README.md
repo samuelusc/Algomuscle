@@ -60,10 +60,15 @@
 **[Day 8](./Daily%20Algo%20Insights/Day08-String-Part1.md#541) - 1/2/2024**
 
 | Question# | Title                                           | Solution                                                                                               | Difficulty | Topics | Complexity                                | Nodes |
-|-----------|-------------------------------------------------|--------------------------------------------------------------------------------------------------------|------------|--------|-------------------------------------------|-------|
-| 344       | [Reverse String](https://leetcode.com/problems/reverse-string) | [Python](./0344-reverse-string)| Easy       |  String, Two Pointers     | T:O(n),S:O(1) |       |
-| 541        | [Reverse StringII](https://leetcode.com/problems/reverse-string-ii) |[Python](./0541-reverse-string-ii)| Easy     | Two Pointer, String    |  T:O(n),S:O(n)      |       |
-| 15      | [3Sum](https://leetcode.com/problems/3sum/) | 1. [Two Pointer](./0015-3sum/twoPointers-0015-3sum.py)| Medium      |  Array, Two Pointers, Sorting   | T: O(n^2), S: O(n^2) |       |
-| 18       | [4Sum](https://leetcode.com/problems/4sum/description/) | 1. [Two Pointer](./0018-4sum/0018-4sum.py)  | Medium       |  Hash Table, Array, Sorting      | T: O(n^3), S: O(m) where m is the number of unique quadruplets that sums up to the target |       |
+| Question# | Title                                           | Solution                                                                                               | Difficulty | Topics | Nodes |
+|-----------|-------------------------------------------------|--------------------------------------------------------------------------------------------------------|------------|--------|-------|
+| 344       | [Reverse String](https://leetcode.com/problems/reverse-string) | [Python](./0344-reverse-string)| Easy       |  String, Two Pointers     |       |
+| 541        | [Reverse StringII](https://leetcode.com/problems/reverse-string-ii) |[Python](./0541-reverse-string-ii)| Easy     | Two Pointer, String    |       |
+| 54      | [Kama-Replace numbers](https://programmercarl.com/kama54.%E6%9B%BF%E6%8D%A2%E6%95%B0%E5%AD%97.html#%E6%80%9D%E8%B7%AF) | [Python](./Daily%20Algo%20Insights/Day08-String-Part1.md#54)| Easy      |  String   |       |
+| 151       | [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string) | 1. [Python](./0151-reverse-words-in-a-string)  | Medium       |  String, Two Pointer   |       |
+| 55       | [Kama-Right Rotate a String](https://programmercarl.com/kama55.%E5%8F%B3%E6%97%8B%E5%AD%97%E7%AC%A6%E4%B8%B2.html) | 1. [Python](./Daily%20Algo%20Insights/Day08-String-Part1.md#55)  | Easy      |  String  |       |
+
+
+
 
 
