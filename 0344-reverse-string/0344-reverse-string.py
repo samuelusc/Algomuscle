@@ -3,5 +3,14 @@ class Solution:
         """
         Do not return anything, modify s in-place instead.
         """
-        # slicing 
+        # slicing T:O(n) S:O(1)
         s[:] = s[::-1]
+
+        # reversed V.S reverse
+        # s[:] = reversed(s)  with iterable parameter
+        # s.reverse() no parameter in ()
+
+        # reverse(0 can only be used with lists and reveses the element of the list in place
+        # reversed can work with any iterable(lists, tuples, strings,etc). It doesn't modify the original iterable instead
+        # it creates a reverse iterator 
+
