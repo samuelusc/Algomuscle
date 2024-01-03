@@ -364,9 +364,9 @@ O(n) where n is the length of "s"
 #### 输入示例
 2
 abcdefg
-##### 输出示例
+#### 输出示例
 fgabcde
-##### 提示信息
+#### 提示信息
 **数据范围：**
 `1 <= k < 10000,`
 `1 <= s.length < 10000;`
