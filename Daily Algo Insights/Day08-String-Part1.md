@@ -26,12 +26,23 @@
 	<li><code>s[i]</code> is a <a href="https://en.wikipedia.org/wiki/ASCII#Printable_characters" target="_blank">printable ascii character</a>.</li>
 </ul>
 
+
 ### Solving approach:
 
 
 ### My Solution：
 ```python
-
+class Solution:
+    def reverseString(self, s: List[str]) -> None:
+        """
+        Do not return anything, modify s in-place instead.
+        """
+        # two pointers
+        left, right = 0, len(s)-1
+        while left < right:
+            s[left],s[right] = s[right],s[left]
+            left += 1
+            right -= 1
 
 ```
 **Complexity Analysis:**
