@@ -374,7 +374,7 @@ fgabcde
 ### Solving approach:
 直接使用 slicing 创造一个新的string（无初始化）,`注意`： 要注意边界处理用k=k%n,将k限制在n的范围内。 
 
-#### My Solution 1：_`xxx`_
+#### My Solution 1：_`Slicing`_
 ```python
 class Solution:
     def rotateStr(self, k: int, s: str)->str:
