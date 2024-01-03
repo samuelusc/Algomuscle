@@ -346,3 +346,56 @@ class Solution:
 O(n) where n is the length of "s"
 - *`Space Complexity`*:
 O(n) where n is the length of "s"
+
+## 55 右旋字符串<a name="55"></a>
+<a href="https://programmercarl.com/kama55.%E5%8F%B3%E6%97%8B%E5%AD%97%E7%AC%A6%E4%B8%B2.html" target="_blank">55.右旋字符串</a>
+#### 题目描述
+字符串的右旋转操作是把字符串尾部的若干个字符转移到字符串的前面。给定一个字符串 s 和一个正整数 k，请编写一个函数，将字符串中的后面 k 个字符移到字符串的前面，实现字符串的右旋转操作。 
+
+例如，对于输入字符串 "abcdefg" 和整数 2，函数应该将其转换为 "fgabcde"。
+
+#### 输入描述
+输入共包含两行，第一行为一个正整数 k，代表右旋转的位数。第二行为字符串 s，代表需要旋转的字符串。
+#### 输出描述
+输出共一行，为进行了右旋转操作后的字符串。
+#### 输入示例
+2
+abcdefg
+##### 输出示例
+fgabcde
+##### 提示信息
+**数据范围：**
+`1 <= k < 10000,`
+`1 <= s.length < 10000;`
+
+### Solving approach:
+直接使用 slicing 创造一个新的string（无初始化）,`注意`： 要注意边界处理用k=k%n,将k限制在n的范围内。 
+
+#### My Solution 1：_`xxx`_
+```python
+class Solution:
+    def rotateStr(self, k: int, s: str)->str:
+
+        n = len(s)
+        k = k % n
+   
+        text = s[n-k:] + s[:n-k]
+        
+        return text
+        
+        
+
+sol = Solution()
+
+k = int(input())
+s = input()
+
+res = sol.rotateStr(k,s)
+print(res)
+
+```
+
+- *`Time Complexity`*:
+O(n)
+- *`Space Complexity`*:
+O(n)
