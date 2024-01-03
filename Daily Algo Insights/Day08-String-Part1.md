@@ -146,7 +146,7 @@ O(n^2/k) Each iteration process 2k and run n/2k. at each iteration to process sl
 - *`Space Complexity`*:
 O(n)
 
-#### My Solution 2：_`xxx`_
+#### My Solution 2：
 ```python
 # T: O(n), S: O(n)
 class Solution:
@@ -181,7 +181,7 @@ class Solution:
 
 - *`Space Complexity`*:
 
-#### My Solution 3：_`xxx`_
+#### My Solution 3：_`for + Slicing`_
 ```python
 class Solution:
     def reverseStr(self, s: str, k: int) -> str:
