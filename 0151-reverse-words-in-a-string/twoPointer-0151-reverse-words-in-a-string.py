@@ -9,3 +9,6 @@ class Solution:
             right -= 1
         
         return " ".join(text)
+
+# T：O(n) 
+# S: O(n) where n is the length of "s"
