@@ -220,9 +220,8 @@ anumberbnumbercnumber
 **数据范围：**
 `1 <= s.length < 10000。`
 
-
-
-
+### Solving approach:
+循环读取每一个letter, 用 char.isdigit() 确认是否数字，如果True 就 text + “number”, 否则 text + char
 
 #### My Solution 1：_`xxx`_
 ```python
@@ -256,3 +255,93 @@ O(n)
 
 - *`Space Complexity`*:
 O(n)
+
+<h2 id="151"><a href="https://leetcode.com/problems/reverse-words-in-a-string">151. Reverse Words in a String</a></h2><h3>Medium</h3><hr><p>Given an input string <code>s</code>, reverse the order of the <strong>words</strong>.</p>
+
+<p>A <strong>word</strong> is defined as a sequence of non-space characters. The <strong>words</strong> in <code>s</code> will be separated by at least one space.</p>
+
+<p>Return <em>a string of the words in reverse order concatenated by a single space.</em></p>
+
+<p><b>Note</b> that <code>s</code> may contain leading or trailing spaces or multiple spaces between two words. The returned string should only have a single space separating the words. Do not include any extra spaces.</p>
+
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> s = &quot;the sky is blue&quot;
+<strong>Output:</strong> &quot;blue is sky the&quot;
+</pre>
+
+<p><strong class="example">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> s = &quot;  hello world  &quot;
+<strong>Output:</strong> &quot;world hello&quot;
+<strong>Explanation:</strong> Your reversed string should not contain leading or trailing spaces.
+</pre>
+
+<p><strong class="example">Example 3:</strong></p>
+
+<pre>
+<strong>Input:</strong> s = &quot;a good   example&quot;
+<strong>Output:</strong> &quot;example good a&quot;
+<strong>Explanation:</strong> You need to reduce multiple spaces between two words to a single space in the reversed string.
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= s.length &lt;= 10<sup>4</sup></code></li>
+	<li><code>s</code> contains English letters (upper-case and lower-case), digits, and spaces <code>&#39; &#39;</code>.</li>
+	<li>There is <strong>at least one</strong> word in <code>s</code>.</li>
+</ul>
+
+<p>&nbsp;</p>
+<p><b data-stringify-type="bold">Follow-up:&nbsp;</b>If the string data type is mutable in your language, can&nbsp;you solve it&nbsp;<b data-stringify-type="bold">in-place</b>&nbsp;with&nbsp;<code data-stringify-type="code">O(1)</code>&nbsp;extra space?</p>
+
+### Solving approach:
+
+
+#### My Solution 1：_`xxx`_
+```python
+class Solution:
+    def reverseWords(self, s: str) -> str:
+        #s.strip() remove start and end space
+        # split() will remove space in s including start and end
+        words = s.split()
+        # reverse in place
+        words.reverse()
+        return ' '.join(words)
+
+```
+
+- *`Time Complexity`*:
+O(n) where n is the length of "s"
+- *`Space Complexity`*:
+O(n) where n is the length of "s"
+#### My Solution 2：_`xxx`_
+```python
+class Solution:
+    def reverseWords(self, s: str) -> str:
+        text = s.split()
+
+        left, right = 0, len(text)-1
+        while left < right:
+            text[left],text[right] = text[right],text[left]
+            left += 1
+            right -= 1
+        
+        return " ".join(text)
+
+# T：O(n) where n is the length of "s"
+# S: O(n) where n is the length of "s"
+
+```
+
+**Complexity Analysis:**
+
+- *`Time Complexity`*:
+O(n) where n is the length of "s"
+- *`Space Complexity`*:
+O(n) where n is the length of "s"
