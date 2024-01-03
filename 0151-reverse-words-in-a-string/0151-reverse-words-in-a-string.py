@@ -1,8 +1,11 @@
 class Solution:
     def reverseWords(self, s: str) -> str:
-        #s.strip() remove start and end space
-        # split() will remove space in s including start and end
-        words = s.split()
-        # reverse in place
-        words.reverse()
-        return ' '.join(words)
+        text = s.split()
+
+        left, right = 0, len(text)-1
+        while left < right:
+            text[left],text[right] = text[right],text[left]
+            left += 1
+            right -= 1
+        
+        return " ".join(text)
