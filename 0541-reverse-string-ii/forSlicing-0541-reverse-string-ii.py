@@ -1,3 +1,4 @@
+# T: O(n), S: O(n)
 class Solution:
     def reverseStr(self, s: str, k: int) -> str:
         if len(s) < k:
@@ -22,3 +23,5 @@ class Solution:
         return "".join(s)
 # In Python, when you slice a string with an index that is beyond the string's actual length, 
 # Python will not throw an error. Instead, it will adapt to the situation and return as many characters as possible.
+
+
