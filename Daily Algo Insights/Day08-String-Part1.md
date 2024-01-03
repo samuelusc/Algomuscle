@@ -1,5 +1,5 @@
 # Day 8 - String Part 1 
-								***01/02/2024***
+
 ## Reference
 [Carl's Coding Collection](https://programmercarl.com/0344.%E5%8F%8D%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2.html)
 ## Contents
