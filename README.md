@@ -59,7 +59,6 @@
 
 **[Day 8](./Daily%20Algo%20Insights/Day08-String-Part1.md#541) - 1/2/2024**
 
-| Question# | Title                                           | Solution                                                                                               | Difficulty | Topics | Complexity                                | Nodes |
 | Question# | Title                                           | Solution                                                                                               | Difficulty | Topics | Nodes |
 |-----------|-------------------------------------------------|--------------------------------------------------------------------------------------------------------|------------|--------|-------|
 | 344       | [Reverse String](https://leetcode.com/problems/reverse-string) | [Python](./0344-reverse-string)| Easy       |  String, Two Pointers     |       |
