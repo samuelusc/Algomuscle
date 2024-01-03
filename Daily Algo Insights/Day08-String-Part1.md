@@ -1,4 +1,4 @@
-# Day08 01/02/2024 
+# Day08 - _01/02/2024_ 
 ## Contents
 * [344.Reverse String](#344)
 * [541.Reverse StringII](#541)
@@ -301,9 +301,10 @@ O(n)
 <p><b data-stringify-type="bold">Follow-up:&nbsp;</b>If the string data type is mutable in your language, can&nbsp;you solve it&nbsp;<b data-stringify-type="bold">in-place</b>&nbsp;with&nbsp;<code data-stringify-type="code">O(1)</code>&nbsp;extra space?</p>
 
 ### Solving approach:
+1. s.split() 可以去掉前后空格生成新的list(strip() 用于去掉前后空格）， 再用reverse()直接反转，最后用' '.join(word)将其转成string 返回.
+2. 仍然用split()转成list，接下来用两个指针 left < right 循环反转。`重点`left 每移动一步就是一个word, 比如["hello", "world", "from"] 0->1 是从 "hello" to "world"
 
-
-#### My Solution 1：_`xxx`_
+#### My Solution 1：_`reverse`_
 ```python
 class Solution:
     def reverseWords(self, s: str) -> str:
@@ -320,7 +321,7 @@ class Solution:
 O(n) where n is the length of "s"
 - *`Space Complexity`*:
 O(n) where n is the length of "s"
-#### My Solution 2：_`xxx`_
+#### My Solution 2：_`two pointers`_
 ```python
 class Solution:
     def reverseWords(self, s: str) -> str:
