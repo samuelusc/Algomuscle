@@ -103,13 +103,13 @@ class MyQueue:
 ```
 
 - *`Time Complexity`*:
-- __init__: O(1) initialize two empty stacks take constant time.
-- push(): O(1) Append operation on a list(stack) costs an amortized constant time operation.
-- pop(): Amortized O(1). In the worst case, this can be O(n) since it hast to move all elements from stack_in to stack_out.However each element is only moved once
+  __init__: O(1) initialize two empty stacks take constant time.
+  push(): O(1) Append operation on a list(stack) costs an amortized constant time operation.
+  pop(): Amortized O(1). In the worst case, this can be O(n) since it hast to move all elements from stack_in to stack_out.However each element is only moved once
 and for m operations it gives average time complexity of O(1).
--  peek(): Amortized O(1) similar to pop().
--  move: Amortized O(1)
--  
+  peek(): Amortized O(1) similar to pop().
+  move: Amortized O(1)
+   
 - *`Space Complexity`*:
 O(n)
 
