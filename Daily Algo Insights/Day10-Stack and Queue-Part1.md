@@ -59,7 +59,7 @@ myQueue.empty(); // return false
 <p><strong>Follow-up:</strong> Can you implement the queue such that each operation is <strong><a href="https://en.wikipedia.org/wiki/Amortized_analysis" target="_blank">amortized</a></strong> <code>O(1)</code> time complexity? In other words, performing <code>n</code> operations will take overall <code>O(n)</code> time even if one of those operations may take longer.</p>
 
 #### Solving approach:
-Consider to implement FIFO Principle using two stacks. 
+用两个栈实现Queue，helper() 将用来在两个栈中传输并将元素的输送延迟到必要时（Amortized Analysis) 
 
 #### My Solution 1：_`xxx`_
 ```python
