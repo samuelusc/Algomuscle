@@ -3,7 +3,7 @@
 ## Contents
 * [28. Find the Index of the First Occurrence in a String](#28)
 * [459. Repeated Substring Pattern](#459)
-* [268. Smallest Missing Integer](#)
+* [268. Smallest Missing Integer](#268)
 * [xx](#)
 * [xx](#)
 
@@ -164,7 +164,7 @@ O(n^2)
 - *`Space Complexity`*:
 O(n)
 
-<h2><a href="https://leetcode.com/problems/missing-number">268. Missing Number</a></h2><h3>Easy</h3><hr><p>Given an array <code>nums</code> containing <code>n</code> distinct numbers in the range <code>[0, n]</code>, return <em>the only number in the range that is missing from the array.</em></p>
+<h2 id="268"><a href="https://leetcode.com/problems/missing-number">268. Missing Number</a></h2><h3>Easy</h3><hr><p>Given an array <code>nums</code> containing <code>n</code> distinct numbers in the range <code>[0, n]</code>, return <em>the only number in the range that is missing from the array.</em></p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
@@ -231,7 +231,7 @@ O(1)
 - 采用 ***`in-place hashing`*** , 非数据结构所称的hashing  data structure， 而是利用 **`数组索引作为key`** 存储和检索值的技术。这种方将数组自身用作哈希表，其中元素值和数组索引有直接关系。
 - Don't forget to check nums[i] < n boundary check, 防止 nums[nums[i]] 越界
 
-#### My Solution 2：_`xxx`_
+#### My Solution 2：_`in_place hashing`_
 ```python
 class Solution:
     def missingNumber(self, nums: List[int]) -> int:
