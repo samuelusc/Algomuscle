@@ -70,7 +70,7 @@
 **[Day 9](./Daily%20Algo%20Insights/Day09-String-Part2.md) - 1/3/2024**
 
 | Question# | Title                                           | Solution                                                                                               | Difficulty | Topics | Nodes |
-|-----------|-------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|------------|--------|-------|
+|-----------|-------------------------------------------------|--------------------------------------------------------------------------------------------------------|------------|--------|-------|
 | 28       | [Find the Index of the First Occurrence in a String](./find-the-index-of-the-first-occurrence-in-a-string) | [Python](./0028-find-the-index-of-the-first-occurrence-in-a-string)| Easy       |  String, Two Pointers     |  Will add the KMP algorithm   next day  |
 | 459        | [Repeated Substring Pattern](https://leetcode.com/problems/repeated-substring-pattern) |[Python](./0459-repeated-substring-pattern)| Easy     | Two Pointer, String    | will include the KMP next day      |
 | 268      | [Smallest Missing Integer](https://programmercarl.com/kama54.%E6%9B%BF%E6%8D%A2%E6%95%B0%E5%AD%97.html#%E6%80%9D%E8%B7%AF) | [Python](./Daily%20Algo%20Insights/Day08-String-Part1.md#54)| Easy      |  Array, Hash Table   |  set(), in-place Hashing    |
