@@ -37,7 +37,7 @@ The first occurrence is at index 0, so we return 0.
 </ul>
 
 #### Solving approach:
-
+用for 循环去查看是否substring 与 target string 匹配，注意loop range(haystack - needle +1)。 比如 abc:ab 到c再匹配查看就会越界所以只到b ->(3-2+1)=2 range(2)
 
 #### My Solution 1：_`for + slicing`_
 ```python
@@ -66,7 +66,7 @@ O((n-m+1) * m) -> O(n*m)
 - *`Space Complexity`*:
 O(1)
 #### Solving approach:
-
+用双指针，当遇到s1[i] == s2[0] 进入 while循环检测，一个指针指向s1 一个s2。 同样注意range
 #### My Solution 2：_`two pointers(for+while)`_
 ```python
 class Solution:
