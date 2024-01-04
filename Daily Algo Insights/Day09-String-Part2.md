@@ -165,7 +165,7 @@ O(n)
 #### Solving approach:
 先定义前缀表，再用前缀表去确认需要回退位置（target str).
 
-#### My Solution 3：_`xxx`_
+#### My Solution 3：_`KMP`_
 ```python
 class Solution:
     # 初始化
@@ -215,6 +215,8 @@ class Solution:
 O(n + m) where n is the length of needle str and m is the length of the haystack str.
 - *`Space Complexity`*:
 O(n) where n is the length of needle str.
+
+
 <h2 id="268"><a href="https://leetcode.com/problems/missing-number">268. Missing Number</a></h2><h3>Easy</h3><hr><p>Given an array <code>nums</code> containing <code>n</code> distinct numbers in the range <code>[0, n]</code>, return <em>the only number in the range that is missing from the array.</em></p>
 
 <p>&nbsp;</p>
