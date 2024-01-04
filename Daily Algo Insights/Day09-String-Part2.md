@@ -34,6 +34,9 @@ The first occurrence is at index 0, so we return 0.
 	<li><code>haystack</code> and <code>needle</code> consist of only lowercase English characters.</li>
 </ul>
 
+---
+
+
 #### Solving approach:
 用for 循环去查看是否substring 与 target string 匹配，注意loop range(haystack - needle +1)。 比如 abc:ab 到c再匹配查看就会越界所以只到b ->(3-2+1)=2 range(2)
 
@@ -155,7 +158,7 @@ O(n + m) where n is the length of needle str and m is the length of the haystack
 - *`Space Complexity`*:
 O(n) where n is the length of needle str.
 
-
+---
 
 <h2 id ="459"><a href="https://leetcode.com/problems/repeated-substring-pattern">459. Repeated Substring Pattern</a></h2><h3>Easy</h3><hr><p>Given a string <code>s</code>, check if it can be constructed by taking a substring of it and appending multiple copies of the substring together.</p>
 
@@ -258,6 +261,8 @@ class Solution:
 O(n)
 - *`Space Complexity`*:
 O(n)
+
+---
 
 
 <h2 id="268"><a href="https://leetcode.com/problems/missing-number">268. Missing Number</a></h2><h3>Easy</h3><hr><p>Given an array <code>nums</code> containing <code>n</code> distinct numbers in the range <code>[0, n]</code>, return <em>the only number in the range that is missing from the array.</em></p>
