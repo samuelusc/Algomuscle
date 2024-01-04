@@ -56,6 +56,9 @@ class Solution:
         
         return -1
 
+	# return haystack.find(needle) 
+	# if find needle ,will return start index in haystack or return  - 1 if can't it.
+	# string.find(substring, start, end) optional: (start, end)
 ```
 
 - *`Time Complexity`*:
