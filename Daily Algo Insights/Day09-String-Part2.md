@@ -137,7 +137,7 @@ O(1)
 	<li><code>s</code> consists of lowercase English letters.</li>
 </ul>
 
-### Solving approach:
+#### Solving approach:
 可以利用 **`字符串的重复性质`** 来检测是否's'可以由它的子字符重复多次构成。如果's'确实可以由其字符串重复构成，那么在2s中找到完全匹配s的初始位置将在第一个s结束前也就是index<len(s).
 
 #### My Solution 1：_`2S`_
@@ -158,16 +158,3 @@ class Solution:
 O(n^2)
 - *`Space Complexity`*:
 O(n)
-### Solving approach:
-
-#### My Solution 2：_`xxx`_
-```python
-
-
-```
-
-**Complexity Analysis:**
-
-- *`Time Complexity`*:
-
-- *`Space Complexity`*:
