@@ -63,6 +63,7 @@ class Solution:
 O((n-m+1) * m) -> O(n*m)
 - *`Space Complexity`*:
 O(1)
+
 #### Solving approach:
 用双指针，当遇到s1[i] == s2[0] 进入 while循环检测，一个指针指向s1 一个s2。 同样注意range
 #### My Solution 2：_`Brute Force`_
@@ -100,6 +101,61 @@ class Solution:
 O((n-m+1) * m) -> O(n*m)
 - *`Space Complexity`*:
 O(1)
+
+#### Solving approach:
+先定义前缀表，再用前缀表去确认需要回退位置（target str).
+
+#### My Solution 3：_`KMP`_
+```python
+class Solution:
+    # 初始化
+    # 前后缀不同
+    # 前后缀相同
+    # next 更新
+    def nextTable(self, next: List[int], s: str)->None:
+        #初始化
+        j = 0 #前缀和末尾
+        next[0] = 0
+        for i in range(1, len(s)): #i 后缀和末尾
+            while j > 0 and s[i] != s[j]:
+                j = next[j-1]
+            if s[i] == s[j]:
+                j += 1
+            next[i] = j
+
+
+    def strStr(self, haystack: str, needle: str) -> int:
+        hay_len,nee_len = len(haystack), len(needle)
+        # boundary check 
+        if nee_len == 0:
+            return 0
+        if hay_len < nee_len:
+            return -1
+        # 初始化
+        next = [0] * nee_len
+        self. nextTable(next, needle) # mutable data type can be changed
+        # after they are created
+        j = 0
+        for i in range(hay_len):
+            while j > 0 and haystack[i] != needle[j]:
+                j = next[j-1]
+            
+            if haystack[i] == needle[j]:
+                j += 1
+            
+            if j == nee_len:
+                return i - nee_len + 1
+        
+        return -1
+
+
+```
+- *`Time Complexity`*:
+O(n + m) where n is the length of needle str and m is the length of the haystack str.
+- *`Space Complexity`*:
+O(n) where n is the length of needle str.
+
+
 
 <h2 id ="459"><a href="https://leetcode.com/problems/repeated-substring-pattern">459. Repeated Substring Pattern</a></h2><h3>Easy</h3><hr><p>Given a string <code>s</code>, check if it can be constructed by taking a substring of it and appending multiple copies of the substring together.</p>
 
@@ -161,60 +217,6 @@ class Solution:
 O(n^2)
 - *`Space Complexity`*:
 O(n)
-
-#### Solving approach:
-先定义前缀表，再用前缀表去确认需要回退位置（target str).
-
-#### My Solution 3：_`KMP`_
-```python
-class Solution:
-    # 初始化
-    # 前后缀不同
-    # 前后缀相同
-    # next 更新
-    def nextTable(self, next: List[int], s: str)->None:
-        #初始化
-        j = 0 #前缀和末尾
-        next[0] = 0
-        for i in range(1, len(s)): #i 后缀和末尾
-            while j > 0 and s[i] != s[j]:
-                j = next[j-1]
-            if s[i] == s[j]:
-                j += 1
-            next[i] = j
-
-
-    def strStr(self, haystack: str, needle: str) -> int:
-        hay_len,nee_len = len(haystack), len(needle)
-        # boundary check 
-        if nee_len == 0:
-            return 0
-        if hay_len < nee_len:
-            return -1
-        # 初始化
-        next = [0] * nee_len
-        self. nextTable(next, needle) # mutable data type can be changed
-        # after they are created
-        j = 0
-        for i in range(hay_len):
-            while j > 0 and haystack[i] != needle[j]:
-                j = next[j-1]
-            
-            if haystack[i] == needle[j]:
-                j += 1
-            
-            if j == nee_len:
-                return i - nee_len + 1
-        
-        return -1
-
-
-```
-
-- *`Time Complexity`*:
-O(n + m) where n is the length of needle str and m is the length of the haystack str.
-- *`Space Complexity`*:
-O(n) where n is the length of needle str.
 
 
 <h2 id="268"><a href="https://leetcode.com/problems/missing-number">268. Missing Number</a></h2><h3>Easy</h3><hr><p>Given an array <code>nums</code> containing <code>n</code> distinct numbers in the range <code>[0, n]</code>, return <em>the only number in the range that is missing from the array.</em></p>
