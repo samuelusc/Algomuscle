@@ -59,7 +59,7 @@ myQueue.empty(); // return false
 <p><strong>Follow-up:</strong> Can you implement the queue such that each operation is <strong><a href="https://en.wikipedia.org/wiki/Amortized_analysis" target="_blank">amortized</a></strong> <code>O(1)</code> time complexity? In other words, performing <code>n</code> operations will take overall <code>O(n)</code> time even if one of those operations may take longer.</p>
 
 #### Solving approach:
-
+Consider to implement FIFO Principle using two stacks. 
 
 #### My Solution 1：_`xxx`_
 ```python
@@ -101,7 +101,6 @@ class MyQueue:
 # param_4 = obj.empty()
 
 ```
-
 - *`Time Complexity`*:
   </br>
   __init__: O(1) initialize two empty stacks take constant time.</br>
@@ -112,25 +111,8 @@ and for m operations it gives average time complexity of O(1).</br>
   **move**: Amortized O(1)
    
 - *`Space Complexity`*:
+</br>
 **O(n)**
-
-#### Solving approach:
-- 
-#### My Solution 2：_`xxx`_
-```python
-
-
-```
-
-**Complexity Analysis:**
-
-- *`Time Complexity`*:
-
-- *`Space Complexity`*:
-
-
-
-
 
 
 
