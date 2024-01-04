@@ -25,7 +25,7 @@ xxxx Question Description with id="xxx"
 
 - *`Space Complexity`*:
 
-### Solving approach:
+#### Solving approach:
 
 #### My Solution 2：_`xxx`_
 ```python
