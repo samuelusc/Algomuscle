@@ -218,6 +218,47 @@ O(n^2)
 - *`Space Complexity`*:
 O(n)
 
+#### Solving approach:
+- 利用kmp 生成的前缀表确定，确定最长前后缀公共长度。 如果其不等于0， 并且target str长度去掉最长公共后缀长度的剩余数可以被 target str 整除，则表示有最小重复子字符
+
+#### My Solution 2：_`KMP`_
+```python
+
+class Solution:
+    def nextTable(self, next:List[int], targetStr: str)-> None:
+            j = 0
+            next[0] = 0
+
+            for i in range(1, len(targetStr)):
+                while j>0 and targetStr[i] != targetStr[j]:
+                    j= next[j-1]
+                
+                if targetStr[i] == targetStr[j]:
+                    j += 1
+                
+                next[i] = j
+
+    def repeatedSubstringPattern(self, s: str) -> bool:
+        # constraints s.len <=1
+
+        next = [0] * len(s)
+        self.nextTable(next, s)
+
+        # first statement 保证有重复
+        # second 可以被最长前后缀之外的部分整除
+        if next[-1] !=0 and len(s) % (len(s) - next[-1]) == 0 :
+            return True
+        
+        return False
+     
+
+```
+
+- *`Time Complexity`*:
+O(n)
+- *`Space Complexity`*:
+O(n)
+
 
 <h2 id="268"><a href="https://leetcode.com/problems/missing-number">268. Missing Number</a></h2><h3>Easy</h3><hr><p>Given an array <code>nums</code> containing <code>n</code> distinct numbers in the range <code>[0, n]</code>, return <em>the only number in the range that is missing from the array.</em></p>
 
