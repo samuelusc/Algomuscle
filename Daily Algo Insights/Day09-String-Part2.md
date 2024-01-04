@@ -65,7 +65,7 @@ O((n-m+1) * m) -> O(n*m)
 O(1)
 #### Solving approach:
 用双指针，当遇到s1[i] == s2[0] 进入 while循环检测，一个指针指向s1 一个s2。 同样注意range
-#### My Solution 2：_`two pointers(for+while)`_
+#### My Solution 2：_`Brute Force`_
 ```python
 class Solution:
     def strStr(self, haystack: str, needle: str) -> int:
