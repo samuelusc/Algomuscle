@@ -64,7 +64,7 @@ O((n-m+1) * m) -> O(n*m)
 O(1)
 ### Solving approach:
 
-#### My Solution 2：_`xxx`_
+#### My Solution 2：_`two pointers(for+while)`_
 ```python
 class Solution:
     def strStr(self, haystack: str, needle: str) -> int:
