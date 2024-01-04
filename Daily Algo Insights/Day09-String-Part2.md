@@ -3,7 +3,7 @@
 ## Contents
 * [28. Find the Index of the First Occurrence in a String](#28)
 * [459. Repeated Substring Pattern](#459)
-* [xx](#)
+* [268. Smallest Missing Integer](#)
 * [xx](#)
 * [xx](#)
 
@@ -163,3 +163,98 @@ class Solution:
 O(n^2)
 - *`Space Complexity`*:
 O(n)
+
+<h2><a href="https://leetcode.com/problems/missing-number">268. Missing Number</a></h2><h3>Easy</h3><hr><p>Given an array <code>nums</code> containing <code>n</code> distinct numbers in the range <code>[0, n]</code>, return <em>the only number in the range that is missing from the array.</em></p>
+
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> nums = [3,0,1]
+<strong>Output:</strong> 2
+<strong>Explanation:</strong> n = 3 since there are 3 numbers, so all numbers are in the range [0,3]. 2 is the missing number in the range since it does not appear in nums.
+</pre>
+
+<p><strong class="example">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> nums = [0,1]
+<strong>Output:</strong> 2
+<strong>Explanation:</strong> n = 2 since there are 2 numbers, so all numbers are in the range [0,2]. 2 is the missing number in the range since it does not appear in nums.
+</pre>
+
+<p><strong class="example">Example 3:</strong></p>
+
+<pre>
+<strong>Input:</strong> nums = [9,6,4,2,3,5,7,0,1]
+<strong>Output:</strong> 8
+<strong>Explanation:</strong> n = 9 since there are 9 numbers, so all numbers are in the range [0,9]. 8 is the missing number in the range since it does not appear in nums.
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>n == nums.length</code></li>
+	<li><code>1 &lt;= n &lt;= 10<sup>4</sup></code></li>
+	<li><code>0 &lt;= nums[i] &lt;= n</code></li>
+	<li>All the numbers of <code>nums</code> are <strong>unique</strong>.</li>
+</ul>
+
+<p>&nbsp;</p>
+<p><strong>Follow up:</strong> Could you implement a solution using only <code>O(1)</code> extra space complexity and <code>O(n)</code> runtime complexity?</p>
+
+#### Solving approach:
+- 要想一下，如果从0开始的数组，它所缺失的最小数必然与按自然数循环的i 不同，那么i 就是缺失的那个。否则就是len(nums)
+- 本题用了sort直接改变了数组也可以用sorted(nums) 创建一个新数组
+
+#### My Solution 1：_`Sort`_
+```python
+class Solution:
+    def missingNumber(self, nums: List[int]) -> int:
+        nums.sort()
+        for i in range(len(nums)):
+            if i != nums[i]:
+                return i
+        
+        return len(nums)
+
+```
+
+- *`Time Complexity`*:
+O(nlogn)
+- *`Space Complexity`*:
+O(1)
+
+#### Solving approach:
+- 需要处理 follow up question: 如何降低复杂度到O(n) 并维持O(1) in place 空间
+- 采用 ***`in-place hashing`*** , 非数据结构所称的hashing  data structure， 而是利用 **`数组索引作为key`** 存储和检索值的技术。这种方将数组自身用作哈希表，其中元素值和数组索引有直接关系。
+- Don't forget to check nums[i] < n boundary check, 防止 nums[nums[i]] 越界
+
+#### My Solution 2：_`xxx`_
+```python
+class Solution:
+    def missingNumber(self, nums: List[int]) -> int:
+
+        n = len(nums)
+
+        for i in range(len(nums)):
+            while nums[i]<n and nums[i]!= nums[nums[i]]:
+                #should consider why to apply this order instead of 
+                # nums[i],nums[nums[i]]
+                nums[nums[i]],nums[i] = nums[i], nums[nums[i]]
+
+        for i in range(len(nums)):
+            if i != nums[i]:
+                return i
+        
+        return len(nums)
+
+```
+
+**Complexity Analysis:**
+
+- *`Time Complexity`*:
+O(n) where n represents the size of the input
+- *`Space Complexity`*:
+O(1)
