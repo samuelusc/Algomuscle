@@ -2,7 +2,7 @@
 
 ## Contents
 * [28. Find the Index of the First Occurrence in a String](#28)
-* [xx](#)
+* [459. Repeated Substring Pattern](#459)
 * [xx](#)
 * [xx](#)
 * [xx](#)
@@ -102,3 +102,72 @@ class Solution:
 O((n-m+1) * m) -> O(n*m)
 - *`Space Complexity`*:
 O(1)
+
+<h2 id ="459"><a href="https://leetcode.com/problems/repeated-substring-pattern">459. Repeated Substring Pattern</a></h2><h3>Easy</h3><hr><p>Given a string <code>s</code>, check if it can be constructed by taking a substring of it and appending multiple copies of the substring together.</p>
+
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> s = &quot;abab&quot;
+<strong>Output:</strong> true
+<strong>Explanation:</strong> It is the substring &quot;ab&quot; twice.
+</pre>
+
+<p><strong class="example">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> s = &quot;aba&quot;
+<strong>Output:</strong> false
+</pre>
+
+<p><strong class="example">Example 3:</strong></p>
+
+<pre>
+<strong>Input:</strong> s = &quot;abcabcabcabc&quot;
+<strong>Output:</strong> true
+<strong>Explanation:</strong> It is the substring &quot;abc&quot; four times or the substring &quot;abcabc&quot; twice.
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= s.length &lt;= 10<sup>4</sup></code></li>
+	<li><code>s</code> consists of lowercase English letters.</li>
+</ul>
+
+### Solving approach:
+可以利用`字符串的重复性质`来检测是否's'可以由它的子字符重复多次构成。如果's'确实可以由其字符串重复构成，那么在2s中找到完全匹配s的初始位置将在第一个s结束前也就是index<len(s).
+
+#### My Solution 1：_`2S`_
+```python
+
+class Solution:
+    def repeatedSubstringPattern(self, s: str) -> bool:
+         # create 2s
+         double_s = s + s
+         index_s = double_s.index(s, 1)
+
+         return index_s < len(s)
+         
+
+```
+
+- *`Time Complexity`*:
+O(n^2)
+- *`Space Complexity`*:
+O(n)
+### Solving approach:
+
+#### My Solution 2：_`xxx`_
+```python
+
+
+```
+
+**Complexity Analysis:**
+
+- *`Time Complexity`*:
+
+- *`Space Complexity`*:
