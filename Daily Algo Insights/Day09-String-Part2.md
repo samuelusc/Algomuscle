@@ -255,6 +255,6 @@ class Solution:
 **Complexity Analysis:**
 
 - *`Time Complexity`*:
-O(n) where n represents the size of the input
+O(n) where n represents the size of the input. Each element in the array is swapped at most once into its correct position. Once an element is in the correct position, it won't be moved again.
 - *`Space Complexity`*:
 O(1)
