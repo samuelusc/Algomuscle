@@ -137,7 +137,7 @@ O(1)
 	<li><code>s</code> consists of lowercase English letters.</li>
 </ul>
 
-#### Solving approach:
+### Solving approach:
 - 可以利用 **`字符串的重复性质`** 来检测是否's'可以由它的子字符重复多次构成。如果's'确实可以由其字符串重复构成，那么在2s中找到完全匹配s的初始位置将在第一个s结束前也就是index<len(s).</br>
 
 - 检查 len(s) <= 1，return False(避免了空集index问题）
@@ -204,7 +204,7 @@ O(n)
 <p>&nbsp;</p>
 <p><strong>Follow up:</strong> Could you implement a solution using only <code>O(1)</code> extra space complexity and <code>O(n)</code> runtime complexity?</p>
 
-#### Solving approach:
+### Solving approach:
 - 要想一下，如果从0开始的数组，它所缺失的最小数必然与按自然数循环的i 不同，那么i 就是缺失的那个。否则就是len(nums)
 - 本题用了sort直接改变了数组也可以用sorted(nums) 创建一个新数组
 
@@ -226,7 +226,7 @@ O(nlogn)
 - *`Space Complexity`*:
 O(1)
 
-#### Solving approach:
+### Solving approach:
 - 需要处理 follow up question: 如何降低复杂度到O(n) 并维持O(1) in place 空间
 - 采用 ***`in-place hashing`*** , 非数据结构所称的hashing  data structure， 而是利用 **`数组索引作为key`** 存储和检索值的技术。这种方将数组自身用作哈希表，其中元素值和数组索引有直接关系。
 - Don't forget to check nums[i] < n boundary check, 防止 nums[nums[i]] 越界
