@@ -71,8 +71,8 @@
 
 | Question# | Title                                           | Solution                                                                                               | Difficulty | Topics | Nodes |
 |-----------|-------------------------------------------------|--------------------------------------------------------------------------------------------------------|------------|--------|-------|
-| 28       | [Find the Index of the First Occurrence in a String](./find-the-index-of-the-first-occurrence-in-a-string) | [Python](./0028-find-the-index-of-the-first-occurrence-in-a-string)| Easy       |  String, Two Pointers     |  review kmp  |
-| 459        | [Repeated Substring Pattern](https://leetcode.com/problems/repeated-substring-pattern) |[Python](./0459-repeated-substring-pattern)| Easy     | Two Pointer, String    | review kmp      |
+| 28       | [Find the Index of the First Occurrence in a String](./find-the-index-of-the-first-occurrence-in-a-string) | [Python](./0028-find-the-index-of-the-first-occurrence-in-a-string)| Easy       |  String, Two Pointers     |  review kmp at 1/4/2024 |
+| 459        | [Repeated Substring Pattern](https://leetcode.com/problems/repeated-substring-pattern) |[Python](./0459-repeated-substring-pattern)| Easy     | Two Pointer, String    | has reviewed kmp at 1/4/2024   |
 | 268      | [Smallest Missing Integer](https://programmercarl.com/kama54.%E6%9B%BF%E6%8D%A2%E6%95%B0%E5%AD%97.html#%E6%80%9D%E8%B7%AF) | [Python](./Daily%20Algo%20Insights/Day08-String-Part1.md#54)| Easy      |  Array, Hash Table   |  set(), in-place Hashing    |
 
 **[Day 10](./Daily%20Algo%20Insights/Day10-Stack%20and%20Queue-Part1.md) - 1/4/2024**
@@ -80,7 +80,7 @@
 | Question# | Title                                           | Solution                                                                                               | Difficulty | Topics | Nodes |
 |-----------|-------------------------------------------------|--------------------------------------------------------------------------------------------------------|------------|--------|-------|
 | 232       | [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks) |[Python](./0028-find-the-index-of-the-first-occurrence-in-a-string)| Easy      |  Stack, Queue     |   |
-| 225        | [Implement Stack using Queues](https://leetcode.com/problems/repeated-substring-pattern) |[Python](./0225-implement-stack-using-queues)| Easy     | Stack, Queue   |      |
+| 225       | [Implement Stack using Queues](https://leetcode.com/problems/repeated-substring-pattern) |[Python](./0225-implement-stack-using-queues)| Easy     | Stack, Queue   |      |
 
 
 
