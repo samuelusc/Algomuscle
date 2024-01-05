@@ -1,7 +1,7 @@
 # Day10 - Stack and Queue Part 1
 
 ## Contents
-* [23. Implement Queue using Stacks](#232)
+* [232. Implement Queue using Stacks](#232)
 * [225. Implement Stack using Queues](#225)
 
 
