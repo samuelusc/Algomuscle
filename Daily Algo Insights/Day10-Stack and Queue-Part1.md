@@ -2,12 +2,8 @@
 
 ## Contents
 * [23. Implement Queue using Stacks](#232)
-* [xx](#)
-* [xx](#)
-* [xx](#)
-* [xx](#)
+* [225. Implement Stack using Queues](#225)
 
-#### [Coding Reference](https://programmercarl.com/0344.%E5%8F%8D%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2.html)
 
 <h2 id = "232"><a href="https://leetcode.com/problems/implement-queue-using-stacks">232. Implement Queue using Stacks</a></h2><h3>Easy</h3><p>Implement a first in first out (FIFO) queue using only two stacks. The implemented queue should support all the functions of a normal queue (<code>push</code>, <code>peek</code>, <code>pop</code>, and <code>empty</code>).</p>
 
@@ -114,5 +110,50 @@ and for m operations it gives average time complexity of O(1).</br>
 </br>
 **O(n)**
 
+*****
 
+#### Solving approach:
+行为必须符合queue的先进先出，所以用两个queue 这样可以让最新的在对列前头。另外python 需要from collections import deque, 并使用 popleft() 从对列头部取出。
+
+#### My Solution 1：_`xxx`_
+```python
+
+class MyStack:
+    from collections import deque
+    def __init__(self):
+        # Use two queues to implement the stack behavior
+        self.main_queue = deque()
+        self.helper_queue = deque()
+
+    def push(self, x: int) -> None:
+        self.helper_queue.append(x)
+
+        while self.main_queue:
+            self.helper_queue.append(self.main_queue.popleft())
+        
+        self.main_queue, self.helper_queue = self.helper_queue, self.main_queue
+    #remove and retrun the last element which is at the start of the queue
+    def pop(self) -> int:
+        return self.main_queue.popleft()
+    #return the first element in the queue 
+    def top(self) -> int:
+        return self.main_queue[0]
+
+    def empty(self) -> bool:
+        return not self.main_queue
+
+
+# Your MyStack object will be instantiated and called as such:
+# obj = MyStack()
+# obj.push(x)
+# param_2 = obj.pop()
+# param_3 = obj.top()
+# param_4 = obj.empty()
+
+```
+
+- *`Time Complexity`*:
+`push` : O(n) / `Others`: O(1)
+- *`Space Complexity`*:
+O(n)
 
