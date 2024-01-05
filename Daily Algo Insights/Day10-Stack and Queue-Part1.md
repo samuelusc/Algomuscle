@@ -57,7 +57,7 @@ myQueue.empty(); // return false
 #### Solving approach:
 用两个栈实现Queue，helper() 将用来在两个栈中传输并将元素的输送延迟到必要时（Amortized Analysis) 
 
-#### My Solution 1：_`xxx`_
+#### My Solution 1：_`2 stacks`_
 ```python
 class MyQueue:
     # we need at least 2 stack to imitate queue's property
@@ -115,7 +115,7 @@ and for m operations it gives average time complexity of O(1).</br>
 #### Solving approach:
 行为必须符合queue的先进先出，所以用两个queue 这样可以让最新的在对列前头。另外python 需要from collections import deque, 并使用 popleft() 从对列头部取出。
 
-#### My Solution 1：_`xxx`_
+#### My Solution 1：_`2 queues`_
 ```python
 
 class MyStack:
