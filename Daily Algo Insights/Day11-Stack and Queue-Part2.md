@@ -147,27 +147,28 @@ For example, in &quot;abbaca&quot; we could remove &quot;bb&quot; since the lett
 </ul>
 
 #### Solving approach 1:
-- 当看到`相邻且相等字符`删除，考虑用LIFO->`Stack`。 三种情况1.stack 空则添加元素并开启下轮循环，
-2.stack非空： 查看stack内最后一个元素，如果相等，则弹出最后一个元素。3. 如果不等，则添加到stack.
+- 当看到`相邻且相等字符`删除，考虑用LIFO->Stack。用 for 循环并处理三种情况 1.stack 空则添加元素，
+2.stack非空且stack内最后一个元素与读取到char相等，则弹出stack。3. 如果不等，则添加元素.
+- 从操作上看有两种情况，1. 弹出stack: stack非空 & stack[-1]==char 2. 添加元素： stack空，stack[-1] != char 
 
 #### My Solution 1：_`stack`_
 ```python
 class Solution:
     def removeDuplicates(self, s: str) -> str:
 
+class Solution:
+    def removeDuplicates(self, s: str) -> str:
         stack = []
+
         for char in s:
-            if not stack:
-                stack.append(char)
-                continue
-            
-            if stack[-1]!= char:
-                stack.append(char)
+            if stack and stack[-1] == char:
+                stack.pop()
             
             else:
-                stack.pop()
+                stack.append(char)
+
         
-        return "".join(stack)
+        return ''.join(stack)
 
             
             
