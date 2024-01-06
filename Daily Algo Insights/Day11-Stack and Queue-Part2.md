@@ -327,7 +327,7 @@ O(n)
 - 判断输入字符是否是“+，-，*，/” 其中之一。 考虑用 Dictionary 这里要 import operator,并将key 设置为这四个符号str，而value则用 operator.add, operator.sub, operator.mul(+-*),
 对于/ 需要考虑 1.趋向于0（truncate toward zero) 2. 负数问题。 就这两个问题考虑采用lambda 处理 ：
 
-lambda x,y : int(operator.divtrue(x,y)). divtrue是普通/ 再普通除法。除后再int()取整，python取整是向0取整。  
+	lambda x,y : int(operator.divtrue(x,y)). divtrue是普通/ 再普通除法。除后再int()取整，python取整是向0取整。  
 
 - 最后返回 stack[-1] 
 
