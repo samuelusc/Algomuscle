@@ -12,7 +12,7 @@
 xxxx Question Description with id="xxx"
 
 
-#### Solving approach:
+#### Solving approach 1:
 
 
 #### My Solution 1：_`xxx`_
@@ -25,7 +25,7 @@ xxxx Question Description with id="xxx"
 
 - *`Space Complexity`*:
 
-#### Solving approach:
+#### Solving approach 2:
 - 
 #### My Solution 2：_`xxx`_
 ```python
