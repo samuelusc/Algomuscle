@@ -49,8 +49,9 @@
 
 
 #### Solving approach:
+
 **Watch the three invalid cases**
-TFirst case: The left parenthesis is unnecessary.
+First case: The left parenthesis is unnecessary.</br>
 ![case1](https://github.com/samuelusc/Algomuscle/blob/main/assets/day11-case1.png)
 
 Second case: The left bracket doesn't match with the right braces.
