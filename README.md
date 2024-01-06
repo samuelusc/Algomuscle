@@ -86,8 +86,8 @@
 
 | Question# | Title                                           | Solution                                                                                               | Difficulty | Topics | Nodes |
 |-----------|-------------------------------------------------|--------------------------------------------------------------------------------------------------------|------------|--------|-------|
-| 20       | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses) |[Python](./0020-valid-parentheses)| Easy      |  Stack, Hash Table    |   |
-| 1047       | [Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string) |[Python](./1047-remove-all-adjacent-duplicates-in-string)| Easy     | Stack, Hash Table   |      |
-| 150       | [Valid Parentheses](https://leetcode.com/problems/evaluate-reverse-polish-notation) |[Python](./0150-evaluate-reverse-polish-notation)| Medium      |  Stack, Hash Table     |   |
+| 20       | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses) |[Python](./0020-valid-parentheses)| Easy      |  Stack, Dictionary    |   |
+| 1047       | [Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string) |[Python](./1047-remove-all-adjacent-duplicates-in-string)| Easy     | Stack, Dictionary   |      |
+| 150       | [Valid Parentheses](https://leetcode.com/problems/evaluate-reverse-polish-notation) |[Python](./0150-evaluate-reverse-polish-notation)| Medium      |  Stack, Dictionary     |   |
 
 
