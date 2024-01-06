@@ -49,15 +49,16 @@
 
 ### Breakdown and Thought Process:
 
+
 *Three invalid cases*
 
-1. First case: The left parenthesis is unnecessary.</br>
+1. First case: The left parenthesis is unnecessary.<br>
 ![case1](https://github.com/samuelusc/Algomuscle/blob/main/assets/day11-case1.png)
 
-2. Second case: The left bracket doesn't match with the right braces.</br>
+2. Second case: The left bracket doesn't match with the right braces.<br>
 ![case1](https://github.com/samuelusc/Algomuscle/blob/main/assets/day11-case2.png)
 
-3. Third case: Two unnecessary parentheses on the right.</br>
+3. Third case: Two unnecessary parentheses on the right.<br>
 ![case1](https://github.com/samuelusc/Algomuscle/blob/main/assets/day11-case3.png)
 
 *How to fill parentheses into the stack* 
