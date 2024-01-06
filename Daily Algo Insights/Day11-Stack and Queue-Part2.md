@@ -237,7 +237,7 @@ O(n)
 </ul>
 
 #### Solving approach 1:
-- 观察后发现，Reverse Polish Notation 会先记录两个数然后是运算符号做计算。考虑使用stack 并处理三种情况 a.是否为数字, 如果是数字则存在stack。b.为符号则从stack弹出两个value 进行计算。c.其他用raise 处理 exceptions.
+- 观察后发现，Reverse Polish Notation 会先记录两个数然后是运算符号做计算。考虑使用stack 并对读取的token 做三种判断 a.是否为数字, 如果是数字则存在stack。b.为符号则从stack弹出两个value 进行计算。c.其他用raise 处理 exceptions.
 - 用char.isdigit()检查是否数字。这时会遇到一个问题，如何处理负数比如‘-15’？ 由于isdigit() 只能判断positive number,可以考虑定义 is_integer()函数，并单独处理 negative number 情况。
 - 判断输入字符是否是“+，-，*，/” 其中之一。 考虑用 Dictionary 这里要 import operator,并将key 设置为这四个符号str，而value则用 operator.add, operator.sub, operator.mul(+-*),
 对于/ 需要考虑 1.趋向于0（truncate toward zero) 2. 负数问题。 就这两个问题考虑采用lambda 处理 ：
