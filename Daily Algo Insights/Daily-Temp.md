@@ -7,7 +7,8 @@
 * [xx](#)
 * [xx](#)
 
-#### [Coding Reference](https://programmercarl.com/0344.%E5%8F%8D%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2.html)
+#### [Coding Reference](https://programmercarl.com/0344.%E5%8F%8D%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2.html)  
+
 
 xxxx Question Description with id="xxx"
 
@@ -15,7 +16,8 @@ xxxx Question Description with id="xxx"
 #### Solving approach 1:
 
 
-#### My Solution 1：_`xxx`_
+#### My Solution 1：_`xxx`_  
+
 ```python
 
 
@@ -23,20 +25,25 @@ xxxx Question Description with id="xxx"
 
 - *`Time Complexity`*:
 
+  
 - *`Space Complexity`*:
 
-#### Solving approach 2:
+  
+#### Solving approach 2:  
+
 - 
-#### My Solution 2：_`xxx`_
+#### My Solution 2：_`xxx`_  
+
 ```python
 
 
 ```
 
-**Complexity Analysis:**
+**Complexity Analysis:**  
 
 - *`Time Complexity`*:
 
+  
 - *`Space Complexity`*:
 
 
