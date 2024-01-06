@@ -50,7 +50,7 @@
 ### Breakdown and Thought Process:  
 <br>
 
-*Three invalid cases*  
+**Three invalid cases:**  
 <br>
 1. First case: The left parenthesis is unnecessary.<br>
 ![case1](https://github.com/samuelusc/Algomuscle/blob/main/assets/day11-case1.png)
@@ -61,7 +61,8 @@
 3. Third case: Two unnecessary parentheses on the right.<br>
 ![case1](https://github.com/samuelusc/Algomuscle/blob/main/assets/day11-case3.png)
 
-*How to fill parentheses into the stack* 
+**How to fill parentheses into the stack* *  
+
 ![valid-brackets](https://github.com/samuelusc/Algomuscle/blob/main/assets/day11-valid-brackets.gif)
 
 #### Solving approach 1:
