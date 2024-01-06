@@ -82,7 +82,12 @@
 | 232       | [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks) |[Python](./0028-find-the-index-of-the-first-occurrence-in-a-string)| Easy      |  Stack, Queue     |   |
 | 225       | [Implement Stack using Queues](https://leetcode.com/problems/repeated-substring-pattern) |[Python](./0225-implement-stack-using-queues)| Easy     | Stack, Queue   |      |
 
+**[Day 11](./Daily%20Algo%20Insights/Day11-Stack%20and%20Queue-Part2.md#150) - 1/4/2024**
 
-
+| Question# | Title                                           | Solution                                                                                               | Difficulty | Topics | Nodes |
+|-----------|-------------------------------------------------|--------------------------------------------------------------------------------------------------------|------------|--------|-------|
+| 20       | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses) |[Python](./0020-valid-parentheses)| Easy      |  Stack, Hash Table    |   |
+| 1047       | [Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string) |[Python](./1047-remove-all-adjacent-duplicates-in-string)| Easy     | Stack, Hash Table   |      |
+| 150       | [Valid Parentheses](https://leetcode.com/problems/evaluate-reverse-polish-notation) |[Python](./0150-evaluate-reverse-polish-notation)| Medium      |  Stack, Hash Table     |   |
 
 
