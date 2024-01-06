@@ -1,7 +1,7 @@
 # Day11 - Stack and Queue Part 2
 
 ## Contents
-* [20.Valid Parentheses](#20)
+* [20. Valid Parentheses](#20)
 * [xx](#)
 * [xx](#)
 * [xx](#)
