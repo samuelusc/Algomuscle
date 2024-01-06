@@ -3,7 +3,7 @@
 ## Contents
 * [20. Valid Parentheses](#20)
 * [1047. Remove All Adjacent Duplicates In String](#1047)
-* [xx](#)
+* [150. Evaluate Reverse Polish Notation](#150)
 * [xx](#)
 * [xx](#)
 
@@ -182,4 +182,112 @@ O(n)
 
 *****
 
+<h2 id='150'><a href="https://leetcode.com/problems/evaluate-reverse-polish-notation">150. Evaluate Reverse Polish Notation</a></h2><h3>Medium</h3><p>You are given an array of strings <code>tokens</code> that represents an arithmetic expression in a <a href="http://en.wikipedia.org/wiki/Reverse_Polish_notation" target="_blank">Reverse Polish Notation</a>.</p>
 
+<p>Evaluate the expression. Return <em>an integer that represents the value of the expression</em>.</p>
+
+<p><strong>Note</strong> that:</p>
+
+<ul>
+	<li>The valid operators are <code>&#39;+&#39;</code>, <code>&#39;-&#39;</code>, <code>&#39;*&#39;</code>, and <code>&#39;/&#39;</code>.</li>
+	<li>Each operand may be an integer or another expression.</li>
+	<li>The division between two integers always <strong>truncates toward zero</strong>.</li>
+	<li>There will not be any division by zero.</li>
+	<li>The input represents a valid arithmetic expression in a reverse polish notation.</li>
+	<li>The answer and all the intermediate calculations can be represented in a <strong>32-bit</strong> integer.</li>
+</ul>
+
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> tokens = [&quot;2&quot;,&quot;1&quot;,&quot;+&quot;,&quot;3&quot;,&quot;*&quot;]
+<strong>Output:</strong> 9
+<strong>Explanation:</strong> ((2 + 1) * 3) = 9
+</pre>
+
+<p><strong class="example">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> tokens = [&quot;4&quot;,&quot;13&quot;,&quot;5&quot;,&quot;/&quot;,&quot;+&quot;]
+<strong>Output:</strong> 6
+<strong>Explanation:</strong> (4 + (13 / 5)) = 6
+</pre>
+
+<p><strong class="example">Example 3:</strong></p>
+
+<pre>
+<strong>Input:</strong> tokens = [&quot;10&quot;,&quot;6&quot;,&quot;9&quot;,&quot;3&quot;,&quot;+&quot;,&quot;-11&quot;,&quot;*&quot;,&quot;/&quot;,&quot;*&quot;,&quot;17&quot;,&quot;+&quot;,&quot;5&quot;,&quot;+&quot;]
+<strong>Output:</strong> 22
+<strong>Explanation:</strong> ((10 * (6 / ((9 + 3) * -11))) + 17) + 5
+= ((10 * (6 / (12 * -11))) + 17) + 5
+= ((10 * (6 / -132)) + 17) + 5
+= ((10 * 0) + 17) + 5
+= (0 + 17) + 5
+= 17 + 5
+= 22
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= tokens.length &lt;= 10<sup>4</sup></code></li>
+	<li><code>tokens[i]</code> is either an operator: <code>&quot;+&quot;</code>, <code>&quot;-&quot;</code>, <code>&quot;*&quot;</code>, or <code>&quot;/&quot;</code>, or an integer in the range <code>[-200, 200]</code>.</li>
+</ul>
+
+#### Solving approach 1:
+- 观察后发现，Reverse Polish Notation 会先记录两个数然后是运算符号做计算。考虑使用stack 并处理三种情况 a.是否为数字, 如果是数字则存在stack。b.为符号则从stack弹出两个value 进行计算。c.其他用raise 处理 exceptions.
+- 用char.isdigit()检查是否数字。这时会遇到一个问题，如何处理负数比如‘-15’？ 由于isdigit() 只能判断positive number,可以考虑定义 is_integer()函数，并单独处理 negative number 情况。
+- 判断输入字符是否是“+，-，*，/” 其中之一。 考虑用 Dictionary 这里要 import operator,并将key 设置为这四个符号str，而value则用 operator.add, operator.sub, operator.mul(+-*),
+对于/ 需要考虑 1.趋向于0（truncate toward zero) 2. 负数问题。 就这两个问题考虑采用lambda 处理 ：
+lambda x,y : int(operator.divtrue(x,y)). divtrue是普通/ 再普通除法。除后再int()取整，python取整是向0取整。
+- 最后返回 stack[-1] 
+
+
+#### My Solution 1：_`Dictionary`_
+```python
+class Solution:
+    def evalRPN(self, tokens: List[str]) -> int:
+        import operator
+        def is_digit(s):
+            if s[0] == '-':
+                return s[1:].isdigit()
+            return s.isdigit()
+        stack = []
+        # / 1. operator.truedive(/) 2. floordive (//)
+        # 3. lambda x,y: int(operator.truediv(x,y)) truncates toward zero
+        operators = {'+': operator.add, '-': operator.sub, '*': operator.mul, '/': lambda x,y: int(operator.truediv(x, y))}
+        for token in tokens:
+            if  is_digit(token):
+                stack.append(int(token))
+            
+            elif token in operators:
+                num1 = stack.pop()
+                num2 = stack.pop()
+                # operators['+'](10, 5)  # 等于 10 + 5
+                stack.append(operators[token](num2,num1))
+            else:
+                raise ValueError('Invalid token')
+
+        return stack[-1]
+
+```
+
+- *`Time Complexity`*:
+O(n)
+- *`Space Complexity`*:
+O(n)
+#### Solving approach 2:
+- 
+#### My Solution 2：_`xxx`_
+```python
+
+
+```
+
+**Complexity Analysis:**
+
+- *`Time Complexity`*:
+
+- *`Space Complexity`*:
