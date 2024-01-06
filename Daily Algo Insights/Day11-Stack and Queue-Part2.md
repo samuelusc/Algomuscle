@@ -50,16 +50,21 @@
 
 #### Solving approach:
 
-*Watch the three invalid cases*
+*Three invalid cases*
 
-- First case: The left parenthesis is unnecessary.</br>
+1. First case: The left parenthesis is unnecessary.</br>
 ![case1](https://github.com/samuelusc/Algomuscle/blob/main/assets/day11-case1.png)
 
-- Second case: The left bracket doesn't match with the right braces.</br>
+2. Second case: The left bracket doesn't match with the right braces.</br>
 ![case1](https://github.com/samuelusc/Algomuscle/blob/main/assets/day11-case2.png)
 
-- Third case: Two unnecessary parentheses on the right.</br>
+3. Third case: Two unnecessary parentheses on the right.</br>
 ![case1](https://github.com/samuelusc/Algomuscle/blob/main/assets/day11-case3.png)
+
+*How to fill parentheses into the stack* 
+![valid-brackets](https://github.com/samuelusc/Algomuscle/blob/main/assets/day11-valid-brackets.gif)
+
+
 
 - 考虑使用 `set()`- 每组括号为一个元素 {'()','{}','[]'}， 循环读取s中每一个字符。2种情况 1.遇到左括号，直接加入stack 
 2.遇到右括号 a.stack为空则直接返回False b.stack弹出字符和读取的字符无法匹配set,返回 False。 
