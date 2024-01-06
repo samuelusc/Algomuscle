@@ -242,7 +242,7 @@ O(n)
 也就是 用一般/ 再用int()转成趋向于0的整数。
 - 最后返回stack[-1](只剩一个数字）
 
-#### My Solution 1：_`Concise if-else + Stack`_
+#### My Solution 1：_`if-else + Stack`_
 ```python
 
 class Solution:
