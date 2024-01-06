@@ -236,7 +236,48 @@ O(n)
 	<li><code>tokens[i]</code> is either an operator: <code>&quot;+&quot;</code>, <code>&quot;-&quot;</code>, <code>&quot;*&quot;</code>, or <code>&quot;/&quot;</code>, or an integer in the range <code>[-200, 200]</code>.</li>
 </ul>
 
+
 #### Solving approach 1:
+- 对于此题考虑用stack存储。 在循环读取token考虑两种情况，case1: if数字，数字包括负数和正数。对于负数比如‘-5’，观察可知len(token) > 1, 对于正数直接用isdigit()判断。然后转成int() 推入stack
+- case2: 字符。 这里进入else再对四种符号做处理， 每一种符号用if 去判断‘+’，‘-’，‘*’，‘/’， 然后将到数第二个数字与stack底数字进行符号运，并更新stack[-2]。 除法需要考虑 truncate towards 0,
+也就是 用一般/ 再用int()转成趋向于0的整数。
+- 最后返回stack[-1](只剩一个数字）
+
+#### My Solution 1：_`Concise if-else + Stack`_
+```python
+
+class Solution:
+    def evalRPN(self, tokens: List[str]) -> int:
+        stack = []
+
+        for token in tokens:
+            if len(token) > 1 or token.isdigit():
+                stack.append(int(token))
+            
+            else:
+                if token == '+':
+                    stack[-2] += stack[-1]
+                
+                elif token == '-':
+                    stack[-2] -= stack[-1] 
+
+                elif token == '*':
+                    stack[-2] *= stack[-1]
+                # division and ensure integer division for negative one
+                else:
+                    stack[-2] = int(stack[-2] / stack[-1])
+                # remove the last element in stack
+                stack.pop()
+
+        return stack[-1]
+
+```
+
+- *`Time Complexity`*:
+O(n)
+- *`Space Complexity`*:
+O(n)
+#### Solving approach 2:
 - 观察后发现，Reverse Polish Notation 会先记录两个数然后是运算符号做计算。考虑使用stack 并对读取的token 做三种判断 a.是否为数字, 如果是数字则存在stack。b.为符号则从stack弹出两个value 进行计算。c.其他用raise 处理 exceptions.
 - 用char.isdigit()检查是否数字。这时会遇到一个问题，如何处理负数比如‘-15’？ 由于isdigit() 只能判断positive number,可以考虑定义 is_integer()函数，并单独处理 negative number 情况。
 - 判断输入字符是否是“+，-，*，/” 其中之一。 考虑用 Dictionary 这里要 import operator,并将key 设置为这四个符号str，而value则用 operator.add, operator.sub, operator.mul(+-*),
@@ -245,7 +286,7 @@ lambda x,y : int(operator.divtrue(x,y)). divtrue是普通/ 再普通除法。除
 - 最后返回 stack[-1] 
 
 
-#### My Solution 1：_`Dictionary`_
+#### My Solution 2：_`Dictionary + Stack`_
 ```python
 class Solution:
     def evalRPN(self, tokens: List[str]) -> int:
@@ -278,16 +319,3 @@ class Solution:
 O(n)
 - *`Space Complexity`*:
 O(n)
-#### Solving approach 2:
-- 
-#### My Solution 2：_`xxx`_
-```python
-
-
-```
-
-**Complexity Analysis:**
-
-- *`Time Complexity`*:
-
-- *`Space Complexity`*:
