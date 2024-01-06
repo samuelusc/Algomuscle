@@ -52,7 +52,7 @@
 
 *Watch the three invalid cases*
 - First case: The left parenthesis is unnecessary.</br>
-![case1](https://github.com/samuelusc/Algomuscle/blob/main/assets/day11-case1.png)
+![case1](assets/day11-case1.png)
 
 - Second case: The left bracket doesn't match with the right braces.
 ![case1](https://github.com/samuelusc/Algomuscle/blob/main/assets/day11-case2.png)
