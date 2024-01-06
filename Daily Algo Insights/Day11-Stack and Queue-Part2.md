@@ -48,11 +48,10 @@
 <br>
 
 ### Breakdown and Thought Process:  
+<br>
 
-  
 *Three invalid cases*  
-
-
+<br>
 1. First case: The left parenthesis is unnecessary.<br>
 ![case1](https://github.com/samuelusc/Algomuscle/blob/main/assets/day11-case1.png)
 
