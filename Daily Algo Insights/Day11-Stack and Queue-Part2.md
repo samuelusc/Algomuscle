@@ -147,9 +147,9 @@ For example, in &quot;abbaca&quot; we could remove &quot;bb&quot; since the lett
 </ul>
 
 #### Solving approach 1:
-- 当看到`相邻且相等字符`删除，考虑用LIFO->Stack。用 for 循环并处理三种情况 1.stack 空则添加元素，
+- 当看到将`相邻且相等`的字符删除，考虑用LIFO->Stack。用 for 循环并处理三种情况 1.stack 空则添加元素，
 2.stack非空且stack内最后一个元素与读取到char相等，则弹出stack。3. 如果不等，则添加元素.
-- 从操作上看有两种情况，1. 弹出stack: stack非空 & stack[-1]==char 2. 添加元素： stack空，stack[-1] != char 
+- 从操作上看有两种情况，1. 弹出stack: stack非空 & stack[-1]==char 2. 添加元素： stack空，or stack[-1] != char 
 
 #### My Solution 1：_`stack`_
 ```python
