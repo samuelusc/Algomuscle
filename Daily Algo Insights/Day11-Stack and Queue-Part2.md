@@ -318,3 +318,30 @@ class Solution:
 O(n)
 - *`Space Complexity`*:
 O(n)
+
+#### Solving approach 3:
+结合答案1与答案2，优化dictionary。 参考 solution 2 中的除法，全部value 用 lambda 替换，这样无需import operator. 比如 '+': lambda x,y : x+y 。只判断2种可能，符号或数字即可
+
+#### My Solution 3：_`Dictionary + lambda`_
+```python
+#consider both solution 1 and 2 to update solution3
+class Solution:
+    def evalRPN(self, tokens: List[str]) -> int:
+        stack = []
+        # refer to solution2 lambda x,y: int(x/y) to update dictionary 
+        operators = {'+': lambda x,y : x + y,'-': lambda x,y : x - y ,'*': lambda x,y : x * y, '/': lambda x,y : int(x/y) }
+        for token in tokens:
+            if token in operators:
+                stack[-2] = operators[token](stack[-2],stack[-1])
+                stack.pop()
+            else:
+                stack.append(int(token))
+        
+        return stack[-1]
+
+```
+
+- *`Time Complexity`*:
+O(n)
+- *`Space Complexity`*:
+O(n)
