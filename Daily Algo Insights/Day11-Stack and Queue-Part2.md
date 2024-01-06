@@ -52,13 +52,13 @@
 
 *Watch the three invalid cases*
 - First case: The left parenthesis is unnecessary.</br>
-![case1](assets/day11-case1.png)
+![case1](![case1](https://github.com/samuelusc/Algomuscle/blob/main/assets/day11-case1.png))
 
 - Second case: The left bracket doesn't match with the right braces.
-![case2](assets/day11-case2.png)
+![case2](![case1](https://github.com/samuelusc/Algomuscle/blob/main/assets/day11-case2.png))
 
 - Third case: Two unnecessary parentheses on the right.
-![case3](assets/day11-case3.png)
+![case3](![case1](https://github.com/samuelusc/Algomuscle/blob/main/assets/day11-case3.png))
 
 - 考虑使用 `set()`- 每组括号为一个元素 {'()','{}','[]'}， 循环读取s中每一个字符。2种情况 1.遇到左括号，直接加入stack 
 2.遇到右括号 a.stack为空则直接返回False b.stack弹出字符和读取的字符无法匹配set,返回 False。 
