@@ -50,8 +50,13 @@
 
 #### Solving approach:
 **Watch the three invalid cases**
+TFirst case: The left parenthesis is unnecessary.
 ![case1](assets/day11-case1.png)
+
+Second case: The left bracket doesn't match with the right braces.
 ![case1](assets/day11-case2.png)
+
+Third case: Two unnecessary parentheses on the right.
 ![case1](assets/day11-case3.png)
 
 - 考虑使用 `set()`- 每组括号为一个元素 {'()','{}','[]'}， 循环读取s中每一个字符。2种情况 1.遇到左括号，直接加入stack 
