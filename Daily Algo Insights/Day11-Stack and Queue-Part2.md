@@ -216,7 +216,7 @@ For example, in &quot;abbaca&quot; we could remove &quot;bb&quot; since the lett
 
 ### Breakdown and Thought Process:  
 
-![valid-brackets](https://github.com/samuelusc/Algomuscle/blob/main/assets/day11-1047.gif)<br>
+![matching process](https://github.com/samuelusc/Algomuscle/blob/main/assets/day11-1047.gif)<br>
   
 ### Solving Approach 1:  
 
@@ -225,7 +225,7 @@ For example, in &quot;abbaca&quot; we could remove &quot;bb&quot; since the lett
 2.stack非空且stack内最后一个元素与读取到char相等，则弹出stack。3. 如果不等，则添加元素.
   
 - 从操作上看有两种情况，1. 弹出stack: stack非空 & stack[-1]==char 2. 添加元素： stack空，or stack[-1] != char 
-
+<br>
   
 ### My Solution 1：_`stack`_  
 
@@ -314,6 +314,10 @@ O(n)
 </ul>
 <br>
 
+### Breakdown and Thought Process:  
+
+![calculating process](https://github.com/samuelusc/Algomuscle/blob/main/assets/day11-150.gif)<br>
+
 ### Solving Approach 1:  
 
   
@@ -323,7 +327,7 @@ O(n)
 也就是 用一般/ 再用int()转成趋向于0的整数。
 
 - 最后返回stack[-1](只剩一个数字）
-
+<br>
   
 ### My Solution 1：_`if-else + Stack`_  
 
@@ -379,7 +383,7 @@ O(n)
 	lambda x,y : int(operator.divtrue(x,y)). divtrue是普通/ 再普通除法。除后再int()取整，python取整是向0取整。  
 
 - 最后返回 stack[-1] 
-
+<br>
 
 ### My Solution 2：_`Dictionary + Stack`_  
 
@@ -425,7 +429,7 @@ O(n)
 
   
 结合答案1与答案2，优化dictionary。 参考 solution 2 中的除法，全部value 用 lambda 替换，这样无需import operator. 比如 '+': lambda x,y : x+y 。只判断2种可能，符号或数字即可
-
+<br>
   
 ### My Solution 3：_`Dictionary + lambda`_  
 
