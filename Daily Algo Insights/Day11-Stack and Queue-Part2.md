@@ -214,6 +214,10 @@ For example, in &quot;abbaca&quot; we could remove &quot;bb&quot; since the lett
 </ul>
 <br>
 
+### Breakdown and Thought Process:  
+
+![valid-brackets](https://github.com/samuelusc/Algomuscle/blob/main/assets/day11-1047.gif)<br>
+  
 ### Solving Approach 1:  
 
   
