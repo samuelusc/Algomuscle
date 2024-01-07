@@ -150,7 +150,7 @@ O(n)
 
 - *`Space Complexity`*:
 O(n)
-
+---
 ![dividing line](https://github.com/samuelusc/Algomuscle/blob/main/assets/dividingline.gif)
 
 
