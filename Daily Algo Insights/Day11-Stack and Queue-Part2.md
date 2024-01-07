@@ -144,7 +144,7 @@ class Solution:
 ```
 
 ### Complexity Analysis:
-<br>
+
 - *`Time Complexity`*:
 O(n)
 
