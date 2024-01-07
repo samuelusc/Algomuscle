@@ -69,7 +69,7 @@
 
 ![valid-brackets](https://github.com/samuelusc/Algomuscle/blob/main/assets/day11-valid-brackets.gif)
 
-#### Solving approach 1:
+### Solving approach 1:
 
 - 考虑使用 `set()`- 每组括号为一个character {'()','{}','[]'}， 循环读取s中每一个字符。
   
@@ -78,7 +78,7 @@
 - 查看stack，空返回 True 否则 False
 
 
-#### My Solution 1：_`set()`_  
+### My Solution 1：_`set()`_  
 
 ```python
 class Solution:
