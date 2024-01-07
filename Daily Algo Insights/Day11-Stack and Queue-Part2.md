@@ -107,7 +107,7 @@ class Solution:
 O(n)
 
 - *`Space Complexity`*:
-O(n)
+O(n)<br>
 
 ---
 
@@ -144,12 +144,12 @@ class Solution:
 ```
 
 ### Complexity Analysis:
-
+<br>
 - *`Time Complexity`*:
 O(n)
 
 - *`Space Complexity`*:
-O(n)
+O(n)<br>
 ---
 ![dividing line](https://github.com/samuelusc/Algomuscle/blob/main/assets/dividingline.gif)
 
@@ -220,12 +220,12 @@ class Solution:
 
 ```
 ### Complexity Analysis:  
-
+<br>
 - *`Time Complexity`*:
 O(n)
 
 - *`Space Complexity`*:
-O(n)
+O(n)<br>
 ---
 ![dividing line](https://github.com/samuelusc/Algomuscle/blob/main/assets/dividingline.gif)
 
@@ -327,12 +327,12 @@ class Solution:
 
 ```
 ### Complexity Analysis:  
-
+<br>
 - *`Time Complexity`*:
 O(n)
 
 - *`Space Complexity`*:
-O(n)
+O(n)<br>
 ---
 
 
@@ -387,7 +387,7 @@ class Solution:
 O(n)
 
 - *`Space Complexity`*:
-O(n)
+O(n) <br>
 ---
 
 
