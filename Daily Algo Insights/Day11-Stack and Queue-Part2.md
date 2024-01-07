@@ -7,7 +7,7 @@
 * **[1047. Remove All Adjacent Duplicates In String](#1047)**
 * **[150. Evaluate Reverse Polish Notation](#150)**
 
-
+<br>
 ![day11](https://github.com/samuelusc/Algomuscle/blob/main/assets/day11.png)
 <br>
 
