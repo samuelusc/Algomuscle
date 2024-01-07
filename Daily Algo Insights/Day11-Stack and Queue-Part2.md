@@ -69,7 +69,7 @@
 
 ![valid-brackets](https://github.com/samuelusc/Algomuscle/blob/main/assets/day11-valid-brackets.gif)
 
-### Solving approach 1:
+### Solving Approach 1:
 
   
 - 考虑使用 `set()`- 每组括号为一个character {'()','{}','[]'}， 循环读取s中每一个字符。
@@ -110,13 +110,13 @@ O(n)
 O(n)
 <br>
 
-### Solving approach 2:  
+### Solving Approach 2:  
 
   
 - 考虑使用dictionary: {'(': ')', '{':'}', '[':']'},关键在于将左括号作为key,右括号作为value。 如果stack空或者与弹出的item.value不匹配则返回False。
   
 - 如果stack为空返回True
-
+<br>
   
 ### My Solution 2：_`dict()`_  
 
@@ -184,7 +184,7 @@ For example, in &quot;abbaca&quot; we could remove &quot;bb&quot; since the lett
 </ul>
 <br>
 
-### Solving approach 1:  
+### Solving Approach 1:  
 
   
 - 当看到将`相邻且相等`的字符删除，考虑用LIFO->Stack。用 for 循环并处理三种情况 1.stack 空则添加元素，
@@ -281,7 +281,7 @@ O(n)
 </ul>
 <br>
 
-### Solving approach 1:  
+### Solving Approach 1:  
 
   
 - 对于此题考虑用stack存储。 在循环读取token考虑两种情况，case1: if数字，数字包括负数和正数。对于负数比如‘-5’，观察可知len(token) > 1, 对于正数直接用isdigit()判断。然后转成int() 推入stack
@@ -331,7 +331,7 @@ O(n)
 O(n)
 <br>
 
-### Solving approach 2:  
+### Solving Approach 2:  
 
   
 - 观察后发现，Reverse Polish Notation 会先记录两个数然后是运算符号做计算。考虑使用stack 并对读取的token 做三种判断 a.是否为数字, 如果是数字则存在stack。b.为符号则从stack弹出两个value 进行计算。c.其他用raise 处理 exceptions.
@@ -384,7 +384,7 @@ O(n)
 O(n)
 <br>
 
-### Solving approach 3:  
+### Solving Approach 3:  
 
   
 结合答案1与答案2，优化dictionary。 参考 solution 2 中的除法，全部value 用 lambda 替换，这样无需import operator. 比如 '+': lambda x,y : x+y 。只判断2种可能，符号或数字即可
