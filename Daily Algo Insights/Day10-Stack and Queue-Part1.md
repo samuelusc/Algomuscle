@@ -1,8 +1,10 @@
 # Day10 - Stack and Queue Part 1
 
 ## Contents
-* [232. Implement Queue using Stacks](#232)
-* [225. Implement Stack using Queues](#225)
+* **[232. Implement Queue using Stacks](#232)**
+* **[225. Implement Stack using Queues](#225)**
+  
+![Day10](https://github.com/samuelusc/Algomuscle/blob/main/assets/day10.png)
 
 
 <h2 id = "232"><a href="https://leetcode.com/problems/implement-queue-using-stacks">232. Implement Queue using Stacks</a></h2><h3>Easy</h3><p>Implement a first in first out (FIFO) queue using only two stacks. The implemented queue should support all the functions of a normal queue (<code>push</code>, <code>peek</code>, <code>pop</code>, and <code>empty</code>).</p>
