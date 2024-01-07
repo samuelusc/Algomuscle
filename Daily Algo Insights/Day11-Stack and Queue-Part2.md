@@ -77,9 +77,9 @@
 
 - 查看stack，空返回 True 否则 False
 
-
+  
 ### My Solution 1：_`set()`_  
-<br>
+
 ```python
 class Solution:
     def isValid(self, s: str) -> bool:
