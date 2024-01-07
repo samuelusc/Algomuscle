@@ -66,7 +66,7 @@
 ![case1](https://github.com/samuelusc/Algomuscle/blob/main/assets/day11-case3.png)
 
 **How to fill parentheses into the stack**  
-
+---
 ![valid-brackets](https://github.com/samuelusc/Algomuscle/blob/main/assets/day11-valid-brackets.gif)
 
 ### Solving Approach 1:
@@ -225,7 +225,7 @@ O(n)
 
 - *`Space Complexity`*:
 O(n)
-
+---
 ![dividing line](https://github.com/samuelusc/Algomuscle/blob/main/assets/dividingline.gif)
 
 <h2 id='150'><a href="https://leetcode.com/problems/evaluate-reverse-polish-notation">150. Evaluate Reverse Polish Notation</a></h2><h3>Medium</h3><p>You are given an array of strings <code>tokens</code> that represents an arithmetic expression in a <a href="http://en.wikipedia.org/wiki/Reverse_Polish_notation" target="_blank">Reverse Polish Notation</a>.</p>
