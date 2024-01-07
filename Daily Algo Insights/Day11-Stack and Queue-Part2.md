@@ -70,7 +70,8 @@
 ![valid-brackets](https://github.com/samuelusc/Algomuscle/blob/main/assets/day11-valid-brackets.gif)
 
 ### Solving approach 1:
-<br>
+
+  
 - 考虑使用 `set()`- 每组括号为一个character {'()','{}','[]'}， 循环读取s中每一个字符。
   
 - 2种情况 1.遇到左括号，直接加入stack. 2. 遇到右括号 a.stack为空则直接返回False b.stack弹出字符和读取的字符无法匹配set,返回 False。   
