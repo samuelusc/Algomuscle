@@ -143,7 +143,7 @@ class Solution:
 
 ```
 
-**Complexity Analysis:**
+### Complexity Analysis:
 
 - *`Time Complexity`*:
 O(n)
@@ -219,6 +219,7 @@ class Solution:
             
 
 ```
+### Complexity Analysis:  
 
 - *`Time Complexity`*:
 O(n)
@@ -325,6 +326,7 @@ class Solution:
         return stack[-1]
 
 ```
+### Complexity Analysis:  
 
 - *`Time Complexity`*:
 O(n)
@@ -379,6 +381,7 @@ class Solution:
         return stack[-1]
 
 ```
+### Complexity Analysis:  
 
 - *`Time Complexity`*:
 O(n)
@@ -414,6 +417,7 @@ class Solution:
         return stack[-1]
 
 ```
+### Complexity Analysis:  
 
 - *`Time Complexity`*:
 O(n)
