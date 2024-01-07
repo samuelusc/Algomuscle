@@ -77,8 +77,7 @@
 - 2种情况 1.遇到左括号，直接加入stack. 2. 遇到右括号 a.stack为空则直接返回False b.stack弹出字符和读取的字符无法匹配set,返回 False。   
 
 - 查看stack，空返回 True 否则 False
-
-  
+<br> 
 ### My Solution 1：_`set()`_  
 
 ```python
