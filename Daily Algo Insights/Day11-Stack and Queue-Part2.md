@@ -220,12 +220,12 @@ class Solution:
 
 ```
 ### Complexity Analysis:  
-<br>
+
 - *`Time Complexity`*:
 O(n)
 
 - *`Space Complexity`*:
-O(n)<br>
+O(n)
 ---
 ![dividing line](https://github.com/samuelusc/Algomuscle/blob/main/assets/dividingline.gif)
 
@@ -327,12 +327,12 @@ class Solution:
 
 ```
 ### Complexity Analysis:  
-<br>
+
 - *`Time Complexity`*:
 O(n)
 
 - *`Space Complexity`*:
-O(n)<br>
+O(n)
 ---
 
 
@@ -387,7 +387,7 @@ class Solution:
 O(n)
 
 - *`Space Complexity`*:
-O(n) <br>
+O(n)
 ---
 
 
