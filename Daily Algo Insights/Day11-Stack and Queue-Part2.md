@@ -109,7 +109,8 @@ O(n)
 - *`Space Complexity`*:
 O(n)
 <br>
-***
+---
+
 ### Solving Approach 2:  
 
   
