@@ -108,13 +108,13 @@ O(n)
 - *`Space Complexity`*:
 O(n)
 
-#### Solving approach 2:  
-
+### Solving approach 2:  
+<br>
 - 考虑使用dictionary: {'(': ')', '{':'}', '[':']'},关键在于将左括号作为key,右括号作为value。 如果stack空或者与弹出的item.value不匹配则返回False。
   
 - 如果stack为空返回True
   
-#### My Solution 2：_`dict()`_  
+### My Solution 2：_`dict()`_  
 
 ```python
 class Solution:
@@ -180,14 +180,14 @@ For example, in &quot;abbaca&quot; we could remove &quot;bb&quot; since the lett
 </ul>
 <br>
 
-#### Solving approach 1:  
+### Solving approach 1:  
 
 - 当看到将`相邻且相等`的字符删除，考虑用LIFO->Stack。用 for 循环并处理三种情况 1.stack 空则添加元素，
 2.stack非空且stack内最后一个元素与读取到char相等，则弹出stack。3. 如果不等，则添加元素.
   
 - 从操作上看有两种情况，1. 弹出stack: stack非空 & stack[-1]==char 2. 添加元素： stack空，or stack[-1] != char 
 
-#### My Solution 1：_`stack`_  
+### My Solution 1：_`stack`_  
 
 ```python
 class Solution:
@@ -275,7 +275,7 @@ O(n)
 </ul>
 <br>
 
-#### Solving approach 1:  
+### Solving approach 1:  
 
 - 对于此题考虑用stack存储。 在循环读取token考虑两种情况，case1: if数字，数字包括负数和正数。对于负数比如‘-5’，观察可知len(token) > 1, 对于正数直接用isdigit()判断。然后转成int() 推入stack
   
@@ -284,7 +284,7 @@ O(n)
 
 - 最后返回stack[-1](只剩一个数字）
 
-#### My Solution 1：_`if-else + Stack`_  
+### My Solution 1：_`if-else + Stack`_  
 
 ```python
 
@@ -321,7 +321,7 @@ O(n)
 - *`Space Complexity`*:
 O(n)
 
-#### Solving approach 2:  
+### Solving approach 2:  
 
 - 观察后发现，Reverse Polish Notation 会先记录两个数然后是运算符号做计算。考虑使用stack 并对读取的token 做三种判断 a.是否为数字, 如果是数字则存在stack。b.为符号则从stack弹出两个value 进行计算。c.其他用raise 处理 exceptions.
   
@@ -335,7 +335,7 @@ O(n)
 - 最后返回 stack[-1] 
 
 
-#### My Solution 2：_`Dictionary + Stack`_  
+### My Solution 2：_`Dictionary + Stack`_  
 
 ```python
 class Solution:
@@ -371,11 +371,11 @@ O(n)
 - *`Space Complexity`*:
 O(n)
 
-#### Solving approach 3:  
+### Solving approach 3:  
 
 结合答案1与答案2，优化dictionary。 参考 solution 2 中的除法，全部value 用 lambda 替换，这样无需import operator. 比如 '+': lambda x,y : x+y 。只判断2种可能，符号或数字即可
 
-#### My Solution 3：_`Dictionary + lambda`_  
+### My Solution 3：_`Dictionary + lambda`_  
 
 ```python
 #consider both solution 1 and 2 to update solution3
