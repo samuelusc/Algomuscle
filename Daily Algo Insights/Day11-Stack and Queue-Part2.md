@@ -143,7 +143,7 @@ O(n)
 - *`Space Complexity`*:
 O(n)
 
-![dividing line](https://github.com/samuelusc/Algomuscle/blob/main/assets/dividing%20line.gif)
+![dividing line](https://github.com/samuelusc/Algomuscle/blob/main/assets/dividingline.gif)
 
 
 <h2 id = "1047"><a href="https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string">1047. Remove All Adjacent Duplicates In String</a></h2><h3>Easy</h3><p>You are given a string <code>s</code> consisting of lowercase English letters. A <strong>duplicate removal</strong> consists of choosing two <strong>adjacent</strong> and <strong>equal</strong> letters and removing them.</p>
@@ -216,7 +216,7 @@ O(n)
 - *`Space Complexity`*:
 O(n)
 
-![dividing line](https://github.com/samuelusc/Algomuscle/blob/main/assets/dividing%20line.gif)
+![dividing line](https://github.com/samuelusc/Algomuscle/blob/main/assets/dividingline.gif)
 
 <h2 id='150'><a href="https://leetcode.com/problems/evaluate-reverse-polish-notation">150. Evaluate Reverse Polish Notation</a></h2><h3>Medium</h3><p>You are given an array of strings <code>tokens</code> that represents an arithmetic expression in a <a href="http://en.wikipedia.org/wiki/Reverse_Polish_notation" target="_blank">Reverse Polish Notation</a>.</p>
 
@@ -398,3 +398,4 @@ O(n)
 
 - *`Space Complexity`*:
 O(n)
+![dividing line](https://github.com/samuelusc/Algomuscle/blob/main/assets/dividingline.gif)
