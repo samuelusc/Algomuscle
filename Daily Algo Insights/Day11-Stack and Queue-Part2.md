@@ -7,6 +7,7 @@
 
 #### [Coding Reference](https://programmercarl.com/0020.%E6%9C%89%E6%95%88%E7%9A%84%E6%8B%AC%E5%8F%B7.html)  
 
+![dividing line](https://github.com/samuelusc/Algomuscle/blob/main/assets/dividingline.gif)
 
 <h2 id = "20"><a href="https://leetcode.com/problems/valid-parentheses">20. Valid Parentheses</a></h2><h3>Easy</h3><p>Given a string <code>s</code> containing just the characters <code>&#39;(&#39;</code>, <code>&#39;)&#39;</code>, <code>&#39;{&#39;</code>, <code>&#39;}&#39;</code>, <code>&#39;[&#39;</code> and <code>&#39;]&#39;</code>, determine if the input string is valid.</p>
 
@@ -398,4 +399,3 @@ O(n)
 
 - *`Space Complexity`*:
 O(n)
-![dividing line](https://github.com/samuelusc/Algomuscle/blob/main/assets/dividingline.gif)
