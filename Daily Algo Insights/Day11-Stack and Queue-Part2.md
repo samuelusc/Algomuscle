@@ -226,8 +226,6 @@ For example, in &quot;abbaca&quot; we could remove &quot;bb&quot; since the lett
 ### My Solution 1：_`stack`_  
 
 ```python
-class Solution:
-    def removeDuplicates(self, s: str) -> str:
 
 class Solution:
     def removeDuplicates(self, s: str) -> str:
