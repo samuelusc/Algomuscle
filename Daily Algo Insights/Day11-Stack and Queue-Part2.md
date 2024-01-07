@@ -108,12 +108,14 @@ O(n)
 
 - *`Space Complexity`*:
 O(n)
-
-### Solving approach 2:  
 <br>
+### Solving approach 2:  
+
+  
 - 考虑使用dictionary: {'(': ')', '{':'}', '[':']'},关键在于将左括号作为key,右括号作为value。 如果stack空或者与弹出的item.value不匹配则返回False。
   
 - 如果stack为空返回True
+
   
 ### My Solution 2：_`dict()`_  
 
@@ -183,11 +185,13 @@ For example, in &quot;abbaca&quot; we could remove &quot;bb&quot; since the lett
 
 ### Solving approach 1:  
 
+  
 - 当看到将`相邻且相等`的字符删除，考虑用LIFO->Stack。用 for 循环并处理三种情况 1.stack 空则添加元素，
 2.stack非空且stack内最后一个元素与读取到char相等，则弹出stack。3. 如果不等，则添加元素.
   
 - 从操作上看有两种情况，1. 弹出stack: stack非空 & stack[-1]==char 2. 添加元素： stack空，or stack[-1] != char 
 
+  
 ### My Solution 1：_`stack`_  
 
 ```python
@@ -278,6 +282,7 @@ O(n)
 
 ### Solving approach 1:  
 
+  
 - 对于此题考虑用stack存储。 在循环读取token考虑两种情况，case1: if数字，数字包括负数和正数。对于负数比如‘-5’，观察可知len(token) > 1, 对于正数直接用isdigit()判断。然后转成int() 推入stack
   
 - case2: 字符。 这里进入else再对四种符号做处理， 每一种符号用if 去判断‘+’，‘-’，‘*’，‘/’， 然后将到数第二个数字与stack底数字进行符号运，并更新stack[-2]。 除法需要考虑 truncate towards 0,
@@ -285,8 +290,10 @@ O(n)
 
 - 最后返回stack[-1](只剩一个数字）
 
+  
 ### My Solution 1：_`if-else + Stack`_  
 
+  
 ```python
 
 class Solution:
@@ -321,9 +328,10 @@ O(n)
 
 - *`Space Complexity`*:
 O(n)
-
+<br>
 ### Solving approach 2:  
 
+  
 - 观察后发现，Reverse Polish Notation 会先记录两个数然后是运算符号做计算。考虑使用stack 并对读取的token 做三种判断 a.是否为数字, 如果是数字则存在stack。b.为符号则从stack弹出两个value 进行计算。c.其他用raise 处理 exceptions.
   
 - 用char.isdigit()检查是否数字。这时会遇到一个问题，如何处理负数比如‘-15’？ 由于isdigit() 只能判断positive number,可以考虑定义 is_integer()函数，并单独处理 negative number 情况。
@@ -338,6 +346,7 @@ O(n)
 
 ### My Solution 2：_`Dictionary + Stack`_  
 
+  
 ```python
 class Solution:
     def evalRPN(self, tokens: List[str]) -> int:
@@ -371,13 +380,17 @@ O(n)
 
 - *`Space Complexity`*:
 O(n)
+<br>
 
 ### Solving approach 3:  
 
+  
 结合答案1与答案2，优化dictionary。 参考 solution 2 中的除法，全部value 用 lambda 替换，这样无需import operator. 比如 '+': lambda x,y : x+y 。只判断2种可能，符号或数字即可
 
+  
 ### My Solution 3：_`Dictionary + lambda`_  
 
+  
 ```python
 #consider both solution 1 and 2 to update solution3
 class Solution:
