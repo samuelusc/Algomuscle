@@ -8,7 +8,7 @@
 * **[150. Evaluate Reverse Polish Notation](#150)**
 <br>
 
-![dividing line](https://github.com/samuelusc/Algomuscle/blob/main/assets/day-11.png)
+![My Day 11](https://github.com/samuelusc/Algomuscle/blob/main/assets/day-11.png)
 
 <br>
 
