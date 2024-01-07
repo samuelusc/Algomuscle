@@ -8,7 +8,7 @@
 * **[150. Evaluate Reverse Polish Notation](#150)**
 <br>
 
-![My Day 11](https://github.com/samuelusc/Algomuscle/blob/main/assets/day-11.png)
+![My Day 11](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day11/day-11.png)
 <br>
 <h2 id = "20"><a href="https://leetcode.com/problems/valid-parentheses">20. Valid Parentheses</a></h2><h3>Easy</h3><p>Given a string <code>s</code> containing just the characters <code>&#39;(&#39;</code>, <code>&#39;)&#39;</code>, <code>&#39;{&#39;</code>, <code>&#39;}&#39;</code>, <code>&#39;[&#39;</code> and <code>&#39;]&#39;</code>, determine if the input string is valid.</p>
 
@@ -57,17 +57,17 @@
 **Three invalid cases:**  
 <br>
 1. First case: The left parenthesis is unnecessary.<br>
-![case1](https://github.com/samuelusc/Algomuscle/blob/main/assets/day11-case1.png)
+![case1](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day11/day11-case1.png)
 
 2. Second case: The left bracket doesn't match with the right braces.<br>
-![case1](https://github.com/samuelusc/Algomuscle/blob/main/assets/day11-case2.png)
+![case1](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day11/day11-case2.png)
 
 3. Third case: Two unnecessary parentheses on the right.<br>
-![case1](https://github.com/samuelusc/Algomuscle/blob/main/assets/day11-case3.png)
+![case1](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day11/day11-case3.png)
 
 **How to fill parentheses into the stack:**  
 
-![valid-brackets](https://github.com/samuelusc/Algomuscle/blob/main/assets/day11-valid-brackets.gif)
+![valid-brackets](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day11/day11-valid-brackets.gif)
 
 ### Solving Approach 1:
 
@@ -216,7 +216,7 @@ For example, in &quot;abbaca&quot; we could remove &quot;bb&quot; since the lett
 
 ### Breakdown and Thought Process:  
 
-![matching process](https://github.com/samuelusc/Algomuscle/blob/main/assets/day11-1047.gif)<br>
+![matching process](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day11/day11-1047.gif)<br>
   
 ### Solving Approach 1:  
 
@@ -316,7 +316,7 @@ O(n)
 
 ### Breakdown and Thought Process:  
 
-![calculating process](https://github.com/samuelusc/Algomuscle/blob/main/assets/day11-150.gif)<br>
+![calculating process](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day11/day11-150.gif)<br>
 
 ### Solving Approach 1:  
 
