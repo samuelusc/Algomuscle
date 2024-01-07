@@ -143,7 +143,7 @@ O(n)
 - *`Space Complexity`*:
 O(n)
 
-![dividing line](https://github.com/samuelusc/Algomuscle/blob/main/assets/dividingline.png)
+![dividing line](https://github.com/samuelusc/Algomuscle/blob/main/assets/dividing%20line.gif)
 
 
 <h2 id = "1047"><a href="https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string">1047. Remove All Adjacent Duplicates In String</a></h2><h3>Easy</h3><p>You are given a string <code>s</code> consisting of lowercase English letters. A <strong>duplicate removal</strong> consists of choosing two <strong>adjacent</strong> and <strong>equal</strong> letters and removing them.</p>
