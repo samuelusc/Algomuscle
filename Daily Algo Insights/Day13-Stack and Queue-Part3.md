@@ -60,7 +60,7 @@ Window position                Max
 **Animated demonstration** <br>
 ![Day13](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day13/day12-239process.gif) <br>
 
-###### 维护一个对列保持两个特性: 1. 保持队列头部的元素最大，如果新加入的比队列中的元素大，则把前面的踢出（新加入的前面一定比他大）。 2. 移动滑窗, 当移动的索引大于window size, 踢出 queue 头部元素。
+##### 维护一个对列保持两个特性: 1. 保持队列头部的元素最大，如果新加入的比队列中的元素大，则把前面的踢出（新加入的前面一定比他大）。 2. 移动滑窗, 当移动的索引大于window size, 踢出 queue 头部元素。
 	
 #### Solving approach 1:
 <br>
