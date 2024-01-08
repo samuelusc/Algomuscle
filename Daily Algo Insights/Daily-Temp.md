@@ -16,12 +16,14 @@ xxxx Question Description with id="xxx"
 ### Breakdown and Thought Process:  
 <br>
 
-#### Solving approach 1:
-<br>
+### Solving approach 1:
+
+xxxx
 
 
-#### My Solution 1：_`xxx`_  
+### My Solution 1：_`xxx`_  
 
+  
 ```python
 
 
@@ -33,12 +35,13 @@ xxxx Question Description with id="xxx"
 - *`Space Complexity`*:
 ---
   
-#### Solving approach 2:  
+### Solving approach 2:  
 
 
  
-#### My Solution 2：_`xxx`_  
+### My Solution 2：_`xxx`_  
 
+  
 ```python
 
 
