@@ -67,8 +67,8 @@ Window position                Max
 #### Solving approach 1:
 <br>
 
-1. 用双端队列deque, 注意在维护性质1时（元素前边都比它大），用 `while` 而不是 "if" 。 
-2. 队列列维护的是`index` 而不是 _number_
+1. 用双端队列deque, 注意在维护性质1时（元素前边都比它大），用 `while` 而不是 *"if"* 。 
+2. 队列列维护的是`index` 而不是 _“number”_
 3. 当队列首位所对应的index 超出window size, 则踢出，当在window size 范围内则加入最终结果
 
 #### My Solution 1：_`xxx`_  
