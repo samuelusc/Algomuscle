@@ -59,11 +59,15 @@ Window position                Max
 **Animated demonstration** <br>
 ![Day13](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day13/day12-239process.gif) <br>
 
-##### 维护一个queue 保持两个特性: 
+##### 维护一个queue 保持下面几个特性: 
 
-1. 保持队列头部的元素最大，如果新加入的比队列中的元素大，则把前面的踢出（新加入的前面一定比他大）。
+1. 队列头部的元素最大：队列被设计为始终将当前窗口内最大元素的索引放在队头
 
-2. 移动滑窗, 当移动的索引大于window size, 踢出 queue 头部元素。
+2. 移除较小元素：如果新加入的元素大于队列中的某些元素，那么这些较小的元素（在队尾）将被移除
+
+3. 队列顺序：队列中的元素（实际上是它们在原数组中的索引）是有序的，从队头到队尾元素的值是递减的。
+
+4. 移动滑窗： 当移动的索引大于window size, 踢出 queue 头部元素。
 	
 ### Solving approach 1:
 
