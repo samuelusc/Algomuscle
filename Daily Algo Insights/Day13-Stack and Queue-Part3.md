@@ -61,6 +61,7 @@ Window position                Max
 ![Day13](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day13/day12-239process.gif) <br>
 
 ##### 维护一个queue 保持两个特性: 
+
 1. 保持队列头部的元素最大，如果新加入的比队列中的元素大，则把前面的踢出（新加入的前面一定比他大）。
 
 2. 移动滑窗, 当移动的索引大于window size, 踢出 queue 头部元素。
@@ -122,13 +123,16 @@ O(n) as there may be at most n elements in the deque.
 
 2. `Follow up`: 如果要降低复杂度就需要降低`logn`，我们不需要*n个*最大频率 而只需要`k个`。考虑最大字样则联想到Heap, Max Heap 和 Min Heap 我们选择 Min Heap 因为需要维护size K,而 min heap 可以轻易弹出最小元素。
 
+
 ### Solving approach: O(nlogk)
+
 
 1. Solution1 是优化过的，我们使用了 `Min-heap`。这里注意两件事 1. Count类似于字典，其key是num 而value则是频率 : for key,value in counts.items()。 
 
 2. 用python 的heapq 记得带上num: heappush(min_heap(freq, num), 因为最后我们需要返回num 另外当frequency 相同时，将会以num 作为min heap排序标准。
 
 3. len(min_heap) > k 则踢出最小的tuple(freq,num), 留下的就是我们需要的。最后循环处理min_que,留下tuple中的第二个元素。
+
 
 ### My Solution 1：_`heapq(min heap)`_  
 
@@ -170,9 +174,11 @@ O(n+k)-> O(n) , n is the size of counter and k is the size of heap. since k is l
   
 ### Solving approach 2:  O(nlogn)
 
+
 1. *未经过优化* 这里用了 collections.Counter()下面的一个方法: `most_common(k)`, 可以获取计数器中频率最高的k个元素和他们的频率。
 
 2. 用 ele for ele, fre in counts.most_common(k), 进行循环解包并返回element。最后生成 top_k 列表
+
  
 ### My Solution 2：_`most_common(k)`_  
 
