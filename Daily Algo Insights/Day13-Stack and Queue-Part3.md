@@ -1,16 +1,16 @@
 # Day13 - Stack and Queue Part 3
 
 ## Contents
-* **[239. Sliding Window Maximu](239)**
-* **[347. Top K Frequent Elements](347)**
-* **[692. Top K Frequent Words](692)**
+* **[239. Sliding Window Maximu](#239)**
+* **[347. Top K Frequent Elements](#347)**
+* **[692. Top K Frequent Words](#692)**
 
 <br>
 
 ![Day13](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day13/Day13.png)
 
 <br>
-<h2 id ='239'><a href="https://leetcode.com/problems/sliding-window-maximum">239. Sliding Window Maximum</a></h2><h3>Hard</h3><p>You are given an array of integers&nbsp;<code>nums</code>, there is a sliding window of size <code>k</code> which is moving from the very left of the array to the very right. You can only see the <code>k</code> numbers in the window. Each time the sliding window moves right by one position.</p>
+<h2 id = "239"><a href="https://leetcode.com/problems/sliding-window-maximum">239. Sliding Window Maximum</a></h2><h3>Hard</h3><p>You are given an array of integers&nbsp;<code>nums</code>, there is a sliding window of size <code>k</code> which is moving from the very left of the array to the very right. You can only see the <code>k</code> numbers in the window. Each time the sliding window moves right by one position.</p>
 
 <p>Return <em>the max sliding window</em>.</p>
 
