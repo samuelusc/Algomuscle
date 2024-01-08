@@ -62,13 +62,16 @@ Window position                Max
 
 ##### 维护一个queue 保持两个特性: 
 1. 保持队列头部的元素最大，如果新加入的比队列中的元素大，则把前面的踢出（新加入的前面一定比他大）。
+
 2. 移动滑窗, 当移动的索引大于window size, 踢出 queue 头部元素。
 	
 #### Solving approach 1:
 <br>
 
 1. 用双端队列deque, 注意在维护性质1时（元素前边都比它大），用 `while` 而不是 *"if"* 。 
+
 2. 队列列维护的是`index` 而不是 _“number”_
+
 3. 当队列首位所对应的index 超出window size, 则踢出，当在window size 范围内则加入最终结果
 
 #### My Solution 1：_`xxx`_  
