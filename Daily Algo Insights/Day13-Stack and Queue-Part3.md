@@ -104,9 +104,10 @@ class Solution:
 ```
 
 - *`Time Complexity`*:
-
+O(n) where n is the number of elements in the array since each element is only pushed into and poped out of deque once.
   
 - *`Space Complexity`*:
+O(n) as there may be at most n elements in the deque.
 ---
 
 ![dividing line](https://github.com/samuelusc/Algomuscle/blob/main/assets/dividingline.gif)
