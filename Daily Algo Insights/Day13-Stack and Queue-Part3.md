@@ -277,7 +277,7 @@ Note that &quot;i&quot; comes before &quot;love&quot; due to a lower alphabetica
 ### Solving approach 1: O(nlogk)
 
 
-这种方法最好的地方是用最小堆的形式，呈现了最大堆的作用。利用 heapify(List) 建立只有O(n) 的时间复杂度，然后利用最小堆特性，弹出k个最大元素(klogn)。这一切归功于（-freq, word)
+这种方法最好的地方是用最小堆的形式 min_heap(-freq, word)，呈现了最大堆的作用。利用 `heapify(List)` 建立只有O(n) 的时间复杂度，然后利用最小堆特性，弹出k个最大元素(klogn),并且保持了他们的字典序。Perfect！
 
 
 ### My Solution 1：_`heapify + min-heap(max heap)`_  
