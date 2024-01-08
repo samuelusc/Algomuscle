@@ -51,11 +51,14 @@ Window position                Max
 ### Breakdown and Thought Process:  
 <br>
 
-`Input`: [1,3,2,5,8,7]  
-k = 3  
+`Input`: [1,3,2,5,8,7]  k = 3  
   
-`Output`:
-1 [3,5,8,8]
+`Output`: 1 [3,5,8,8] <br>
+
+![Day13](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day13/day13-239presentation.png)
+
+
+
 	
 #### Solving approach 1:
 <br>
