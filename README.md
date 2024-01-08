@@ -90,4 +90,12 @@
 | 1047       | [Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string) |[Python](./1047-remove-all-adjacent-duplicates-in-string)| Easy     | Stack, Dictionary   |      |
 | 150       | [Valid Parentheses](https://leetcode.com/problems/evaluate-reverse-polish-notation) |[Python](./0150-evaluate-reverse-polish-notation)| Medium      |  Stack, Dictionary     |   |
 
+**[Day 13](./Daily%20Algo%20Insights/Day13-Stack%20and%20Queue-Part3.md) - 1/4/2024**
+
+| Question# | Title                                           | Solution                                                                                               | Difficulty | Topics | Nodes |
+|-----------|-------------------------------------------------|--------------------------------------------------------------------------------------------------------|------------|--------|-------|
+| 239       | [Sliding Window Maximu](https://leetcode.com/problems/sliding-window-maximum) |[Python](./0239-sliding-window-maximum)| Hard      | Monotonic Queue, Heap, Priority Queue    |   |
+| 347       | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements) |[Python](./0347-top-k-frequent-elements)| Medium     | Min Heap, Priority Queue, Hash Table   |      |
+| 692       | [Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words) |[Python](./0692-top-k-frequent-words)| Medium      |  Min Heap, Hash Table, Sorting     | Need Review again  |
+
 
