@@ -66,7 +66,7 @@ Window position                Max
 2. 移动滑窗, 当移动的索引大于window size, 踢出 queue 头部元素。
 	
 #### Solving approach 1:
-<br>
+
 
 1. 用双端队列deque, 注意在维护性质1时（元素前边都比它大），用 `while` 而不是 *"if"* 。 
 
