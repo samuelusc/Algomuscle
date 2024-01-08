@@ -50,7 +50,11 @@ Window position                Max
 
 ### Breakdown and Thought Process:  
 <br>
-
+`Input`: [1,3,2,5,8,7]  
+k = 3  
+`Output`:
+1 [3,5,8,8]
+	
 #### Solving approach 1:
 <br>
 
