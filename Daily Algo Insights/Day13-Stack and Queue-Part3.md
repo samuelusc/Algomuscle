@@ -115,6 +115,93 @@ O(n) as there may be at most n elements in the deque.
 
 ![dividing line](https://github.com/samuelusc/Algomuscle/blob/main/assets/dividingline.gif)
 
+### Breakdown and Thought Process:  
+<br>
+
+1. 维护一个最大`k 频率`的列表，首先想到可以用模块collections下的Counter 子类，去获取每个数字对应的频率。 如果对它进行排序并抽取最大的k个那么就可以得到结果，时间复杂度O(nlogn)
+
+2. `Follow up`: 如果要降低复杂度就需要降低`logn`，我们不需要*n个*最大频率 而只需要`k个`。考虑最大字样则联想到Heap, Max Heap 和 Min Heap 我们选择 Min Heap 因为需要维护size K,而 min heap 可以轻易弹出最小元素。
+
+### Solving approach: O(nlogk)
+
+1. Solution1 是优化过的，我们使用了 `Min-heap`。这里注意两件事 1. Count类似于字典，其key是num 而value则是频率 : for key,value in counts.items()。 
+
+用python 的heapq 记得带上num: heappush(min_heap(freq, num), 因为最后我们需要返回num 另外当frequency 相同时，将会以num 作为min heap排序标准
+
+2. len(min_heap) > k 则踢出最小的tuple(freq,num), 留下的就是我们需要的。最后循环处理min_que,留下tuple中的第二个元素。
+
+### My Solution 1：_`heapq(min heap)`_  
+
+  
+```python
+
+class Solution:
+    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+        from collections import Counter
+        from heapq import heappush, heappop
+        min_heap =[]
+        
+        # count frequency of each number in nums by Counter
+        counts = Counter(nums)
+
+        #Iterate through counts for each pair(number, frequency)
+        for num, freq in counts.items():
+            # push a pair of tuple into heap
+            heappush(min_heap, (freq, num))
+            # check if the heap size exceed k
+            if len(min_heap) > k:
+                heappop(min_heap)
+        
+        #extract the top k frequency number(index 2) from tuple 
+        top_k = [pair[1] for pair in min_heap]
+
+	# don't forget return the list top_k
+        return top_k
+        
+
+```
+
+- *`Time Complexity`*:
+O(nlogk), where there are n heap push and pop operations, each taiking O(log k) time. 
+  
+- *`Space Complexity`*:
+O(n+k)-> O(n) , n is the size of counter and k is the size of heap. since k is less than n, therefore the space can be O(n)
+---
+  
+### Solving approach 2:  O(nlogn)
+
+1. *未经过优化* 这里用了 collections.Counter()下面的一个方法: `most_common(k)`, 可以获取计数器中频率最高的k个元素和他们的频率。
+
+2. 用 ele for ele, fre in counts.most_common(k), 进行循环解包并返回element。最后生成 top_k 列表
+ 
+### My Solution 2：_`most_common(k)`_  
+
+  
+```python
+
+class Solution:
+    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+        from collections import Counter
+        # Use Counter to count the occurrence of each number in nums
+        counts = Counter(nums)
+        # Retrieve the top k most frequent elements
+        # most_common() returns a list of tuples, unpacking them here
+        top_k = [element for element, count in counts.most_common(k)]
+
+        return top_k
+
+```
+
+**Complexity Analysis:**  
+
+- *`Time Complexity`*:
+O(nlogn)
+  
+- *`Space Complexity`*:
+O(n)
+---
+
+![dividing line](https://github.com/samuelusc/Algomuscle/blob/main/assets/dividingline.gif)
 
 
 
