@@ -116,7 +116,7 @@ O(n) as there may be at most n elements in the deque.
 ![dividing line](https://github.com/samuelusc/Algomuscle/blob/main/assets/dividingline.gif)
 
 ### Breakdown and Thought Process:  
-<br>
+
 
 1. 维护一个最大`k 频率`的列表，首先想到可以用模块collections下的Counter 子类，去获取每个数字对应的频率。 如果对它进行排序并抽取最大的k个那么就可以得到结果，时间复杂度O(nlogn)
 
@@ -126,9 +126,9 @@ O(n) as there may be at most n elements in the deque.
 
 1. Solution1 是优化过的，我们使用了 `Min-heap`。这里注意两件事 1. Count类似于字典，其key是num 而value则是频率 : for key,value in counts.items()。 
 
-   用python 的heapq 记得带上num: heappush(min_heap(freq, num), 因为最后我们需要返回num 另外当frequency 相同时，将会以num 作为min heap排序标准
+2. 用python 的heapq 记得带上num: heappush(min_heap(freq, num), 因为最后我们需要返回num 另外当frequency 相同时，将会以num 作为min heap排序标准。
 
-2. len(min_heap) > k 则踢出最小的tuple(freq,num), 留下的就是我们需要的。最后循环处理min_que,留下tuple中的第二个元素。
+3. len(min_heap) > k 则踢出最小的tuple(freq,num), 留下的就是我们需要的。最后循环处理min_que,留下tuple中的第二个元素。
 
 ### My Solution 1：_`heapq(min heap)`_  
 
