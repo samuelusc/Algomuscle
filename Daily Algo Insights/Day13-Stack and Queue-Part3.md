@@ -73,8 +73,9 @@ Window position                Max
 
 3. 当队列首位所对应的index 超出window size, 则踢出，当在window size 范围内则加入最终结果
 
-### My Solution 1：_`xxx`_  
+### My Solution 1：_`Monotonic deque`_  
 
+  
 ```python
 from collections import deque
 class Solution:
