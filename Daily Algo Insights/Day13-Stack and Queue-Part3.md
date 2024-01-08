@@ -267,7 +267,9 @@ Note that &quot;i&quot; comes before &quot;love&quot; due to a lower alphabetica
 
 <p>&nbsp;</p>
 <p><strong>Follow-up:</strong> Could you solve it in <code>O(n log(k))</code> time and <code>O(n)</code> extra space?</p>
-<br>
+
+
+
 ### Breakdown and Thought Process:  
 
 
