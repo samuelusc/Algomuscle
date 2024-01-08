@@ -65,7 +65,7 @@ Window position                Max
 
 2. 移动滑窗, 当移动的索引大于window size, 踢出 queue 头部元素。
 	
-#### Solving approach 1:
+### Solving approach 1:
 
 1. 用双端队列deque, 注意在维护性质1时（元素前边都比它大），用 `while` 而不是 *"if"* 。 
 
@@ -73,7 +73,7 @@ Window position                Max
 
 3. 当队列首位所对应的index 超出window size, 则踢出，当在window size 范围内则加入最终结果
 
-#### My Solution 1：_`xxx`_  
+### My Solution 1：_`xxx`_  
 
 ```python
 from collections import deque
