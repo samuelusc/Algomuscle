@@ -1,10 +1,10 @@
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
         from collections import Counter
-        # 使用 Counter 计算每个 num 出现个数
+        # Use Counter to count the occurrence of each number in nums
         counts = Counter(nums)
-        # 获取出现最多的k个元素
-        # most_common() 返回元组，需要解包
-        top_k = [element for element,count in counts.most_common(k)]
+        # Retrieve the top k most frequent elements
+        # most_common() returns a list of tuples, unpacking them here
+        top_k = [element for element, count in counts.most_common(k)]
 
         return top_k
