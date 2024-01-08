@@ -50,6 +50,7 @@ Window position                Max
 
 ### Breakdown and Thought Process:  
 <br>
+
 `Input`: [1,3,2,5,8,7]  
 k = 3  
 `Output`:
