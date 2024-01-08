@@ -3,7 +3,7 @@
 ## Contents
 * **[239. Sliding Window Maximu](239)**
 * **[347. Top K Frequent Elements](347)**
-* **[xx](#)**
+* **[692. Top K Frequent Words](692)**
 * **[xx](#)**
 * **[xx](#)**
 <br>
@@ -234,8 +234,116 @@ O(n)
 ![dividing line](https://github.com/samuelusc/Algomuscle/blob/main/assets/dividingline.gif)
 
 
+<h2 id = '692'><a href="https://leetcode.com/problems/top-k-frequent-words">692. Top K Frequent Words</a></h2><h3>Medium</h3><hr><p>Given an array of strings <code>words</code> and an integer <code>k</code>, return <em>the </em><code>k</code><em> most frequent strings</em>.</p>
+
+<p>Return the answer <strong>sorted</strong> by <strong>the frequency</strong> from highest to lowest. Sort the words with the same frequency by their <strong>lexicographical order</strong>.</p>
+
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> words = [&quot;i&quot;,&quot;love&quot;,&quot;leetcode&quot;,&quot;i&quot;,&quot;love&quot;,&quot;coding&quot;], k = 2
+<strong>Output:</strong> [&quot;i&quot;,&quot;love&quot;]
+<strong>Explanation:</strong> &quot;i&quot; and &quot;love&quot; are the two most frequent words.
+Note that &quot;i&quot; comes before &quot;love&quot; due to a lower alphabetical order.
+</pre>
+
+<p><strong class="example">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> words = [&quot;the&quot;,&quot;day&quot;,&quot;is&quot;,&quot;sunny&quot;,&quot;the&quot;,&quot;the&quot;,&quot;the&quot;,&quot;sunny&quot;,&quot;is&quot;,&quot;is&quot;], k = 4
+<strong>Output:</strong> [&quot;the&quot;,&quot;is&quot;,&quot;sunny&quot;,&quot;day&quot;]
+<strong>Explanation:</strong> &quot;the&quot;, &quot;is&quot;, &quot;sunny&quot; and &quot;day&quot; are the four most frequent words, with the number of occurrence being 4, 3, 2 and 1 respectively.
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= words.length &lt;= 500</code></li>
+	<li><code>1 &lt;= words[i].length &lt;= 10</code></li>
+	<li><code>words[i]</code> consists of lowercase English letters.</li>
+	<li><code>k</code> is in the range <code>[1, The number of <strong>unique</strong> words[i]]</code></li>
+</ul>
+
+<p>&nbsp;</p>
+<p><strong>Follow-up:</strong> Could you solve it in <code>O(n log(k))</code> time and <code>O(n)</code> extra space?</p>
+<br>
+
+### Breakdown and Thought Process:  
+<br>
+本打算采用min_heap 方式，但是遇到了很大问题。原因在于在相同frequency 情况下，需要优先选择字典序(`lexicographical order`)。如果不考虑 follow-up 可以选择 solution 2 的 sorted + lambda 组合。时间复杂度在O(nlogn)。 
+
+### Solving approach 1: O(nlogk)
 
 
+这种方法最好的地方是用最小堆的形式，呈现了最大堆的作用。利用 heapify(List) 建立只有O(n) 的时间复杂度，然后利用最小堆特性，弹出k个最大元素(klogn)。这一切归功于（-freq, word)
+
+
+### My Solution 1：_`heapify + min-heap(max heap)`_  
+
+  
+```python
+from collections import Counter
+from heapq import heapify,heappop
+class Solution:
+    def topKFrequent(self, words: List[str], k: int) -> List[str]:
+       
+       counts = Counter(words)
+        
+       # Create a heap of tuples. Each tuple contains the negative frequency and the word.
+       # Using negative frequency turns the min-heap into a max-heap.
+       heap = [(-freq, word) for word,freq in counts.items()]
+        
+       # Convert the list into a heap (in-place).
+       # The negative frequency ensures that the heap behaves like a max-heap.
+       heapify(heap)
+        
+       # Pop the top k elements from the heap and return their words.
+       # heappop returns the smallest item from the heap (highest frequency due to negative values).
+       return [heappop(heap)[1] for _ in range(k)]
+
+       
+
+```
+
+
+- *`Time Complexity`*:
+O(nlogk)
+  
+- *`Space Complexity`*:
+O(n)
+---
+  
+ 
+### My Solution 2：_`sorted + lambda`_   
+
+  
+```python
+
+from collections import Counter
+class Solution:
+    def topKFrequent(self, words: List[str], k: int) -> List[str]:
+        
+        counts = Counter(words)
+        # sort each unique word by frequncy in descending,then alphabetically
+        top_k = sorted(counts, key = lambda word: (-counts[word] , word))
+        # return the first k element by slicing [:k]
+        return top_k[:k]
+
+```
+
+
+**Complexity Analysis:**  
+
+- *`Time Complexity`*:
+O(nlogn)
+  
+- *`Space Complexity`*:
+O(n)
+---
+
+![dividing line](https://github.com/samuelusc/Algomuscle/blob/main/assets/dividingline.gif)
 
 
 
