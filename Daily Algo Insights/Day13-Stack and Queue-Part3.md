@@ -4,8 +4,7 @@
 * **[239. Sliding Window Maximu](239)**
 * **[347. Top K Frequent Elements](347)**
 * **[692. Top K Frequent Words](692)**
-* **[xx](#)**
-* **[xx](#)**
+
 <br>
 
 ![Day13](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day13/Day13.png)
@@ -272,7 +271,7 @@ Note that &quot;i&quot; comes before &quot;love&quot; due to a lower alphabetica
 
 ### Breakdown and Thought Process:  
 <br>
-本打算采用min_heap 方式，但是遇到了很大问题。原因在于在相同frequency 情况下，需要优先选择字典序(`lexicographical order`)。如果不考虑 follow-up 可以选择 solution 2 的 sorted + lambda 组合。时间复杂度在O(nlogn)。 
+本打算采用min_heap 方式，但是遇到了很大问题。原因在于在相同frequency 情况下，需要优先选择字典序 `lexicographical order` 。如果不考虑 follow-up 可以选择 solution 2 的 sorted + lambda 组合。时间复杂度在O(nlogn)。 
 
 ### Solving approach 1: O(nlogk)
 
