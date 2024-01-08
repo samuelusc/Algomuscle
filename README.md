@@ -82,7 +82,7 @@
 | 232       | [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks) |[Python](./0028-find-the-index-of-the-first-occurrence-in-a-string)| Easy      |  Stack, Queue     |   |
 | 225       | [Implement Stack using Queues](https://leetcode.com/problems/repeated-substring-pattern) |[Python](./0225-implement-stack-using-queues)| Easy     | Stack, Queue   |      |
 
-**[Day 11](./Daily%20Algo%20Insights/Day11-Stack%20and%20Queue-Part2.md#150) - 1/4/2024**
+**[Day 11](./Daily%20Algo%20Insights/Day11-Stack%20and%20Queue-Part2.md#150) - 1/5/2024**
 
 | Question# | Title                                           | Solution                                                                                               | Difficulty | Topics | Nodes |
 |-----------|-------------------------------------------------|--------------------------------------------------------------------------------------------------------|------------|--------|-------|
@@ -90,7 +90,7 @@
 | 1047       | [Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string) |[Python](./1047-remove-all-adjacent-duplicates-in-string)| Easy     | Stack, Dictionary   |      |
 | 150       | [Valid Parentheses](https://leetcode.com/problems/evaluate-reverse-polish-notation) |[Python](./0150-evaluate-reverse-polish-notation)| Medium      |  Stack, Dictionary     |   |
 
-**[Day 13](./Daily%20Algo%20Insights/Day13-Stack%20and%20Queue-Part3.md) - 1/4/2024**
+**[Day 13](./Daily%20Algo%20Insights/Day13-Stack%20and%20Queue-Part3.md) - 1/7/2024**
 
 | Question# | Title                                           | Solution                                                                                               | Difficulty | Topics | Nodes |
 |-----------|-------------------------------------------------|--------------------------------------------------------------------------------------------------------|------------|--------|-------|
