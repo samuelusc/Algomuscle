@@ -18,6 +18,7 @@ xxxx Question Description with id="xxx"
 
 ### Solving approach 1:
 
+
 xxxx
 
 
@@ -29,6 +30,7 @@ xxxx
 
 ```
 
+
 - *`Time Complexity`*:
 
   
@@ -38,6 +40,8 @@ xxxx
 ### Solving approach 2:  
 
 
+xxx
+
  
 ### My Solution 2：_`xxx`_  
 
@@ -46,6 +50,7 @@ xxxx
 
 
 ```
+
 
 **Complexity Analysis:**  
 
