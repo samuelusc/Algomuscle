@@ -117,7 +117,7 @@ O(n) where n is the number of elements in the array since each element is only p
 O(n) as there may be at most n elements in the deque.
 ---
 
-![dividing line](https://github.com/samuelusc/Algomuscle/blob/main/assets/dividingline.gif)
+![dividing line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
 
 <h2 id = '347'><a href="https://leetcode.com/problems/top-k-frequent-elements">347. Top K Frequent Elements</a></h2><h3>Medium</h3><p>Given an integer array <code>nums</code> and an integer <code>k</code>, return <em>the</em> <code>k</code> <em>most frequent elements</em>. You may return the answer in <strong>any order</strong>.</p>
 
@@ -234,7 +234,7 @@ O(nlogn)
 O(n)
 ---
 
-![dividing line](https://github.com/samuelusc/Algomuscle/blob/main/assets/dividingline.gif)
+![dividing line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
 
 
 <h2 id = '692'><a href="https://leetcode.com/problems/top-k-frequent-words">692. Top K Frequent Words</a></h2><h3>Medium</h3><hr><p>Given an array of strings <code>words</code> and an integer <code>k</code>, return <em>the </em><code>k</code><em> most frequent strings</em>.</p>
@@ -347,7 +347,7 @@ O(nlogn)
 O(n)
 ---
 
-![dividing line](https://github.com/samuelusc/Algomuscle/blob/main/assets/dividingline.gif)
+![dividing line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
 
 
 
