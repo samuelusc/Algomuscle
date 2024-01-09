@@ -73,6 +73,7 @@ Post-order traversal visits the left subtree first, then the right subtree, and 
 
 <br>
 
+<a name="Recursion"></a>
 ## Recursion 101: The Three Ingredients You Need
 
 ![Recursion illustration](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day14/recursion.png
