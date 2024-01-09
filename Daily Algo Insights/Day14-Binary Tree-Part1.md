@@ -72,7 +72,7 @@ Post-order traversal visits the left subtree first, then the right subtree, and 
 
 ---
 
-![dividing line](https://github.com/samuelusc/Algomuscle/blob/main/assets/dividingline.gif)
+![dividing line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
 
 <h2 id = "144"><a href="https://leetcode.com/problems/binary-tree-preorder-traversal">144. Binary Tree Preorder Traversal</a></h2><h3>Easy</h3><p>Given the <code>root</code> of a binary tree, return <em>the preorder traversal of its nodes&#39; values</em>.</p>
 
@@ -233,7 +233,7 @@ O(n)
 O(n)
 ---
 
-![dividing line](https://github.com/samuelusc/Algomuscle/blob/main/assets/dividingline.gif)
+![dividing line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
 
 <h2 id = "145"><a href="https://leetcode.com/problems/binary-tree-postorder-traversal">145. Binary Tree Postorder Traversal</a></h2><h3>Easy</h3><p>Given the <code>root</code> of a&nbsp;binary tree, return <em>the postorder traversal of its nodes&#39; values</em>.</p>
 
@@ -394,7 +394,7 @@ O(n)
 O(n)
 ---
 
-![dividing line](https://github.com/samuelusc/Algomuscle/blob/main/assets/dividingline.gif)
+![dividing line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
 
 
 <h2 id = "94"><a href="https://leetcode.com/problems/binary-tree-inorder-traversal">94. Binary Tree Inorder Traversal</a></h2><h3>Easy</h3><p>Given the <code>root</code> of a binary tree, return <em>the inorder traversal of its nodes&#39; values</em>.</p>
