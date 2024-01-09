@@ -98,4 +98,10 @@
 | 347       | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements) |[Python](./0347-top-k-frequent-elements)| Medium     | Min Heap, Priority Queue, Hash Table   |      |
 | 692       | [Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words) |[Python](./0692-top-k-frequent-words)| Medium      |  Min Heap, Hash Table, Sorting     | Need Review again  |
 
+**[Day 14](./Daily%20Algo%20Insights/Day14-Binary%20Tree-Part1.md) - 1/8/2024**
 
+| Question# | Title                                           | Solution                                                                                               | Difficulty | Topics | Nodes |
+|-----------|-------------------------------------------------|--------------------------------------------------------------------------------------------------------|------------|--------|-------|
+| 144       | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal) |[Python](./0144-binary-tree-preorder-traversal)| Easy      | Binary Tree    |   |
+| 145       | [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal) |[Python](./0145-binary-tree-postorder-traversal)| Easy     | Binary Tree   |      |
+| 94       | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal) |[Python](./0094-binary-tree-inorder-traversal)| Easy     |  Binary Tree     |   |
