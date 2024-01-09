@@ -82,6 +82,7 @@ Post-order traversal visits the left subtree first, then the right subtree, and 
 
 ### A recursive algorithm must have a base case/exit.
 
+
 A base case is the condition that allows the algorithm to stop recursing.
 
 - A base case is typically a problem that is small enough to solve directly.
@@ -89,7 +90,9 @@ A base case is the condition that allows the algorithm to stop recursing.
 - In the factorial algorithm the base case is `n=1`.
 
 
+
 ### A recursive algorithm must change its state and move toward the base case.
+
 
 We must arrange for a change of state that moves the algorithm toward the base case.
 
@@ -99,12 +102,17 @@ We must arrange for a change of state that moves the algorithm toward the base c
 
 - In the factorial n decreases.
 
+  
+
 ### A recursive algorithm must call itself, recursively.
+
 
 Calling the function itself with different argument
 
 
+
 ## OR
+
 
 
 ### 确定递归函数的参数和返回值： 
