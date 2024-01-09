@@ -69,62 +69,495 @@ Pre-order traversal visits the current node first, then the left subtree, and fi
 ### Post-order Traversal [A,C,E,D,B,H,G,F]
 
 Post-order traversal visits the left subtree first, then the right subtree, and finally the current node. The diagram below shows the traversal order of a post-order traversal on a binary tree.
-
-### Breakdown and Thought Process:  
-<br>
-
-### Solving approach 1:
-
-
-xxxx
-
-
-### My Solution 1：_`xxx`_  
-
-  
-```python
-
-
-```
-
-
-- *`Time Complexity`*:
-
-  
-- *`Space Complexity`*:
 ---
-  
-### Solving approach 2:  
+
+![dividing line](https://github.com/samuelusc/Algomuscle/blob/main/assets/dividingline.gif)
+
+<h2 id = "144"><a href="https://leetcode.com/problems/binary-tree-preorder-traversal">144. Binary Tree Preorder Traversal</a></h2><h3>Easy</h3><p>Given the <code>root</code> of a binary tree, return <em>the preorder traversal of its nodes&#39; values</em>.</p>
+
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2020/09/15/inorder_1.jpg" style="width: 125px; height: 200px;" />
+<pre>
+<strong>Input:</strong> root = [1,null,2,3]
+<strong>Output:</strong> [1,2,3]
+</pre>
+
+<p><strong class="example">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> root = []
+<strong>Output:</strong> []
+</pre>
+
+<p><strong class="example">Example 3:</strong></p>
+
+<pre>
+<strong>Input:</strong> root = [1]
+<strong>Output:</strong> [1]
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li>The number of nodes in the tree is in the range <code>[0, 100]</code>.</li>
+	<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
+</ul>
+
+<p>&nbsp;</p>
+<p><strong>Follow up:</strong> Recursive solution is trivial, could you do it iteratively?</p>
 
 
-xxx
-
- 
-### My Solution 2：_`xxx`_  
+### My Solution 1：_`Self-Recursion`_  
 
   
 ```python
 
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+
+class Solution:
+    def preorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+        res =[]
+        if not root:
+            return res
+        
+        
+        res.append(root.val)
+        res += self.preorderTraversal(root.left)
+        res += self.preorderTraversal(root.right)
+        return res
+        
 
 ```
 
+
+### My Solution 2：_`Helper-Recursion`_  
+
+  
+```python
+
+class Solution:
+    def preorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+        res = []
+
+        def _helper(node):
+            if not node:
+                return
+
+            res.append(node.val)
+            _helper(node.left)
+            _helper(node.right)
+        
+        _helper(root)
+        return res
+
+```
+
+### My Solution 3：_`Stack`_  
+
+  
+```python
+
+class Solution:
+    def preorderTraversal(self, root: Optional[TreeNode]) -> List[int]:        
+        res = []
+        stack = [root]
+        
+        while stack:
+            node = stack.pop()
+            if node:
+                res.append(node.val)
+
+                # Stack is LIFO, 
+                # Push right child first for Preorder
+                stack.append(node.right)
+                stack.append(node.left)
+            
+
+        return res
+            
+        
+
+```
+
+
+### My Solution 4：_`General-Stack`_  
+
+  
+```python
+
+class Solution:
+    def preorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+        if not root:
+            return []
+        
+        res = []
+        stack = [root]
+
+        while stack:
+            node = stack.pop()
+            if node:
+                # stack 固定顺序先右后左
+                if node.right:
+                    stack.append(node.right)
+                
+                if node.left:
+                    stack.append(node.left)
+                # preorder 最后放根结点
+                stack.append(node)
+                stack.append(None)
+            
+            else:
+                node = stack.pop()
+                res.append(node.val)
+        
+        return res
+            
+        
+
+```
 
 **Complexity Analysis:**  
 
 - *`Time Complexity`*:
-
+O(n)
   
 - *`Space Complexity`*:
+O(n)
+---
+
+![dividing line](https://github.com/samuelusc/Algomuscle/blob/main/assets/dividingline.gif)
+
+<h2 id = "145"><a href="https://leetcode.com/problems/binary-tree-postorder-traversal">145. Binary Tree Postorder Traversal</a></h2><h3>Easy</h3><p>Given the <code>root</code> of a&nbsp;binary tree, return <em>the postorder traversal of its nodes&#39; values</em>.</p>
+
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2020/08/28/pre1.jpg" style="width: 127px; height: 200px;" />
+<pre>
+<strong>Input:</strong> root = [1,null,2,3]
+<strong>Output:</strong> [3,2,1]
+</pre>
+
+<p><strong class="example">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> root = []
+<strong>Output:</strong> []
+</pre>
+
+<p><strong class="example">Example 3:</strong></p>
+
+<pre>
+<strong>Input:</strong> root = [1]
+<strong>Output:</strong> [1]
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li>The number of the nodes in the tree is in the range <code>[0, 100]</code>.</li>
+	<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
+</ul>
+
+<p>&nbsp;</p>
+<strong>Follow up:</strong> Recursive solution is trivial, could you do it iteratively?
+
+
+### My Solution 1：_`Self-Recursion`_  
+
+  
+```python
+
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def postorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+        res = []
+        if not root:
+            return res
+        
+        res.extend(self.postorderTraversal(root.left))
+        res.extend(self.postorderTraversal(root.right))
+        res.append(root.val)
+        return res
+        
+        
+
+```
+
+
+### My Solution 2：_`Helper-Recursion`_  
+
+  
+```python
+
+class Solution:
+    def postorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+        res = []
+        def _postOrder(node):
+            if not node:
+                return
+
+            _postOrder(node.left)
+            _postOrder(node.right)
+            res.append(node.val)
+        
+        _postOrder(root)
+        return res
+
+```
+
+### My Solution 3：_`Stack`_  
+
+  
+```python
+
+class Solution:
+    def postorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+        stack = [root]
+        res = []
+
+        while stack:
+            
+            node = stack.pop()
+            if node:
+                res.append(node.val)
+                # 注意这里和preOrder相反
+                stack.append(node.left)
+                stack.append(node.right)
+        # 中，右，左，反转就是 左，中，右
+        # return res[::-1]        
+        res.reverse() # x.reverse()inplace modify and return None
+        return res
+        
+
+```
+
+
+### My Solution 4：_`General-Stack`_  
+
+  
+```python
+
+class Solution:
+    def postorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+        #检查root,空返回[]
+        if not root:
+            return []
+        #确保 root 非空将其设为stack的首个元素
+        stack = [root]
+        res = []
+
+        while stack:
+            node = stack.pop()
+            # 如果没有遍历完左右子树
+            if node:
+                stack.append(node)
+                # 空节点作为标记
+                stack.append(None)
+                # 依照Stack性质，right then left
+                if node.right:
+                    stack.append(node.right)
+                if node.left:
+                    stack.append(node.left)
+            
+            # node为None，到了叶节点
+            else:
+                # 弹出加入最终列表的节点
+                node = stack.pop()
+                res.append(node.val)
+        
+        return res
+              
+        
+
+```
+
+**Complexity Analysis:**  
+
+- *`Time Complexity`*:
+O(n)
+  
+- *`Space Complexity`*:
+O(n)
 ---
 
 ![dividing line](https://github.com/samuelusc/Algomuscle/blob/main/assets/dividingline.gif)
 
 
+<h2 id = "94"><a href="https://leetcode.com/problems/binary-tree-inorder-traversal">94. Binary Tree Inorder Traversal</a></h2><h3>Easy</h3><p>Given the <code>root</code> of a binary tree, return <em>the inorder traversal of its nodes&#39; values</em>.</p>
+
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2020/09/15/inorder_1.jpg" style="width: 125px; height: 200px;" />
+<pre>
+<strong>Input:</strong> root = [1,null,2,3]
+<strong>Output:</strong> [1,3,2]
+</pre>
+
+<p><strong class="example">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> root = []
+<strong>Output:</strong> []
+</pre>
+
+<p><strong class="example">Example 3:</strong></p>
+
+<pre>
+<strong>Input:</strong> root = [1]
+<strong>Output:</strong> [1]
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li>The number of nodes in the tree is in the range <code>[0, 100]</code>.</li>
+	<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
+</ul>
+
+<p>&nbsp;</p>
+<strong>Follow up:</strong> Recursive solution is trivial, could you do it iteratively?
 
 
+### My Solution 1：_`Self-Recursion`_  
+
+  
+```python
+
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
 
 
+class Solution:
+    def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+        res = []
+
+        if not root:
+            return res
+        
+        res += self.inorderTraversal(root.left)
+        res.append(root.val)
+        res += self.inorderTraversal(root.right)
+
+        return res
+        
+        
+
+```
 
 
+### My Solution 2：_`Helper-Recursion`_  
+
+  
+```python
+
+class Solution:
+    def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+        res = []
+
+        def _inorder(node):
+            if not node:
+                return
+
+            _inorder(node.left)
+            res.append(node.val)
+            _inorder(node.right)
+
+        _inorder(root)
+        return res
+
+```
+
+### My Solution 3：_`Stack`_  
+
+  
+```python
+
+class Solution:
+    def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+        stack = [] # visited
+        res =[]
+        cur = root # current traversing 
+        while cur or stack:
+            if cur:
+                stack.append(cur)
+                cur = cur.left
+            
+            else:
+                # no left child
+                cur = stack.pop()
+                # push into final list 
+                res.append(cur.val)
+                #traverse right child of node
+                cur = cur.right
+        
+        return res
+                
+        
+        
+
+```
 
 
+### My Solution 4：_`General-Stack`_  
+
+  
+```python
+
+class Solution:
+    def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+        if not root:
+            return []
+
+        res = []
+        stack = [root]
+
+        while stack:
+            node = stack.pop()
+
+            if node:
+                # 中序遍历，push stack 顺序是右中左
+                if node.right:
+                    stack.append(node.right)
+                stack.append(node)
+                stack.append(None)
+                if node.left:
+                    stack.append(node.left)
+                
+            else:
+                node = stack.pop()
+                res.append(node.val)
+
+        return res
+              
+        
+
+```
+
+**Complexity Analysis:**  
+
+- *`Time Complexity`*:
+O(n)
+  
+- *`Space Complexity`*:
+O(n)
+---
+
+![dividing line](https://github.com/samuelusc/Algomuscle/blob/main/assets/dividingline.gif)
