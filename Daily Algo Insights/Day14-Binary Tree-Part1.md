@@ -76,8 +76,7 @@ Post-order traversal visits the left subtree first, then the right subtree, and 
 <a name="Recursion"></a>
 ## Recursion 101: The Three Ingredients You Need
 
-![Recursion illustration](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day14/recursion.png
-)
+![Recursion illustration](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day14/recursion.png) <br>
 
 
 ### A recursive algorithm must have a base case/exit.
@@ -100,15 +99,16 @@ We must arrange for a change of state that moves the algorithm toward the base c
 
 - Usually the data that represents our problem gets smaller in some way.
 
-- In the factorial n decreases.
+- In the `factorial n decreases`.
 
   
 
 ### A recursive algorithm must call itself, recursively.
 
 
-Calling the function itself with different argument
+Calling the function itself `with different argument`
 <br>
+
 
 ## OR
 
