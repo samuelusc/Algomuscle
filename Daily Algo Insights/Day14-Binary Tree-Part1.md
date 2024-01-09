@@ -1,5 +1,4 @@
 # Day14 - Binary Tree Part 1
-<br>
 
 ![Day14](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day14/day14.png)
 <br>
