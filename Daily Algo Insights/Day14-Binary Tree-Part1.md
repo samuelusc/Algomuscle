@@ -3,7 +3,7 @@
 
 ## Contents
 * **[Introduction of Binary Tree](#Intro)**
-* **[Tree Traversal](#Traverse)**
+* **[Binary Tree Traversal](#Traverse)**
 * **[144.Binary Tree Preorder Traversal](#144)**
 * **[145.Binary Tree Postorder Traversal](#145)**
 * **[94.Binary Tree Inorder Traversal](#94)**
@@ -56,7 +56,7 @@ A binary search tree (BST) is a special type of binary tree, in which every node
 <a name="Traverse"></a>
 ## Tree Traversal 
 
-![Tree Traversal](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day14/traverse.jpg)
+![Tree Traversal](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day14/traverse1.jpg)
 
 ### In-order Traversal: [A,B,C,D,E,F,G,H]
 
