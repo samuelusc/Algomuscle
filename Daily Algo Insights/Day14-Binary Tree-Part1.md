@@ -3,10 +3,11 @@
 
 ## Contents
 * **[Introduction of Binary Tree](#Intro)**
+* **[Tree Traversal](#Traverse)**
 * **[144.Binary Tree Preorder Traversal](#144)**
 * **[145.Binary Tree Postorder Traversal](#145)**
 * **[94.Binary Tree Inorder Traversal](#94)**
-* **[xx](#)** <br>
+ <br>
 
 ![Day14](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day14/day14.png)
 <br>
@@ -46,10 +47,28 @@ In a complete binary tree, every level except possibly the last, is completely f
 
 All internals nodes have two children and all leaf nodes have the same level.
 
+
 ## Binary Search Tree
 
 A binary search tree (BST) is a special type of binary tree, in which every nodes follows the ordering property of all left descendents < node < all right descendents.
 
+
+<a name="Traverse"></a>
+## Tree Traversal 
+
+![Tree Traversal](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day14/traverse.jpg)
+
+### In-order Traversal: [A,B,C,D,E,F,G,H]
+
+In-order traversal visits the left branch first, then the current node, and finally the right branch. The diagram below shows the traversal order of an in-order traversal on a binary tree.
+
+### Pre-order Traversal: [F,B,A,D,C,E,G,H]
+
+Pre-order traversal visits the current node first, then the left subtree, and finally the right subtree. The diagram below shows the traversal order of a pre-order traversal on a binary tree.
+
+### Post-order Traversal [A,C,E,D,B,H,G,F]
+
+Post-order traversal visits the left subtree first, then the right subtree, and finally the current node. The diagram below shows the traversal order of a post-order traversal on a binary tree.
 
 ### Breakdown and Thought Process:  
 <br>
