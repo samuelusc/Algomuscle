@@ -70,7 +70,7 @@ Pre-order traversal visits the current node first, then the left subtree, and fi
 
 Post-order traversal visits the left subtree first, then the right subtree, and finally the current node. The diagram below shows the traversal order of a post-order traversal on a binary tree.
 
----
+<br>
 
 ![dividing line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
 
@@ -231,7 +231,7 @@ O(n)
   
 - *`Space Complexity`*:
 O(n)
----
+<br>
 
 ![dividing line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
 
@@ -392,7 +392,7 @@ O(n)
   
 - *`Space Complexity`*:
 O(n)
----
+<br>
 
 ![dividing line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
 
