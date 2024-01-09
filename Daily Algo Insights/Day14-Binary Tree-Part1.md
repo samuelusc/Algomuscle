@@ -6,10 +6,10 @@
 * **[Binary Tree Traversal](#Traverse)**
 * **[144.Binary Tree Preorder Traversal](#144)**
 * **[145.Binary Tree Postorder Traversal](#145)**
-* **[94.Binary Tree Inorder Traversal](#94)**
- <br>
+* **[94.Binary Tree Inorder Traversal](#94)**  <br>
 
 ![Day14](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day14/day14.png)
+
 <br>
 
 <a name="Intro"></a>
@@ -69,6 +69,7 @@ Pre-order traversal visits the current node first, then the left subtree, and fi
 ### Post-order Traversal [A,C,E,D,B,H,G,F]
 
 Post-order traversal visits the left subtree first, then the right subtree, and finally the current node. The diagram below shows the traversal order of a post-order traversal on a binary tree.
+
 ---
 
 ![dividing line](https://github.com/samuelusc/Algomuscle/blob/main/assets/dividingline.gif)
@@ -558,6 +559,4 @@ O(n)
   
 - *`Space Complexity`*:
 O(n)
----
 
-![dividing line](https://github.com/samuelusc/Algomuscle/blob/main/assets/dividingline.gif)
