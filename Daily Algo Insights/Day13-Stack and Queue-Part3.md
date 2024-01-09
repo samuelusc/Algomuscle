@@ -115,7 +115,7 @@ O(n) where n is the number of elements in the array since each element is only p
   
 - *`Space Complexity`*:
 O(n) as there may be at most n elements in the deque.
----
+
 
 ![dividing line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
 
@@ -232,7 +232,7 @@ O(nlogn)
   
 - *`Space Complexity`*:
 O(n)
----
+
 
 ![dividing line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
 
@@ -345,7 +345,7 @@ O(nlogn)
   
 - *`Space Complexity`*:
 O(n)
----
+
 
 ![dividing line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
 
