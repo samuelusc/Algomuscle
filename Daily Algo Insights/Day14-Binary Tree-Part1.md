@@ -34,15 +34,15 @@ The length of the path from n to its deepest descendant. The height of the tree 
 
 ![Full,Complete, Perfect Binary Tree](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day14/full-complete-perfect.png)
 
-### Full binary tree
+### Full Binary Tree
 
 Every node has 0 or 2 children.
 
-### Complete Binary tree
+### Complete Binary Tree
 
 In a complete binary tree, every level except possibly the last, is completely filled and all nodes in the last level are as far left as possible.
 
-### Perfect binary tree
+### Perfect Binary Tree
 
 All internals nodes have two children and all leaf nodes have the same level.
 
