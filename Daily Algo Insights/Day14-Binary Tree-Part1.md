@@ -2,7 +2,7 @@
 
 
 ## Contents
-* **[Introduction](#Intro)**
+* **[Introduction of Binary Tree](#Intro)**
 * **[144.Binary Tree Preorder Traversal](#144)**
 * **[145.Binary Tree Postorder Traversal](#145)**
 * **[94.Binary Tree Inorder Traversal](#94)**
@@ -12,7 +12,7 @@
 <br>
 
 <a name="Intro"></a>
-## Binary Tree
+### Binary Tree
 
 A binary tree is a tree data structure in which each node has at most two children, which are referred to as the left child and the right child. Have a look at an elementary example of a binary tree:
 
