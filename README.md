@@ -6,8 +6,8 @@
 
 | Question# | Title                                           | Solution                                                                                       | Difficulty | Topics | Notes                   |
 |-----------|-------------------------------------------------|------------------------------------------------------------------------------------------------|------------|--------|-------------------------|
-| 704       | [Binary Search](https://leetcode.com/problems/binary-search/description/) | [Python](https://github.com/samuelusc/Algomuscle/tree/main/Arrays) | Easy       | Arrays       |              |
-| 27        | [Remove Element](https://leetcode.com/problems/remove-element/description/) | [Python](https://github.com/samuelusc/Algomuscle/tree/main/Arrays) | Easy       | Arrays       | Two pointer and brute force |
+| 704       | [Binary Search](https://leetcode.com/problems/binary-search/description/) | [right-open](./0704-binary-search/rightExclude-0704-binary-search.py), [right-close](./0704-binary-search/rightIncluded-0704-binary-search.py) | Easy       | Arrays       |              |
+| 27        | [Remove Element](https://leetcode.com/problems/remove-element/description/) | [Brute Force](./0027-remove-element/bruteForce-0027-remove-element.py, [Two Pointer](./0027-remove-element/twoPointer-0027-remove-element.py)) | Easy       | Arrays       | Two pointer and brute force |
 
 
 **Day 2 - 12/27/2023**
