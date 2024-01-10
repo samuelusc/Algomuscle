@@ -61,7 +61,7 @@ xxx
 
 <br>
 
-![Day 15](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
+![Dividing Line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
 
 
 
