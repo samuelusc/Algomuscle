@@ -59,7 +59,7 @@ xxx
   
 - *`Space Complexity`*:
 
-
+<br>
 
 ![Day 15](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
 
