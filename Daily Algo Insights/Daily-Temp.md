@@ -58,9 +58,11 @@ xxx
 
   
 - *`Space Complexity`*:
+
 ---
 
-![dividing line](https://github.com/samuelusc/Algomuscle/blob/main/assets/dividingline.gif)
+
+![dividing line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png）
 
 
 
