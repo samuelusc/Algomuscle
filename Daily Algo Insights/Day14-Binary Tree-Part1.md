@@ -22,7 +22,7 @@ A binary tree is a tree data structure in which each node has at most two childr
 
 ## Depth of a Node
 
-The length of the path from a node, n, to the root node. The depth of the root node is 0.
+The length of the path from a node, n, to the root node. The depth of the root node is 0(In some question the depth of root is 1 such as 111.Minimum Depth of Binary Tree).
 
 ![Depth of Node](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day14/depth.gif)
 
@@ -61,15 +61,14 @@ A binary search tree (BST) is a special type of binary tree, in which every node
 
 ### In-order Traversal: [A,B,C,D,E,F,G,H]
 
-In-order traversal visits the left branch first, then the current node, and finally the right branch. The diagram below shows the traversal order of an in-order traversal on a binary tree.
-
+In-order traversal visits the left branch first, then the current node, and finally the right branch. 
 ### Pre-order Traversal: [F,B,A,D,C,E,G,H]
 
-Pre-order traversal visits the current node first, then the left subtree, and finally the right subtree. The diagram below shows the traversal order of a pre-order traversal on a binary tree.
+Pre-order traversal visits the current node first, then the left subtree, and finally the right subtree. 
 
 ### Post-order Traversal [A,C,E,D,B,H,G,F]
 
-Post-order traversal visits the left subtree first, then the right subtree, and finally the current node. The diagram below shows the traversal order of a post-order traversal on a binary tree.
+Post-order traversal visits the left subtree first, then the right subtree, and finally the current node. 
 
 <br>
 
