@@ -1,4 +1,4 @@
-# Dayxx - Arrays Part 1
+# Day01 - Arrays Part 1
 
 
 
@@ -7,6 +7,7 @@
 * **[27.Remove Element](#27)**
 
 <br>
+
 ![Day 1](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day1/Day1.png)
 <br>
 
