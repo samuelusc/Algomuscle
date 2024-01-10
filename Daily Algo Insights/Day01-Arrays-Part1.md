@@ -42,7 +42,7 @@
 	<li>All the integers in <code>nums</code> are <strong>unique</strong>.</li>
 	<li><code>nums</code> is sorted in ascending order.</li>
 </ul>
-### Breakdown and Thought Process:  
+ 
 <br>
 
 
