@@ -43,7 +43,7 @@ After sorting, it becomes [0,1,9,16,100].
 <strong>Follow up:</strong> Squaring each element and sorting the new array is very trivial, could you find an <code>O(n)</code> solution using a different approach?
 
 
-### My Solution 1：_`xxx`_  
+### My Solution 1：_`two pointer`_  
 
   
 ```python
