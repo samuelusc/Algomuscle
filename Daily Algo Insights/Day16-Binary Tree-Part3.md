@@ -8,7 +8,6 @@
 
 ![Day 16](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day16/Day16.png)
 
-<br>
 
 <h2><a href="https://leetcode.com/problems/maximum-depth-of-binary-tree">104. Maximum Depth of Binary Tree</a></h2><h3>Easy</h3><p>Given the <code>root</code> of a binary tree, return <em>its maximum depth</em>.</p>
 
