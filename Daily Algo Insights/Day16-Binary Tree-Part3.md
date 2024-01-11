@@ -5,6 +5,9 @@
 * **[104.Maximum Depth of Binary Tree](#104)**
 * **[111.Minimum Depth of Binary Tree](#111)**
 * **[222.Count Complete Tree Nodes](#222)**
+<br>
+
+![Day 16](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day16/Day16.png)
 
 <br>
 
@@ -114,9 +117,6 @@ class Solution:
 
 ![Dividing Line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
 
-
-
-xxxx
 
 
 <h2 id = "111"><a href="https://leetcode.com/problems/minimum-depth-of-binary-tree">111. Minimum Depth of Binary Tree</a></h2><h3>Easy</h3><p>Given a binary tree, find its minimum depth.</p>
