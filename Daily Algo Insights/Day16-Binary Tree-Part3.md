@@ -8,7 +8,7 @@
 
 <br>
 
-<h2><a href="https://leetcode.com/problems/maximum-depth-of-binary-tree">104. Maximum Depth of Binary Tree</a></h2><h3>Easy</h3><hr><p>Given the <code>root</code> of a binary tree, return <em>its maximum depth</em>.</p>
+<h2><a href="https://leetcode.com/problems/maximum-depth-of-binary-tree">104. Maximum Depth of Binary Tree</a></h2><h3>Easy</h3><p>Given the <code>root</code> of a binary tree, return <em>its maximum depth</em>.</p>
 
 <p>A binary tree&#39;s <strong>maximum depth</strong>&nbsp;is the number of nodes along the longest path from the root node down to the farthest leaf node.</p>
 
@@ -119,7 +119,7 @@ class Solution:
 xxxx
 
 
-<h2 id = "111"><a href="https://leetcode.com/problems/minimum-depth-of-binary-tree">111. Minimum Depth of Binary Tree</a></h2><h3>Easy</h3><hr><p>Given a binary tree, find its minimum depth.</p>
+<h2 id = "111"><a href="https://leetcode.com/problems/minimum-depth-of-binary-tree">111. Minimum Depth of Binary Tree</a></h2><h3>Easy</h3><p>Given a binary tree, find its minimum depth.</p>
 
 <p>The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.</p>
 
@@ -228,7 +228,7 @@ O(n)
 
 
 
-<h2 id = "222"><a href="https://leetcode.com/problems/count-complete-tree-nodes">222. Count Complete Tree Nodes</a></h2><h3>Easy</h3><hr><p>Given the <code>root</code> of a <strong>complete</strong> binary tree, return the number of the nodes in the tree.</p>
+<h2 id = "222"><a href="https://leetcode.com/problems/count-complete-tree-nodes">222. Count Complete Tree Nodes</a></h2><h3>Easy</h3><p>Given the <code>root</code> of a <strong>complete</strong> binary tree, return the number of the nodes in the tree.</p>
 
 <p>According to <strong><a href="http://en.wikipedia.org/wiki/Binary_tree#Types_of_binary_trees" target="_blank">Wikipedia</a></strong>, every level, except possibly the last, is completely filled in a complete binary tree, and all nodes in the last level are as far left as possible. It can have between <code>1</code> and <code>2<sup>h</sup></code> nodes inclusive at the last level <code>h</code>.</p>
 
