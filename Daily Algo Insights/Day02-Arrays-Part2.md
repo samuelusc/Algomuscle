@@ -7,7 +7,7 @@
 * **[54.Spiral Matrix](#54)**
 * **[59.Spiral Matrix II](#59)**
 
-<br>
+
 
 ![Day 2](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day2/Day2.png)
 <br>
