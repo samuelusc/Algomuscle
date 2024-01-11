@@ -9,7 +9,7 @@
 
 <br>
 
-xxximagexxx
+![Day 2](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day2/Day2.png)
 <br>
 <h2 id = "977"><a href="https://leetcode.com/problems/squares-of-a-sorted-array">977. Squares of a Sorted Array</a></h2><h3>Easy</h3><p>Given an integer array <code>nums</code> sorted in <strong>non-decreasing</strong> order, return <em>an array of <strong>the squares of each number</strong> sorted in non-decreasing order</em>.</p>
 
