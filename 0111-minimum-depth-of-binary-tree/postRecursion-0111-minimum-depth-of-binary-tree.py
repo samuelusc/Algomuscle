@@ -22,5 +22,5 @@ class Solution:
 
         if not rightHeight and leftHeight:
             return 1 + leftHeight
-        
+        # 后序遍历: 左右中
         return 1 + min(leftHeight,rightHeight)
