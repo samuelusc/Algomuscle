@@ -7,8 +7,7 @@
 * **[257.Binary Tree Paths](#257)**
 * **[404.Sum of Left Leaves](#404)**
 
-<br>
-xxximagexxx
+
 <br>
 <h2 id ="110"><a href="https://leetcode.com/problems/balanced-binary-tree">110. Balanced Binary Tree</a></h2><h3>Easy</h3><p>Given a binary tree, determine if it is <span data-keyword="height-balanced"><strong>height-balanced</strong></span>.</p>
 
