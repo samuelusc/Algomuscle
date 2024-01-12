@@ -8,6 +8,17 @@
 
 ![Day 16](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day16/Day16.png)
 
+## Key Points
+
+
+- Height 高度指的是任一节点到叶节点的距离， 从根节点到叶节点的距离就是树的高度。另外叶节点本身的高度在习题中如Leetcode视为1，但也有视为0的，那么他们的返回值也有所不同（return 0 or return -1)
+
+- Depth 深度指的是任一节点到根节点的距离，从叶子节点到根节点的距离就是深度。 这个概念在同时具备（根节点，叶子节点）两个条件时，Depth and Height 是一样的。另外同样习题中多把root 根节点本身的深度视作1，但也可以为0：(return 0, reutrn -1)
+
+
+---
+
+
 
 <h2><a href="https://leetcode.com/problems/maximum-depth-of-binary-tree">104. Maximum Depth of Binary Tree</a></h2><h3>Easy</h3><p>Given the <code>root</code> of a binary tree, return <em>its maximum depth</em>.</p>
 
