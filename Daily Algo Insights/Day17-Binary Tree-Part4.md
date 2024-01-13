@@ -281,6 +281,53 @@ class Solution:
         return res
 ```
 
+
+### Solving approach 2:
+
+
+**`先检查当前节点`**：方法 2 开始于检查当前节点的左子节点是否是叶子节点。如果是，就立即将其值加入总和。
+
+**`再递归向下`**：完成当前节点的检查和处理后，方法 2 接着递归地向下遍历左右子节点。
+
+**`每个节点都重复此过程`**：在对每个节点进行递归调用时，都重复这个检查和累加值的过程。
+
+
+### My Solution 2：_`pre-Order Recursion`_  
+
+  
+```python
+
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def sumOfLeftLeaves(self, root: Optional[TreeNode]) -> int:
+        #方法类似前序遍历    
+
+        # 递归结束条件(base case)
+        if not root:
+            return 0
+       
+        #返回值初始化
+        sum_left = 0
+        
+        # 先处理节点->类似前序的中
+        # 单层递归逻辑：子叶就加到返回值中        
+        if root.left and not root.left.left and not root.left.right:
+            sum_left += root.left.val
+        
+        #递归函数的参数和返回值
+        #前序的左右： 递归遍历左和右子树
+        sum_left += self.sumOfLeftLeaves(root.left)
+        sum_left += self.sumOfLeftLeaves(root.right)
+
+        #最后返回
+        return sum_left
+```
+
 **Complexity Analysis:**  
 
 - *`Time Complexity`*:
