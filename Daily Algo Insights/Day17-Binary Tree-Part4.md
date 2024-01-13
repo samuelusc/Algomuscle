@@ -225,10 +225,14 @@ class Solution:
 ### Solving approach 1:
 
 
-xxxx
+`递归到最底层`：方法 1 首先递归地遍历到树的最底层，即最深的叶子节点。
+
+`逐级反映信息`：然后，从这些最深的节点开始，信息（如是否是左叶子节点，以及它们的值）被逐级向上传递回到上层的节点。
+
+`先递归再检查`：因此这个方法首先进行递归调用，然后在返回的过程中检查每个节点的左子节点是否是叶子节点，并相应地进行值的累加。
 
 
-### My Solution 1：_`xxx`_  
+### My Solution 1：_`standard post-Order Recursion`_  
 
   
 ```python
@@ -241,30 +245,45 @@ xxxx
 #         self.right = right
 class Solution:
     def sumOfLeftLeaves(self, root: Optional[TreeNode]) -> int:
+        res = self.traverse(root)
+        if res != 0:
+            return res
+        else:
+            return 0
+
+    # 递归函数的参数和返回值
+    def traverse(self, root):    
+        #base case 递归终止条件 1
         if not root:
             return 0
-
+        #递归终止条件 2 ->叶子节点
         if not root.left and not root.right:
             return 0
+        
+        #单层递归逻辑
+        #先递归 -> 后检查是否叶节点
+        leftNums = self.traverse(root.left)
 
-        leftValue = self.sumOfLeftLeaves(root.left)
+        #回溯时再处理节点
         if root.left and not root.left.left and not root.left.right:
-            leftValue = root.left.val
+            leftNums = root.left.val
+        
+        #单层递归逻辑
+        rightNums = self.traverse(root.right)
 
-        rightValue = self.sumOfLeftLeaves(root.right)
-
-        sum_val = leftValue + rightValue
-
-        return sum_val 
+        res = leftNums + rightNums
+        #递归返回值 ->int
+        return res
 ```
 
 **Complexity Analysis:**  
 
 - *`Time Complexity`*:
-
+O(n), where n is the number of nodes in the binary tree. Because the algorithm must visit each node once to verify if it is a left leave node or not.
   
 - *`Space Complexity`*:
-
+O(n),where n is the height of the binary tree. The space is used for the recursive call stack. In the worst scenario, the hight of the tree can be n (the same as the number of nodes), a completely unbalanced tree.
+In the best case the height of the tree can be logn , which results in a space complexity of O(log(n)).
 <br>
 
 ![Dividing Line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
