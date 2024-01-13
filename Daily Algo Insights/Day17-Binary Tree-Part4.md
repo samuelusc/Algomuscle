@@ -9,9 +9,9 @@
 
 ### Key Notes:
 
-- 求树的高度选择后序遍历
+##### 求树的高度选择后序遍历
 
-- 求树的深度选择前序遍历
+##### 求树的深度选择前序遍历
 
 <br>
 <h2 id ="110"><a href="https://leetcode.com/problems/balanced-binary-tree">110. Balanced Binary Tree</a></h2><h3>Easy</h3><p>Given a binary tree, determine if it is <span data-keyword="height-balanced"><strong>height-balanced</strong></span>.</p>
