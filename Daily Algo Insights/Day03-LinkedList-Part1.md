@@ -170,70 +170,86 @@ myLinkedList.get(1);              // return 3
   
 ```python
 
+# 定义ListNode,leetcode已经包括这个可以直接用
+# class ListNode:
+#     def __init__(self, val = 0, next = None):
+#         self.val = val
+#         self.next = next
+
 class MyLinkedList:
-    #design scratch 
+
     def __init__(self):
-        # Create a dummy node
-        self.dummy_node = ListNode()
-        # Initialize node counter and length
+        #添加dummy节点
+        self.dummy = ListNode()
+        #初始化size 为 0,这样新加就是从1开始
         self.size = 0
 
+
     def get(self, index: int) -> int:
-        # Boundary check
+        #检查index 边界
         if index < 0 or index >= self.size:
-            return  -1
+            return -1 
 
-        # Start from the head, there will be at least one node
-        current_node = self.dummy_node.next
-
-        # Iterate to the next node based on index
+        #遍历链表
+        #从head开始,也就是index 0 
+        cur_node = self.dummy.next
         for _ in range(index):
-            current_node = current_node.next
+            cur_node = cur_node.next
         
-        return current_node.val
+        #用 index = 0 测试    
+        return cur_node.val
 
     def addAtHead(self, val: int) -> None:
-        # Invoke addAtIndex and assign (0, val)
-        self.addAtIndex(0, val)
+        #重复利用已有函数
+        #加头部元素也就是index 0 的元素，size 变成1
+        self.addAtIndex(0,val)
 
     def addAtTail(self, val: int) -> None:
-        # Invoke addAtIndex and assign (self.size, val)
+        #利用已有函数
+        #链表添加元素从0开始,比如（0，1，2）
+        #所以添加新的尾部则index 为 size = 3
         self.addAtIndex(self.size, val)
 
     def addAtIndex(self, index: int, val: int) -> None:
-        # Check for index out of bounds
-        if index < 0 or index > self.size:
+        #增加头部和尾部逻辑，放在这处理
+        
+        #首先处理边界,最大index
+        #返回None 表示没有预期操作
+        if index > self.size:
             return
         
-        # Assign the dummy node to predecessor
-        predecessor = self.dummy_node
-
-        # Find the predecessor of the node to be added
+        #找到previous_node
+        pre_node = self.dummy
         for _ in range(index):
-            predecessor = predecessor.next
+            pre_node = pre_node.next
         
-        # Create the new node and maintain the predecessor's link
-        add_node = ListNode(val, predecessor.next)
-        # Link the predecessor with the new node
-        predecessor.next = add_node
-
-        # Don't forget to increment self.size by 1 for each added node
+        #新建节点,并让它指向当前 previous node 的next 节点（
+        # 如果新节点是head,则previous 的下一个指向的None
+        cur_node = ListNode(val, pre_node.next)
+        # 然后将 pre_node 的下一个指向新建立的节点
+        pre_node.next = cur_node
+        
+        ##注意要先把新节点指向原来的pre_node.next,保留关系
+        ## 再把新节点设为pre_node.next
+        
+        #加完节点后记得size增长1
         self.size += 1
-
     def deleteAtIndex(self, index: int) -> None:
-        # Check boundaries
+        #查看边界
         if index < 0 or index >= self.size:
             return 
         
-        # Like in addAtIndex, first find the predecessor
-        predecessor = self.dummy_node
+        #遍历查找，定位到pre_node
+        pre_node = self.dummy
+
         for _ in range(index):
-            predecessor = predecessor.next
+            pre_node = pre_node.next
         
-        # The predecessor skips the node to be deleted
-        predecessor.next = predecessor.next.next
-        # Don't forget to decrement self.size by 1
+        #删除节点
+        pre_node.next = pre_node.next.next
+        #长度减1
         self.size -= 1
+
 
 
 # Your MyLinkedList object will be instantiated and called as such:
@@ -243,6 +259,7 @@ class MyLinkedList:
 # obj.addAtTail(val)
 # obj.addAtIndex(index,val)
 # obj.deleteAtIndex(index)
+
 ```
 
 
@@ -250,10 +267,10 @@ class MyLinkedList:
 **Complexity Analysis:**  
 
 - *`Time Complexity`*:
-
+add,delte,get-> O(n)
   
 - *`Space Complexity`*:
-
+O(n)
 <br>
 
 ![Dividing Line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
