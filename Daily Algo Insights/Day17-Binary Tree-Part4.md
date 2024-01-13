@@ -330,10 +330,10 @@ class Solution:
 
 **Complexity Analysis:**  
 
-- *`Time Complexity`*:
+- *`Time Complexity`*:<br>
 O(n), where n is the number of nodes in the binary tree. Because the algorithm must visit each node once to verify if it is a left leave node or not.
   
-- *`Space Complexity`*:
+- *`Space Complexity`*:<br>
 O(n),where n is the height of the binary tree. The space is used for the recursive call stack. In the worst scenario, the hight of the tree can be n (the same as the number of nodes), a completely unbalanced tree.
 In the best case the height of the tree can be logn , which results in a space complexity of O(log(n)).
 <br>
