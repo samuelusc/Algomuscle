@@ -136,13 +136,8 @@ class Solution:
 ### Breakdown and Thought Process:  
 <br>
 
-### Solving approach 1:
 
-
-xxxx
-
-
-### My Solution 1：_`xxx`_  
+### My Solution 1：_`preOrder-Recursion(step by step)`_  
 
   
 ```python
@@ -155,29 +150,28 @@ xxxx
 #         self.right = right
 class Solution:
     def binaryTreePaths(self, root: Optional[TreeNode]) -> List[str]:
-        # 前序遍历
+        res = []
         path = []
-        result = []
         if not root:
-            return result
-        self.dfs(root, path, result)
-        return result
-    
+            return res
+        self.preOrder(root, path, res)
+        return res
 
-    def dfs(self, cur_node, path, result):
-        # 父节点 （中）
-        path.append(cur_node.val)
-        # 到达叶子节点
-        if not cur_node.left and not cur_node.right:
-            result.append('->'.join(map(str,path)))
-            return 
+    def preOrder(self, node, path, res):
+        
 
-        if cur_node.left:
-            self.dfs(cur_node.left, path, result)
+        path.append(str(node.val))
+
+        if not node.left and not node.right:
+            res.append('->'.join(path))
+            return
+        
+        if node.left:
+            self.preOrder(node.left, path, res)
             path.pop()
         
-        if cur_node.right:
-            self.dfs(cur_node.right, path, result)
+        if node.right:
+            self.preOrder(node.right, path, res)
             path.pop()
 
 
@@ -224,6 +218,52 @@ class Solution:
                 
 ```
 
+
+### Test Code
+
+```python
+
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+class Solution:
+    def binaryTreePaths(self, root):
+        def preOrder(node):
+            # base case
+            if not node:
+                return 
+
+            path.append(str(node.val))
+
+            #如果到了叶节点
+            if not node.left and not node.right:
+                res.append('->'.join(path))
+
+            else:
+                preOrder(node.left)
+                preOrder(node.right)
+
+            path.pop()
+
+        res = []
+        path = []
+        preOrder(root)
+        return res
+            
+# 构建二叉树
+root = TreeNode(1)
+root.left = TreeNode(2)
+root.right = TreeNode(3)
+root.left.right = TreeNode(5)
+
+# 创建解决方案实例并调用函数
+solution = Solution()
+paths = solution.binaryTreePaths(root)
+print(paths)
+```
 
 
 **Complexity Analysis:**  
