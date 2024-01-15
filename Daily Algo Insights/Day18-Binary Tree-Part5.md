@@ -11,7 +11,7 @@
 <br>
 xxximagexxx
 <br>
-<h2 id = "513"><a href="https://leetcode.com/problems/find-bottom-left-tree-value">513. Find Bottom Left Tree Value</a></h2><h3>Medium</h3><hr><p>Given the <code>root</code> of a binary tree, return the leftmost value in the last row of the tree.</p>
+<h2 id = "513"><a href="https://leetcode.com/problems/find-bottom-left-tree-value">513. Find Bottom Left Tree Value</a></h2><h3>Medium</h3><p>Given the <code>root</code> of a binary tree, return the leftmost value in the last row of the tree.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
@@ -177,7 +177,7 @@ O(1)
 
 
 
-<h2 id = "112"><a href="https://leetcode.com/problems/path-sum">112. Path Sum</a></h2><h3>Easy</h3><hr><p>Given the <code>root</code> of a binary tree and an integer <code>targetSum</code>, return <code>true</code> if the tree has a <strong>root-to-leaf</strong> path such that adding up all the values along the path equals <code>targetSum</code>.</p>
+<h2 id = "112"><a href="https://leetcode.com/problems/path-sum">112. Path Sum</a></h2><h3>Easy</h3><p>Given the <code>root</code> of a binary tree and an integer <code>targetSum</code>, return <code>true</code> if the tree has a <strong>root-to-leaf</strong> path such that adding up all the values along the path equals <code>targetSum</code>.</p>
 
 <p>A <strong>leaf</strong> is a node with no children.</p>
 
@@ -311,7 +311,7 @@ O(1)
 
 
 
-<h2 id= "106"><a href="https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal">106. Construct Binary Tree from Inorder and Postorder Traversal</a></h2><h3>Medium</h3><hr><p>Given two integer arrays <code>inorder</code> and <code>postorder</code> where <code>inorder</code> is the inorder traversal of a binary tree and <code>postorder</code> is the postorder traversal of the same tree, construct and return <em>the binary tree</em>.</p>
+<h2 id= "106"><a href="https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal">106. Construct Binary Tree from Inorder and Postorder Traversal</a></h2><h3>Medium</h3><p>Given two integer arrays <code>inorder</code> and <code>postorder</code> where <code>inorder</code> is the inorder traversal of a binary tree and <code>postorder</code> is the postorder traversal of the same tree, construct and return <em>the binary tree</em>.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
