@@ -133,10 +133,10 @@ class Solution:
 
 **Complexity Analysis:**  
 
-- *`Time Complexity`*:
+- *`Time Complexity`*:<br>
 O(n^2)
   
-- *`Space Complexity`*:
+- *`Space Complexity`*:<br>
 O(n)
 <br>
 
@@ -208,10 +208,10 @@ class Solution:
 ```
 
 
-- *`Time Complexity`*:
+- *`Time Complexity`*:<br>
 O(n) where n is the number of nodes in the smaller tree between root1 and root2
   
-- *`Space Complexity`*:
+- *`Space Complexity`*:<br>
 O(n) where n is the height of the smaller tree. Worst case can be O(min(n1,n2)) where the height of smaller tree is same as its number of nodes. Best case is log(min(n1,n2)) in balanced binary tree.
 ---
   
@@ -249,10 +249,10 @@ class Solution:
 
 **Complexity Analysis:**  
 
-- *`Time Complexity`*:
+- *`Time Complexity`*:<br>
 O(n) where n is the number of nodes in the smaller tree between root1 and root2
   
-- *`Space Complexity`*:
+- *`Space Complexity`*:<br>
 O(m+n), where m and n are the number of nodes in root1 and root2.
 <br>
 
@@ -322,11 +322,11 @@ class Solution:
 ```
 
 
-- *`Time Complexity`*:
+- *`Time Complexity`*:<br>
 O(h) where h is the hight of the BST tree.
 
   
-- *`Space Complexity`*:
+- *`Space Complexity`*:<br>
 O(h) depends on the depth of recursion which is related to the hight(h) of the tree.\
 ---
   
@@ -363,10 +363,10 @@ class Solution:
 
 **Complexity Analysis:**  
 
-- *`Time Complexity`*:
+- *`Time Complexity`*:<br>
 O(h) where h is the hight of the BST tree.
   
-- *`Space Complexity`*:
+- *`Space Complexity`*:<br>
 O(1)
 <br>
 
@@ -453,10 +453,10 @@ class Solution:
 ```
 
 
-- *`Time Complexity`*:
+- *`Time Complexity`*:<br>
 O(n) where n is the number of nodes in the binary tree.
   
-- *`Space Complexity`*:
+- *`Space Complexity`*:<br>
 O(h) where h is the height of the tree.
 ---
   
@@ -500,10 +500,10 @@ class Solution:
 
 **Complexity Analysis:**  
 
-- *`Time Complexity`*:
+- *`Time Complexity`*:<br>
 O(n)
   
-- *`Space Complexity`*:
+- *`Space Complexity`*:<br>
 O(n) where n is the number of nodes in the binary tree.
 <br>
 
