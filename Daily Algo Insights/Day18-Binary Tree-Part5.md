@@ -6,8 +6,7 @@
 * **[513.Find Bottom Left Tree Value](#513)**
 * **[112.Path Sum](#112)**
 * **[106.Construct Binary Tree from Inorder and Postorder Traversal](#106)**
-* **[xx](#)**
-* **[xx](#)**
+
 <br>
 xxximagexxx
 <br>
