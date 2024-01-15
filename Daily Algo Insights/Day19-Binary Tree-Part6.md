@@ -5,11 +5,11 @@
 * **[654.Maximum Binary Tree](#654)**
 * **[617.Merge Two Binary Trees](#617)**
 * **[700.Search in a Binary Search Tree](#700)**
-* **[xx](#)**
+* **[98.Validate Binary Search Tree](#98)**
 * **[xx](#)**
 
 <br>
-<h2 id = "654"><a href="https://leetcode.com/problems/maximum-binary-tree">654. Maximum Binary Tree</a></h2><h3>Medium</h3><hr><p>You are given an integer array <code>nums</code> with no duplicates. A <strong>maximum binary tree</strong> can be built recursively from <code>nums</code> using the following algorithm:</p>
+<h2 id = "654"><a href="https://leetcode.com/problems/maximum-binary-tree">654. Maximum Binary Tree</a></h2><h3>Medium</h3><p>You are given an integer array <code>nums</code> with no duplicates. A <strong>maximum binary tree</strong> can be built recursively from <code>nums</code> using the following algorithm:</p>
 
 <ol>
 	<li>Create a root node whose value is the maximum value in <code>nums</code>.</li>
@@ -144,7 +144,7 @@ O(n)
 
 
 
-<h2 id = "617"><a href="https://leetcode.com/problems/merge-two-binary-trees">617. Merge Two Binary Trees</a></h2><h3>Easy</h3><hr><p>You are given two binary trees <code>root1</code> and <code>root2</code>.</p>
+<h2 id = "617"><a href="https://leetcode.com/problems/merge-two-binary-trees">617. Merge Two Binary Trees</a></h2><h3>Easy</h3><p>You are given two binary trees <code>root1</code> and <code>root2</code>.</p>
 
 <p>Imagine that when you put one of them to cover the other, some nodes of the two trees are overlapped while the others are not. You need to merge the two trees into a new binary tree. The merge rule is that if two nodes overlap, then sum node values up as the new value of the merged node. Otherwise, the NOT null node will be used as the node of the new tree.</p>
 
@@ -260,7 +260,7 @@ O(m+n), where m and n are the number of nodes in root1 and root2.
 
 
 
-<h2 id = "700"><a href="https://leetcode.com/problems/search-in-a-binary-search-tree">700. Search in a Binary Search Tree</a></h2><h3>Easy</h3><hr><p>You are given the <code>root</code> of a binary search tree (BST) and an integer <code>val</code>.</p>
+<h2 id = "700"><a href="https://leetcode.com/problems/search-in-a-binary-search-tree">700. Search in a Binary Search Tree</a></h2><h3>Easy</h3><p>You are given the <code>root</code> of a binary search tree (BST) and an integer <code>val</code>.</p>
 
 <p>Find the node in the BST that the node&#39;s value equals <code>val</code> and return the subtree rooted with that node. If such a node does not exist, return <code>null</code>.</p>
 
@@ -374,8 +374,139 @@ O(1)
 
 
 
-xxxx
+<h2 id = "98"><a href="https://leetcode.com/problems/validate-binary-search-tree">98. Validate Binary Search Tree</a></h2><h3>Medium</h3><p>Given the <code>root</code> of a binary tree, <em>determine if it is a valid binary search tree (BST)</em>.</p>
+
+<p>A <strong>valid BST</strong> is defined as follows:</p>
+
+<ul>
+	<li>The left <span data-keyword="subtree">subtree</span> of a node contains only nodes with keys <strong>less than</strong> the node&#39;s key.</li>
+	<li>The right subtree of a node contains only nodes with keys <strong>greater than</strong> the node&#39;s key.</li>
+	<li>Both the left and right subtrees must also be binary search trees.</li>
+</ul>
+
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2020/12/01/tree1.jpg" style="width: 302px; height: 182px;" />
+<pre>
+<strong>Input:</strong> root = [2,1,3]
+<strong>Output:</strong> true
+</pre>
+
+<p><strong class="example">Example 2:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2020/12/01/tree2.jpg" style="width: 422px; height: 292px;" />
+<pre>
+<strong>Input:</strong> root = [5,1,4,null,null,3,6]
+<strong>Output:</strong> false
+<strong>Explanation:</strong> The root node&#39;s value is 5 but its right child&#39;s value is 4.
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li>The number of nodes in the tree is in the range <code>[1, 10<sup>4</sup>]</code>.</li>
+	<li><code>-2<sup>31</sup> &lt;= Node.val &lt;= 2<sup>31</sup> - 1</code></li>
+</ul>
 
 
+
+
+### My Solution 1：_`inorder Recursion`_  
+
+  
+```python
+
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    #设置类的成员变量防止递归重置
+    def __init__(self):
+        self.pre_val = float('-inf')
+
+    def isValidBST(self, root: Optional[TreeNode]) -> bool:
+        # 中序遍历
+        # 如果空树，则返回True
+        if not root:
+            return True
+        
+        #下面是出错的语句，递归每次都重置pre_val
+        # pre_val = float('-inf')
+        
+        
+        #遍历左子树
+        left_valid = self.isValidBST(root.left)
+
+        #遍历的中节点永远大于前一个节点
+        if root.val > self.pre_val:
+            self.pre_val = root.val
+        #否则返回False
+        else:
+            return False
+        # 遍历右子树
+        right_valid = self.isValidBST(root.right)
+        #返回左右子树的判断
+        return left_valid and right_valid
+```
+
+
+- *`Time Complexity`*:
+O(n) where n is the number of nodes in the binary tree.
+  
+- *`Space Complexity`*:
+O(h) where h is the height of the tree.
+---
+  
+
+### My Solution 2：_`stack inorder`_  
+
+  
+```python
+
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def isValidBST(self, root: Optional[TreeNode]) -> bool:
+        # 迭代 inorder
+        stack =[]
+        cur_node = root
+        pre_node = None
+
+        # 当两个中有一个为真
+        while cur_node or stack:
+            if cur_node:
+                stack.append(cur_node)
+                cur_node = cur_node.left
+
+            else:
+                cur_node = stack.pop()
+                if pre_node and cur_node.val <= pre_node.val:
+                    return False
+
+                pre_node = cur_node
+                cur_node = cur_node.right
+        
+        return True
+
+```
+
+
+**Complexity Analysis:**  
+
+- *`Time Complexity`*:
+O(n)
+  
+- *`Space Complexity`*:
+O(n) where n is the number of nodes in the binary tree.
+<br>
+
+![Dividing Line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
 
 
