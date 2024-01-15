@@ -4,7 +4,7 @@
 
 ## Contents
 * **[513.Find Bottom Left Tree Value](#513)**
-* **[xx](#)**
+* **[112.Path Sum](#112)**
 * **[xx](#)**
 * **[xx](#)**
 * **[xx](#)**
@@ -89,10 +89,43 @@ class Solution:
         
         return self.result
 ```
+---
+
+### My Solution 2：_`concise Recurison`_  
+
+  
+```python
+
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def findBottomLeftValue(self, root: Optional[TreeNode]) -> int:
+        self.max_depth = float("-inf")
+        self.res = None
+        self.traversal(root, 0)
+        return self.res
+
+    def traversal(self, root, depth):
+        if not root.left and not root.right:
+            if depth > self.max_depth:
+                self.max_depth = depth
+                self.res = root.val
+            
+        if root.left:
+            self.traversal(root.left, depth + 1)
+
+        if root.right:
+            self.traversal(root.right, depth + 1)
+```
+
 
 ---
  
-### My Solution 2：_`iteration-deque`_  
+### My Solution 3：_`iteration-deque`_  
 
   
 ```python
@@ -144,8 +177,145 @@ O(1)
 
 
 
-xxxx
+<h2 id = "112"><a href="https://leetcode.com/problems/path-sum">112. Path Sum</a></h2><h3>Easy</h3><hr><p>Given the <code>root</code> of a binary tree and an integer <code>targetSum</code>, return <code>true</code> if the tree has a <strong>root-to-leaf</strong> path such that adding up all the values along the path equals <code>targetSum</code>.</p>
 
+<p>A <strong>leaf</strong> is a node with no children.</p>
+
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/01/18/pathsum1.jpg" style="width: 500px; height: 356px;" />
+<pre>
+<strong>Input:</strong> root = [5,4,8,11,null,13,4,7,2,null,null,null,1], targetSum = 22
+<strong>Output:</strong> true
+<strong>Explanation:</strong> The root-to-leaf path with the target sum is shown.
+</pre>
+
+<p><strong class="example">Example 2:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/01/18/pathsum2.jpg" />
+<pre>
+<strong>Input:</strong> root = [1,2,3], targetSum = 5
+<strong>Output:</strong> false
+<strong>Explanation:</strong> There two root-to-leaf paths in the tree:
+(1 --&gt; 2): The sum is 3.
+(1 --&gt; 3): The sum is 4.
+There is no root-to-leaf path with sum = 5.
+</pre>
+
+<p><strong class="example">Example 3:</strong></p>
+
+<pre>
+<strong>Input:</strong> root = [], targetSum = 0
+<strong>Output:</strong> false
+<strong>Explanation:</strong> Since the tree is empty, there are no root-to-leaf paths.
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li>The number of nodes in the tree is in the range <code>[0, 5000]</code>.</li>
+	<li><code>-1000 &lt;= Node.val &lt;= 1000</code></li>
+	<li><code>-1000 &lt;= targetSum &lt;= 1000</code></li>
+</ul>
+
+
+
+### My Solution 1：_`recursion (step by step)`_  
+
+  
+```python
+
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def hasPathSum(self, root: Optional[TreeNode], targetSum: int) -> bool:
+        if not root:
+            return False
+        # self.traversal(root, target) is incorrect such as
+        # ([1],1)
+        return self.traversal(root, targetSum - root.val)
+
+    def traversal(self, root, count):
+        if not root.left and not root.right:
+            return count == 0
+
+        if root.left:
+            count -= root.left.val
+            if self.traversal(root.left, count):
+                return True
+            count += root.left.val
+
+        if root.right:
+            count -= root.right.val
+            if self.traversal(root.right, count):
+                return True
+            count += root.right.val
+
+        return False
+        
+
+
+        
+```
+
+---
+  
+### Solving approach 2:  
+
+
+xxx
+
+ 
+### My Solution 2：_`concise Recursion`_  
+
+  
+```python
+
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def hasPathSum(self, root: Optional[TreeNode], targetSum: int) -> bool:
+        def dfs(root, sumNode):
+            if not root:
+                return False
+            
+            sumNode += root.val
+
+            if not root.left and not root.right and sumNode == targetSum:
+                return True
+
+            return dfs(root.left, sumNode) or dfs(root.right, sumNode)
+        
+        return dfs(root, 0)
+        
+
+
+        
+```
+
+
+**Complexity Analysis:**  
+
+- *`Time Complexity`*:
+O(n)
+  
+- *`Space Complexity`*:
+O(1)
+<br>
+
+![Dividing Line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
+
+
+
+xxxx
 
 
 
