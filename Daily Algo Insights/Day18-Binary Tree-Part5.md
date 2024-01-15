@@ -9,8 +9,6 @@
 * **[106.Construct Binary Tree from Inorder and Postorder Traversal](#106)**
 
 <br>
-xxximagexxx
-<br>
 <h2 id = "513"><a href="https://leetcode.com/problems/find-bottom-left-tree-value">513. Find Bottom Left Tree Value</a></h2><h3>Medium</h3><p>Given the <code>root</code> of a binary tree, return the leftmost value in the last row of the tree.</p>
 
 <p>&nbsp;</p>
@@ -35,13 +33,7 @@ xxximagexxx
 	<li>The number of nodes in the tree is in the range <code>[1, 10<sup>4</sup>]</code>.</li>
 	<li><code>-2<sup>31</sup> &lt;= Node.val &lt;= 2<sup>31</sup> - 1</code></li>
 </ul>
-### Breakdown and Thought Process:  
-<br>
 
-### Solving approach 1:
-
-
-xxxx
 
 
 ### My Solution 1：_`recursion (step by step)`_  
@@ -358,7 +350,7 @@ O(1)
 - 同理 `inorder[i+1:] 和 postorder[i:-1]`  也具有相同的右子树元素
 
 
-### My Solution 1：_`xxx`_  
+### My Solution 1：_`recursion`_  
 
   
 ```python
