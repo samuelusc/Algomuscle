@@ -1,4 +1,4 @@
-# Day20 - Binary Tree Part6.md
+# Day20 - Binary Tree Part 6.md
 
 
 ## Contents
