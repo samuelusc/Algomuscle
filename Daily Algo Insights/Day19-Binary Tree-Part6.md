@@ -101,7 +101,7 @@ class Solution:
         return node
 ```
 
-### My Solution 2：_`xxx`_  
+### My Solution 2：_`concise Preorder`_  
 
   
 ```python
