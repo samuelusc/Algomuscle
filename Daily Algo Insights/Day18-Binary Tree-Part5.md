@@ -264,10 +264,6 @@ class Solution:
 
 ---
   
-### Solving approach 2:  
-
-
-xxx
 
  
 ### My Solution 2：_`concise Recursion`_  
