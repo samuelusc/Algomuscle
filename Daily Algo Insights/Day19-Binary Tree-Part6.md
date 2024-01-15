@@ -4,7 +4,7 @@
 ## Contents
 * **[654.Maximum Binary Tree](#654)**
 * **[617.Merge Two Binary Trees](#617)**
-* **[xx](#)**
+* **[700.Search in a Binary Search Tree](#700)**
 * **[xx](#)**
 * **[xx](#)**
 
@@ -260,10 +260,121 @@ O(m+n), where m and n are the number of nodes in root1 and root2.
 
 
 
+<h2 id = "700"><a href="https://leetcode.com/problems/search-in-a-binary-search-tree">700. Search in a Binary Search Tree</a></h2><h3>Easy</h3><hr><p>You are given the <code>root</code> of a binary search tree (BST) and an integer <code>val</code>.</p>
+
+<p>Find the node in the BST that the node&#39;s value equals <code>val</code> and return the subtree rooted with that node. If such a node does not exist, return <code>null</code>.</p>
+
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/01/12/tree1.jpg" style="width: 422px; height: 302px;" />
+<pre>
+<strong>Input:</strong> root = [4,2,7,1,3], val = 2
+<strong>Output:</strong> [2,1,3]
+</pre>
+
+<p><strong class="example">Example 2:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/01/12/tree2.jpg" style="width: 422px; height: 302px;" />
+<pre>
+<strong>Input:</strong> root = [4,2,7,1,3], val = 5
+<strong>Output:</strong> []
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li>The number of nodes in the tree is in the range <code>[1, 5000]</code>.</li>
+	<li><code>1 &lt;= Node.val &lt;= 10<sup>7</sup></code></li>
+	<li><code>root</code> is a binary search tree.</li>
+	<li><code>1 &lt;= val &lt;= 10<sup>7</sup></code></li>
+</ul>
+
+
+
+### My Solution 1：_`recursion`_  
+
+  
+```python
+
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def searchBST(self, root: Optional[TreeNode], val: int) -> Optional[TreeNode]:
+        # 如过树为空，或树的根节点就是 target value
+        if not root or root.val == val:
+            return root
+        #initialize res to None
+        res = None
+
+        # 当根节点value > target value时
+        if root.val > val:
+            #将查找结果存入res
+            res = self.searchBST(root.left, val)
+
+        else:
+            res = self.searchBST(root.right, val)
+
+        return res
+```
+
+
+- *`Time Complexity`*:
+O(h) where h is the hight of the BST tree.
+
+  
+- *`Space Complexity`*:
+O(h) depends on the depth of recursion which is related to the hight(h) of the tree.\
+---
+  
+
+### My Solution 2：_`stack`_  
+
+  
+```python
+
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def searchBST(self, root: Optional[TreeNode], val: int) -> Optional[TreeNode]:
+        # 使用单独变量，不会改变原始树的结构root 指针
+        cur = root
+
+        while cur:
+            if cur.val > val:
+                cur = cur.left
+            
+            elif cur.val < val:
+                cur = cur.right
+            
+            else:
+                return cur
+        #没找到返回None
+        return None
+```
+
+
+**Complexity Analysis:**  
+
+- *`Time Complexity`*:
+O(h) where h is the hight of the BST tree.
+  
+- *`Space Complexity`*:
+O(1)
+<br>
+
+![Dividing Line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
+
+
+
 xxxx
-
-
-
 
 
 
