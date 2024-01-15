@@ -3,14 +3,13 @@
 
 ## Contents
 * **[654.Maximum Binary Tree](#654)**
+* **[617.Merge Two Binary Trees](#617)**
 * **[xx](#)**
 * **[xx](#)**
 * **[xx](#)**
-* **[xx](#)**
+
 <br>
-xxximagexxx
-<br>
-<h2 id = '654'><a href="https://leetcode.com/problems/maximum-binary-tree">654. Maximum Binary Tree</a></h2><h3>Medium</h3><hr><p>You are given an integer array <code>nums</code> with no duplicates. A <strong>maximum binary tree</strong> can be built recursively from <code>nums</code> using the following algorithm:</p>
+<h2 id = "654"><a href="https://leetcode.com/problems/maximum-binary-tree">654. Maximum Binary Tree</a></h2><h3>Medium</h3><hr><p>You are given an integer array <code>nums</code> with no duplicates. A <strong>maximum binary tree</strong> can be built recursively from <code>nums</code> using the following algorithm:</p>
 
 <ol>
 	<li>Create a root node whose value is the maximum value in <code>nums</code>.</li>
@@ -145,8 +144,123 @@ O(n)
 
 
 
-xxxx
+<h2 id = "617"><a href="https://leetcode.com/problems/merge-two-binary-trees">617. Merge Two Binary Trees</a></h2><h3>Easy</h3><hr><p>You are given two binary trees <code>root1</code> and <code>root2</code>.</p>
 
+<p>Imagine that when you put one of them to cover the other, some nodes of the two trees are overlapped while the others are not. You need to merge the two trees into a new binary tree. The merge rule is that if two nodes overlap, then sum node values up as the new value of the merged node. Otherwise, the NOT null node will be used as the node of the new tree.</p>
+
+<p>Return <em>the merged tree</em>.</p>
+
+<p><strong>Note:</strong> The merging process must start from the root nodes of both trees.</p>
+
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/02/05/merge.jpg" style="width: 600px; height: 163px;" />
+<pre>
+<strong>Input:</strong> root1 = [1,3,2,5], root2 = [2,1,3,null,4,null,7]
+<strong>Output:</strong> [3,4,5,5,4,null,7]
+</pre>
+
+<p><strong class="example">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> root1 = [1], root2 = [1,2]
+<strong>Output:</strong> [2,2]
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li>The number of nodes in both trees is in the range <code>[0, 2000]</code>.</li>
+	<li><code>-10<sup>4</sup> &lt;= Node.val &lt;= 10<sup>4</sup></code></li>
+</ul>
+
+
+
+### My Solution 1：_`preOrder-inplace`_  
+
+  
+```python
+
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def mergeTrees(self, root1: Optional[TreeNode], root2: Optional[TreeNode]) -> Optional[TreeNode]:
+        # Pre-order
+
+        # base case 终止条件
+        # 处理树为空的情况
+        if not root1:
+            return root2
+        if not root2:
+            return root1
+        #合并根节点
+        root1.val += root2.val
+        #新树的左右节点（用了原来的树结构）
+        root1.left = self.mergeTrees(root1.left, root2.left)
+        root1.right = self.mergeTrees(root1.right, root2.right)
+
+        return root1
+```
+
+
+- *`Time Complexity`*:
+O(n)
+  
+- *`Space Complexity`*:
+O(1)
+---
+  
+
+ 
+### My Solution 2：_`construct new tree`_  
+
+  
+```python
+
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def mergeTrees(self, root1: Optional[TreeNode], root2: Optional[TreeNode]) -> Optional[TreeNode]:
+        #construct a new binary tree
+
+        if not root1:
+            return root2
+        
+        if not root2:
+            return root1
+
+        merge_node = TreeNode(root1.val + root2.val)
+
+        merge_node.left = self.mergeTrees(root1.left, root2.left)
+        merge_node.right = self.mergeTrees(root1.right, root2.right)
+
+        return merge_node
+```
+
+
+**Complexity Analysis:**  
+
+- *`Time Complexity`*:
+O(n)
+  
+- *`Space Complexity`*:
+O(n)
+<br>
+
+![Dividing Line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
+
+
+
+xxxx
 
 
 
