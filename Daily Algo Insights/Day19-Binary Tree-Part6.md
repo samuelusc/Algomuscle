@@ -56,7 +56,7 @@ xxximagexxx
 
 ### Solving approach 1:
 
-- **构建树：首先想到`前序遍历`，先找到root value 建立树的根节点，再根据根节点在数组中的index划分左右子树，继续递归找到子树的根节点**
+- 构建树：首先想到`前序遍历`，先找到`root value` 建立树的根节点，再根据根节点在数组中的`index`划分左右子树，再`分别递归`找到它们的根节点，并建立相应的子树
 
 
 ### My Solution 1：_`preorder-Step by step`_  
