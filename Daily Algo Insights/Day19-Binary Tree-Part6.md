@@ -209,10 +209,10 @@ class Solution:
 
 
 - *`Time Complexity`*:
-O(n)
+O(n) where n is the number of nodes in the smaller tree between root1 and root2
   
 - *`Space Complexity`*:
-O(1)
+O(n) where n is the height of the smaller tree. Worst case can be O(min(n1,n2)) where the height of smaller tree is same as its number of nodes. Best case is log(min(n1,n2)) in balanced binary tree.
 ---
   
 
@@ -250,10 +250,10 @@ class Solution:
 **Complexity Analysis:**  
 
 - *`Time Complexity`*:
-O(n)
+O(n) where n is the number of nodes in the smaller tree between root1 and root2
   
 - *`Space Complexity`*:
-O(n)
+O(m+n), where m and n are the number of nodes in root1 and root2.
 <br>
 
 ![Dividing Line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
