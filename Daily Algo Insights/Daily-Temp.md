@@ -31,10 +31,10 @@ xxxx
 ```
 
 
-- *`Time Complexity`*:
+- *`Time Complexity`*:<br>
 
   
-- *`Space Complexity`*:
+- *`Space Complexity`*:<br>
 ---
   
 ### Solving approach 2:  
@@ -54,10 +54,10 @@ xxx
 
 **Complexity Analysis:**  
 
-- *`Time Complexity`*:
+- *`Time Complexity`*:<br>
 
   
-- *`Space Complexity`*:
+- *`Space Complexity`*:<br>
 
 <br>
 
