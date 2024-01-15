@@ -91,12 +91,6 @@ class Solution:
 ```
 
 ---
-  
-### Solving approach 2:  
-
-
-xxx
-
  
 ### My Solution 2：_`iteration-deque`_  
 
@@ -140,10 +134,10 @@ class Solution:
 **Complexity Analysis:**  
 
 - *`Time Complexity`*:
-
+O(n)
   
 - *`Space Complexity`*:
-
+O(1)
 <br>
 
 ![Dividing Line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
