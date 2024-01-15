@@ -380,7 +380,7 @@ class Solution:
 
 **Complexity Analysis:**  
 
-- *`Time Complexity`*:
+- *`Time Complexity`*:<br>
 O(n^2), since .index() clled on the inorder list takes O(n) and will call buildTree n times.
   
 - *`Space Complexity`*:
