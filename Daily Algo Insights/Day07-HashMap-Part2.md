@@ -4,9 +4,13 @@
 ## Contents
 * **[454.4Sum II](#454)**
 * **[383.Ransom Note](#383)**
+* **[15.3Sum](#15)**
 * **[xx](#)**
 * **[xx](#)**
-* **[xx](#)**
+
+### Key Points
+
+- **在空间复杂度中属于问题一部分的output空间不视为算法的额外空间复杂度**
 
 <br>
 <h2 id = "454"><a href="https://leetcode.com/problems/4sum-ii">454. 4Sum II</a></h2><h3>Medium</h3><hr><p>Given four integer arrays <code>nums1</code>, <code>nums2</code>, <code>nums3</code>, and <code>nums4</code> all of length <code>n</code>, return the number of tuples <code>(i, j, k, l)</code> such that:</p>
@@ -215,3 +219,128 @@ O(1)
 
 
 
+<h2><a href="https://leetcode.com/problems/3sum">15. 3Sum</a></h2><h3>Medium</h3><hr><p>Given an integer array nums, return all the triplets <code>[nums[i], nums[j], nums[k]]</code> such that <code>i != j</code>, <code>i != k</code>, and <code>j != k</code>, and <code>nums[i] + nums[j] + nums[k] == 0</code>.</p>
+
+<p>Notice that the solution set must not contain duplicate triplets.</p>
+
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> nums = [-1,0,1,2,-1,-4]
+<strong>Output:</strong> [[-1,-1,2],[-1,0,1]]
+<strong>Explanation:</strong> 
+nums[0] + nums[1] + nums[2] = (-1) + 0 + 1 = 0.
+nums[1] + nums[2] + nums[4] = 0 + 1 + (-1) = 0.
+nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0.
+The distinct triplets are [-1,0,1] and [-1,-1,2].
+Notice that the order of the output and the order of the triplets does not matter.
+</pre>
+
+<p><strong class="example">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> nums = [0,1,1]
+<strong>Output:</strong> []
+<strong>Explanation:</strong> The only possible triplet does not sum up to 0.
+</pre>
+
+<p><strong class="example">Example 3:</strong></p>
+
+<pre>
+<strong>Input:</strong> nums = [0,0,0]
+<strong>Output:</strong> [[0,0,0]]
+<strong>Explanation:</strong> The only possible triplet sums up to 0.
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>3 &lt;= nums.length &lt;= 3000</code></li>
+	<li><code>-10<sup>5</sup> &lt;= nums[i] &lt;= 10<sup>5</sup></code></li>
+</ul>
+
+
+### My Solution 1：_`two pointer`_  
+
+  
+```python
+
+class Solution:
+    def threeSum(self, nums: List[int]) -> List[List[int]]:
+        res =[]
+        nums.sort()
+        
+        # Iterate through the array, leaving 2 elements for the two pointers.
+        # E.g., for length = 5 (indexes: 0,1,2,3,4), only iterate through index 2 (0,1,2).
+        for i in range(len(nums)-2):
+            # 已经排序，所以初始位就>0 不可能找到三数相加 = 0
+            if nums[i] > 0: 
+                #这里不能返回[],因为会直接结束程序 而没有返回真正的结果比如case[-2,0,1,1,2]
+                return res
+            
+            # Skip the same element to avoid duplicate triplets.
+            # 三元组内可以重复（0，0，0），不能用 nums[i] == nums[i+1]去判断，
+            # 会舍弃可能的结果集比如 （-1，-1，2）
+            if i > 0 and nums[i] == nums[i-1]:
+                continue
+
+            left = i + 1
+            right = len(nums) -1
+            # 三个数所以left != right
+            while left < right:
+                current = nums[i] + nums[left] + nums[right] 
+                
+                # Check the sum and adjust the pointers accordingly.
+                if current > 0:
+                    right -= 1
+                elif current < 0:
+                    left += 1
+
+                else: 
+                    # 第一次写时错误的写成 res.append(nums[i],nums[left],nums[right])
+                    res.append([nums[i],nums[left],nums[right]])
+                    
+                    # Move both pointers for the next potential search.
+                    left, right = left + 1, right - 1
+                    while left < right and nums[left] == nums[left - 1]:
+                        left += 1
+                    
+                    while left < right and nums[right] == nums[right + 1]:
+                        right -= 1
+        return res
+
+        # Time Complexity: sort() -> O(nlogn) + nested loop -> n^2 , then it's O(n^2) 
+        # Space Complexity : in place sort -> O(1) 
+```
+
+
+
+---
+  
+### Solving approach 2:  
+
+
+xxx
+
+ 
+### My Solution 2：_`xxx`_  
+
+  
+```python
+
+
+```
+
+
+**Complexity Analysis:**  
+
+- *`Time Complexity`*:<br>
+O(n^2)
+  
+- *`Space Complexity`*:<br>
+O(1)
+<br>
+
+![Dividing Line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
