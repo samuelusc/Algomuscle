@@ -36,13 +36,14 @@
 
 <p>&nbsp;</p>
 <p><strong>Note:</strong> This question is the same as 783: <a href="https://leetcode.com/problems/minimum-distance-between-bst-nodes/" target="_blank">https://leetcode.com/problems/minimum-distance-between-bst-nodes/</a></p>
-### Breakdown and Thought Process:  
 <br>
 
 ### Solving approach 1:
 
 
 - BST 遍历首先要想到`中序遍历` -> `单调递增`
+
+
 
 ### My Solution 1：_`inorder- recursion`_  
 
