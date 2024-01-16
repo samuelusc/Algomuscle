@@ -6,17 +6,19 @@ class Solution:
         # Iterate through the array, leaving 2 elements for the two pointers.
         # E.g., for length = 5 (indexes: 0,1,2,3,4), only iterate through index 2 (0,1,2).
         for i in range(len(nums)-2):
-            # As the array is sorted, no three numbers can sum to zero beyond this point.
+            # 已经排序，所以初始位就>0 不可能找到三数相加 = 0
             if nums[i] > 0: 
                 return res
             
             # Skip the same element to avoid duplicate triplets.
+            # 三元组内可以重复（0，0，0），不能用 nums[i] == nums[i+1]去判断，
+            # 会舍弃可能的结果集比如 （-1，-1，2）
             if i > 0 and nums[i] == nums[i-1]:
                 continue
 
             left = i + 1
             right = len(nums) -1
-
+            # 三个数所以left != right
             while left < right:
                 current = nums[i] + nums[left] + nums[right] 
                 
@@ -27,6 +29,7 @@ class Solution:
                     left += 1
 
                 else: 
+                    # 第一次写时错误的写成 res.append(nums[i],nums[left],nums[right])
                     res.append([nums[i],nums[left],nums[right]])
                     
                     # Move both pointers for the next potential search.
