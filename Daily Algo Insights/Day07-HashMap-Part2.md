@@ -5,15 +5,15 @@
 * **[454.4Sum II](#454)**
 * **[383.Ransom Note](#383)**
 * **[15.3Sum](#15)**
-* **[xx](#)**
-* **[xx](#)**
+* **[18.4Sum](#18)**
+
 
 ### Key Points
 
 - **在空间复杂度中属于问题一部分的output空间，不视为算法的额外空间复杂度**
 
 <br>
-<h2 id = "454"><a href="https://leetcode.com/problems/4sum-ii">454. 4Sum II</a></h2><h3>Medium</h3><hr><p>Given four integer arrays <code>nums1</code>, <code>nums2</code>, <code>nums3</code>, and <code>nums4</code> all of length <code>n</code>, return the number of tuples <code>(i, j, k, l)</code> such that:</p>
+<h2 id = "454"><a href="https://leetcode.com/problems/4sum-ii">454. 4Sum II</a></h2><h3>Medium</h3><p>Given four integer arrays <code>nums1</code>, <code>nums2</code>, <code>nums3</code>, and <code>nums4</code> all of length <code>n</code>, return the number of tuples <code>(i, j, k, l)</code> such that:</p>
 
 <ul>
 	<li><code>0 &lt;= i, j, k, l &lt; n</code></li>
@@ -120,7 +120,7 @@ O(n^2). The Counter holds at most n^2 entries, corresponding to each unique sum 
 
 
 
-<h2 id ="383"><a href="https://leetcode.com/problems/ransom-note/">383. Ransom Note</a></h2><h3>Easy</h3><hr><p>Given two strings <code>ransomNote</code> and <code>magazine</code>, return <code>true</code><em> if </em><code>ransomNote</code><em> can be constructed by using the letters from </em><code>magazine</code><em> and </em><code>false</code><em> otherwise</em>.</p>
+<h2 id ="383"><a href="https://leetcode.com/problems/ransom-note/">383. Ransom Note</a></h2><h3>Easy</h3><p>Given two strings <code>ransomNote</code> and <code>magazine</code>, return <code>true</code><em> if </em><code>ransomNote</code><em> can be constructed by using the letters from </em><code>magazine</code><em> and </em><code>false</code><em> otherwise</em>.</p>
 
 <p>Each letter in <code>magazine</code> can only be used once in <code>ransomNote</code>.</p>
 
@@ -219,7 +219,7 @@ O(1)
 
 
 
-<h2><a href="https://leetcode.com/problems/3sum">15. 3Sum</a></h2><h3>Medium</h3><hr><p>Given an integer array nums, return all the triplets <code>[nums[i], nums[j], nums[k]]</code> such that <code>i != j</code>, <code>i != k</code>, and <code>j != k</code>, and <code>nums[i] + nums[j] + nums[k] == 0</code>.</p>
+<h2><a href="https://leetcode.com/problems/3sum">15. 3Sum</a></h2><h3>Medium</h3><p>Given an integer array nums, return all the triplets <code>[nums[i], nums[j], nums[k]]</code> such that <code>i != j</code>, <code>i != k</code>, and <code>j != k</code>, and <code>nums[i] + nums[j] + nums[k] == 0</code>.</p>
 
 <p>Notice that the solution set must not contain duplicate triplets.</p>
 
@@ -324,6 +324,97 @@ O(n^2)
   
 - *`Space Complexity`*:<br>
 O(1)
+<br>
+
+![Dividing Line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
+
+
+
+<h2 id = "18"><a href="https://leetcode.com/problems/4sum">18. 4Sum</a></h2><h3>Medium</h3><p>Given an array <code>nums</code> of <code>n</code> integers, return <em>an array of all the <strong>unique</strong> quadruplets</em> <code>[nums[a], nums[b], nums[c], nums[d]]</code> such that:</p>
+
+<ul>
+	<li><code>0 &lt;= a, b, c, d&nbsp;&lt; n</code></li>
+	<li><code>a</code>, <code>b</code>, <code>c</code>, and <code>d</code> are <strong>distinct</strong>.</li>
+	<li><code>nums[a] + nums[b] + nums[c] + nums[d] == target</code></li>
+</ul>
+
+<p>You may return the answer in <strong>any order</strong>.</p>
+
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> nums = [1,0,-1,0,-2,2], target = 0
+<strong>Output:</strong> [[-2,-1,1,2],[-2,0,0,2],[-1,0,0,1]]
+</pre>
+
+<p><strong class="example">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> nums = [2,2,2,2,2], target = 8
+<strong>Output:</strong> [[2,2,2,2]]
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= nums.length &lt;= 200</code></li>
+	<li><code>-10<sup>9</sup> &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>
+	<li><code>-10<sup>9</sup> &lt;= target &lt;= 10<sup>9</sup></code></li>
+</ul>
+
+
+### My Solution 1：_`two pointer + 2for`_  
+
+  
+```python
+
+class Solution:
+    def fourSum(self, nums: List[int], target: int) -> List[List[int]]:
+        n = len(nums)
+        res = []
+        
+        #check boundary 
+        if n < 4:
+            return res
+        
+        # Don't forget to sort()
+        nums.sort()
+
+        for i in range(n-3):
+            if i > 0 and nums[i] == nums[i-1]:
+                continue
+            for j in range(i+1, n-2):
+                if j > i+1 and nums[j] == nums[j-1]:
+                    continue
+                left,right = j+1, n-1
+                while left < right:
+
+                    current = nums[i] + nums[j] + nums[left] + nums[right]
+                    if current < target:
+                        left += 1
+                    elif current > target:
+                        right -= 1
+
+                    else:
+                        res.append([nums[i],nums[j],nums[left],nums[right]])                       
+                        left,right = left + 1, right - 1
+                        while left < right and nums[left] == nums[left-1]:
+                            left += 1
+                        while left < right and nums[right] == nums[right + 1]:
+                            right -= 1
+        
+        return res
+```
+
+**Complexity Analysis:**  
+
+- *`Time Complexity`*:<br>
+O(n^3)
+  
+- *`Space Complexity`*:<br>
+O(1) , here we don't consider output space since it is part of question.
 <br>
 
 ![Dividing Line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
