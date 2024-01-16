@@ -4,7 +4,7 @@
 ## Contents
 * **[530.Minimum Absolute Difference in BST](#530)**
 * **[501.Find Mode in Binary Search Tree](#501)**
-* **[xx](#)**
+* **[236.Lowest Common Ancestor of a Binary Tree](#236)**
 * **[xx](#)**
 * **[xx](#)**
 
@@ -254,3 +254,131 @@ O(n)
 
 
 
+
+
+<h2 id = "236"><a href="https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree">236. Lowest Common Ancestor of a Binary Tree</a></h2><h3>Medium</h3><hr><p>Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.</p>
+
+<p>According to the <a href="https://en.wikipedia.org/wiki/Lowest_common_ancestor" target="_blank">definition of LCA on Wikipedia</a>: &ldquo;The lowest common ancestor is defined between two nodes <code>p</code> and <code>q</code> as the lowest node in <code>T</code> that has both <code>p</code> and <code>q</code> as descendants (where we allow <b>a node to be a descendant of itself</b>).&rdquo;</p>
+
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2018/12/14/binarytree.png" style="width: 200px; height: 190px;" />
+<pre>
+<strong>Input:</strong> root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 1
+<strong>Output:</strong> 3
+<strong>Explanation:</strong> The LCA of nodes 5 and 1 is 3.
+</pre>
+
+<p><strong class="example">Example 2:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2018/12/14/binarytree.png" style="width: 200px; height: 190px;" />
+<pre>
+<strong>Input:</strong> root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 4
+<strong>Output:</strong> 5
+<strong>Explanation:</strong> The LCA of nodes 5 and 4 is 5, since a node can be a descendant of itself according to the LCA definition.
+</pre>
+
+<p><strong class="example">Example 3:</strong></p>
+
+<pre>
+<strong>Input:</strong> root = [1,2], p = 1, q = 2
+<strong>Output:</strong> 1
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li>The number of nodes in the tree is in the range <code>[2, 10<sup>5</sup>]</code>.</li>
+	<li><code>-10<sup>9</sup> &lt;= Node.val &lt;= 10<sup>9</sup></code></li>
+	<li>All <code>Node.val</code> are <strong>unique</strong>.</li>
+	<li><code>p != q</code></li>
+	<li><code>p</code> and <code>q</code> will exist in the tree.</li>
+</ul>
+
+
+
+### My Solution 1：_`postorder Recursion`_  
+
+  
+```python
+
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+
+class Solution:
+    def lowestCommonAncestor(
+        self, root: "TreeNode", p: "TreeNode", q: "TreeNode"
+    ) -> "TreeNode":
+        # post-order -> left, right , root
+
+        # base case: if current node is None,return None
+        if not root:
+            return None
+        # base case: if current node matches either p or q,
+        # return current node
+        if root == p or root == q:
+            return root
+
+        # recursively search in the left / right subtree for p or q
+        left = self.lowestCommonAncestor(root.left, p, q)
+        right = self.lowestCommonAncestor(root.right, p, q)
+
+        # handling 4 cases based on the nodes
+        # found in the left and right subtress
+
+        # Case1:if left and right subtree are not None
+        # means the current node is their lowest common ancestor
+        if left and right:
+            return root
+
+        # Case 2: If both left and right are None,
+        # it means neither p nor q are found in the subtree of the cur node
+        if not left and not right:
+            return None
+
+        # Case3: either p or q found in the left subtree
+        elif left:
+            return left
+        # Case4: either p or q found in the right subtree
+        else:
+            return right
+```
+
+
+- *`Time Complexity`*:<br>
+O(n)
+  
+- *`Space Complexity`*:<br>
+O(h) where h is the height of the tree
+---
+  
+### Solving approach 2:  
+
+
+xxx
+
+ 
+### My Solution 2：_`xxx`_  
+
+  
+```python
+
+
+```
+
+
+**Complexity Analysis:**  
+
+- *`Time Complexity`*:<br>
+
+  
+- *`Space Complexity`*:<br>
+
+<br>
+
+![Dividing Line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
