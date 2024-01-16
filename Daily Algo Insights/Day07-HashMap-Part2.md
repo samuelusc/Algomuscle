@@ -10,7 +10,7 @@
 
 ### Key Points
 
-- **在空间复杂度中属于问题一部分的output空间不视为算法的额外空间复杂度**
+- **在空间复杂度中属于问题一部分的output空间，不视为算法的额外空间复杂度**
 
 <br>
 <h2 id = "454"><a href="https://leetcode.com/problems/4sum-ii">454. 4Sum II</a></h2><h3>Medium</h3><hr><p>Given four integer arrays <code>nums1</code>, <code>nums2</code>, <code>nums3</code>, and <code>nums4</code> all of length <code>n</code>, return the number of tuples <code>(i, j, k, l)</code> such that:</p>
