@@ -2,6 +2,8 @@ class Solution:
     def fourSum(self, nums: List[int], target: int) -> List[List[int]]:
         n = len(nums)
         res = []
+        
+        #check boundary 
         if n < 4:
             return res
         
