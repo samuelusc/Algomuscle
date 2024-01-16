@@ -8,6 +8,7 @@ class Solution:
         for i in range(len(nums)-2):
             # 已经排序，所以初始位就>0 不可能找到三数相加 = 0
             if nums[i] > 0: 
+                #这里不能返回[],因为会直接结束程序 而没有返回真正的结果比如case[-2,0,1,1,2]
                 return res
             
             # Skip the same element to avoid duplicate triplets.
