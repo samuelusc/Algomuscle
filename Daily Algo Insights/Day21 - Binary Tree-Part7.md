@@ -5,11 +5,10 @@
 * **[530.Minimum Absolute Difference in BST](#530)**
 * **[501.Find Mode in Binary Search Tree](#501)**
 * **[236.Lowest Common Ancestor of a Binary Tree](#236)**
-* **[xx](#)**
-* **[xx](#)**
+
 
 <br>
-<h2 id = "530"><a href="https://leetcode.com/problems/minimum-absolute-difference-in-bst">530. Minimum Absolute Difference in BST</a></h2><h3>Easy</h3><hr><p>Given the <code>root</code> of a Binary Search Tree (BST), return <em>the minimum absolute difference between the values of any two different nodes in the tree</em>.</p>
+<h2 id = "530"><a href="https://leetcode.com/problems/minimum-absolute-difference-in-bst">530. Minimum Absolute Difference in BST</a></h2><h3>Easy</h3><p>Given the <code>root</code> of a Binary Search Tree (BST), return <em>the minimum absolute difference between the values of any two different nodes in the tree</em>.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
@@ -125,7 +124,7 @@ xxx
 
 
 
-<h2 id = "501"><a href="https://leetcode.com/problems/find-mode-in-binary-search-tree">501. Find Mode in Binary Search Tree</a></h2><h3>Easy</h3><hr><p>Given the <code>root</code> of a binary search tree (BST) with duplicates, return <em>all the <a href="https://en.wikipedia.org/wiki/Mode_(statistics)" target="_blank">mode(s)</a> (i.e., the most frequently occurred element) in it</em>.</p>
+<h2 id = "501"><a href="https://leetcode.com/problems/find-mode-in-binary-search-tree">501. Find Mode in Binary Search Tree</a></h2><h3>Easy</h3><p>Given the <code>root</code> of a binary search tree (BST) with duplicates, return <em>all the <a href="https://en.wikipedia.org/wiki/Mode_(statistics)" target="_blank">mode(s)</a> (i.e., the most frequently occurred element) in it</em>.</p>
 
 <p>If the tree has more than one mode, return them in <strong>any order</strong>.</p>
 
@@ -256,7 +255,7 @@ O(n)
 
 
 
-<h2 id = "236"><a href="https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree">236. Lowest Common Ancestor of a Binary Tree</a></h2><h3>Medium</h3><hr><p>Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.</p>
+<h2 id = "236"><a href="https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree">236. Lowest Common Ancestor of a Binary Tree</a></h2><h3>Medium</h3><p>Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.</p>
 
 <p>According to the <a href="https://en.wikipedia.org/wiki/Lowest_common_ancestor" target="_blank">definition of LCA on Wikipedia</a>: &ldquo;The lowest common ancestor is defined between two nodes <code>p</code> and <code>q</code> as the lowest node in <code>T</code> that has both <code>p</code> and <code>q</code> as descendants (where we allow <b>a node to be a descendant of itself</b>).&rdquo;</p>
 
