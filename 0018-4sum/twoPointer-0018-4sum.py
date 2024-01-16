@@ -4,7 +4,8 @@ class Solution:
         res = []
         if n < 4:
             return res
-        # Don't forget to sort
+        
+        # Don't forget to sort()
         nums.sort()
 
         for i in range(n-3):
