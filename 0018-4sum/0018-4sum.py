@@ -3,7 +3,8 @@ class Solution:
         # 忘了加（）
         nums.sort()
         res = []
-
+        if len(nums) < 4:
+            return res
         for i in range(len(nums)-3):
             if i > 0 and nums[i] == nums[i-1]:
                 continue 
