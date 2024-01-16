@@ -94,29 +94,7 @@ O(n)
   
 - *`Space Complexity`*:<br>
 O(n)
----
-  
-### Solving approach 2:  
 
-
-xxx
-
- 
-### My Solution 2：_`xxx`_  
-
-  
-```python
-
-
-```
-
-
-**Complexity Analysis:**  
-
-- *`Time Complexity`*:<br>
-
-  
-- *`Space Complexity`*:<br>
 
 <br>
 
@@ -227,25 +205,7 @@ O(n)
   
 - *`Space Complexity`*:<br>
 O(n)
----
-  
 
- 
-### My Solution 2：_`xxx`_  
-
-  
-```python
-
-
-```
-
-
-**Complexity Analysis:**  
-
-- *`Time Complexity`*:<br>
-
-  
-- *`Space Complexity`*:<br>
 
 <br>
 
@@ -355,28 +315,6 @@ O(n)
 - *`Space Complexity`*:<br>
 O(h) where h is the height of the tree
 ---
-  
-### Solving approach 2:  
-
-
-xxx
-
- 
-### My Solution 2：_`xxx`_  
-
-  
-```python
-
-
-```
-
-
-**Complexity Analysis:**  
-
-- *`Time Complexity`*:<br>
-
-  
-- *`Space Complexity`*:<br>
 
 <br>
 
