@@ -41,8 +41,9 @@ class Solution:
         elif key > root.val:
             print(f"Going right from {root.val}")
             root.right = self.deleteNode(root.right, key)
-        else:
-            print(f"Going root from here")
-            return root
+        # below part can be removed
+        # else:
+        #     print(f"Going root from here")
+        #     return root
        
         return root
