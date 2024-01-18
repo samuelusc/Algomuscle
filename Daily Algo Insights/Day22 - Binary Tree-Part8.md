@@ -205,10 +205,10 @@ class Solution:
 
 
 - *`Time Complexity`*:<br>
-
+O(h) where h is the height of the binary search tree. 
   
 - *`Space Complexity`*:<br>
-
+O(h) (worst case is O(n), best case is O(logn)
   
 
 ### My Solution 2：_`iteration`_  
@@ -251,10 +251,10 @@ class Solution:
 **Complexity Analysis:**  
 
 - *`Time Complexity`*:<br>
-
+O(logn)for a balanced BST and O(n) for a skewed BST.
   
 - *`Space Complexity`*:<br>
-
+O(1)
 <br>
 
 ![Dividing Line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
@@ -377,10 +377,10 @@ class Solution:
 **Complexity Analysis:**  
 
 - *`Time Complexity`*:<br>
+The overall time complexity is O(h), which would be O(log n) for a balanced BST and O(n) for a skewed BST
 
-  
 - *`Space Complexity`*:<br>
-
+The space complexity is therefore O(h), which corresponds to O(log n) for a balanced BST and O(n) for a skewed BST due to the recursive function calls.
 <br>
 
 ![Dividing Line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
