@@ -62,7 +62,7 @@ xxx
 <br>
 
 ![Dividing Line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
-
+<br>
 
 
 xxxx
