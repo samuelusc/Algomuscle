@@ -85,10 +85,10 @@ class Solution:
 
 
 - *`Time Complexity`*:<br>
+O(n)
 
-  
 - *`Space Complexity`*:<br>
-
+O(h), where h is the height of teh tree, due to the recursive stack. (O(n) in the worst case and O(logn) in the best case)
   
 
  
@@ -124,10 +124,11 @@ class Solution:
 **Complexity Analysis:**  
 
 - *`Time Complexity`*:<br>
+O(h),where h is the height of the binary tree. THe height h could be linear in respect to the number of nodes N.
 
   
 - *`Space Complexity`*:<br>
-
+O(1)
 <br>
 
 ![Dividing Line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
