@@ -92,7 +92,7 @@ class Solution:
   
 
  
-### My Solution 2：_`xxx`_  
+### My Solution 2：_`iteration`_  
 
   
 ```python
@@ -176,70 +176,6 @@ class Solution:
 
 
 
-### My Solution 1：_`xxx`_  
-
-  
-```python
-
-# Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, val=0, left=None, right=None):
-#         self.val = val
-#         self.left = left
-#         self.right = right
-class Solution:
-    def insertIntoBST(self, root: Optional[TreeNode], val: int) -> Optional[TreeNode]:
-        if not root:
-            return TreeNode(val)
-
-        # 注意这部分要比较的是root.val not root.left.val
-        if val < root.val:
-            root.left = self.insertIntoBST(root.left, val)
-
-        elif val > root.val:
-            root.right = self.insertIntoBST(root.right, val)
-
-        return root
-```
-
-
-- *`Time Complexity`*:<br>
-
-  
-- *`Space Complexity`*:<br>
-
-  
-### Solving approach 2:  
-
-
-xxx
-
- 
-### My Solution 2：_`xxx`_  
-
-  
-```python
-
-
-```
-
-
-**Complexity Analysis:**  
-
-- *`Time Complexity`*:<br>
-
-  
-- *`Space Complexity`*:<br>
-
-<br>
-
-![Dividing Line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
-<br>
-
-
-
-
-
 ### My Solution 1：_`recursion`_  
 
   
@@ -273,12 +209,7 @@ class Solution:
 - *`Space Complexity`*:<br>
 
   
-### Solving approach 2:  
 
-
-xxx
-
- 
 ### My Solution 2：_`iteration`_  
 
   
