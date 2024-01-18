@@ -34,14 +34,17 @@ class Solution:
                 print(f"left subtree of root is {cur_node.left.val} ")
                 print(f"right subtree of root is {root.right.val}")
                 return root.right
-        
+        # process if key in left subtree
         if key < root.val:
             print(f"Going left from {root.val }")
             root.left = self.deleteNode(root.left,key)
+        # process if key in right subtree
         elif key > root.val:
             print(f"Going right from {root.val}")
             root.right = self.deleteNode(root.right, key)
-        # below part can be removed
+        
+        # below part can be removed since the case root.val == key 
+        # has been conisdered at the top 
         # else:
         #     print(f"Going root from here")
         #     return root
