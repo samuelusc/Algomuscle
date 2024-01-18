@@ -131,7 +131,7 @@ class Solution:
 <br>
 
 ![Dividing Line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
-
+<br>
 
 
 <h2><a href="https://leetcode.com/problems/insert-into-a-binary-search-tree">701. Insert into a Binary Search Tree</a></h2><h3>Medium</h3><p>You are given the <code>root</code> node of a binary search tree (BST) and a <code>value</code> to insert into the tree. Return <em>the root node of the BST after the insertion</em>. It is <strong>guaranteed</strong> that the new value does not exist in the original BST.</p>
@@ -234,7 +234,7 @@ xxx
 <br>
 
 ![Dividing Line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
-
+<br>
 
 
 ### My Solution 1：_`recursion`_  
@@ -323,7 +323,7 @@ class Solution:
 <br>
 
 ![Dividing Line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
-
+<br>
 
 
 <h2 id = "450"><a href="https://leetcode.com/problems/delete-node-in-a-bst">450. Delete Node in a BST</a></h2><h3>Medium</h3><p>Given a root node reference of a BST and a key, delete the node with the given key in the BST. Return <em>the <strong>root node reference</strong> (possibly updated) of the BST</em>.</p>
