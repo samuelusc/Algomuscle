@@ -6,12 +6,11 @@
 * **[235.Lowest Common Ancestor of a Binary Search Tree](#235)**
 * **[701.Insert into a Binary Search Tree](#701)**
 * **[450.Delete Node in a BST](#450)**
-* **[xx](#)**
-* **[xx](#)**
+
 
 
 <br>
-<h2 id = "235"><a href="https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree">235. Lowest Common Ancestor of a Binary Search Tree</a></h2><h3>Medium</h3><hr><p>Given a binary search tree (BST), find the lowest common ancestor (LCA) node of two given nodes in the BST.</p>
+<h2 id = "235"><a href="https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree">235. Lowest Common Ancestor of a Binary Search Tree</a></h2><h3>Medium</h3><p>Given a binary search tree (BST), find the lowest common ancestor (LCA) node of two given nodes in the BST.</p>
 
 <p>According to the <a href="https://en.wikipedia.org/wiki/Lowest_common_ancestor" target="_blank">definition of LCA on Wikipedia</a>: &ldquo;The lowest common ancestor is defined between two nodes <code>p</code> and <code>q</code> as the lowest node in <code>T</code> that has both <code>p</code> and <code>q</code> as descendants (where we allow <strong>a node to be a descendant of itself</strong>).&rdquo;</p>
 
@@ -135,7 +134,7 @@ class Solution:
 
 
 
-<h2><a href="https://leetcode.com/problems/insert-into-a-binary-search-tree">701. Insert into a Binary Search Tree</a></h2><h3>Medium</h3><hr><p>You are given the <code>root</code> node of a binary search tree (BST) and a <code>value</code> to insert into the tree. Return <em>the root node of the BST after the insertion</em>. It is <strong>guaranteed</strong> that the new value does not exist in the original BST.</p>
+<h2><a href="https://leetcode.com/problems/insert-into-a-binary-search-tree">701. Insert into a Binary Search Tree</a></h2><h3>Medium</h3><p>You are given the <code>root</code> node of a binary search tree (BST) and a <code>value</code> to insert into the tree. Return <em>the root node of the BST after the insertion</em>. It is <strong>guaranteed</strong> that the new value does not exist in the original BST.</p>
 
 <p><strong>Notice</strong>&nbsp;that there may exist&nbsp;multiple valid ways for the&nbsp;insertion, as long as the tree remains a BST after insertion. You can return <strong>any of them</strong>.</p>
 
@@ -327,7 +326,7 @@ class Solution:
 
 
 
-<h2 id = "450"><a href="https://leetcode.com/problems/delete-node-in-a-bst">450. Delete Node in a BST</a></h2><h3>Medium</h3><hr><p>Given a root node reference of a BST and a key, delete the node with the given key in the BST. Return <em>the <strong>root node reference</strong> (possibly updated) of the BST</em>.</p>
+<h2 id = "450"><a href="https://leetcode.com/problems/delete-node-in-a-bst">450. Delete Node in a BST</a></h2><h3>Medium</h3><p>Given a root node reference of a BST and a key, delete the node with the given key in the BST. Return <em>the <strong>root node reference</strong> (possibly updated) of the BST</em>.</p>
 
 <p>Basically, the deletion can be divided into two stages:</p>
 
