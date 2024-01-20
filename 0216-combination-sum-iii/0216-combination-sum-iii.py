@@ -13,9 +13,12 @@ class Solution:
             #只要元素到达k，无论是否n都停止继续递归
             return 
         
+        # basic : for i in range(startIndex, 10):
+        # 再减枝 如k = 6, 当i=5 时已经无效 
 
-        for i in range(startIndex, 10):
+        for i in range(startIndex, 11 - (k-len(self.path))):
             sumAll += i
+            # 减枝 prune invalid if samAll > n
             if sumAll > n:
                 continue
             self.path.append(i)
