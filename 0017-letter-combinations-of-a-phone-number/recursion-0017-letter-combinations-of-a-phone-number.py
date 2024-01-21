@@ -19,7 +19,7 @@ class Solution:
 
             for char in letters:
 
-                backtracking(combo + char, index + 1)
+                backtracking(combo + char, index + 1) # 这里实现了回溯
                 # combo = combo[:-1] 这部分导致错误，每次调用会产生新的combo副本
         # 先定义后调用
         backtracking(combo, 0)
