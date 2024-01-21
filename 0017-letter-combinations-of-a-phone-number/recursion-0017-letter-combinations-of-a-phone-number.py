@@ -2,7 +2,7 @@ class Solution:
     def letterCombinations(self, digits: str) -> List[str]:
         letterMap = ["","","abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"]
         result = []
-        combo = ''
+        combo = '' # 套函数如果需要修改要么1.作为参数传递 2. 用nonlocal 字段在套函数内声明
         if not digits:
             return []
 
