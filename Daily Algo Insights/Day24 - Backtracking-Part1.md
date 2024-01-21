@@ -5,10 +5,7 @@
 
 ## Contents
 * **[77. Combinations](#77)**
-* **[xx](#)**
-* **[xx](#)**
-* **[xx](#)**
-* **[xx](#)**
+
 <br>
 xxximagexxx
 <br>
