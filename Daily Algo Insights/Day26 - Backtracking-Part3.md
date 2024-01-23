@@ -1,6 +1,5 @@
 # Day26 - Backtracking Part3.md
 
-### [Study Reference](https://programmercarl.com/0020.%E6%9C%89%E6%95%88%E7%9A%84%E6%8B%AC%E5%8F%B7.html)  
 
 ## Contents
 * **[131.Palindrome Partitioning](#131)**
