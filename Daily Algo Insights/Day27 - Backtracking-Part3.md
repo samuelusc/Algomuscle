@@ -1,12 +1,210 @@
-# Day28 - Backtracking Part4.md
+# Day27 - Backtracking Part3.md
 
 
 ## Contents
+* **[39.Combination Sum](#39)**
+* **[40. Combination Sum II](#40)**
 * **[131.Palindrome Partitioning](#131)**
-* **[93.Restore IP Addresses](#93)**
-* **[78.Subsets](#78)**
+
 
 <br>
+<h2 id ="39"><a href="https://leetcode.com/problems/combination-sum">39. Combination Sum</a></h2><h3>Medium</h3><hr><p>Given an array of <strong>distinct</strong> integers <code>candidates</code> and a target integer <code>target</code>, return <em>a list of all <strong>unique combinations</strong> of </em><code>candidates</code><em> where the chosen numbers sum to </em><code>target</code><em>.</em> You may return the combinations in <strong>any order</strong>.</p>
+
+<p>The <strong>same</strong> number may be chosen from <code>candidates</code> an <strong>unlimited number of times</strong>. Two combinations are unique if the <span data-keyword="frequency-array">frequency</span> of at least one of the chosen numbers is different.</p>
+
+<p>The test cases are generated such that the number of unique combinations that sum up to <code>target</code> is less than <code>150</code> combinations for the given input.</p>
+
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> candidates = [2,3,6,7], target = 7
+<strong>Output:</strong> [[2,2,3],[7]]
+<strong>Explanation:</strong>
+2 and 3 are candidates, and 2 + 2 + 3 = 7. Note that 2 can be used multiple times.
+7 is a candidate, and 7 = 7.
+These are the only two combinations.
+</pre>
+
+<p><strong class="example">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> candidates = [2,3,5], target = 8
+<strong>Output:</strong> [[2,2,2,2],[2,3,3],[3,5]]
+</pre>
+
+<p><strong class="example">Example 3:</strong></p>
+
+<pre>
+<strong>Input:</strong> candidates = [2], target = 1
+<strong>Output:</strong> []
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= candidates.length &lt;= 30</code></li>
+	<li><code>2 &lt;= candidates[i] &lt;= 40</code></li>
+	<li>All elements of <code>candidates</code> are <strong>distinct</strong>.</li>
+	<li><code>1 &lt;= target &lt;= 40</code></li>
+</ul>
+
+
+### My Solution 1：_`backtracking + pruning`_  
+
+  
+```python
+
+class Solution:
+    def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
+        res = []
+        path = []
+        candidates.sort()
+        def backtracking(candidates, target, current_sum, startIndex):
+
+            if current_sum == target:
+                res.append(path[:])
+                return
+
+            for i in range(startIndex, len(candidates)):
+                current_sum += candidates[i]
+                if current_sum > target: 
+                    break
+
+                path.append(candidates[i])
+                # 注意这里是i, 因为元素可以重复使用
+                backtracking(candidates, target, current_sum, i)
+                
+                # sum 减去最后的candidate
+                current_sum -= candidates[i]
+                path.pop()
+
+        backtracking(candidates, target, 0, 0) 
+
+        return res
+        
+
+
+
+               
+
+```
+
+**Complexity Analysis:**  
+
+- *`Time Complexity`*:<br>
+O(n^k) where n is the number of candidates and k is the maximum recursion depth,
+- *`Space Complexity`*:<br>
+O(n^k)
+<br>
+
+![Dividing Line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
+<br>
+
+
+<h2 id = "40"><a href="https://leetcode.com/problems/combination-sum-ii">40. Combination Sum II</a></h2><h3>Medium</h3><hr><p>Given a collection of candidate numbers (<code>candidates</code>) and a target number (<code>target</code>), find all unique combinations in <code>candidates</code>&nbsp;where the candidate numbers sum to <code>target</code>.</p>
+
+<p>Each number in <code>candidates</code>&nbsp;may only be used <strong>once</strong> in the combination.</p>
+
+<p><strong>Note:</strong>&nbsp;The solution set must not contain duplicate combinations.</p>
+
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> candidates = [10,1,2,7,6,1,5], target = 8
+<strong>Output:</strong> 
+[
+[1,1,6],
+[1,2,5],
+[1,7],
+[2,6]
+]
+</pre>
+
+<p><strong class="example">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> candidates = [2,5,2,1,2], target = 5
+<strong>Output:</strong> 
+[
+[1,2,2],
+[5]
+]
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;=&nbsp;candidates.length &lt;= 100</code></li>
+	<li><code>1 &lt;=&nbsp;candidates[i] &lt;= 50</code></li>
+	<li><code>1 &lt;= target &lt;= 30</code></li>
+</ul>
+
+
+
+
+
+
+
+### My Solution 1：_`backtracking`_  
+
+  
+```python
+
+class Solution:
+    def combinationSum2(self, candidates: List[int], target: int) -> List[List[int]]:
+        # 排序让相邻元素在一起
+        # 树层去重，树枝不去重
+
+        candidates.sort()
+        res = []
+        path = []
+
+        def backtracking(candidates, target, current_sum, startIndex):
+            if current_sum == target:
+                res.append(path[:])
+
+            
+            for i in range(startIndex, len(candidates)):
+                #检查相邻的两个是否相等
+                if i > startIndex and candidates[i] == candidates[i-1]:
+                    continue
+
+                # pruning branches
+                if current_sum + candidates[i] > target:
+                    break
+                
+                path.append(candidates[i])
+                # 传递新的 current_sum,
+                # 这样backtracking 就不需要 current_sum - candidates[i]
+                backtracking(candidates, target, current_sum + candidates[i], i + 1)
+                path.pop()
+
+        backtracking(candidates, target, 0, 0)
+
+        return res
+
+       
+```
+
+
+
+
+**Complexity Analysis:**  
+
+- *`Time Complexity`*:<br>
+O(2^n), where n is the number of elements in candidates.   
+- *`Space Complexity`*:<br>
+ O(2^n), where n is the number of elements in candidates.
+
+<br>
+
+
+
+
 <h2 id = "131"><a href="https://leetcode.com/problems/palindrome-partitioning">131. Palindrome Partitioning</a></h2><h3>Medium</h3><p>Given a string <code>s</code>, partition <code>s</code> such that every <span data-keyword="substring-nonempty">substring</span> of the partition is a <span data-keyword="palindrome-string"><strong>palindrome</strong></span>. Return <em>all possible palindrome partitioning of </em><code>s</code>.</p>
 
 <p>&nbsp;</p>
@@ -99,182 +297,6 @@ O(N^2 * 2^N) where N is the string of length.
   
 - *`Space Complexity`*:<br>
 O(N^2 * 2^N) where N is the string of length.
-<br>
-
-![Dividing Line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
-<br>
-
-
-<h2 id = "93"><a href="https://leetcode.com/problems/restore-ip-addresses">93. Restore IP Addresses</a></h2><h3>Medium</h3><p>A <strong>valid IP address</strong> consists of exactly four integers separated by single dots. Each integer is between <code>0</code> and <code>255</code> (<strong>inclusive</strong>) and cannot have leading zeros.</p>
-
-<ul>
-	<li>For example, <code>&quot;0.1.2.201&quot;</code> and <code>&quot;192.168.1.1&quot;</code> are <strong>valid</strong> IP addresses, but <code>&quot;0.011.255.245&quot;</code>, <code>&quot;192.168.1.312&quot;</code> and <code>&quot;192.168@1.1&quot;</code> are <strong>invalid</strong> IP addresses.</li>
-</ul>
-
-<p>Given a string <code>s</code> containing only digits, return <em>all possible valid IP addresses that can be formed by inserting dots into </em><code>s</code>. You are <strong>not</strong> allowed to reorder or remove any digits in <code>s</code>. You may return the valid IP addresses in <strong>any</strong> order.</p>
-
-<p>&nbsp;</p>
-<p><strong class="example">Example 1:</strong></p>
-
-<pre>
-<strong>Input:</strong> s = &quot;25525511135&quot;
-<strong>Output:</strong> [&quot;255.255.11.135&quot;,&quot;255.255.111.35&quot;]
-</pre>
-
-<p><strong class="example">Example 2:</strong></p>
-
-<pre>
-<strong>Input:</strong> s = &quot;0000&quot;
-<strong>Output:</strong> [&quot;0.0.0.0&quot;]
-</pre>
-
-<p><strong class="example">Example 3:</strong></p>
-
-<pre>
-<strong>Input:</strong> s = &quot;101023&quot;
-<strong>Output:</strong> [&quot;1.0.10.23&quot;,&quot;1.0.102.3&quot;,&quot;10.1.0.23&quot;,&quot;10.10.2.3&quot;,&quot;101.0.2.3&quot;]
-</pre>
-
-<p>&nbsp;</p>
-<p><strong>Constraints:</strong></p>
-
-<ul>
-	<li><code>1 &lt;= s.length &lt;= 20</code></li>
-	<li><code>s</code> consists of digits only.</li>
-</ul>
-
-
-
-
-
-
-
-### My Solution 1：_`backtracking`_  
-
-  
-```python
-
-class Solution:
-    def restoreIpAddresses(self, s: str) -> List[str]:
-        res = []
-        path = []
-        def backtracking(startIndex):
-            if startIndex >= len(s) and len(path)==4:
-                res.append(".".join(path))
-                return
-
-            if len(path) > 4:
-                return
-
-            for i in range(startIndex, min(startIndex + 3, len(s))):
-                if is_valid (startIndex, i):
-                    path.append(s[startIndex: i + 1])
-                    backtracking(i + 1)
-                    path.pop()
-
-
-        def is_valid(start, end):
-            if s[start] == "0" and end!=start :
-                return False
-            
-            return 0 <=int(s[start: end + 1]) <= 255
-
-        
-        backtracking(0)
-        return res
-
-       
-```
-
-
-
-
-**Complexity Analysis:**  
-
-- *`Time Complexity`*:<br>
-O(1) in terms of input string length N, since the size of the input is not a factor beyond a certain length (the length must be between 4 and 12 for a valid IP address).
-  
-- *`Space Complexity`*:<br>
-O(1) , as the space used does not grow significantly with the length of the input string N.
-<br>
-
-![Dividing Line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
-<br>
-
-
-
-
-<h2 id = "78"><a href="https://leetcode.com/problems/subsets">78. Subsets</a></h2><h3>Medium</h3><p>Given an integer array <code>nums</code> of <strong>unique</strong> elements, return <em>all possible</em> <span data-keyword="subset"><em>subsets</em></span> <em>(the power set)</em>.</p>
-
-<p>The solution set <strong>must not</strong> contain duplicate subsets. Return the solution in <strong>any order</strong>.</p>
-
-<p>&nbsp;</p>
-<p><strong class="example">Example 1:</strong></p>
-
-<pre>
-<strong>Input:</strong> nums = [1,2,3]
-<strong>Output:</strong> [[],[1],[2],[1,2],[3],[1,3],[2,3],[1,2,3]]
-</pre>
-
-<p><strong class="example">Example 2:</strong></p>
-
-<pre>
-<strong>Input:</strong> nums = [0]
-<strong>Output:</strong> [[],[0]]
-</pre>
-
-<p>&nbsp;</p>
-<p><strong>Constraints:</strong></p>
-
-<ul>
-	<li><code>1 &lt;= nums.length &lt;= 10</code></li>
-	<li><code>-10 &lt;= nums[i] &lt;= 10</code></li>
-	<li>All the numbers of&nbsp;<code>nums</code> are <strong>unique</strong>.</li>
-</ul>
-
-
-
-
-
-
-### My Solution 1：_`backtracking`_  
-
-  
-```python
-
-class Solution:
-    def subsets(self, nums: List[int]) -> List[List[int]]:
-        self.res = []
-        self.path = []
-
-        self.backtracking(nums, 0)
-        return self.res
-
-
-
-    def backtracking(self, nums, startIndex):
-        
-        # 如果最后递归为[1,2,3]，所以先放入再检查
-        self.res.append(self.path[:])
-
-        # 下面可以省略，因为 for循环已经帮助处理 startIndex > len(nums)
-        # if startIndex >= len(nums):
-        #     return
-    
-
-        for i in range(startIndex, len(nums)):
-            self.path.append(nums[i])
-            self.backtracking(nums, i + 1)
-            self.path.pop()
-```
-
-**Complexity Analysis:**  
-
-- *`Time Complexity`*:<br>
-O(2^n).Each number has two possibilities: either it is part of a subset or it is not.
-  
-- *`Space Complexity`*:<br>
-O(n) if we only consider auxiliary space not the space for the output. 
 <br>
 
 ![Dividing Line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
