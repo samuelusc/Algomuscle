@@ -3,25 +3,23 @@ class Solution:
         res = []
         path = []
         candidates.sort()
-        def backtracking(candidates, target, sum, startIndex):
-            if sum > target:
-                return
+        def backtracking(candidates, target, current_sum, startIndex):
 
-            if sum == target:
+            if current_sum == target:
                 res.append(path[:])
                 return
 
             for i in range(startIndex, len(candidates)):
-                sum += candidates[i]
-                if sum > target: 
+                current_sum += candidates[i]
+                if current_sum > target: 
                     break
 
                 path.append(candidates[i])
                 # 注意这里是i, 因为元素可以重复使用
-                backtracking(candidates, target, sum, i)
+                backtracking(candidates, target, current_sum, i)
                 
                 # sum 减去最后的candidate
-                sum -= candidates[i]
+                current_sum -= candidates[i]
                 path.pop()
 
         backtracking(candidates, target, 0, 0) 
