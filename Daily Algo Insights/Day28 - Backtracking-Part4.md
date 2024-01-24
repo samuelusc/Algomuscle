@@ -209,7 +209,7 @@ O(n) if we only consider auxiliary space not the space for the output.
 
 
 
-### My Solution 1：_`backtracking+deduplicating`_  
+### My Solution 1：_`backtracking+deduplication`_  
 
   
 ```python
