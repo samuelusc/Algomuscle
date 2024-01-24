@@ -7,7 +7,7 @@
 * **[77. Combinations](#77)**
 
 
-## Template 1
+## Template 
 
 ```
 void backtracking(参数) {
