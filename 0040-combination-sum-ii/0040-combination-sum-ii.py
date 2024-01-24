@@ -16,15 +16,15 @@ class Solution:
                 #检查相邻的两个是否相等
                 if i > startIndex and candidates[i] == candidates[i-1]:
                     continue
-                # 求合
-                current_sum += candidates[i]
+
                 # pruning branches
-                if current_sum > target:
+                if current_sum + candidates[i] > target:
                     break
                 
                 path.append(candidates[i])
-                backtracking(candidates, target, current_sum, i + 1)
-                current_sum -= candidates[i]
+                # 传递新的 current_sum,
+                # 这样backtracking 就不需要 current_sum - candidates[i]
+                backtracking(candidates, target, current_sum + candidates[i], i + 1)
                 path.pop()
 
         backtracking(candidates, target, 0, 0)
