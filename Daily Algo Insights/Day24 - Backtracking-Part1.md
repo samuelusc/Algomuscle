@@ -7,6 +7,23 @@
 * **[77. Combinations](#77)**
 
 
+## Key Points
+
+```
+void backtracking(参数) {
+    if (终止条件) {
+        存放结果;
+        return;
+    }
+
+    for (选择：本层集合中元素（树中节点孩子的数量就是集合的大小）) {
+        处理节点;
+        backtracking(路径，选择列表); // 递归
+        回溯，撤销处理结果
+    }
+}
+```
+
 <br>
 <h2 id = "77"><a href="https://leetcode.com/problems/combinations">77. Combinations</a></h2><h3>Medium</h3><hr><p>Given two integers <code>n</code> and <code>k</code>, return <em>all possible combinations of</em> <code>k</code> <em>numbers chosen from the range</em> <code>[1, n]</code>.</p>
 
