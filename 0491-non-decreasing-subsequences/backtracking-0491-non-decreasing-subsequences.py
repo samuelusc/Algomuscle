@@ -4,9 +4,10 @@ class Solution:
         path = []
 
         def backtracking(nums, startIndex):
+            # 这里是开始记录的条件，而不是递归结束条件
             if len(path) > 1:
                 res.append(path[:])
-
+            # 为什么没有加return 因为会跳过后面的元素，而这里并非截止点
 
             seen = set()
 
