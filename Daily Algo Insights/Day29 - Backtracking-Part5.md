@@ -7,8 +7,7 @@
 * **[47. Permutations II](#47)**
 * **[xx](#)**
 * **[xx](#)**
-<br>
-xxximagexxx
+
 <br>
 <h2 id = "491"><a href="https://leetcode.com/problems/non-decreasing-subsequences">491. Non-decreasing Subsequences</a></h2><h3>Medium</h3><p>Given an integer array <code>nums</code>, return <em>all the different possible non-decreasing subsequences of the given array with at least two elements</em>. You may return the answer in <strong>any order</strong>.</p>
 
@@ -40,7 +39,8 @@ xxximagexxx
 ### Solving approach 1:
 
 
-xxxx
+![Leetcode 46 ](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day29/%23Leetcode46-draft.jpg)
+
 
 
 ### My Solution 1：_`backtracking + set`_  
@@ -85,7 +85,7 @@ class Solution:
 
 <br>
 
-![Dividing Line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
+![Dividing Line](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day29/%23leetcode491.jpg)
 <br>
 
 
@@ -116,7 +116,7 @@ class Solution:
 ### Solving approach 1:
 
 
-xxxx
+![Leetcode 46 ](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day29/%23Leetcode46-draft.jpg)
 
 
 ### My Solution 1：_`xxx`_  
@@ -194,6 +194,13 @@ class Solution:
 	<li><code>-10 &lt;= nums[i] &lt;= 10</code></li>
 </ul>
 
+
+
+
+### Solving approach 1:
+
+
+![Leetcode 47 ](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day29/Leetcode47-draft.jpg)
 
 
 ### My Solution 1：_`xxx`_  
