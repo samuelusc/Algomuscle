@@ -8,13 +8,10 @@ class Solution:
         # 注意这里的循环顺序不能颠倒
         # 例如 g[1,2,7,10] s[1,3,5,9]
         for i in range(len(g)-1, -1, -1):
-            while s_index>=0 and s[s_index] >= g[i]:
+            if s_index>=0 and s[s_index] >= g[i]:
                 s_index -= 1
                 count += 1
-                # 得跳出内循环
-                break
-
-
+  
         return count
         
 
