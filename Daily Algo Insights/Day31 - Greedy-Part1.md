@@ -243,10 +243,10 @@ class Solution:
 **Complexity Analysis:**  
 
 - *`Time Complexity`*:<br>
-
 O(n)  
 - *`Space Complexity`*:<br>
 O(1)
+
 <br>
 
 ![Dividing Line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
