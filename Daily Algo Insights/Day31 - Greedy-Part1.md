@@ -1,13 +1,11 @@
 # Day31 - Greedy Part 1
 
-### [Study Reference](https://programmercarl.com/0020.%E6%9C%89%E6%95%88%E7%9A%84%E6%8B%AC%E5%8F%B7.html)  
 
 ## Contents
 * **[455.Assign Cookies](#455)**
 * **[376. Wiggle Subsequence](#376)**
 * **[53. Maximum Subarray](#)**
-* **[xx](#)**
-* **[xx](#)**
+
 
 <br>
 <h2 id = "455"><a href="https://leetcode.com/problems/assign-cookies">455. Assign Cookies</a></h2><h3>Easy</h3><hr><p>Assume you are an awesome parent and want to give your children some cookies. But, you should give each child at most one cookie.</p>
