@@ -170,7 +170,7 @@
 | 236       | [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree)               | [Python](./0236-lowest-common-ancestor-of-a-binary-tree)                         | Medium     | Binary Tree            |       |
 
 
-**[Day 22](Daily%20Algo%20Insights/Day22%20-%20Binary%20Tree-Part8.md) - 1/15/2024**
+**[Day 22](Daily%20Algo%20Insights/Day22%20-%20Binary%20Tree-Part8.md) - 1/16/2024**
 
 | Question# | Title                                                                                                                          | Solution                                                                      | Difficulty | Topics                 | Nodes |
 |-----------|--------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|------------|------------------------|-------|
@@ -180,3 +180,18 @@
 
 
 
+**[Day 23](Daily%20Algo%20Insights/Day23%20-%20Binary%20Tree-Part9.md) - 1/17/2024**
+
+| Question# | Title                                                                                                                    | Solution                                                                    | Difficulty | Topics                 | Nodes |
+|-----------|--------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------|------------------------|-------|
+| 669       | [Trim a Binary Search Tree](https://leetcode.com/problems/trim-a-binary-search-tree)                                     | [Python](./0669-trim-a-binary-search-tree)                                  | Medium     | Binary Search Tree     |       |
+| 108       | [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree)   | [Python](./0108-convert-sorted-array-to-binary-search-tree)                 | Easy       | Binary Search Tree     |       |
+| 538       | [Convert BST to Greater Tree](https://leetcode.com/problems/convert-bst-to-greater-tree)                                 | [Python](./0538-convert-bst-to-greater-tree)                                | Medium     | Binary Search Tree     |       |
+
+
+
+**[Day 24](Daily%20Algo%20Insights/Day24%20-%20Backtracking-Part1.md) - 1/18/2024**
+
+| Question# | Title                                            | Solution                                                    | Difficulty | Topics             | Nodes |
+|-----------|--------------------------------------------------|-------------------------------------------------------------|------------|--------------------|-------|
+| 77        | [Combinations](https://leetcode.com/problems/combinations) | [Python](./0077-combinations)    
