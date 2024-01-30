@@ -221,3 +221,13 @@
 | 78        | [Subsets](https://leetcode.com/problems/subsets)                                          | [Python](./0078-subsets)                  | Medium     | Backtracking |       |
 | 90        | [Subsets II](https://leetcode.com/problems/subsets-ii)                                    | [Python](./0090-subsets-ii)               | Medium     | Backtracking |       |
 
+
+
+**[Day 29](Daily%20Algo%20Insights/Day29%20-%20Backtracking-Part5.md) - 1/31/2024**
+
+| Question# | Title                                                                                     | Solution                                   | Difficulty | Topics       | Notes |
+|-----------|-------------------------------------------------------------------------------------------|--------------------------------------------|------------|--------------|-------|
+| 491       | [Non-decreasing Subsequences](https://leetcode.com/problems/non-decreasing-subsequences) | [Python](./0491-non-decreasing-subsequences) | Medium     | Backtracking |       |
+| 46        | [Permutations](https://leetcode.com/problems/permutations)                                | [Python](./0046-permutations)              | Medium     | Backtracking |       |
+| 47        | [Permutations II](https://leetcode.com/problems/permutations-ii)                          | [Python](./0047-permutations-ii)           | Medium     | Backtracking |       |
+
