@@ -124,7 +124,7 @@
 | 226       | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree)                   | [Python](./0226-invert-binary-tree)                                                     | Easy       | Binary Tree    |       |
 | 101       | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree)                          | [Python](./0101-symmetric-tree)                                                         | Easy       | Binary Tree    |       |
 
-**[Day 16](./Daily%20Algo%20Insights/Day15-Binary%20Tree-Part3.md) - 1/10/2024**
+**[Day 16](Daily%20Algo%20Insights/Day16-Binary%20Tree-Part3.md) - 1/10/2024**
 
 | Question# | Title                                                                           | Solution                                                    | Difficulty | Topics        | Nodes |
 |-----------|---------------------------------------------------------------------------------|-------------------------------------------------------------|------------|---------------|-------|
@@ -133,7 +133,7 @@
 | 222       | [Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes) | [Python](./0222-count-complete-tree-nodes)                  | Easy       | Binary Tree   |       |
 
 
-**[Day 17](./Daily%20Algo%20Insights/Day16-Binary%20Tree-Part4.md) - 1/11/2024**
+**[Day 17](Daily%20Algo%20Insights/Day17-Binary%20Tree-Part4.md) - 1/11/2024**
 
 | Question# | Title                                                                       | Solution                                             | Difficulty | Topics        | Nodes |
 |-----------|-----------------------------------------------------------------------------|------------------------------------------------------|------------|---------------|-------|
@@ -142,7 +142,7 @@
 | 404       | [Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves)    | [Python](./0404-sum-of-left-leaves)                  | Easy       | Binary Tree   |       |
 
 
-**[Day 18](./Daily%20Algo%20Insights/Day17-Binary%20Tree-Part5.md) - 1/12/2024**
+**[Day 18](Daily%20Algo%20Insights/Day18-Binary%20Tree-Part5.md) - 1/12/2024**
 
 | Question# | Title                                                                                                     | Solution                                                        | Difficulty | Topics        | Nodes |
 |-----------|-----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|------------|---------------|-------|
@@ -151,7 +151,7 @@
 | 106       | [Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal) | [Python](./0106-construct-binary-tree-from-inorder-and-postorder-traversal) | Medium     | Binary Tree   |       |
 
 
-**[Day 20](./Daily%20Algo%20Insights/Day19-Binary%20Tree-Part6.md) - 1/14/2024**
+**[Day 20](Daily%20Algo%20Insights/Day20-Binary%20Tree-Part6.md) - 1/14/2024**
 
 | Question# | Title                                                                                                               | Solution                                                             | Difficulty | Topics          | Nodes |
 |-----------|---------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|------------|-----------------|-------|
@@ -161,7 +161,7 @@
 | 98        | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree)                           | [Python](./0098-validate-binary-search-tree)                         | Medium     | Binary Search Tree |     |
 
 
-**[Day 21](./Daily%20Algo%20Insights/Day20-Binary%20Tree-Part7.md) - 1/15/2024**
+**[Day 21](Daily%20Algo%20Insights/Day20-Binary%21Tree-Part7.md) - 1/15/2024**
 
 | Question# | Title                                                                                                                           | Solution                                                                         | Difficulty | Topics                 | Nodes |
 |-----------|---------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|------------|------------------------|-------|
