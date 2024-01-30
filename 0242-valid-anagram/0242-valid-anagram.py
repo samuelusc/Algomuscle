@@ -8,4 +8,8 @@ class Solution:
         for char in t:
             record[ord(char) - ord('a')] -= 1
 
-        return all(value == 0 for value in record)
+        for num in record:
+            if num:
+                return False
+
+        return True
