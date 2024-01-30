@@ -124,3 +124,48 @@
 | 226       | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree)                   | [Python](./0226-invert-binary-tree)                                                     | Easy       | Binary Tree    |       |
 | 101       | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree)                          | [Python](./0101-symmetric-tree)                                                         | Easy       | Binary Tree    |       |
 
+**[Day 16](./Daily%20Algo%20Insights/Day15-Binary%20Tree-Part3.md) - 1/10/2024**
+
+| Question# | Title                                                                           | Solution                                                    | Difficulty | Topics        | Nodes |
+|-----------|---------------------------------------------------------------------------------|-------------------------------------------------------------|------------|---------------|-------|
+| 104       | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree) | [Python](./0104-maximum-depth-of-binary-tree)               | Easy       | Binary Tree   |       |
+| 111       | [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree) | [Python](./0111-minimum-depth-of-binary-tree)               | Easy       | Binary Tree   |       |
+| 222       | [Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes) | [Python](./0222-count-complete-tree-nodes)                  | Easy       | Binary Tree   |       |
+
+
+**[Day 17](./Daily%20Algo%20Insights/Day16-Binary%20Tree-Part4.md) - 1/11/2024**
+
+| Question# | Title                                                                       | Solution                                             | Difficulty | Topics        | Nodes |
+|-----------|-----------------------------------------------------------------------------|------------------------------------------------------|------------|---------------|-------|
+| 110       | [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree) | [Python](./0110-balanced-binary-tree)                | Easy       | Binary Tree   |       |
+| 257       | [Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths)       | [Python](./0257-binary-tree-paths)                   | Easy       | Binary Tree   |       |
+| 404       | [Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves)    | [Python](./0404-sum-of-left-leaves)                  | Easy       | Binary Tree   |       |
+
+
+**[Day 18](./Daily%20Algo%20Insights/Day17-Binary%20Tree-Part5.md) - 1/12/2024**
+
+| Question# | Title                                                                                                     | Solution                                                        | Difficulty | Topics        | Nodes |
+|-----------|-----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|------------|---------------|-------|
+| 513       | [Find Bottom Left Tree Value](https://leetcode.com/problems/find-bottom-left-tree-value)                 | [Python](./0513-find-bottom-left-tree-value)                    | Medium     | Binary Tree   |       |
+| 112       | [Path Sum](https://leetcode.com/problems/path-sum)                                                        | [Python](./0112-path-sum)                                       | Easy       | Binary Tree   |       |
+| 106       | [Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal) | [Python](./0106-construct-binary-tree-from-inorder-and-postorder-traversal) | Medium     | Binary Tree   |       |
+
+
+**[Day 20](./Daily%20Algo%20Insights/Day19-Binary%20Tree-Part6.md) - 1/14/2024**
+
+| Question# | Title                                                                                                               | Solution                                                             | Difficulty | Topics          | Nodes |
+|-----------|---------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|------------|-----------------|-------|
+| 654       | [Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree)                                           | [Python](./0654-maximum-binary-tree)                                 | Medium     | Binary Tree     |       |
+| 617       | [Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees)                                     | [Python](./0617-merge-two-binary-trees)                              | Easy       | Binary Tree     |       |
+| 700       | [Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree)                     | [Python](./0700-search-in-a-binary-search-tree)                      | Easy       | Binary Search Tree |     |
+| 98        | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree)                           | [Python](./0098-validate-binary-search-tree)                         | Medium     | Binary Search Tree |     |
+
+
+**[Day 21](./Daily%20Algo%20Insights/Day20-Binary%20Tree-Part7.md) - 1/15/2024**
+
+| Question# | Title                                                                                                                           | Solution                                                                         | Difficulty | Topics                 | Nodes |
+|-----------|---------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|------------|------------------------|-------|
+| 530       | [Minimum Absolute Difference in BST](https://leetcode.com/problems/minimum-absolute-difference-in-bst)                         | [Python](./0530-minimum-absolute-difference-in-bst)                              | Easy       | Binary Search Tree     |       |
+| 501       | [Find Mode in Binary Search Tree](https://leetcode.com/problems/find-mode-in-binary-search-tree)                               | [Python](./0501-find-mode-in-binary-search-tree)                                 | Easy       | Binary Search Tree     |       |
+| 236       | [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree)               | [Python](./0236-lowest-common-ancestor-of-a-binary-tree)                         | Medium     | Binary Tree            |       |
+
