@@ -169,3 +169,14 @@
 | 501       | [Find Mode in Binary Search Tree](https://leetcode.com/problems/find-mode-in-binary-search-tree)                               | [Python](./0501-find-mode-in-binary-search-tree)                                 | Easy       | Binary Search Tree     |       |
 | 236       | [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree)               | [Python](./0236-lowest-common-ancestor-of-a-binary-tree)                         | Medium     | Binary Tree            |       |
 
+
+**[Day 22](Daily%20Algo%20Insights/Day22%20-%20Binary%20Tree-Part8.md) - 1/15/2024**
+
+| Question# | Title                                                                                                                          | Solution                                                                      | Difficulty | Topics                 | Nodes |
+|-----------|--------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|------------|------------------------|-------|
+| 235       | [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree) | [Python](./0235-lowest-common-ancestor-of-a-binary-search-tree)               | Medium     | Binary Search Tree     |       |
+| 701       | [Insert into a Binary Search Tree](https://leetcode.com/problems/insert-into-a-binary-search-tree)                            | [Python](./0701-insert-into-a-binary-search-tree)                             | Medium     | Binary Search Tree     |       |
+| 450       | [Delete Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst)                                                     | [Python](./0450-delete-node-in-a-bst)                                         | Medium     | Binary Search Tree     |       |
+
+
+
