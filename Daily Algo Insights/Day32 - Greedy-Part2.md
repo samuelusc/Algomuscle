@@ -5,7 +5,7 @@
 * **[122. Best Time to Buy and Sell Stock II](#122)**
 * **[55. Jump Game](#55)**
 * **[45. Jump Game II](#45)**
-* **[Jump Game](#MS)**
+* **[Ms. Jump Game](#MS)**
 
 
 
