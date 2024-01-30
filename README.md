@@ -105,3 +105,22 @@
 | 144       | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal) |[Python](./0144-binary-tree-preorder-traversal)| Easy      | Binary Tree    |   |
 | 145       | [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal) |[Python](./0145-binary-tree-postorder-traversal)| Easy     | Binary Tree   |      |
 | 94       | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal) |[Python](./0094-binary-tree-inorder-traversal)| Easy     |  Binary Tree     |   |
+
+
+**[Day 15](./Daily%20Algo%20Insights/Day14-Binary%20Tree-Part2.md) - 1/9/2024**
+
+| Question# | Title                                                                                   | Solution                                                                                | Difficulty | Topics         | Nodes |
+|-----------|-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|------------|----------------|-------|
+| 102       | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal) | [Python](./0102-binary-tree-level-order-traversal)                                      | Medium     | Binary Tree    |       |
+| 107       | [Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii) | [Python](./0107-binary-tree-level-order-traversal-ii)                                   | Medium     | Binary Tree    |       |
+| 199       | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view) | [Python](./0199-binary-tree-right-side-view)                                            | Medium     | Binary Tree    |       |
+| 637       | [Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree) | [Python](./0637-average-of-levels-in-binary-tree)                                       | Easy       | Binary Tree    |       |
+| 429       | [N-ary Tree Level Order Traversal](https://leetcode.com/problems/n-ary-tree-level-order-traversal) | [Python](./0429-n-ary-tree-level-order-traversal)                                       | Medium     | N-ary Tree     |       |
+| 515       | [Find Largest Value in Each Tree Row](https://leetcode.com/problems/find-largest-value-in-each-tree-row) | [Python](./0515-find-largest-value-in-each-tree-row)                                    | Medium     | Binary Tree    |       |
+| 116       | [Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node) | [Python](./0116-populating-next-right-pointers-in-each-node)                            | Medium     | Binary Tree    |       |
+| 117       | [Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii) | [Python](./0117-populating-next-right-pointers-in-each-node-ii)                         | Medium     | Binary Tree    |       |
+| 104       | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree) | [Python](./0104-maximum-depth-of-binary-tree)                                           | Easy       | Binary Tree    |       |
+| 111       | [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree) | [Python](./0111-minimum-depth-of-binary-tree)                                           | Easy       | Binary Tree    |       |
+| 226       | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree)                   | [Python](./0226-invert-binary-tree)                                                     | Easy       | Binary Tree    |       |
+| 101       | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree)                          | [Python](./0101-symmetric-tree)                                                         | Easy       | Binary Tree    |       |
+
