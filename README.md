@@ -194,4 +194,13 @@
 
 | Question# | Title                                            | Solution                                                    | Difficulty | Topics             | Nodes |
 |-----------|--------------------------------------------------|-------------------------------------------------------------|------------|--------------------|-------|
-| 77        | [Combinations](https://leetcode.com/problems/combinations) | [Python](./0077-combinations)    
+| 77        | [Combinations](https://leetcode.com/problems/combinations) | [Python](./0077-combinations)                               | Medium     | Backtracking       |       |
+
+
+**[Day 25](Daily%20Algo%20Insights/Day25%20-%20Backtracking-Part2.md) - 1/19/2024**
+
+| Question# | Title                                                                                     | Solution                                   | Difficulty | Topics              | Notes |
+|-----------|-------------------------------------------------------------------------------------------|--------------------------------------------|------------|---------------------|-------|
+| 216       | [Combination Sum III](https://leetcode.com/problems/combination-sum-iii)                  | [Python](./0216-combination-sum-iii)       | Medium     | Backtracking        |       |
+| 17        | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number) | [Python](./0017-letter-combinations-of-a-phone-number) | Medium     | Backtracking        |       |
+
