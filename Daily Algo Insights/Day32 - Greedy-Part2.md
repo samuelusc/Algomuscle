@@ -6,7 +6,7 @@
 * **[55. Jump Game](#55)**
 * **[45. Jump Game II](#45)**
 * **[Jump Game](#MS)**
-* **[xx](#)**
+
 
 
 <br>
@@ -287,11 +287,12 @@ xxx
 <br>
 
 
-<h2 id = "MS">Jump Game - MS</h2>
+
+<h2 id = "MS">Jump Game - MicroSoft</h2>
 
 *You are given an array of non-negative integers arr and a start index. When you are at an index i, you can move left or right by arr[i]. Your task is to figure out if you can reach value 0.*
 
-Example 1: 
+`Example 1:`
 
 Input: arr = [3, 4, 2, 3, 0, 3, 1, 2, 1], start = 7
 
@@ -301,7 +302,7 @@ Explanation:
 left -> left -> right
 
 
-Example 2:
+`Example 2:`
 
 Input: arr = [3, 2, 1, 3, 0, 3, 1, 2, 1], start = 2
 
