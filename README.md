@@ -204,3 +204,10 @@
 | 216       | [Combination Sum III](https://leetcode.com/problems/combination-sum-iii)                  | [Python](./0216-combination-sum-iii)       | Medium     | Backtracking        |       |
 | 17        | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number) | [Python](./0017-letter-combinations-of-a-phone-number) | Medium     | Backtracking        |       |
 
+**[Day 27](Daily%20Algo%20Insights/Day27%20-%20Backtracking-Part3.md) - 1/21/2024**
+
+| Question# | Title                                                                                         | Solution                                    | Difficulty | Topics       | Notes |
+|-----------|------------------------------------------------------------------------------------------------|---------------------------------------------|------------|--------------|-------|
+| 39        | [Combination Sum](https://leetcode.com/problems/combination-sum)                               | [Python](./0039-combination-sum)            | Medium     | Backtracking |       |
+| 40        | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii)                         | [Python](./0040-combination-sum-ii)         | Medium     | Backtracking |       |
+| 131       | [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning)               | [Python](./0131-palindrome-partitioning)    | Medium     | Backtracking |       |
