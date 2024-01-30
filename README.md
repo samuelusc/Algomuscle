@@ -223,11 +223,32 @@
 
 
 
-**[Day 29](Daily%20Algo%20Insights/Day29%20-%20Backtracking-Part5.md) - 1/31/2024**
+**[Day 29](Daily%20Algo%20Insights/Day29%20-%20Backtracking-Part5.md) - 1/23/2024**
 
 | Question# | Title                                                                                     | Solution                                   | Difficulty | Topics       | Notes |
 |-----------|-------------------------------------------------------------------------------------------|--------------------------------------------|------------|--------------|-------|
 | 491       | [Non-decreasing Subsequences](https://leetcode.com/problems/non-decreasing-subsequences) | [Python](./0491-non-decreasing-subsequences) | Medium     | Backtracking |       |
 | 46        | [Permutations](https://leetcode.com/problems/permutations)                                | [Python](./0046-permutations)              | Medium     | Backtracking |       |
 | 47        | [Permutations II](https://leetcode.com/problems/permutations-ii)                          | [Python](./0047-permutations-ii)           | Medium     | Backtracking |       |
+
+
+
+**[Day 31](Daily%20Algo%20Insights/Day31%20-%20Greedy-Part1.md) - 1/25/2024**
+
+| Question# | Title                                                                                          | Solution                                | Difficulty | Topics       | Notes |
+|-----------|------------------------------------------------------------------------------------------------|-----------------------------------------|------------|--------------|-------|
+| 455       | [Assign Cookies](https://leetcode.com/problems/assign-cookies)                                 | [Python](./0455-assign-cookies)         | Easy       | Greedy       |       |
+| 376       | [Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence)                         | [Python](./0376-wiggle-subsequence)     | Medium     | Greedy       |       |
+| 53        | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray)                             | [Python](./0053-maximum-subarray)       | Medium     | Greedy       |       |
+
+
+
+**[Day 32](Daily%20Algo%20Insights/Day32%20-%20Greedy-Part2.md) - 2/03/2024**
+
+| Question# | Title                                                                                                           | Solution                                       | Difficulty | Topics | Notes |
+|-----------|-----------------------------------------------------------------------------------------------------------------|------------------------------------------------|------------|--------|-------|
+| 122       | [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii)          | [Python](./0122-best-time-to-buy-and-sell-stock-ii) | Medium     | Greedy |       |
+| 55        | [Jump Game](https://leetcode.com/problems/jump-game)                                                            | [Python](./0055-jump-game)                         | Medium     | Greedy |       |
+| 45        | [Jump Game II](https://leetcode.com/problems/jump-game-ii)                                                      | [Python](./0045-jump-game-ii)                       | Medium     | Greedy |       |
+| MS        | Jump Game - MicroSoft                                                                                          | [Python](./MS-jump-game-microsoft)                  | --         | Greedy |       |
 
