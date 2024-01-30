@@ -211,3 +211,13 @@
 | 39        | [Combination Sum](https://leetcode.com/problems/combination-sum)                               | [Python](./0039-combination-sum)            | Medium     | Backtracking |       |
 | 40        | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii)                         | [Python](./0040-combination-sum-ii)         | Medium     | Backtracking |       |
 | 131       | [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning)               | [Python](./0131-palindrome-partitioning)    | Medium     | Backtracking |       |
+
+
+**[Day 28](Daily%20Algo%20Insights/Day28%20-%20Backtracking-Part4.md) - 1/22/2024**
+
+| Question# | Title                                                                                     | Solution                                  | Difficulty | Topics       | Notes |
+|-----------|-------------------------------------------------------------------------------------------|-------------------------------------------|------------|--------------|-------|
+| 93        | [Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses)               | [Python](./0093-restore-ip-addresses)     | Medium     | Backtracking |       |
+| 78        | [Subsets](https://leetcode.com/problems/subsets)                                          | [Python](./0078-subsets)                  | Medium     | Backtracking |       |
+| 90        | [Subsets II](https://leetcode.com/problems/subsets-ii)                                    | [Python](./0090-subsets-ii)               | Medium     | Backtracking |       |
+
