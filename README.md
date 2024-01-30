@@ -107,7 +107,7 @@
 | 94       | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal) |[Python](./0094-binary-tree-inorder-traversal)| Easy     |  Binary Tree     |   |
 
 
-**[Day 15](./Daily%20Algo%20Insights/Day14-Binary%20Tree-Part2.md) - 1/9/2024**
+**[Day 15](Daily%20Algo%20Insights/Day15-Binary%20Tree-Part2.md) - 1/9/2024**
 
 | Question# | Title                                                                                   | Solution                                                                                | Difficulty | Topics         | Nodes |
 |-----------|-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|------------|----------------|-------|
