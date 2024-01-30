@@ -249,15 +249,21 @@ O(1)
   
 ```python
 
+class Solution:
+    def jump(self, nums: List[int]) -> int:
+        
+        last, cover, count = 0, 0, 0
 
+        for i in range(len(nums) - 1):
+            cover = max(cover, nums[i] + i)
+
+            if i == last:
+                count += 1
+                last = cover
+
+        return count
 ```
 
-
-- *`Time Complexity`*:<br>
-
-  
-- *`Space Complexity`*:<br>
----
   
 ### Solving approach 2:  
 
@@ -277,10 +283,10 @@ xxx
 **Complexity Analysis:**  
 
 - *`Time Complexity`*:<br>
-
+O(n)
   
 - *`Space Complexity`*:<br>
-
+O(1)
 <br>
 
 ![Dividing Line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
@@ -309,12 +315,12 @@ Input: arr = [3, 2, 1, 3, 0, 3, 1, 2, 1], start = 2
 Output: false
 
 
-### My Solution 1：_`Greedy-queue`_  
+### My Solution 1：_`Greedy-BFS`_  
 ```python
 from typing import List
 from collections import deque
 def jump_game(arr: List[int], start: int) -> bool:
-    # WRITE YOUR BRILLIANT CODE HERE
+    # 我们使用BFS（适合寻找最短路径）
     visited = set()
     queue = deque([start])
     
@@ -343,3 +349,12 @@ if __name__ == '__main__':
     res = jump_game(arr, start)
     print('true' if res else 'false')
 ```
+
+
+**Complexity Analysis:**  
+
+- *`Time Complexity`*:<br>
+O(n)
+  
+- *`Space Complexity`*:<br>
+O(n)
