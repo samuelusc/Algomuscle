@@ -10,7 +10,7 @@
 
 
 <br>
-<h2 id = "122"><a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii">122. Best Time to Buy and Sell Stock II</a></h2><h3>Medium</h3><hr><p>You are given an integer array <code>prices</code> where <code>prices[i]</code> is the price of a given stock on the <code>i<sup>th</sup></code> day.</p>
+<h2 id = "122"><a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii">122. Best Time to Buy and Sell Stock II</a></h2><h3>Medium</h3><p>You are given an integer array <code>prices</code> where <code>prices[i]</code> is the price of a given stock on the <code>i<sup>th</sup></code> day.</p>
 
 <p>On each day, you may decide to buy and/or sell the stock. You can only hold <strong>at most one</strong> share of the stock at any time. However, you can buy it then immediately sell it on the <strong>same day</strong>.</p>
 
@@ -54,13 +54,8 @@ Total profit is 4.
 
 <br>
 
-### Solving approach 1:
 
-
-xxxx
-
-
-### My Solution 1：_`xxx`_  
+### My Solution 1：_`greedy - positive diff`_  
 
   
 ```python
@@ -75,28 +70,6 @@ class Solution:
         return count 
 ```
 
-
-- *`Time Complexity`*:<br>
-
-  
-- *`Space Complexity`*:<br>
----
-  
-### Solving approach 2:  
-
-
-xxx
-
- 
-### My Solution 2：_`xxx`_  
-
-  
-```python
-
-
-```
-
-
 **Complexity Analysis:**  
 
 - *`Time Complexity`*:<br>
@@ -110,7 +83,7 @@ O(1)
 <br>
 
 
-<h2 id = "55"><a href="https://leetcode.com/problems/jump-game">55. Jump Game</a></h2><h3>Medium</h3><hr><p>You are given an integer array <code>nums</code>. You are initially positioned at the array&#39;s <strong>first index</strong>, and each element in the array represents your maximum jump length at that position.</p>
+<h2 id = "55"><a href="https://leetcode.com/problems/jump-game">55. Jump Game</a></h2><h3>Medium</h3><p>You are given an integer array <code>nums</code>. You are initially positioned at the array&#39;s <strong>first index</strong>, and each element in the array represents your maximum jump length at that position.</p>
 
 <p>Return <code>true</code><em> if you can reach the last index, or </em><code>false</code><em> otherwise</em>.</p>
 
@@ -142,7 +115,7 @@ O(1)
 
 
 
-### My Solution 1：_`xxx`_  
+### My Solution 1：_`greedy - longest cover`_  
 
   
 ```python
@@ -164,30 +137,7 @@ class Solution:
 
         #never meet the case of False
         return True
-```
-
-
-- *`Time Complexity`*:<br>
-
-  
-- *`Space Complexity`*:<br>
----
-  
-### Solving approach 2:  
-
-
-xxx
-
- 
-### My Solution 2：_`xxx`_  
-
-  
-```python
-
-
-```
-
-
+``
 **Complexity Analysis:**  
 
 - *`Time Complexity`*:<br>
@@ -203,7 +153,7 @@ O(1)
 
 
 
-<h2 id = "45"><a href="https://leetcode.com/problems/jump-game-ii">45. Jump Game II</a></h2><h3>Medium</h3><hr><p>You are given a <strong>0-indexed</strong> array of integers <code>nums</code> of length <code>n</code>. You are initially positioned at <code>nums[0]</code>.</p>
+<h2 id = "45"><a href="https://leetcode.com/problems/jump-game-ii">45. Jump Game II</a></h2><h3>Medium</h3><p>You are given a <strong>0-indexed</strong> array of integers <code>nums</code> of length <code>n</code>. You are initially positioned at <code>nums[0]</code>.</p>
 
 <p>Each element <code>nums[i]</code> represents the maximum length of a forward jump from index <code>i</code>. In other words, if you are at <code>nums[i]</code>, you can jump to any <code>nums[i + j]</code> where:</p>
 
@@ -244,7 +194,7 @@ O(1)
 
 
 
-### My Solution 1：_`xxx`_  
+### My Solution 1：_`greedy - longest cover`_  
 
   
 ```python
@@ -263,22 +213,6 @@ class Solution:
 
         return count
 ```
-
-  
-### Solving approach 2:  
-
-
-xxx
-
- 
-### My Solution 2：_`xxx`_  
-
-  
-```python
-
-
-```
-
 
 **Complexity Analysis:**  
 
