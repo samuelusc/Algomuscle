@@ -161,7 +161,7 @@
 | 98        | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree)                           | [Python](./0098-validate-binary-search-tree)                         | Medium     | Binary Search Tree |     |
 
 
-**[Day 21](Daily%20Algo%20Insights/Day20-Binary%21Tree-Part7.md) - 1/15/2024**
+**[Day 21](Daily%20Algo%20Insights/Day21%20-%20Binary%20Tree-Part7.md) - 1/15/2024**
 
 | Question# | Title                                                                                                                           | Solution                                                                         | Difficulty | Topics                 | Nodes |
 |-----------|---------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|------------|------------------------|-------|
