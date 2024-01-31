@@ -71,11 +71,11 @@ xxxx Question Description with id="xxx"
 ### Solving approach 1:
 
 
-1. 先按照身高降序排列。sort(key = len) 是in place modify original list。Parameter key 是可选的，如果不写为升序排列。 
+1. `先按照身高降序排列`。sort(key = len) 是in place modify original list。Parameter key 是可选的，如果不写为升序排列。 sort()只能用在列表，sorted(iterable, key = len/reverse = True)可以用在其他可迭代对象如tuple,dict.
 
-2.  people.sort(key = lambda x: (-x[0],x[1])。 x 就是 people中的元素，即为[h,k]，它返回一个tuple(-x[0],x[1]), 这里 -x[0]表示按照降序排列，当第一个元素相同时会按第二个元素x[1]升序排。
+2.  `people.sort(key = lambda x: (-x[0],x[1])`。 x 就是 people中的元素，即为[h,k]，它返回一个tuple(-x[0],x[1]), 这里 -x[0]表示按照降序排列，当第一个元素相同时会按第二个元素x[1]升序排。
    
-   - lambda arguments: expression
+   - `lambda arguments: expression`
 
 ```python
 # Case 1 
@@ -104,7 +104,19 @@ print(even_nums)  # 输出: [2, 4]
 
 ```
 
-4.  
+4.  insert() 方法只用在列表，
+  
+```python
+my_list = [1, 2, 3, 4, 5]
+
+my_list.insert(2, 'X')  # 在索引位置 2 之前插入 'X'
+# 现在列表变为 [1, 2, 'X', 3, 4, 5]
+
+my_list.insert(-1, 'Y')  # 在倒数第一个位置（最后一个位置）之后插入 'Y'
+# 现在列表变为 [1, 2, 'X', 3, 4, 'Y', 5]
+
+
+```
 
 ### My Solution 1：_`xxx`_  
 
