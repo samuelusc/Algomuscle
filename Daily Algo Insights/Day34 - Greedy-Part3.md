@@ -77,7 +77,7 @@ xxxx Question Description with id="xxx"
    
    - lambda arguments: expression
 
-···python
+```python
 # Case 1 
 add = lambda x, y: x + y
 print(add(5, 3))  # 输出: 8
@@ -102,7 +102,8 @@ even_nums = list(filter(lambda x: x % 2 == 0, nums))
 print(even_nums)  # 输出: [2, 4]
 
 
-···
+```
+
 4.  
 
 ### My Solution 1：_`xxx`_  
