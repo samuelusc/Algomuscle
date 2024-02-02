@@ -252,3 +252,13 @@
 | 45        | [Jump Game II](https://leetcode.com/problems/jump-game-ii)                                                      | [Python](./0045-jump-game-ii)                       | Medium     | Greedy |       |
 | MS        | Jump Game - MicroSoft                                                                                          | [Python](./MS-jump-game-microsoft)                  | --         | Greedy |       |
 
+
+
+**[Day 34](Daily%20Algo%20Insights/Day34%20-%20Greedy-Part3.md) - 1/28/2024**
+
+| Question# | Title                                                                                                           | Solution                                       | Difficulty | Topics | Notes |
+|-----------|-----------------------------------------------------------------------------------------------------------------|------------------------------------------------|------------|--------|-------|
+| 1005      | [Maximize Sum Of Array After K Negations](https://leetcode.com/problems/maximize-sum-of-array-after-k-negations) | [Python](./1005-maximize-sum-of-array-after-k-negations) | Easy       | Greedy |       |
+| 134       | [Gas Station](https://leetcode.com/problems/gas-station)                                                        | [Python](./0134-gas-station)                      | Medium     | Greedy |       |
+| 135       | [Candy](https://leetcode.com/problems/candy)                                                                    | [Python](./0135-candy)                            | Hard       | Greedy |       |
+
