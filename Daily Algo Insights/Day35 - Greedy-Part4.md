@@ -9,7 +9,7 @@
 * **[9. Palindrome Number](#9)**
 
 <br>
-<h2><a href="https://leetcode.com/problems/lemonade-change">860. Lemonade Change</a></h2><h3>Easy</h3><hr><p>At a lemonade stand, each lemonade costs <code>$5</code>. Customers are standing in a queue to buy from you and order one at a time (in the order specified by bills). Each customer will only buy one lemonade and pay with either a <code>$5</code>, <code>$10</code>, or <code>$20</code> bill. You must provide the correct change to each customer so that the net transaction is that the customer pays <code>$5</code>.</p>
+<h2 id = "860"><a href="https://leetcode.com/problems/lemonade-change">860. Lemonade Change</a></h2><h3>Easy</h3><hr><p>At a lemonade stand, each lemonade costs <code>$5</code>. Customers are standing in a queue to buy from you and order one at a time (in the order specified by bills). Each customer will only buy one lemonade and pay with either a <code>$5</code>, <code>$10</code>, or <code>$20</code> bill. You must provide the correct change to each customer so that the net transaction is that the customer pays <code>$5</code>.</p>
 
 <p>Note that you do not have any change in hand at first.</p>
 
@@ -93,17 +93,17 @@ class Solution:
 **Complexity Analysis:**  
 
 - *`Time Complexity`*:<br>
-
+O(n), where n is the number of bills.
   
 - *`Space Complexity`*:<br>
-
+O(1)
 <br>
 
 ![Dividing Line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
 <br>
 
 
-<h2><a href="https://leetcode.com/problems/queue-reconstruction-by-height">406. Queue Reconstruction by Height</a></h2><h3>Medium</h3><hr><p>You are given an array of people, <code>people</code>, which are the attributes of some people in a queue (not necessarily in order). Each <code>people[i] = [h<sub>i</sub>, k<sub>i</sub>]</code> represents the <code>i<sup>th</sup></code> person of height <code>h<sub>i</sub></code> with <strong>exactly</strong> <code>k<sub>i</sub></code> other people in front who have a height greater than or equal to <code>h<sub>i</sub></code>.</p>
+<h2 id = "406"><a href="https://leetcode.com/problems/queue-reconstruction-by-height">406. Queue Reconstruction by Height</a></h2><h3>Medium</h3><hr><p>You are given an array of people, <code>people</code>, which are the attributes of some people in a queue (not necessarily in order). Each <code>people[i] = [h<sub>i</sub>, k<sub>i</sub>]</code> represents the <code>i<sup>th</sup></code> person of height <code>h<sub>i</sub></code> with <strong>exactly</strong> <code>k<sub>i</sub></code> other people in front who have a height greater than or equal to <code>h<sub>i</sub></code>.</p>
 
 <p>Reconstruct and return <em>the queue that is represented by the input array </em><code>people</code>. The returned queue should be formatted as an array <code>queue</code>, where <code>queue[j] = [h<sub>j</sub>, k<sub>j</sub>]</code> is the attributes of the <code>j<sup>th</sup></code> person in the queue (<code>queue[0]</code> is the person at the front of the queue).</p>
 
@@ -218,33 +218,15 @@ class Solution:
 ```
 
 
-- *`Time Complexity`*:<br>
-
-  
-- *`Space Complexity`*:<br>
----
-  
-### Solving approach 2:  
-
-
-xxx
-
- 
-### My Solution 2：_`xxx`_  
-
-  
-```python
-
-
-```
-
 
 **Complexity Analysis:**  
 
 - *`Time Complexity`*:<br>
+O(n^2), where n is the number of people. Sorting opertion in PYthon is O(nlogn).
 
   
 - *`Space Complexity`*:<br>
+O(n)
 
 <br>
 
@@ -253,7 +235,7 @@ xxx
 
 
 
-<h2><a href="https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons">452. Minimum Number of Arrows to Burst Balloons</a></h2><h3>Medium</h3><hr><p>There are some spherical balloons taped onto a flat wall that represents the XY-plane. The balloons are represented as a 2D integer array <code>points</code> where <code>points[i] = [x<sub>start</sub>, x<sub>end</sub>]</code> denotes a balloon whose <strong>horizontal diameter</strong> stretches between <code>x<sub>start</sub></code> and <code>x<sub>end</sub></code>. You do not know the exact y-coordinates of the balloons.</p>
+<h2 id = "452"><a href="https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons">452. Minimum Number of Arrows to Burst Balloons</a></h2><h3>Medium</h3><hr><p>There are some spherical balloons taped onto a flat wall that represents the XY-plane. The balloons are represented as a 2D integer array <code>points</code> where <code>points[i] = [x<sub>start</sub>, x<sub>end</sub>]</code> denotes a balloon whose <strong>horizontal diameter</strong> stretches between <code>x<sub>start</sub></code> and <code>x<sub>end</sub></code>. You do not know the exact y-coordinates of the balloons.</p>
 
 <p>Arrows can be shot up <strong>directly vertically</strong> (in the positive y-direction) from different points along the x-axis. A balloon with <code>x<sub>start</sub></code> and <code>x<sub>end</sub></code> is <strong>burst</strong> by an arrow shot at <code>x</code> if <code>x<sub>start</sub> &lt;= x &lt;= x<sub>end</sub></code>. There is <strong>no limit</strong> to the number of arrows that can be shot. A shot arrow keeps traveling up infinitely, bursting any balloons in its path.</p>
 
@@ -297,11 +279,6 @@ xxx
 	<li><code>-2<sup>31</sup> &lt;= x<sub>start</sub> &lt; x<sub>end</sub> &lt;= 2<sup>31</sup> - 1</code></li>
 </ul><br>
 
-### Solving approach 1:
-
-
-xxxx
-
 
 ### My Solution 1：_`xxx`_  
 
@@ -328,41 +305,20 @@ class Solution:
 ```
 
 
-- *`Time Complexity`*:<br>
-
-  
-- *`Space Complexity`*:<br>
----
-  
-### Solving approach 2:  
-
-
-xxx
-
- 
-### My Solution 2：_`xxx`_  
-
-  
-```python
-
-
-```
-
-
 **Complexity Analysis:**  
 
 - *`Time Complexity`*:<br>
-
+O(nlogn)
   
 - *`Space Complexity`*:<br>
-
+O(1)
 <br>
 
 ![Dividing Line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
 <br>
 
 
-<h2><a href="https://leetcode.com/problems/palindrome-number">9. Palindrome Number</a></h2><h3>Easy</h3><hr><p>Given an integer <code>x</code>, return <code>true</code><em> if </em><code>x</code><em> is a </em><span data-keyword="palindrome-integer"><em><strong>palindrome</strong></em></span><em>, and </em><code>false</code><em> otherwise</em>.</p>
+<h2 id = "9"><a href="https://leetcode.com/problems/palindrome-number">9. Palindrome Number</a></h2><h3>Easy</h3><hr><p>Given an integer <code>x</code>, return <code>true</code><em> if </em><code>x</code><em> is a </em><span data-keyword="palindrome-integer"><em><strong>palindrome</strong></em></span><em>, and </em><code>false</code><em> otherwise</em>.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
@@ -418,34 +374,13 @@ class Solution:
 ```
 
 
-- *`Time Complexity`*:<br>
-
-  
-- *`Space Complexity`*:<br>
----
-  
-### Solving approach 2:  
-
-
-xxx
-
- 
-### My Solution 2：_`xxx`_  
-
-  
-```python
-
-
-```
-
-
 **Complexity Analysis:**  
 
 - *`Time Complexity`*:<br>
-
+O(log n)
   
 - *`Space Complexity`*:<br>
-
+O(1)
 <br>
 
 ![Dividing Line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
