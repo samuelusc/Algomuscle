@@ -1,6 +1,5 @@
 # Day35 - Greedy Part4
 
-### [Study Reference](https://programmercarl.com/0020.%E6%9C%89%E6%95%88%E7%9A%84%E6%8B%AC%E5%8F%B7.html)  
 
 ## Contents
 * **[860. Lemonade Change](#860)**
