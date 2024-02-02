@@ -196,7 +196,7 @@ my_list.insert(-1, 'Y')  # 在倒数第一个位置（最后一个位置）之�
 ```
 
 
-### My Solution 1：_`xxx`_  
+### My Solution 1：_`Greedy`_  
 
   
 ```python
@@ -280,7 +280,7 @@ O(n)
 
 
 ### My Solution 1：_`xxx`_  
-
+[Similar question 453 /Day36](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day36%20-%20Greedy-Part5.md)
   
 ```python
 
