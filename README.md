@@ -262,3 +262,12 @@
 | 134       | [Gas Station](https://leetcode.com/problems/gas-station)                                                        | [Python](./0134-gas-station)                      | Medium     | Greedy |       |
 | 135       | [Candy](https://leetcode.com/problems/candy)                                                                    | [Python](./0135-candy)                            | Hard       | Greedy |       |
 
+
+**[Day 35](Daily%20Algo%20Insights/Day35%20-%20Greedy-Part4.md) - 1/29/2024**
+
+| Question# | Title                                                                                                           | Solution                                       | Difficulty | Topics | Notes |
+|-----------|-----------------------------------------------------------------------------------------------------------------|------------------------------------------------|------------|--------|-------|
+| 860       | [Lemonade Change](https://leetcode.com/problems/lemonade-change)                                                | [Python](./0860-lemonade-change)               | Easy       | Greedy |       |
+| 406       | [Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height)                  | [Python](./0406-queue-reconstruction-by-height)| Medium     | Greedy |       |
+| 452       | [Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons) | [Python](./0452-minimum-number-of-arrows-to-burst-balloons) | Medium | Greedy |       |
+| 9         | [Palindrome Number](https://leetcode.com/problems/palindrome-number)                                          | [Python](./0009-palindrome-number)             | Easy       | Greedy |       |
