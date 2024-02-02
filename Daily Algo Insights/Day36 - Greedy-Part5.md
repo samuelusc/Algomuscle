@@ -51,7 +51,7 @@ xxximagexxx
 
 ### Solving approach 1:
 
-[452 Similar Question/Day 35](https://github.com/samuelusc/Algomuscle/blob/main/0435-non-overlapping-intervals/greedy-0435-non-overlapping-intervals.py)
+[452 Similar Question/Day 35](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day35%20-%20Greedy-Part4.md#452)
 
 ![Thought-process](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day36/Leetcode435-thoutht.jpg)
 
