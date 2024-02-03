@@ -1,16 +1,14 @@
-# Day37 - Greedy Part5
+# Day36 - Greedy Part5
 
 
 ## Contents
 * **[435. Non-overlapping Intervals](#435)**
 * **[763. Partition Labels](#763)**
-* **[xx](#)**
-* **[xx](#)**
-* **[xx](#)**
+* **[56. Merge Intervals](#56)**
+
+
 <br>
-xxximagexxx
-<br>
-<h2><a href="https://leetcode.com/problems/non-overlapping-intervals">435. Non-overlapping Intervals</a></h2><h3>Medium</h3><hr><p>Given an array of intervals <code>intervals</code> where <code>intervals[i] = [start<sub>i</sub>, end<sub>i</sub>]</code>, return <em>the minimum number of intervals you need to remove to make the rest of the intervals non-overlapping</em>.</p>
+<h2 id = "435"><a href="https://leetcode.com/problems/non-overlapping-intervals">435. Non-overlapping Intervals</a></h2><h3>Medium</h3><p>Given an array of intervals <code>intervals</code> where <code>intervals[i] = [start<sub>i</sub>, end<sub>i</sub>]</code>, return <em>the minimum number of intervals you need to remove to make the rest of the intervals non-overlapping</em>.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
@@ -98,7 +96,7 @@ O(1)
 
 
 
-<h2><a href="https://leetcode.com/problems/partition-labels">763. Partition Labels</a></h2><h3>Medium</h3><hr><p>You are given a string <code>s</code>. We want to partition the string into as many parts as possible so that each letter appears in at most one part.</p>
+<h2 id = "763"><a href="https://leetcode.com/problems/partition-labels">763. Partition Labels</a></h2><h3>Medium</h3><p>You are given a string <code>s</code>. We want to partition the string into as many parts as possible so that each letter appears in at most one part.</p>
 
 <p>Note that the partition is done so that after concatenating all the parts in order, the resultant string should be <code>s</code>.</p>
 
@@ -183,7 +181,7 @@ O(n)
 
 
 
-<h2><a href="https://leetcode.com/problems/merge-intervals">56. Merge Intervals</a></h2><h3>Medium</h3><hr><p>Given an array&nbsp;of <code>intervals</code>&nbsp;where <code>intervals[i] = [start<sub>i</sub>, end<sub>i</sub>]</code>, merge all overlapping intervals, and return <em>an array of the non-overlapping intervals that cover all the intervals in the input</em>.</p>
+<h2 id = "56"><a href="https://leetcode.com/problems/merge-intervals">56. Merge Intervals</a></h2><h3>Medium</h3><p>Given an array&nbsp;of <code>intervals</code>&nbsp;where <code>intervals[i] = [start<sub>i</sub>, end<sub>i</sub>]</code>, merge all overlapping intervals, and return <em>an array of the non-overlapping intervals that cover all the intervals in the input</em>.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
@@ -214,6 +212,8 @@ O(n)
 
 ### Solving approach 1:
 
+[452 Similar Question/Day 35](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day35%20-%20Greedy-Part4.md#452)
+[453 Similar Question/Day 36](https://github.com/samuelusc/Algomuscle/edit/main/Daily%20Algo%20Insights/Day36%20-%20Greedy-Part5.md#453)
 
 ![Thought-process-56](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day36/Leetcode56-thought.jpg)
 
