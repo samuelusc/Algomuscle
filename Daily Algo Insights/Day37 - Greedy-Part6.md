@@ -48,7 +48,7 @@
 ### Solving approach 1:
 
 
-![Thought process - Q738](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day37/Leetcode56-thought.jpg)
+![Thought process - Q738](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day37/Leetcode738-thought.jpg)
 
 
 
