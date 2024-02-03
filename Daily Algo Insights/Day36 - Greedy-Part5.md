@@ -219,7 +219,7 @@ O(n)
 
 
 
-### My Solution 1：_`xxx`_  
+### My Solution 1：_`greedy left`_  
 
   
 ```python
