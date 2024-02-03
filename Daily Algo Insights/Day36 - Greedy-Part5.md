@@ -252,21 +252,11 @@ class Solution:
 **Complexity Analysis:**  
 
 - *`Time Complexity`*:<br>
-
+O(nlogn)
   
 - *`Space Complexity`*:<br>
-
+O(1) if we don't consider output space which can be O(n)
 <br>
 
 ![Dividing Line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
 <br>
-
-
-xxxx
-
-
-
-
-
-
-
