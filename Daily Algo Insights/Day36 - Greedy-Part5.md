@@ -49,7 +49,7 @@
 
 ### Solving approach 1:
 
-- [452 Similar Question/Day 35](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day35%20-%20Greedy-Part4.md#452)
+- [452 Similar Question - 452. Minimum Number of Arrows to Burst Balloons](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day35%20-%20Greedy-Part4.md#452)
 
 ![Thought-process-435](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day36/Leetcode435-thoutht.jpg)
 
@@ -212,8 +212,8 @@ O(n)
 
 ### Solving approach 1:
 
-- [Similar Question/Day 35 - 452. Minimum Number of Arrows to Burst Balloons](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day35%20-%20Greedy-Part4.md#452)
-- [Similar Question/Day 36 - 435. Non-overlapping Intervals](#435)
+- [Similar Question - 452. Minimum Number of Arrows to Burst Balloons](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day35%20-%20Greedy-Part4.md#452)
+- [Similar Question - 435. Non-overlapping Intervals](#435)
 
 ![Thought-process-56](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day36/Leetcode56-thought.jpg)
 
