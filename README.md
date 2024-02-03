@@ -271,3 +271,13 @@
 | 406       | [Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height)                  | [Python](./0406-queue-reconstruction-by-height)| Medium     | Greedy |       |
 | 452       | [Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons) | [Python](./0452-minimum-number-of-arrows-to-burst-balloons) | Medium | Greedy |       |
 | 9         | [Palindrome Number](https://leetcode.com/problems/palindrome-number)                                          | [Python](./0009-palindrome-number)             | Easy       | Greedy |       |
+
+
+**[Day 36](Daily%20Algo%20Insights/Day36%20-%20Greedy-Part5.md) - 1/30/2024**
+
+| Question# | Title                                                                                             | Solution                               | Difficulty | Topics | Notes |
+|-----------|---------------------------------------------------------------------------------------------------|----------------------------------------|------------|--------|-------|
+| 435       | [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals)              | [Python](./0435-non-overlapping-intervals) | Medium     | Greedy |       |
+| 763       | [Partition Labels](https://leetcode.com/problems/partition-labels)                                | [Python](./0763-partition-labels)      | Medium     | Greedy |       |
+| 56        | [Merge Intervals](https://leetcode.com/problems/merge-intervals)                                  | [Python](./0056-merge-intervals)       | Medium     | Greedy |       |
+
