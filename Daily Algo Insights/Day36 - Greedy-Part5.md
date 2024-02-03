@@ -141,10 +141,6 @@ A partition like &quot;ababcbacadefegde&quot;, &quot;hijhklij&quot; is incorrect
 
 
 
-
-
-
-
 ### My Solution 1：_`xxx`_  
 
   
@@ -176,10 +172,10 @@ class Solution:
 **Complexity Analysis:**  
 
 - *`Time Complexity`*:<br>
-
+O(n)
   
 - *`Space Complexity`*:<br>
-
+O(n)
 <br>
 
 ![Dividing Line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
