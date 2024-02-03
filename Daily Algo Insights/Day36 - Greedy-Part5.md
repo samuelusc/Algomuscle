@@ -3,7 +3,7 @@
 
 ## Contents
 * **[435. Non-overlapping Intervals](#435)**
-* **[xx](#)**
+* **[763. Partition Labels](#763)**
 * **[xx](#)**
 * **[xx](#)**
 * **[xx](#)**
@@ -53,7 +53,7 @@ xxximagexxx
 
 [452 Similar Question/Day 35](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day35%20-%20Greedy-Part4.md#452)
 
-![Thought-process](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day36/Leetcode435-thoutht.jpg)
+![Thought-process-435](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day36/Leetcode435-thoutht.jpg)
 
 
  
@@ -98,7 +98,50 @@ O(1)
 
 
 
-xxxxx
+<h2><a href="https://leetcode.com/problems/partition-labels">763. Partition Labels</a></h2><h3>Medium</h3><hr><p>You are given a string <code>s</code>. We want to partition the string into as many parts as possible so that each letter appears in at most one part.</p>
+
+<p>Note that the partition is done so that after concatenating all the parts in order, the resultant string should be <code>s</code>.</p>
+
+<p>Return <em>a list of integers representing the size of these parts</em>.</p>
+
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> s = &quot;ababcbacadefegdehijhklij&quot;
+<strong>Output:</strong> [9,7,8]
+<strong>Explanation:</strong>
+The partition is &quot;ababcbaca&quot;, &quot;defegde&quot;, &quot;hijhklij&quot;.
+This is a partition so that each letter appears in at most one part.
+A partition like &quot;ababcbacadefegde&quot;, &quot;hijhklij&quot; is incorrect, because it splits s into less parts.
+</pre>
+
+<p><strong class="example">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> s = &quot;eccbbbbdec&quot;
+<strong>Output:</strong> [10]
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= s.length &lt;= 500</code></li>
+	<li><code>s</code> consists of lowercase English letters.</li>
+</ul>
+
+
+
+### Solving approach 1:
+
+
+![Thought-process-763](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day36/Leetcode763-thoght%20.jpg)
+
+
+
+
+
 
 
 
@@ -107,7 +150,26 @@ xxxxx
   
 ```python
 
+class Solution:
+    def partitionLabels(self, s: str) -> List[int]:
+        hashmap = [0] * 26
+        res = []
+        for i in range(len(s)):
+            hashmap[ord(s[i]) - ord('a')] = i
+        print(hashmap)
 
+
+        left, right = 0, 0
+        for i in range(len(s)):
+            right = max(right, hashmap[ord(s[i])-ord("a")])
+
+            if right == i:
+                #return the size of the part +1
+                res.append(right - left + 1)
+                left = i+1
+
+
+        return res
 ```
 
 
