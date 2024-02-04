@@ -191,7 +191,8 @@ class MyStack:
     def top(self) -> int:
         if self.empty():
             return 
-        return self.que[-1]
+        return self.que[-1] # 会有歧义是否用了stack特性
+	# 或者再次使用类似pop()方法，去获取 last element, 再放回queue
 
     def empty(self) -> bool:
         return not self.que
