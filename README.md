@@ -281,3 +281,16 @@
 | 763       | [Partition Labels](https://leetcode.com/problems/partition-labels)                                | [Python](./0763-partition-labels)      | Medium     | Greedy |       |
 | 56        | [Merge Intervals](https://leetcode.com/problems/merge-intervals)                                  | [Python](./0056-merge-intervals)       | Medium     | Greedy |       |
 
+
+**[Day 37](Daily%20Algo%20Insights/Day37%20-%20Greedy-Part6.md) - 2/1/2024**
+
+| Question# | Title                                                                                             | Solution                               | Difficulty | Topics | Notes |
+|-----------|---------------------------------------------------------------------------------------------------|----------------------------------------|------------|--------|-------|
+| 738       | [Monotone Increasing Digits](https://leetcode.com/problems/monotone-increasing-digits)            | [Python](./0738-monotone-increasing-digits) | Medium     | Greedy |       |
+| 968       | [Binary Tree Cameras](https://leetcode.com/problems/binary-tree-cameras)                          | [Python](./0968-binary-tree-cameras)   | Hard       | Greedy |       |
+
+
+
+
+
+
