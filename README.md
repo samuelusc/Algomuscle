@@ -277,9 +277,9 @@
 
 | Question# | Title                                                                                             | Solution                               | Difficulty | Topics | Notes |
 |-----------|---------------------------------------------------------------------------------------------------|----------------------------------------|------------|--------|-------|
-| 435       | [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals)              | [Python](./0435-non-overlapping-intervals) | Medium     | Greedy |       |
-| 763       | [Partition Labels](https://leetcode.com/problems/partition-labels)                                | [Python](./0763-partition-labels)      | Medium     | Greedy |       |
-| 56        | [Merge Intervals](https://leetcode.com/problems/merge-intervals)                                  | [Python](./0056-merge-intervals)       | Medium     | Greedy |       |
+| 435       | [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals)              | [Python](./0435-non-overlapping-intervals) | Medium     | Greedy |  [2/3 review](assets/Day36/Leetcode-435-sol.jpg)     |
+| 763       | [Partition Labels](https://leetcode.com/problems/partition-labels)                                | [Python](./0763-partition-labels)      | Medium     | Greedy |    [2/3 review]()   |
+| 56        | [Merge Intervals](https://leetcode.com/problems/merge-intervals)                                  | [Python](./0056-merge-intervals)       | Medium     | Greedy |    [2/3 review]()   |
 
 
 **[Day 37](Daily%20Algo%20Insights/Day37%20-%20Greedy-Part6.md) - 2/1/2024**
