@@ -166,6 +166,8 @@ myStack.empty(); // return False
 #### Solving approach:
 用python 中的 deque 实现队列FIFO。 如果想要用一个队列实现stack的LIFO, 我们可以先计算出 queue的size，然后不断的弹出首个元素，总共弹出size - 1 个元素。剩下的就是stack 要弹出的元素。 
 
+
+![Thought process - 225](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day10/Leetcode225-thought.jpg)
 ### My Solution 1：_`1 que`_  
 
   
