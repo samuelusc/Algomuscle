@@ -59,6 +59,10 @@ myQueue.empty(); // return false
 #### Solving approach:
 用两个栈实现Queue，helper() 将用来在两个栈中传输并将元素的输送延迟到必要时（Amortized Analysis) 
 
+
+![Thought process - 232](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day10/Leetcode232-thought.jpg)
+
+
 #### My Solution 1：_`2 stacks`_
 ```python
 class MyQueue:
