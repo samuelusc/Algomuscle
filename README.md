@@ -75,7 +75,7 @@
 | 459        | [Repeated Substring Pattern](https://leetcode.com/problems/repeated-substring-pattern) |[Python](./0459-repeated-substring-pattern)| Easy     | Two Pointer, String    | has reviewed kmp at 1/4/2024   |
 | 268      | [Smallest Missing Integer](https://programmercarl.com/kama54.%E6%9B%BF%E6%8D%A2%E6%95%B0%E5%AD%97.html#%E6%80%9D%E8%B7%AF) | [Python](./Daily%20Algo%20Insights/Day08-String-Part1.md#54)| Easy      |  Array, Hash Table   |  set(), in-place Hashing    |
 
-**[Day 10](./Daily%20Algo%20Insights/Day10-Stack%20and%20Queue-Part1.md) - 1/4/2024 (- 2/3 Reveiw)**  
+**[Day 10](./Daily%20Algo%20Insights/Day10-Stack%20and%20Queue-Part1.md) - 1/4/2024, 2/3/2024**  
 
 | Question# | Title                                           | Solution                                                                                               | Difficulty | Topics | Nodes |
 |-----------|-------------------------------------------------|--------------------------------------------------------------------------------------------------------|------------|--------|-------|
