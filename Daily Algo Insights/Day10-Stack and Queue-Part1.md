@@ -62,8 +62,49 @@ myQueue.empty(); // return false
 
 ![Thought process - 232](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day10/Leetcode232-thought.jpg)
 
+### My Solution ：_`2 stack`_  
 
-#### My Solution 1：_`2 stacks`_
+  
+```python
+
+class MyQueue:
+
+    def __init__(self):
+      self.stackIn = []
+      self.stackOut = [] 
+
+    def push(self, x: int) -> None:
+        self.stackIn.append(x)
+        
+    def pop(self) -> int:
+        if self.empty():
+            return
+        
+        if not self.stackOut:
+            while self.stackIn:
+                self.stackOut.append(self.stackIn.pop())
+        return self.stackOut.pop()
+           
+
+    def peek(self) -> int:
+        if not self.stackOut:
+            while self.stackIn:
+                self.stackOut.append(self.stackIn.pop())
+        return self.stackOut[-1]
+
+    def empty(self) -> bool:
+        return not self.stackIn and not self.stackOut 
+
+
+# Your MyQueue object will be instantiated and called as such:
+# obj = MyQueue()
+# obj.push(x)
+# param_2 = obj.pop()
+# param_3 = obj.peek()
+# param_4 = obj.empty()
+```
+
+#### My Solution 2：_`with helper funciton`_
 ```python
 class MyQueue:
     # we need at least 2 stack to imitate queue's property
