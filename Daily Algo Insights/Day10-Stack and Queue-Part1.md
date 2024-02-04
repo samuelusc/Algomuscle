@@ -164,6 +164,50 @@ myStack.empty(); // return False
 <p><strong>Follow-up:</strong> Can you implement the stack using only one queue?</p>
 
 #### Solving approach:
+用python 中的 deque 实现队列FIFO。 如果想要用一个队列实现stack的LIFO, 我们可以先计算出 queue的size，然后不断的弹出首个元素，总共弹出size - 1 个元素。剩下的就是stack 要弹出的元素。 
+
+### My Solution 1：_`1 que`_  
+
+  
+```python
+
+from collections import deque
+class MyStack:
+
+    def __init__(self):
+        self.que = deque()
+
+    def push(self, x: int) -> None:
+        self.que.append(x)
+
+    def pop(self) -> int:
+        if self.empty():
+            return
+        for i in range(len(self.que) - 1):
+            self.que.append(self.que.popleft())
+        return self.que.popleft()
+
+
+    def top(self) -> int:
+        if self.empty():
+            return 
+        return self.que[-1]
+
+    def empty(self) -> bool:
+        return not self.que
+
+
+# Your MyStack object will be instantiated and called as such:
+# obj = MyStack()
+# obj.push(x)
+# param_2 = obj.pop()
+# param_3 = obj.top()
+# param_4 = obj.empty()
+```
+
+
+
+#### Solving approach:
 行为必须符合queue的先进先出，所以用两个queue 这样可以让最新的在对列前头。另外python 需要from collections import deque, 并使用 popleft() 从对列头部取出。
 
 #### My Solution 1：_`2 queues`_
