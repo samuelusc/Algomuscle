@@ -56,7 +56,7 @@ myQueue.empty(); // return false
 <p>&nbsp;</p>
 <p><strong>Follow-up:</strong> Can you implement the queue such that each operation is <strong><a href="https://en.wikipedia.org/wiki/Amortized_analysis" target="_blank">amortized</a></strong> <code>O(1)</code> time complexity? In other words, performing <code>n</code> operations will take overall <code>O(n)</code> time even if one of those operations may take longer.</p>
 
-### Solving approach:
+#### Solving approach:
 用两个栈实现Queue，helper() 将用来在两个栈中传输并将元素的输送延迟到必要时（Amortized Analysis) 
 
 #### My Solution 1：_`2 stacks`_
@@ -163,7 +163,7 @@ myStack.empty(); // return False
 <p>&nbsp;</p>
 <p><strong>Follow-up:</strong> Can you implement the stack using only one queue?</p>
 
-#### Solving approach:
+### Solving approach:
 用python 中的 deque 实现队列FIFO。 如果想要用一个队列实现stack的LIFO, 我们可以先计算出 queue的size，然后不断的弹出首个元素，总共弹出size - 1 个元素。剩下的就是stack 要弹出的元素。 
 
 
