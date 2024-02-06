@@ -14,7 +14,7 @@
 
 
 
-<h2><a href="https://leetcode.com/problems/fibonacci-number">509. Fibonacci Number</a></h2><h3>Easy</h3><hr><p>The <b>Fibonacci numbers</b>, commonly denoted <code>F(n)</code> form a sequence, called the <b>Fibonacci sequence</b>, such that each number is the sum of the two preceding ones, starting from <code>0</code> and <code>1</code>. That is,</p>
+<h2 id = "509"><a href="https://leetcode.com/problems/fibonacci-number">509. Fibonacci Number</a></h2><h3>Easy</h3><p>The <b>Fibonacci numbers</b>, commonly denoted <code>F(n)</code> form a sequence, called the <b>Fibonacci sequence</b>, such that each number is the sum of the two preceding ones, starting from <code>0</code> and <code>1</code>. That is,</p>
 
 <pre>
 F(0) = 0, F(1) = 1
@@ -57,7 +57,7 @@ F(n) = F(n - 1) + F(n - 2), for n &gt; 1.
 
 
 
-### Solving approach 1:
+### Solving approach:
 
 
 ![509 thought process](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day38/Leetcode509-thought.jpg)<br>
@@ -65,7 +65,7 @@ F(n) = F(n - 1) + F(n - 2), for n &gt; 1.
 
 
  
-### My Solution 2：_`save space - dp`_  
+### My Solution：_`save space - dp`_  
 
   
 ```python
@@ -99,7 +99,7 @@ O(1)
 <br>
 
 
-<h2><a href="https://leetcode.com/problems/climbing-stairs">70. Climbing Stairs</a></h2><h3>Easy</h3><hr><p>You are climbing a staircase. It takes <code>n</code> steps to reach the top.</p>
+<h2 id = "70"><a href="https://leetcode.com/problems/climbing-stairs">70. Climbing Stairs</a></h2><h3>Easy</h3><p>You are climbing a staircase. It takes <code>n</code> steps to reach the top.</p>
 
 <p>Each time you can either climb <code>1</code> or <code>2</code> steps. In how many distinct ways can you climb to the top?</p>
 
@@ -134,14 +134,14 @@ O(1)
 
 
 
-### Solving approach 2:  
+### Solving approach:  
 
 
 ![70 thought process](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day38/Leetcode70-thought.jpg)<br>
 
 
 
-### My Solution 2：_`xxx`_  
+### My Solution：_`space save - dp`_  
 
   
 ```python
@@ -166,17 +166,17 @@ class Solution:
 **Complexity Analysis:**  
 
 - *`Time Complexity`*:<br>
-
+O(n), where n is the size of input.
   
 - *`Space Complexity`*:<br>
-
+O(1)
 <br>
 
 ![Dividing Line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
 <br>
 
 
-<h2><a href="https://leetcode.com/problems/min-cost-climbing-stairs">746. Min Cost Climbing Stairs</a></h2><h3>Easy</h3><hr><p>You are given an integer array <code>cost</code> where <code>cost[i]</code> is the cost of <code>i<sup>th</sup></code> step on a staircase. Once you pay the cost, you can either climb one or two steps.</p>
+<h2 id = "746"><a href="https://leetcode.com/problems/min-cost-climbing-stairs">746. Min Cost Climbing Stairs</a></h2><h3>Easy</h3><p>You are given an integer array <code>cost</code> where <code>cost[i]</code> is the cost of <code>i<sup>th</sup></code> step on a staircase. Once you pay the cost, you can either climb one or two steps.</p>
 
 <p>You can either start from the step with index <code>0</code>, or the step with index <code>1</code>.</p>
 
@@ -219,7 +219,7 @@ The total cost is 6.
 
 
 
-### Solving approach 2:  
+### Solving approach:  
 
 
 [746 thought process](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day38/Leetcode746-thought.jpg.jpg)
@@ -227,37 +227,39 @@ The total cost is 6.
 
 
 
-### My Solution 2：_`save space dp`_  
+### My Solution：_`save space dp`_  
 
   
 ```python
 
 class Solution:
     def minCostClimbingStairs(self, cost: List[int]) -> int:
-        # 这里必须 + 1
-        dp = [0] * (len(cost) + 1)
-
-        for i in range(2, len(cost) + 1):
-            dp[i] = min(dp[i-1] + cost[i-1], dp[i-2] + cost[i-2])
-
-        return dp[-1]
+        dp = [0] * 3
+        # 不需要考虑 n<2 的情况因为 0， 1 step cost 0
+        
+        # 考虑关键,跨过n需要的最小代价->len(cost) + 1
+        for i in range(2,len(cost)+1):
+            dp[2] = min(dp[1] + cost[i-1], dp[0] + cost[i-2])
+            dp[0] = dp[1]
+            dp[1] = dp[2]
+        
+        return dp[2]
 ```
 
 
 **Complexity Analysis:**  
 
 - *`Time Complexity`*:<br>
-
+O(n)
   
 - *`Space Complexity`*:<br>
-
+O(1)
 <br>
 
 ![Dividing Line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
 <br>
 
 
-xxxx
 
 
 
