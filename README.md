@@ -282,7 +282,7 @@
 | 56        | [Merge Intervals](https://leetcode.com/problems/merge-intervals)                                  | [Python](./0056-merge-intervals)       | Medium     | Greedy |    [2/3 review](assets/Day36/Leetcode56-sol.jpg)   |
 
 
-**[Day 37](Daily%20Algo%20Insights/Day37%20-%20Greedy-Part6.md) - 2/1/2024**
+**[Day 37](Daily%20Algo%20Insights/Day37%20-%20Greedy-Part6.md) - 1/31/2024**
 
 | Question# | Title                                                                                             | Solution                               | Difficulty | Topics | Notes |
 |-----------|---------------------------------------------------------------------------------------------------|----------------------------------------|------------|--------|-------|
@@ -291,6 +291,19 @@
 
 
 
+**[Day 38](Daily%20Algo%20Insights/Day38%20-%20Dynamic%20Programming%20Part%201.md) - 2/1/2024**
+
+| Question# | Title                                                                                    | Solution                              | Difficulty | Topics       | Notes   |
+|-----------|------------------------------------------------------------------------------------------|---------------------------------------|------------|--------------|---------|
+| 509       | [Fibonacci Number](https://leetcode.com/problems/fibonacci-number)                        | [Python](./0509-fibonacci-number)     | Easy       | Dynamic Programming |  be cautious for (n+1)   |
+| 70        | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs)                          | [Python](./0070-climbing-stairs)      | Easy       | Dynamic Programming |       |
+| 746       | [Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs)        | [Python](./0746-min-cost-climbing-stairs) | Easy   | Dynamic Programming | be caustious for (len(cost)) + 1      |
 
 
 
+**[Day 39](Daily%20Algo%20Insights/Day39%20-%20Dynamic%20Programming%20Part%202.md) - 2/2/2024**
+
+| Question# | Title                                                                                       | Solution                             | Difficulty | Topics       | Notes   |
+|-----------|---------------------------------------------------------------------------------------------|--------------------------------------|------------|--------------|---------|
+| 62        | [Unique Paths](https://leetcode.com/problems/unique-paths)                                  | [Python](./0062-unique-paths)        | Medium     | Dynamic Programming | review and consider space save      |
+| 63        | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii)                            | [Python](./0063-unique-paths-ii)     | Medium     | Dynamic Programming |       |
