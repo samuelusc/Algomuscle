@@ -291,7 +291,7 @@
 
 
 
-**[Day 38](Daily%20Algo%20Insights/Day38%20-%20Dynamic%20Programming%20Part%201.md) - 2/1/2024**
+**[Day 38](Day38%20-%20Dynamic%20Programming-Part1.md) - 2/1/2024**
 
 | Question# | Title                                                                                    | Solution                              | Difficulty | Topics       | Notes   |
 |-----------|------------------------------------------------------------------------------------------|---------------------------------------|------------|--------------|---------|
@@ -301,7 +301,7 @@
 
 
 
-**[Day 39](Daily%20Algo%20Insights/Day39%20-%20Dynamic%20Programming%20Part%202.md) - 2/2/2024**
+**[Day 39](Daily%20Algo%20Insights/Day39%20-%20Dynamic%20Programming-Part2.md) - 2/2/2024**
 
 | Question# | Title                                                                                       | Solution                             | Difficulty | Topics       | Notes   |
 |-----------|---------------------------------------------------------------------------------------------|--------------------------------------|------------|--------------|---------|
