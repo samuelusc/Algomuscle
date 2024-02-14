@@ -12,7 +12,7 @@ xxximagexxx
 <br>
 
 ### 46. 携带研究材料 <a name = "46"></a>
-#### [Reference](https://kamacoder.com/problempage.php?pid=1046)
+#### [Question reference](https://kamacoder.com/problempage.php?pid=1046)
 
 
 小明是一位科学家，他需要参加一场重要的国际科学大会，以展示自己的最新研究成果。他需要带一些研究材料，但是他的行李箱空间有限。这些研究材料包括实验设备、文献资料和实验样本等等，它们各自占据不同的空间，并且具有不同的价值。 
