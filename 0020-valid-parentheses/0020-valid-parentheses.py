@@ -13,7 +13,7 @@ class Solution:
             
             elif s[i] == '{':
                 stack.append("}")
-
+            
             elif stack and s[i] == stack[-1]:
                     stack.pop()
             
