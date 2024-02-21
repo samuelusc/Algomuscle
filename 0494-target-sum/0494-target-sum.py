@@ -8,7 +8,7 @@ class Solution:
         bag_size = (total + target)//2
         dp = [[0]*(bag_size+1) for _ in range(len(nums))]
 
-        dp[0][0] = 1 if nums[0] != 0 else 2
+        dp[0][0] = 2 if nums[0] == 0 else 1
         for j in range(1, bag_size+1):
             if nums[0] == j:
                 dp[0][j] = 1
