@@ -2,11 +2,9 @@
 
 
 ## Contents
-* **[46. 携带研究材料](#46)**
-* **[xx](#)**
-* **[xx](#)**
-* **[xx](#)**
-* **[xx](#)**
+* **[46. 携带研究材料-2D/1D](#46)**
+* **[416. Partition Equal Subset Sum](#416)**
+
 <br>
 
 ### 0-1 Knapsack
@@ -53,7 +51,7 @@
 
 研究材料占用空间和价值都小于等于 1000
 
-### Breakdown and Thought Process:  
+
 <br>
 
 ### My Solution 1：_`2D`_  
@@ -113,13 +111,13 @@ O(n^2)
 <br>
 
 
-### Solving approach 1D:
+## Knapsack - 1D:
 
 ![0-1 knapsack-1D](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day42/%E8%83%8C%E5%8C%851D.jpg)
 
 
 
-### My Solution 2：_`1D`_  
+### My Solution：_`1D`_  
 
   
 ```python
@@ -172,7 +170,7 @@ O(n)
 <br>
 
 
-<h2><a href="https://leetcode.com/problems/partition-equal-subset-sum">416. Partition Equal Subset Sum</a></h2><h3>Medium</h3><hr><p>Given an integer array <code>nums</code>, return <code>true</code> <em>if you can partition the array into two subsets such that the sum of the elements in both subsets is equal or </em><code>false</code><em> otherwise</em>.</p>
+<h2 id="416"><a href="https://leetcode.com/problems/partition-equal-subset-sum">416. Partition Equal Subset Sum</a></h2><h3>Medium</h3><p>Given an integer array <code>nums</code>, return <code>true</code> <em>if you can partition the array into two subsets such that the sum of the elements in both subsets is equal or </em><code>false</code><em> otherwise</em>.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
@@ -200,7 +198,49 @@ O(n)
 </ul>
 
 
+### Solving approach:  
 
+
+![0-1 knapsack-416](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day42/Leetcode416-thought.jpg)
+
+
+ 
+### My Solution 2：_`xxx`_  
+
+  
+```python
+
+class Solution:
+    def canPartition(self, nums: List[int]) -> bool:
+        
+        if sum(nums) % 2 != 0:
+            return False  
+        
+        target = sum(nums) //2
+
+        dp = [0] * (target + 1)
+
+        for num in nums:
+            for j in range(target, num -1, -1):
+                dp[j] = max(dp[j], dp[j - num] + num)
+        
+        return dp[-1] == target
+
+        
+```
+
+
+**Complexity Analysis:**  
+
+- *`Time Complexity`*:<br>
+O(n^2)
+  
+- *`Space Complexity`*:<br>
+O(n)
+<br>
+
+![Dividing Line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
+<br>
 
 
 
