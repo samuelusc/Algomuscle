@@ -54,33 +54,12 @@ xxximagexxx
 
 ### Solving approach 1:
 
+![0-1 knapsack-1](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day42/0-1%20knapsack-%E4%BA%8C%E7%BB%B4_1.jpg)
+![0-1 knapsack-2](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day42/0-1%20knapsack-%E4%BA%8C%E7%BB%B4_2.jpg)
 
 
+### My Solution 1：_`2D`_  
 
-### My Solution 1：_`xxx`_  
-
-  
-```python
-
-
-```
-
-
-- *`Time Complexity`*:<br>
-
-  
-- *`Space Complexity`*:<br>
----
-  
-### Solving approach 2:  
-
-
-xxx
-
- 
-### My Solution：
-
-  
 ```python
 
 class Solution:
@@ -129,17 +108,91 @@ if __name__ == "__main__":
 **Complexity Analysis:**  
 
 - *`Time Complexity`*:<br>
-
+O(n^2)
   
 - *`Space Complexity`*:<br>
-
+O(n^2)
 <br>
 
+### My Solution 2：_`1D`_  
+
+  
+```python
+
+class Solution:
+    def knapsack(self, mat_size, capacity, weights, vals):
+        
+        if capacity < min(weights):
+            return 0
+            
+        dp = [0] * (capacity + 1)
+    
+        
+        for item,val in zip(weights,vals):
+            for j in range(capacity, item -1, -1):
+                dp[j] = max(dp[j],dp[j-item] + val)
+
+                
+    
+        return dp[-1]
+        
+        
+        
+        
+if __name__ == "__main__":
+    arr = [int(x) for x in input().split()]
+        
+    mat_size = arr[0]
+    capacity = arr[1]
+        
+    weights = [int(x) for x in input().split()]
+    vals =[int(x) for x in input().split()]
+        
+    sol = Solution()
+    res = sol.knapsack(mat_size, capacity,weights,vals)
+        
+    print(res)   
+```
+
+
+**Complexity Analysis:**  
+
+- *`Time Complexity`*:<br>
+O(n^2)
+  
+- *`Space Complexity`*:<br>
+O(n)
+<br>
 ![Dividing Line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
 <br>
 
 
-xxxx
+<h2><a href="https://leetcode.com/problems/partition-equal-subset-sum">416. Partition Equal Subset Sum</a></h2><h3>Medium</h3><hr><p>Given an integer array <code>nums</code>, return <code>true</code> <em>if you can partition the array into two subsets such that the sum of the elements in both subsets is equal or </em><code>false</code><em> otherwise</em>.</p>
+
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> nums = [1,5,11,5]
+<strong>Output:</strong> true
+<strong>Explanation:</strong> The array can be partitioned as [1, 5, 5] and [11].
+</pre>
+
+<p><strong class="example">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> nums = [1,2,3,5]
+<strong>Output:</strong> false
+<strong>Explanation:</strong> The array cannot be partitioned into equal sum subsets.
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= nums.length &lt;= 200</code></li>
+	<li><code>1 &lt;= nums[i] &lt;= 100</code></li>
+</ul>
 
 
 
