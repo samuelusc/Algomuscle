@@ -8,7 +8,11 @@
 * **[xx](#)**
 * **[xx](#)**
 <br>
-xxximagexxx
+
+### 0-1 Knapsack
+
+![0-1 knapsack-1](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day42/0-1%20knapsack-%E4%BA%8C%E7%BB%B4_1.jpg)
+![0-1 knapsack-2](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day42/0-1%20knapsack-%E4%BA%8C%E7%BB%B4_2.jpg)
 <br>
 
 ### 46. 携带研究材料 <a name = "46"></a>
@@ -51,12 +55,6 @@ xxximagexxx
 
 ### Breakdown and Thought Process:  
 <br>
-
-### Solving approach 1:
-
-![0-1 knapsack-1](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day42/0-1%20knapsack-%E4%BA%8C%E7%BB%B4_1.jpg)
-![0-1 knapsack-2](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day42/0-1%20knapsack-%E4%BA%8C%E7%BB%B4_2.jpg)
-
 
 ### My Solution 1：_`2D`_  
 
@@ -113,6 +111,13 @@ O(n^2)
 - *`Space Complexity`*:<br>
 O(n^2)
 <br>
+
+
+### Solving approach 1D:
+
+![0-1 knapsack-1D](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day42/%E8%83%8C%E5%8C%851D.jpg)
+
+
 
 ### My Solution 2：_`1D`_  
 
