@@ -54,8 +54,8 @@ Note that you are allowed to reuse a dictionary word.
 ### Solving approach 1:
 
 
-[word break - thought](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day46/LC139-thought_1.jpg)
-[word break - thought2](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day46/LC139-thought_2.jpg)
+![word break - thought](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day46/LC139-thought_1.jpg)
+![word break - thought2](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day46/LC139-thought_2.jpg)
 
 
 
