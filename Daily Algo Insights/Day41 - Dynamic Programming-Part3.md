@@ -8,7 +8,7 @@
 
 <br>
 
-<h2 id = "343"><a href="https://leetcode.com/problems/integer-break">343. Integer Break</a></h2><h3>Medium</h3><hr><p>Given an integer <code>n</code>, break it into the sum of <code>k</code> <strong>positive integers</strong>, where <code>k &gt;= 2</code>, and maximize the product of those integers.</p>
+<h2 id = "343"><a href="https://leetcode.com/problems/integer-break">343. Integer Break</a></h2><h3>Medium</h3><p>Given an integer <code>n</code>, break it into the sum of <code>k</code> <strong>positive integers</strong>, where <code>k &gt;= 2</code>, and maximize the product of those integers.</p>
 
 <p>Return <em>the maximum product you can get</em>.</p>
 
@@ -79,7 +79,7 @@ O(n)
 <br>
 
 
-<h2 id = "96"><a href="https://leetcode.com/problems/unique-binary-search-trees">96. Unique Binary Search Trees</a></h2><h3>Medium</h3><hr><p>Given an integer <code>n</code>, return <em>the number of structurally unique <strong>BST&#39;</strong>s (binary search trees) which has exactly </em><code>n</code><em> nodes of unique values from</em> <code>1</code> <em>to</em> <code>n</code>.</p>
+<h2 id = "96"><a href="https://leetcode.com/problems/unique-binary-search-trees">96. Unique Binary Search Trees</a></h2><h3>Medium</h3><p>Given an integer <code>n</code>, return <em>the number of structurally unique <strong>BST&#39;</strong>s (binary search trees) which has exactly </em><code>n</code><em> nodes of unique values from</em> <code>1</code> <em>to</em> <code>n</code>.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
