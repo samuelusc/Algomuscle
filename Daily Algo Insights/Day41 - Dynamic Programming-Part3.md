@@ -41,7 +41,7 @@
 ### Solving approach:
 
 
-[343-thought1](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day41/Leetcode343-thought.jpg)
+![343-thought1](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day41/Leetcode343-thought.jpg)
 
 
 
@@ -108,8 +108,8 @@ O(n)
 ### Solving approach:  
 
 
-[96-thought1](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day41/Leetcode96-thought_1.jpg)
-[96-thought2](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day41/Leetcode96-thought_2.jpg)
+![96-thought1](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day41/Leetcode96-thought_1.jpg)
+![96-thought2](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day41/Leetcode96-thought_2.jpg)
 
  
 ### My Solution：
