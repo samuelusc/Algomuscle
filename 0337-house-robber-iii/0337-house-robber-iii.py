@@ -6,8 +6,6 @@
 #         self.right = right
 class Solution:
     def rob(self, root: Optional[TreeNode]) -> int:
-        res = [0] * 2
-
         res = self.robTree(root)
         return max(res[0],res[1])
 
