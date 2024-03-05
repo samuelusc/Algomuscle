@@ -5,7 +5,7 @@ class Solution:
         # for j in range(2*k+1):
         #     if j % 2 == 1:
         #         dp[0][j] = -prices[0]
-        for j in range(1, 2*k, 2):
+        for j in range(1, 2*k + 1, 2):
             dp[0][j] = -prices[0]
 
 
