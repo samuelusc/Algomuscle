@@ -219,17 +219,3 @@ O(1)
 <br>
 
 
-xxxx
-
-<br>
-
-![Dividing Line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
-<br>
-
-
-xxxx
-
-
-
-
-
