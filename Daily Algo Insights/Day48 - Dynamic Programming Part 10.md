@@ -157,7 +157,7 @@ Total profit is 4.
 ### Solving approach:  
 
 
-[122](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day48/LC122-Thought.jpg)
+![122](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day48/LC122-Thought.jpg)
 
  
 ### My Solution ：_`DP`_  
