@@ -2,7 +2,7 @@
 
 ## Daily Progress Log
 
-**[Day 1](./Daily%20Algo%20Insights/Day01-Arrays-Part1.md)**
+**[Day 1 - Arrays Part 1](./Daily%20Algo%20Insights/Day01-Arrays-Part1.md)**
 
 | Question# | Title                                           | Solution                                                                                       | Difficulty | Topics | Notes                   |
 |-----------|-------------------------------------------------|------------------------------------------------------------------------------------------------|------------|--------|-------------------------|
@@ -10,7 +10,7 @@
 | 27        | [Remove Element](https://leetcode.com/problems/remove-element/description/) | [Brute Force](./0027-remove-element/bruteForce-0027-remove-element.py), [Two Pointer](./0027-remove-element/twoPointer-0027-remove-element.py)) | Easy       | Arrays       | Two pointer and brute force |
 
 
-**[Day 2](./Daily%20Algo%20Insights/Day02-Arrays-Part2.md)**
+**[Day 2 - Arrays Part 2](./Daily%20Algo%20Insights/Day02-Arrays-Part2.md)**
 
 | Question# | Title                                           | Solution                                                                                       | Difficulty | Topics | Notes                                      |
 |-----------|-------------------------------------------------|------------------------------------------------------------------------------------------------|------------|--------|--------------------------------------------|
@@ -21,7 +21,7 @@
 | 88        | [Merge Sorted Array](https://github.com/samuelusc/Algomuscle/tree/main/0088-merge-sorted-array) | [Python](./0088-merge-sorted-array/0088-merge-sorted-array.py) | Easy       |  Two Pointer      | Need review                              |
 
 
-**[Day 3](./Daily%20Algo%20Insights/Day03-LinkedList-Part1.md)**
+**[Day 3 - LinkedList Part 1](./Daily%20Algo%20Insights/Day03-LinkedList-Part1.md)**
 
 | Question# | Title                                           | Solution                                                                                       | Difficulty | Topics | Notes                                      |
 |-----------|-------------------------------------------------|------------------------------------------------------------------------------------------------|------------|--------|--------------------------------------------|
@@ -29,7 +29,7 @@
 | 707       | [Design Linked List](https://leetcode.com/problems/design-linked-list/description/) | [Python](https://github.com/samuelusc/Algomuscle/tree/main/0707-design-linked-list) | Medium     | Linked List       | Great example for learning about the inner workings of Linked List    |
 | 206       | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/description/) | [Python](https://github.com/samuelusc/Algomuscle/tree/main/0206-reverse-linked-list) | Easy       |  Linked List      | review reversing a linked list    |
 
-**[Day 4](./Daily%20Algo%20Insights/Day04-LinkedList-Part2.md)**
+**[Day 4 - LinkedList Part 2](./Daily%20Algo%20Insights/Day04-LinkedList-Part2.md)**
 
 | Question# | Title                                           | Solution                                                                                               | Difficulty | Topics | Complexity                                | Nodes |
 |-----------|-------------------------------------------------|--------------------------------------------------------------------------------------------------------|------------|--------|-------------------------------------------|-------|
@@ -38,7 +38,7 @@
 | 160       | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/description/) | [Two Pointer - Python](./0160-intersection-of-two-linked-lists/0160-intersection-of-two-linked-lists.py), [Hashtable - Python](./0160-intersection-of-two-linked-lists/hashTable-0160-intersection-of-two-linked-lists.py) | Easy       |  Linked List, Two Pointer, Hash Table     | Two Pointer: T: O(n) S:O(1), Hashtable: T:O(n), S: O(n) |       |
 | 142       | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/description/) | [HashTable - Python](./0142-linked-list-cycle-ii/setV-0142-linked-list-cycle-ii.py), [Two Pointer - Python](./0142-linked-list-cycle-ii/twoP-0142-linked-list-cycle-ii.py) | Medium       |  Linked List, Hash Table, Two Pointer      | Hash Table: T: O(n), S: O(n), Two Pointer: T:O(n),S:O(1) |       |
 
-**[Day 6](./Daily%20Algo%20Insights/Day06-HashMap-Part1.md)**
+**[Day 6 - HashMap-Part1](./Daily%20Algo%20Insights/Day06-HashMap-Part1.md)**
 
 | Question# | Title                                           | Solution                                                                                               | Difficulty | Topics | Complexity                                | Nodes |
 |-----------|-------------------------------------------------|--------------------------------------------------------------------------------------------------------|------------|--------|-------------------------------------------|-------|
@@ -48,7 +48,7 @@
 | 1       | [Two Sum](https://leetcode.com/problems/two-sum/description/) | [Dictionary](./0001-two-sum/0001-two-sum.py)  | Easy       |  Hash Table, Array      | Hash Table: T: O(n), S: O(n) |       |
 | 34       | [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/two-sum/description/) | [bisect - Binary Search](./0034-find-first-and-last-position-of-element-in-sorted-array/bisect-0034-find-first-and-last-position-of-element-in-sorted-array.py), [regular - Binary Search](./0034-find-first-and-last-position-of-element-in-sorted-array/binarySearch-0034-find-first-and-last-position-of-element-in-sorted-array.py)   | Medium       |  Hash Table, Array      | bisect: T: O(logn), S: O(1), Regular binary Search: O(n) where n is the number of elements in the array, S: O(1)|      |
 
-**[Day 7](./Daily%20Algo%20Insights/Day07-HashMap-Part2.md)**
+**[Day 7 - HashMap-Part2](./Daily%20Algo%20Insights/Day07-HashMap-Part2.md)**
 
 | Question# | Title                                           | Solution                                                                                               | Difficulty | Topics | Complexity                                | Nodes |
 |-----------|-------------------------------------------------|--------------------------------------------------------------------------------------------------------|------------|--------|-------------------------------------------|-------|
@@ -57,7 +57,7 @@
 | 15      | [3Sum](https://leetcode.com/problems/3sum/) | 1. [Two Pointer](./0015-3sum/twoPointers-0015-3sum.py)| Medium      |  Array, Two Pointers, Sorting   | T: O(n^2), S: O(n^2) |       |
 | 18       | [4Sum](https://leetcode.com/problems/4sum/description/) | 1. [Two Pointer](./0018-4sum/0018-4sum.py)  | Medium       |  Hash Table, Array, Sorting      | T: O(n^3), S: O(m) where m is the number of unique quadruplets that sums up to the target |       |
 
-**[Day 8](./Daily%20Algo%20Insights/Day08-String-Part1.md)**
+**[Day 8 - String Part 1](./Daily%20Algo%20Insights/Day08-String-Part1.md)**
 
 | Question# | Title                                           | Solution                                                                                               | Difficulty | Topics | Nodes |
 |-----------|-------------------------------------------------|--------------------------------------------------------------------------------------------------------|------------|--------|-------|
@@ -67,7 +67,7 @@
 | 151       | [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string) | [Python](./0151-reverse-words-in-a-string)  | Medium       |  String, Two Pointer   |       |
 | 55       | [Kama-Right Rotate a String](https://programmercarl.com/kama55.%E5%8F%B3%E6%97%8B%E5%AD%97%E7%AC%A6%E4%B8%B2.html) | [Python](./Daily%20Algo%20Insights/Day08-String-Part1.md#55)  | Easy      |  String  |       |
 
-**[Day 9](./Daily%20Algo%20Insights/Day09-String-Part2.md)**
+**[Day 9 - String Part 2](./Daily%20Algo%20Insights/Day09-String-Part2.md)**
 
 | Question# | Title                                           | Solution                                                                                               | Difficulty | Topics | Nodes |
 |-----------|-------------------------------------------------|--------------------------------------------------------------------------------------------------------|------------|--------|-------|
@@ -75,14 +75,14 @@
 | 459        | [Repeated Substring Pattern](https://leetcode.com/problems/repeated-substring-pattern) |[Python](./0459-repeated-substring-pattern)| Easy     | Two Pointer, String    | has reviewed kmp at 1/4/2024   |
 | 268      | [Smallest Missing Integer](https://programmercarl.com/kama54.%E6%9B%BF%E6%8D%A2%E6%95%B0%E5%AD%97.html#%E6%80%9D%E8%B7%AF) | [Python](./Daily%20Algo%20Insights/Day08-String-Part1.md#54)| Easy      |  Array, Hash Table   |  set(), in-place Hashing    |
 
-**[Day 10](./Daily%20Algo%20Insights/Day10-Stack%20and%20Queue-Part1.md)**  
+**[Day 10 - Stack and Queue Part 1](./Daily%20Algo%20Insights/Day10-Stack%20and%20Queue-Part1.md)**  
 
 | Question# | Title                                           | Solution                                                                                               | Difficulty | Topics | Nodes |
 |-----------|-------------------------------------------------|--------------------------------------------------------------------------------------------------------|------------|--------|-------|
 | 232       | [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks) |[Python](./0028-find-the-index-of-the-first-occurrence-in-a-string)| Easy      |  Stack, Queue     |   |
 | 225       | [Implement Stack using Queues](https://leetcode.com/problems/repeated-substring-pattern) |[Python](./0225-implement-stack-using-queues)| Easy     | Stack, Queue   |      |
 
-**[Day 11](./Daily%20Algo%20Insights/Day11-Stack%20and%20Queue-Part2.md#150)**
+**[Day 11 - Stack and Queue Part 2](./Daily%20Algo%20Insights/Day11-Stack%20and%20Queue-Part2.md#150)**
 
 | Question# | Title                                           | Solution                                                                                               | Difficulty | Topics | Nodes |
 |-----------|-------------------------------------------------|--------------------------------------------------------------------------------------------------------|------------|--------|-------|
@@ -90,7 +90,7 @@
 | 1047       | [Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string) |[Python](./1047-remove-all-adjacent-duplicates-in-string)| Easy     | Stack, Dictionary   |      |
 | 150       | [Valid Parentheses](https://leetcode.com/problems/evaluate-reverse-polish-notation) |[Python](./0150-evaluate-reverse-polish-notation)| Medium      |  Stack, Dictionary     |   |
 
-**[Day 13](./Daily%20Algo%20Insights/Day13-Stack%20and%20Queue-Part3.md)**
+**[Day 13 - Stack and Queue Part 3](./Daily%20Algo%20Insights/Day13-Stack%20and%20Queue-Part3.md)**
 
 | Question# | Title                                           | Solution                                                                                               | Difficulty | Topics | Nodes |
 |-----------|-------------------------------------------------|--------------------------------------------------------------------------------------------------------|------------|--------|-------|
@@ -98,7 +98,7 @@
 | 347       | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements) |[Python](./0347-top-k-frequent-elements)| Medium     | Min Heap, Priority Queue, Hash Table   |      |
 | 692       | [Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words) |[Python](./0692-top-k-frequent-words)| Medium      |  Min Heap, Hash Table, Sorting     | Need Review again  |
 
-**[Day 14](./Daily%20Algo%20Insights/Day14-Binary%20Tree-Part1.md)**
+**[Day 14 - Binary Tree Part 1](./Daily%20Algo%20Insights/Day14-Binary%20Tree-Part1.md)**
 
 | Question# | Title                                           | Solution                                                                                               | Difficulty | Topics | Nodes |
 |-----------|-------------------------------------------------|--------------------------------------------------------------------------------------------------------|------------|--------|-------|
@@ -107,7 +107,7 @@
 | 94       | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal) |[Python](./0094-binary-tree-inorder-traversal)| Easy     |  Binary Tree     |   |
 
 
-**[Day 15](Daily%20Algo%20Insights/Day15-Binary%20Tree-Part2.md)**
+**[Day 15 - Binary Tree Part 2](Daily%20Algo%20Insights/Day15-Binary%20Tree-Part2.md)**
 
 | Question# | Title                                                                                   | Solution                                                                                | Difficulty | Topics         | Nodes |
 |-----------|-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|------------|----------------|-------|
@@ -124,7 +124,7 @@
 | 226       | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree)                   | [Python](./0226-invert-binary-tree)                                                     | Easy       | Binary Tree    |       |
 | 101       | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree)                          | [Python](./0101-symmetric-tree)                                                         | Easy       | Binary Tree    |       |
 
-**[Day 16](Daily%20Algo%20Insights/Day16-Binary%20Tree-Part3.md)**
+**[Day 16 - Binary Tree Part 3](Daily%20Algo%20Insights/Day16-Binary%20Tree-Part3.md)**
 
 | Question# | Title                                                                           | Solution                                                    | Difficulty | Topics        | Nodes |
 |-----------|---------------------------------------------------------------------------------|-------------------------------------------------------------|------------|---------------|-------|
@@ -133,7 +133,7 @@
 | 222       | [Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes) | [Python](./0222-count-complete-tree-nodes)                  | Easy       | Binary Tree   |       |
 
 
-**[Day 17](Daily%20Algo%20Insights/Day17-Binary%20Tree-Part4.md)**
+**[Day 17 - Binary Tree Part 4](Daily%20Algo%20Insights/Day17-Binary%20Tree-Part4.md)**
 
 | Question# | Title                                                                       | Solution                                             | Difficulty | Topics        | Nodes |
 |-----------|-----------------------------------------------------------------------------|------------------------------------------------------|------------|---------------|-------|
@@ -142,7 +142,7 @@
 | 404       | [Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves)    | [Python](./0404-sum-of-left-leaves)                  | Easy       | Binary Tree   |       |
 
 
-**[Day 18](Daily%20Algo%20Insights/Day18-Binary%20Tree-Part5.md)**
+**[Day 18 - Binary Tree Part 5](Daily%20Algo%20Insights/Day18-Binary%20Tree-Part5.md)**
 
 | Question# | Title                                                                                                     | Solution                                                        | Difficulty | Topics        | Nodes |
 |-----------|-----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|------------|---------------|-------|
@@ -151,7 +151,7 @@
 | 106       | [Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal) | [Python](./0106-construct-binary-tree-from-inorder-and-postorder-traversal) | Medium     | Binary Tree   |       |
 
 
-**[Day 20](Daily%20Algo%20Insights/Day20-Binary%20Tree-Part6.md)**
+**[Day 19 - Binary Tree Part 6](Daily%20Algo%20Insights/Day20-Binary%20Tree-Part6.md)**
 
 | Question# | Title                                                                                                               | Solution                                                             | Difficulty | Topics          | Nodes |
 |-----------|---------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|------------|-----------------|-------|
@@ -161,7 +161,7 @@
 | 98        | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree)                           | [Python](./0098-validate-binary-search-tree)                         | Medium     | Binary Search Tree |     |
 
 
-**[Day 21](Daily%20Algo%20Insights/Day21%20-%20Binary%20Tree-Part7.md)**
+**[Day 20 - Binary Tree Part 7](Daily%20Algo%20Insights/Day21%20-%20Binary%20Tree-Part7.md)**
 
 | Question# | Title                                                                                                                           | Solution                                                                         | Difficulty | Topics                 | Nodes |
 |-----------|---------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|------------|------------------------|-------|
