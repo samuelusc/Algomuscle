@@ -38,7 +38,7 @@
 - **[Day 39 - Dynamic Programming Part 2](Daily%20Algo%20Insights/Day39%20-%20Dynamic%20Programming-Part2.md)**
 - **[Day 40 - Dynamic Programming Part 3](Daily%20Algo%20Insights/Day40%20-%20Dynamic%20Programming-Part3.md)**
 - **[Day 41 - Dynamic Programming Part 4](Daily%20Algo%20Insights/Day41%20-%20Dynamic%20Programming-Part4.md)**
-- **[Day 43 - Dynamic Programming Part 5](Daily%20Algo%20Insights/Day42%20-%20Dynamic%20Programming-Part5.md)**
+- **[Day 43 - Dynamic Programming Part 5](Daily%20Algo%20Insights/Day43%20-%20Dynamic%20Programming%20Part%205.md)**
 - **[Day 44 - Dynamic Programming Part 6](Daily%20Algo%20Insights/Day44%20-%20Dynamic%20Programming-Part6.md)**
 - **[Day 45 - Dynamic Programming Part 7](Daily%20Algo%20Insights/Day45%20-%20Dynamic%20Programming-Part7.md)**
 - **[Day 46 - Dynamic Programming Part 8](Daily%20Algo%20Insights/Day46%20-%20Dynamic%20Programming-Part8.md)**
@@ -378,7 +378,7 @@
 | 46        | [携带研究材料-2D/1D](https://kamacoder.com/problempage.php?pid=1046)                          | [Python](./0046-携带研究材料-2D1D.py) | --         | Dynamic Programming|  |
 | 416       | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum)         | [Python](./0416-partition-equal-subset-sum.py) | Medium     | Dynamic Programming| |
 
-**[Day 43 - Dynamic Programming Part 5](Daily%20Algo%20Insights/Day42%20-%20Dynamic%20Programming-Part5.md)**
+**[Day 43 - Dynamic Programming Part 5](Daily%20Algo%20Insights/Day43%20-%20Dynamic%20Programming%20Part%205.md)**
 
 | Question# | Title                                                                                        | Solution                             | Difficulty | Topics            | Notes              |
 |-----------|----------------------------------------------------------------------------------------------|--------------------------------------|------------|-------------------|--------------------|
