@@ -44,7 +44,7 @@
 - **[Day 46 - Dynamic Programming Part 8](Daily%20Algo%20Insights/Day46%20-%20Dynamic%20Programming-Part8.md)**
 - **[Day 47 - Dynamic Programming Part 9](Daily%20Algo%20Insights/Day47%20-%20Dynamic%20Programming-Part9.md)**
 - **[Day 48 - Dynamic Programming Part 10](Daily%20Algo%20Insights/Day48%20-%20Dynamic%20Programming-Part10.md)**
-- **[Day 50 - Dynamic Programming Part 11](Daily%20Algo%20Insights/Day50%20-%20Dynamic%20Programming-Part11.md)**
+- **[Day 50 - Dynamic Programming Part 11](Daily%20Algo%20Insights/Day50%20-%20Dynamic%20Programming%20Part%2011.md)**
 - **[Day 51 - Dynamic Programming Part 12](Daily%20Algo%20Insights/Day51%20-%20Dynamic%20Programming-Part12.md)**
 - **[Day 52 - Dynamic Programming Part 13](Daily%20Algo%20Insights/Day52%20-%20Dynamic%20Programming-Part13.md)**
 - **[Day 53 - Dynamic Programming Part 14](Daily%20Algo%20Insights/Day53%20-%20Dynamic%20Programming-Part14.md)**
@@ -430,7 +430,7 @@
 | 122       | [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii) | [Python](./0122-best-time-to-buy-and-sell-stock-ii.py)| Medium     | Dynamic Programming|       |
 
 
-**[Day 50 - Dynamic Programming Part 11](Daily%20Algo%20Insights/Day50%20-%20Dynamic%20Programming-Part11.md)**
+**[Day 50 - Dynamic Programming Part 11](Daily%20Algo%20Insights/Day50%20-%20Dynamic%20Programming%20Part%2011.md)**
 
 | Question# | Title                                                                                                 | Solution                                       | Difficulty | Topics            | Notes |
 |-----------|-------------------------------------------------------------------------------------------------------|------------------------------------------------|------------|-------------------|-------|
