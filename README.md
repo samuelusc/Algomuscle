@@ -356,3 +356,12 @@
 | 139       | [Word Break](https://leetcode.com/problems/word-break)                                    | [Python](./0139-word-break.py)       | Medium     | Dynamic Programming|       |
 | 56        | [Carrying Ore Resources](https://kamacoder.com/problempage.php?pid=1066)                   | [Python](./0056-carrying-ore-resources.py) | --        | Dynamic Programming|       |
 | 146       | [LRU Cache](https://leetcode.com/problems/lru-cache)                                      | [Python](./0146-lru-cache.py)        | Medium     | Design             |       |
+
+
+**[Day 47 - Dynamic Programming Part 9](Daily%20Algo%20Insights/Day47%20-%20Dynamic%20Programming-Part9.md)**
+
+| Question# | Title                                                                                  | Solution                            | Difficulty | Topics            | Notes |
+|-----------|----------------------------------------------------------------------------------------|-------------------------------------|------------|-------------------|-------|
+| 198       | [House Robber](https://leetcode.com/problems/house-robber)                              | [Python](./0198-house-robber.py)    | Medium     | Dynamic Programming|       |
+| 213       | [House Robber II](https://leetcode.com/problems/house-robber-ii)                        | [Python](./0213-house-robber-ii.py) | Medium     | Dynamic Programming|       |
+| 337       | [House Robber III](https://leetcode.com/problems/house-robber-iii)                      | [Python](./0337-house-robber-iii.py)| Medium     | Dynamic Programming|       |
