@@ -2,8 +2,8 @@
 
 
 ## Contents
-* **[xx](#583)**
-* **[xx](#72)**
+* **[583. Delete Operation for Two Strings](#583)**
+* **[72. Edit Distance](#72)**
 
 
 <br>
