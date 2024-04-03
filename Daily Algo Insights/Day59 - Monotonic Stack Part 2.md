@@ -2,8 +2,8 @@
 
 
 ## Contents
-* **[xx](#503)**
-* **[xx](#42)**
+* **[503. Next Greater Element II](#503)**
+* **[42. Trapping Rain Water](#42)**
 
 <br>
 <h2 id = "503"><a href="https://leetcode.com/problems/next-greater-element-ii">503. Next Greater Element II</a></h2><h3>Medium</h3><p>Given a circular integer array <code>nums</code> (i.e., the next element of <code>nums[nums.length - 1]</code> is <code>nums[0]</code>), return <em>the <strong>next greater number</strong> for every element in</em> <code>nums</code>.</p>
