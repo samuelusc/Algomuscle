@@ -45,7 +45,7 @@
 - **[Day 47 - Dynamic Programming Part 9](Daily%20Algo%20Insights/Day47%20-%20Dynamic%20Programming-Part9.md)**
 - **[Day 48 - Dynamic Programming Part 10](Daily%20Algo%20Insights/Day48%20-%20Dynamic%20Programming%20Part%2010.md)**
 - **[Day 50 - Dynamic Programming Part 11](Daily%20Algo%20Insights/Day50%20-%20Dynamic%20Programming%20Part%2011.md)**
-- **[Day 51 - Dynamic Programming Part 12](Daily%20Algo%20Insights/Day51%20-%20Dynamic%20Programming-Part12.md)**
+- **[Day 51 - Dynamic Programming Part 12](Daily%20Algo%20Insights/Day51%20-%20Dynamic%20Programming%20Part%2012.md)**
 - **[Day 52 - Dynamic Programming Part 13](Daily%20Algo%20Insights/Day52%20-%20Dynamic%20Programming-Part13.md)**
 - **[Day 53 - Dynamic Programming Part 14](Daily%20Algo%20Insights/Day53%20-%20Dynamic%20Programming-Part14.md)**
 - **[Day 54 - Dynamic Programming Part 15](Daily%20Algo%20Insights/Day54%20-%20Dynamic%20Programming-Part15.md)**
@@ -438,7 +438,7 @@
 | 188       | [Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv)   | [Python](./0188-best-time-to-buy-and-sell-stock-iv.py)  | Hard       | Dynamic Programming|       |
 
 
-**[Day 51 - Dynamic Programming Part 12](Daily%20Algo%20Insights/Day51%20-%20Dynamic%20Programming-Part12.md)**
+**[Day 51 - Dynamic Programming Part 12](Daily%20Algo%20Insights/Day51%20-%20Dynamic%20Programming%20Part%2012.md)**
 
 | Question# | Title                                                                                                                        | Solution                                                       | Difficulty | Topics            | Notes |
 |-----------|------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|------------|-------------------|-------|
@@ -446,7 +446,7 @@
 | 714       | [Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee) | [Python](./0714-best-time-to-buy-and-sell-stock-with-transaction-fee.py) | Medium     | Dynamic Programming|       |
 
 
-**[Day 52 - Dynamic Programming Part 13](Daily%20Algo%20Insights/Day52%20-%20Dynamic%20Programming-Part13.md)**
+**[Day 52 - Dynamic Programming Part 13](Daily%20Algo%20Insights/Day52%20-%20Dynamic%20Programming%20Part%2013.md)**
 
 | Question# | Title                                                                                                               | Solution                                                    | Difficulty | Topics            | Notes |
 |-----------|---------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|------------|-------------------|-------|
@@ -455,7 +455,7 @@
 | 718       | [Maximum Length of Repeated Subarray](https://leetcode.com/problems/maximum-length-of-repeated-subarray)             | [Python](./0718-maximum-length-of-repeated-subarray.py)     | Medium     | Dynamic Programming|       |
 
 
-**[Day 53 - Dynamic Programming Part 14](Daily%20Algo%20Insights/Day53%20-%20Dynamic%20Programming-Part14.md)**
+**[Day 53 - Dynamic Programming Part 14](Daily%20Algo%20Insights/Day53%20-%20Dynamic%20Programming%20Part%2014.md)**
 
 | Question# | Title                                                                                                                        | Solution                                                                | Difficulty | Topics            | Notes |
 |-----------|------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|------------|-------------------|-------|
@@ -464,7 +464,7 @@
 | 53        | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray)                                                           | [Python](./0053-maximum-subarray.py)                                    | Medium     | Dynamic Programming|       |
 
 
-**[Day 54 - Dynamic Programming Part 15](Daily%20Algo%20Insights/Day54%20-%20Dynamic%20Programming-Part15.md)**
+**[Day 54 - Dynamic Programming Part 15](Daily%20Algo%20Insights/Day54%20-%20Dynamic%20Programming%20Part%2015.md)**
 
 | Question# | Title                                                                                 | Solution                                   | Difficulty | Topics            | Notes |
 |-----------|---------------------------------------------------------------------------------------|--------------------------------------------|------------|-------------------|-------|
@@ -472,7 +472,7 @@
 | 115       | [Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences)          | [Python](./0115-distinct-subsequences.py)  | Hard       | Dynamic Programming|       |
 
 
-**[Day 55 - Dynamic Programming Part 16](Daily%20Algo%20Insights/Day55%20-%20Dynamic%20Programming-Part16.md)**
+**[Day 55 - Dynamic Programming Part 16](Daily%20Algo%20Insights/Day55%20-%20Dynamic%20Programming%20Part%2016.md)**
 
 | Question# | Title                                                                                             | Solution                                   | Difficulty | Topics            | Notes                           |
 |-----------|---------------------------------------------------------------------------------------------------|--------------------------------------------|------------|-------------------|---------------------------------|
@@ -480,7 +480,7 @@
 | 72        | [Edit Distance](https://leetcode.com/problems/edit-distance)                                      | [Python](./0072-edit-distance.py)          | Hard       | Dynamic Programming|    |
 
 
-**[Day 57 - Dynamic Programming Part 17](Daily%20Algo%20Insights/Day57%20-%20Dynamic%20Programming-Part17.md)**
+**[Day 57 - Dynamic Programming Part 17](Daily%20Algo%20Insights/Day57%20-%20%20Dynamic%20Programming%20Part%2017.md)**
 
 | Question# | Title                                                                                                   | Solution                                           | Difficulty | Topics            | Notes                        |
 |-----------|---------------------------------------------------------------------------------------------------------|----------------------------------------------------|------------|-------------------|------------------------------|
@@ -488,7 +488,7 @@
 | 516       | [Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence)        | [Python](./0516-longest-palindromic-subsequence.py)| Medium     | Dynamic Programming|      |
 
 
-**[Day 58 - Monotonic Stack Part 1](Daily%20Algo%20Insights/Day58%20-%20Monotonic%20Stack-Part1.md)**
+**[Day 58 - Monotonic Stack Part 1](Daily%20Algo%20Insights/Day58%20-%20Monotonic%20Stack%20Part%201.md)**
 
 | Question# | Title                                                                                                   | Solution                                          | Difficulty | Topics            | Notes               |
 |-----------|---------------------------------------------------------------------------------------------------------|---------------------------------------------------|------------|-------------------|---------------------|
@@ -496,7 +496,7 @@
 | 496       | [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i)                         | [Python](./0496-next-greater-element-i.py)        | Easy       | Monotonic Stack   |                     |
 
 
-**[Day 59 - Monotonic Stack Part 2](Daily%20Algo%20Insights/Day59%20-%20Monotonic%20Stack-Part2.md)**
+**[Day 59 - Monotonic Stack Part 2](Daily%20Algo%20Insights/Day59%20-%20Monotonic%20Stack%20Part%202.md)**
 
 | Question# | Title                                                                                            | Solution                                               | Difficulty | Topics            | Notes              |
 |-----------|--------------------------------------------------------------------------------------------------|--------------------------------------------------------|------------|-------------------|--------------------|
@@ -504,7 +504,7 @@
 | 42        | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water)                        | [Python](./0042-trapping-rain-water.py)                | Hard       | Monotonic Stack   |                    |
 
 
-**[Day 60 - Monotonic Stack Part 3](Daily%20Algo%20Insights/Day60%20-%20Monotonic%20Stack-Part3.md)**
+**[Day 60 - Monotonic Stack Part 3](Daily%20Algo%20Insights/Day60%20-%20Monotonic%20Stack%20Part%203.md)**
 
 | Question# | Title                                                                                         | Solution                                         | Difficulty | Topics            | Notes              |
 |-----------|-----------------------------------------------------------------------------------------------|--------------------------------------------------|------------|-------------------|--------------------|
