@@ -170,7 +170,7 @@
 | 236       | [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree)               | [Python](./0236-lowest-common-ancestor-of-a-binary-tree)                         | Medium     | Binary Tree            |       |
 
 
-**[Day 22](Daily%20Algo%20Insights/Day22%20-%20Binary%20Tree-Part8.md)**
+**[Day 22 - Binary Tree Part 8](Daily%20Algo%20Insights/Day22%20-%20Binary%20Tree-Part8.md)**
 
 | Question# | Title                                                                                                                          | Solution                                                                      | Difficulty | Topics                 | Nodes |
 |-----------|--------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|------------|------------------------|-------|
@@ -180,7 +180,7 @@
 
 
 
-**[Day 23](Daily%20Algo%20Insights/Day23%20-%20Binary%20Tree-Part9.md)**
+**[Day 23 - Binary Tree Part 9](Daily%20Algo%20Insights/Day23%20-%20Binary%20Tree-Part9.md)**
 
 | Question# | Title                                                                                                                    | Solution                                                                    | Difficulty | Topics                 | Nodes |
 |-----------|--------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------|------------------------|-------|
@@ -190,21 +190,21 @@
 
 
 
-**[Day 24](Daily%20Algo%20Insights/Day24%20-%20Backtracking-Part1.md)**
+**[Day 24 - Backtracking Part 1](Daily%20Algo%20Insights/Day24%20-%20Backtracking-Part1.md)**
 
 | Question# | Title                                            | Solution                                                    | Difficulty | Topics             | Nodes |
 |-----------|--------------------------------------------------|-------------------------------------------------------------|------------|--------------------|-------|
 | 77        | [Combinations](https://leetcode.com/problems/combinations) | [Python](./0077-combinations)                               | Medium     | Backtracking       |       |
 
 
-**[Day 25](Daily%20Algo%20Insights/Day25%20-%20Backtracking-Part2.md)**
+**[Day 25 - Backtracking Part 2](Daily%20Algo%20Insights/Day25%20-%20Backtracking-Part2.md)**
 
 | Question# | Title                                                                                     | Solution                                   | Difficulty | Topics              | Notes |
 |-----------|-------------------------------------------------------------------------------------------|--------------------------------------------|------------|---------------------|-------|
 | 216       | [Combination Sum III](https://leetcode.com/problems/combination-sum-iii)                  | [Python](./0216-combination-sum-iii)       | Medium     | Backtracking        |       |
 | 17        | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number) | [Python](./0017-letter-combinations-of-a-phone-number) | Medium     | Backtracking        |       |
 
-**[Day 27](Daily%20Algo%20Insights/Day27%20-%20Backtracking-Part3.md)**
+**[Day 26 - Backtracking Part 3](Daily%20Algo%20Insights/Day27%20-%20Backtracking-Part3.md)**
 
 | Question# | Title                                                                                         | Solution                                    | Difficulty | Topics       | Notes |
 |-----------|------------------------------------------------------------------------------------------------|---------------------------------------------|------------|--------------|-------|
@@ -213,7 +213,7 @@
 | 131       | [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning)               | [Python](./0131-palindrome-partitioning)    | Medium     | Backtracking |       |
 
 
-**[Day 28](Daily%20Algo%20Insights/Day28%20-%20Backtracking-Part4.md)**
+**[Day 27  - Backtracking Part 4](Daily%20Algo%20Insights/Day28%20-%20Backtracking-Part4.md)**
 
 | Question# | Title                                                                                     | Solution                                  | Difficulty | Topics       | Notes |
 |-----------|-------------------------------------------------------------------------------------------|-------------------------------------------|------------|--------------|-------|
