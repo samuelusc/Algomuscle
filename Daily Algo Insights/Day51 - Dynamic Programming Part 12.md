@@ -46,7 +46,7 @@
 ### Solving approach :
 
 
-[309-thought](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day51/LC309-Thought.jpg)
+![309-thought](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day51/LC309-Thought.jpg)
 
 
 ### My Solution ：
@@ -134,7 +134,7 @@ The total profit is ((8 - 1) - 2) + ((9 - 4) - 2) = 8.
 ### Solving approach 1:
 
 
-[714-thought](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day51/LC714-Thought.jpg)
+![714-thought](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day51/LC714-Thought.jpg)
 
 
 
