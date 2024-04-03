@@ -1,4 +1,4 @@
-# Day38 - Dynamic Programming Part 1.md
+# Day38 - Dynamic Programming Part 1
 
 
 ## Contents
