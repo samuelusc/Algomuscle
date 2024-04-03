@@ -151,7 +151,7 @@
 | 106       | [Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal) | [Python](./0106-construct-binary-tree-from-inorder-and-postorder-traversal) | Medium     | Binary Tree   |       |
 
 
-**[Day 19 - Binary Tree Part 6](Daily%20Algo%20Insights/Day20-Binary%20Tree-Part6.md)**
+**[Day 19 - Binary Tree Part 6](Daily%20Algo%20Insights/Day19-Binary%20Tree-Part6.md)**
 
 | Question# | Title                                                                                                               | Solution                                                             | Difficulty | Topics          | Nodes |
 |-----------|---------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|------------|-----------------|-------|
@@ -161,7 +161,7 @@
 | 98        | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree)                           | [Python](./0098-validate-binary-search-tree)                         | Medium     | Binary Search Tree |     |
 
 
-**[Day 20 - Binary Tree Part 7](Daily%20Algo%20Insights/Day21%20-%20Binary%20Tree-Part7.md)**
+**[Day 20 - Binary Tree Part 7](Daily%20Algo%20Insights/Day20%20-%20Binary%20Tree-Part7.md)**
 
 | Question# | Title                                                                                                                           | Solution                                                                         | Difficulty | Topics                 | Nodes |
 |-----------|---------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|------------|------------------------|-------|
