@@ -3,7 +3,7 @@
 
 ## Contents
 * **[392. Is Subsequence](#392)**
-* **[xx](#115)**
+* **[115. Distinct Subsequences](#115)**
 
 
 <br>
