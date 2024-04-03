@@ -40,7 +40,7 @@
 - **[Day 41 - Dynamic Programming Part 4](Daily%20Algo%20Insights/Day41%20-%20Dynamic%20Programming-Part4.md)**
 - **[Day 43 - Dynamic Programming Part 5](Daily%20Algo%20Insights/Day43%20-%20Dynamic%20Programming%20Part%205.md)**
 - **[Day 44 - Dynamic Programming Part 6](Daily%20Algo%20Insights/Day44%20-%20Dynamic%20Programming-Part6.md)**
-- **[Day 45 - Dynamic Programming Part 7](Daily%20Algo%20Insights/Day45%20-%20Dynamic%20Programming-Part7.md)**
+- **[Day 45 - Dynamic Programming Part 7](Daily%20Algo%20Insights/Day45%20-%20Dynamic%20Programming%20Part%207.md)**
 - **[Day 46 - Dynamic Programming Part 8](Daily%20Algo%20Insights/Day46%20-%20Dynamic%20Programming-Part8.md)**
 - **[Day 47 - Dynamic Programming Part 9](Daily%20Algo%20Insights/Day47%20-%20Dynamic%20Programming-Part9.md)**
 - **[Day 48 - Dynamic Programming Part 10](Daily%20Algo%20Insights/Day48%20-%20Dynamic%20Programming-Part10.md)**
@@ -394,7 +394,7 @@
 | 377       | [Combination Sum IV](https://leetcode.com/problems/combination-sum-iv)                     | [Python](./0377-combination-sum-iv.py)    | Medium     | Dynamic Programming|   |
 
 
-**[Day 45 - Dynamic Programming Part 7](Daily%20Algo%20Insights/Day45%20-%20Dynamic%20Programming-Part7.md)**
+**[Day 45 - Dynamic Programming Part 7](Daily%20Algo%20Insights/Day45%20-%20Dynamic%20Programming%20Part%207.md)**
 
 | Question# | Title                                                                                  | Solution                             | Difficulty | Topics            | Notes                          |
 |-----------|----------------------------------------------------------------------------------------|--------------------------------------|------------|-------------------|--------------------------------|
