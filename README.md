@@ -31,7 +31,7 @@
 - **[Day 31 - Greedy Part 1](Daily%20Algo%20Insights/Day31%20-%20Greedy-Part1.md)**
 - **[Day 32 - Greedy Part 2](Daily%20Algo%20Insights/Day32%20-%20Greedy-Part2.md)**
 - **[Day 33 - Greedy Part 3](./Daily%20Algo%20Insights/Day33%20-%20Greedy-Part3.md)**
-- **[Day 35 - Greedy Part 4](Daily%20Algo%20Insights/Day35%20-%20Greedy-Part4.md)**
+- **[Day 34 - Greedy Part 4](Daily%20Algo%20Insights/Day34%20-%20Greedy-Part4.md)**
 - **[Day 36 - Greedy Part 5](Daily%20Algo%20Insights/Day36%20-%20Greedy-Part5.md)**
 - **[Day 37 - Greedy Part 6](Daily%20Algo%20Insights/Day37%20-%20Greedy-Part6.md)**
 - **[Day 38 - Dynamic Programming Part 1](Daily%20Algo%20Insights/Day38%20-%20Dynamic%20Programming-Part1.md)**
@@ -318,7 +318,7 @@
 | 135       | [Candy](https://leetcode.com/problems/candy)                                                                    | [Python](./0135-candy)                            | Hard       | Greedy |       |
 
 
-**[Day 35 - Greedy Part 4](Daily%20Algo%20Insights/Day35%20-%20Greedy-Part4.md)**
+**[Day 34 - Greedy Part 4](Daily%20Algo%20Insights/Day34%20-%20Greedy-Part4.md)**
 
 | Question# | Title                                                                                                           | Solution                                       | Difficulty | Topics | Notes |
 |-----------|-----------------------------------------------------------------------------------------------------------------|------------------------------------------------|------------|--------|-------|
