@@ -44,16 +44,16 @@
 - **[Day 46 - Dynamic Programming Part 8](Daily%20Algo%20Insights/Day46%20-%20Dynamic%20Programming-Part8.md)**
 - **[Day 47 - Dynamic Programming Part 9](Daily%20Algo%20Insights/Day47%20-%20Dynamic%20Programming-Part9.md)**
 - **[Day 48 - Dynamic Programming Part 10](Daily%20Algo%20Insights/Day48%20-%20Dynamic%20Programming%20Part%2010.md)**
-- **[Day 50 - Dynamic Programming Part 11](Daily%20Algo%20Insights/Day50%20-%20Dynamic%20Programming%20Part%2011.md)**
-- **[Day 51 - Dynamic Programming Part 12](Daily%20Algo%20Insights/Day51%20-%20Dynamic%20Programming%20Part%2012.md)**
-- **[Day 52 - Dynamic Programming Part 13](Daily%20Algo%20Insights/Day52%20-%20Dynamic%20Programming-Part13.md)**
-- **[Day 53 - Dynamic Programming Part 14](Daily%20Algo%20Insights/Day53%20-%20Dynamic%20Programming-Part14.md)**
-- **[Day 54 - Dynamic Programming Part 15](Daily%20Algo%20Insights/Day54%20-%20Dynamic%20Programming-Part15.md)**
-- **[Day 55 - Dynamic Programming Part 16](Daily%20Algo%20Insights/Day55%20-%20Dynamic%20Programming-Part16.md)**
-- **[Day 57 - Dynamic Programming Part 17](Daily%20Algo%20Insights/Day57%20-%20Dynamic%20Programming-Part17.md)**
-- **[Day 58 - Monotonic Stack Part 1](Daily%20Algo%20Insights/Day58%20-%20Monotonic%20Stack-Part1.md)**
-- **[Day 59 - Monotonic Stack Part 2](Daily%20Algo%20Insights/Day59%20-%20Monotonic%20Stack-Part2.md)**
-- **[Day 60 - Monotonic Stack Part 3](Daily%20Algo%20Insights/Day60%20-%20Monotonic%20Stack-Part3.md)**
+- **[Day 50 - Dynamic Programming Part 11](./Daily%20Algo%20Insights/Day50%20-%20Dynamic%20Programming%20Part%2011.md)**
+- **[Day 51 - Dynamic Programming Part 12](./Daily%20Algo%20Insights/Day51%20-%20Dynamic%20Programming%20Part%2012.md)**
+- **[Day 52 - Dynamic Programming Part 13](./Daily%20Algo%20Insights/Day52%20-%20Dynamic%20Programming%20Part%2013.md)**
+- **[Day 53 - Dynamic Programming Part 14](./Daily%20Algo%20Insights/Day53%20-%20Dynamic%20Programming%20Part%2014.md)**
+- **[Day 54 - Dynamic Programming Part 15](./Daily%20Algo%20Insights/Day54%20-%20Dynamic%20Programming%20Part%2015.md)**
+- **[Day 55 - Dynamic Programming Part 16](./Daily%20Algo%20Insights/Day55%20-%20Dynamic%20Programming%20Part%2016.md)**
+- **[Day 57 - Dynamic Programming Part 17](./Daily%20Algo%20Insights/Day57%20-%20%20Dynamic%20Programming%20Part%2017.md)**
+- **[Day 58 - Monotonic Stack Part 1](./Daily%20Algo%20Insights/Day58%20-%20Monotonic%20Stack%20Part%201.md)**
+- **[Day 59 - Monotonic Stack Part 2](./Daily%20Algo%20Insights/Day59%20-%20Monotonic%20Stack%20Part%202.md)**
+- **[Day 60 - Monotonic Stack Part 3](./Daily%20Algo%20Insights/Day60%20-%20Monotonic%20Stack%20Part%203.md)**
 
 ## Daily Progress Log
 
