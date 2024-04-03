@@ -263,7 +263,7 @@
 | 135       | [Candy](https://leetcode.com/problems/candy)                                                                    | [Python](./0135-candy)                            | Hard       | Greedy |       |
 
 
-**[Day 35 - Greedy Part 1](Daily%20Algo%20Insights/Day35%20-%20Greedy-Part4.md)**
+**[Day 35 - Greedy Part 4](Daily%20Algo%20Insights/Day35%20-%20Greedy-Part4.md)**
 
 | Question# | Title                                                                                                           | Solution                                       | Difficulty | Topics | Notes |
 |-----------|-----------------------------------------------------------------------------------------------------------------|------------------------------------------------|------------|--------|-------|
@@ -273,7 +273,7 @@
 | 9         | [Palindrome Number](https://leetcode.com/problems/palindrome-number)                                          | [Python](./0009-palindrome-number)             | Easy       | Greedy |       |
 
 
-**[Day 36 - Greedy Part 1](Daily%20Algo%20Insights/Day36%20-%20Greedy-Part5.md)**
+**[Day 36 - Greedy Part 5](Daily%20Algo%20Insights/Day36%20-%20Greedy-Part5.md)**
 
 | Question# | Title                                                                                             | Solution                               | Difficulty | Topics | Notes |
 |-----------|---------------------------------------------------------------------------------------------------|----------------------------------------|------------|--------|-------|
@@ -282,7 +282,7 @@
 | 56        | [Merge Intervals](https://leetcode.com/problems/merge-intervals)                                  | [Python](./0056-merge-intervals)       | Medium     | Greedy |    [2/3 review](assets/Day36/Leetcode56-sol.jpg)   |
 
 
-**[Day 37](Daily%20Algo%20Insights/Day37%20-%20Greedy-Part6.md)**
+**[Day 37 - Greedy Part 6](Daily%20Algo%20Insights/Day37%20-%20Greedy-Part6.md)**
 
 | Question# | Title                                                                                             | Solution                               | Difficulty | Topics | Notes |
 |-----------|---------------------------------------------------------------------------------------------------|----------------------------------------|------------|--------|-------|
@@ -291,7 +291,7 @@
 
 
 
-**[Day 38](Daily%20Algo%20Insights/Day38%20-%20Dynamic%20Programming-Part1.md)**
+**[Day 38 - Dynamic Programming Part 1](Daily%20Algo%20Insights/Day38%20-%20Dynamic%20Programming-Part1.md)**
 
 | Question# | Title                                                                                    | Solution                              | Difficulty | Topics       | Notes   |
 |-----------|------------------------------------------------------------------------------------------|---------------------------------------|------------|--------------|---------|
@@ -301,14 +301,14 @@
 
 
 
-**[Day 39](Daily%20Algo%20Insights/Day39%20-%20Dynamic%20Programming-Part2.md)**
+**[Day 39 - Dynamic Programming Part 2](Daily%20Algo%20Insights/Day39%20-%20Dynamic%20Programming-Part2.md)**
 
 | Question# | Title                                                                                       | Solution                             | Difficulty | Topics       | Notes   |
 |-----------|---------------------------------------------------------------------------------------------|--------------------------------------|------------|--------------|---------|
 | 62        | [Unique Paths](https://leetcode.com/problems/unique-paths)                                  | [Python](./0062-unique-paths)        | Medium     | Dynamic Programming | review and consider space save      |
 | 63        | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii)                            | [Python](./0063-unique-paths-ii)     | Medium     | Dynamic Programming |       |
 
-**[Day 40](Daily%20Algo%20Insights/Day40%20-%20Dynamic%20Programming-Part3.md)**
+**[Day 40 - Dynamic Programming Part 3](Daily%20Algo%20Insights/Day40%20-%20Dynamic%20Programming-Part3.md)**
 
 | Question# | Title                                                                                       | Solution                             | Difficulty | Topics            | Notes   |
 |-----------|---------------------------------------------------------------------------------------------|--------------------------------------|------------|-------------------|---------|
@@ -316,14 +316,14 @@
 | 96        | [Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees)      | [Python](./0096-unique-binary-search-trees) | Medium | Dynamic Programming ||
 
 
-**[Day 41](Daily%20Algo%20Insights/Day41%20-%20Dynamic%20Programming-Part4.md)**
+**[Day 41 - Dynamic Programming Part 4](Daily%20Algo%20Insights/Day41%20-%20Dynamic%20Programming-Part4.md)**
 
 | Question# | Title                                                                                        | Solution                             | Difficulty | Topics            | Notes              |
 |-----------|----------------------------------------------------------------------------------------------|--------------------------------------|------------|-------------------|--------------------|
 | 46        | [携带研究材料-2D/1D](https://kamacoder.com/problempage.php?pid=1046)                          | [Python](./0046-携带研究材料-2D1D.py) | --         | Dynamic Programming|  |
 | 416       | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum)         | [Python](./0416-partition-equal-subset-sum.py) | Medium     | Dynamic Programming| |
 
-**[Day 43](Daily%20Algo%20Insights/Day42%20-%20Dynamic%20Programming-Part5.md)**
+**[Day 43 - Dynamic Programming Part 5](Daily%20Algo%20Insights/Day42%20-%20Dynamic%20Programming-Part5.md)**
 
 | Question# | Title                                                                                        | Solution                             | Difficulty | Topics            | Notes              |
 |-----------|----------------------------------------------------------------------------------------------|--------------------------------------|------------|-------------------|--------------------|
@@ -331,7 +331,7 @@
 | 494       | [Target Sum](https://leetcode.com/problems/target-sum)                                       | [Python](./0494-target-sum.py)       | Medium     | Dynamic Programming| |
 | 474       | [Ones and Zeroes](https://leetcode.com/problems/ones-and-zeroes)                             | [Python](./0474-ones-and-zeroes.py)  | Medium     | Dynamic Programming| |
 
-**[Day 44](Daily%20Algo%20Insights/Day44%20-%20Dynamic%20Programming-Part6.md)**
+**[Day 44 - Dynamic Programming Part 6](Daily%20Algo%20Insights/Day44%20-%20Dynamic%20Programming-Part6.md)**
 
 | Question# | Title                                                                                      | Solution                                  | Difficulty | Topics            | Notes                          |
 |-----------|--------------------------------------------------------------------------------------------|-------------------------------------------|------------|-------------------|--------------------------------|
@@ -339,12 +339,20 @@
 | 377       | [Combination Sum IV](https://leetcode.com/problems/combination-sum-iv)                     | [Python](./0377-combination-sum-iv.py)    | Medium     | Dynamic Programming|   |
 
 
-**[Day 45](Daily%20Algo%20Insights/Day45%20-%20Dynamic%20Programming-Part7.md)**
+**[Day 45 - Dynamic Programming Part 7](Daily%20Algo%20Insights/Day45%20-%20Dynamic%20Programming-Part7.md)**
 
 | Question# | Title                                                                                  | Solution                             | Difficulty | Topics            | Notes                          |
 |-----------|----------------------------------------------------------------------------------------|--------------------------------------|------------|-------------------|--------------------------------|
-| 70        | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs)                       | [Python](./0070-climbing-stairs.py)  | Easy       | Dynamic Programming| O(n) Time, O(n) Space; O(n) Time, O(1) Space |
-| 57        | [Advanced Climbing Stairs](https://kamacoder.com/problempage.php?pid=1067)             | [Python](./0057-advanced-climbing-stairs.py) | --        | Dynamic Programming| O(n*m) Time, O(n) Space        |
-| 322       | [Coin Change](https://leetcode.com/problems/coin-change)                               | [Python](./0322-coin-change.py)      | Medium     | Dynamic Programming| O(S*n) Time, O(S) Space        |
-| 279       | [Perfect Squares](https://leetcode.com/problems/perfect-squares)                       | [Python](./0279-perfect-squares.py)  | Medium     | Dynamic Programming| O(n*m) Time, O(n) Space        |
-| amz       | [Amazon Warehouse Distribution](#amz)                                                | [Python](./amz-warehouse-distribution.py) | --        | Dynamic Programming| O(nlogn) Time, O(n) Space      |
+| 70        | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs)                       | [Python](./0070-climbing-stairs.py)  | Easy       | Dynamic Programming| |
+| 57        | [Advanced Climbing Stairs](https://kamacoder.com/problempage.php?pid=1067)             | [Python](./0057-advanced-climbing-stairs.py) | --        | Dynamic Programming|         |
+| 322       | [Coin Change](https://leetcode.com/problems/coin-change)                               | [Python](./0322-coin-change.py)      | Medium     | Dynamic Programming|         |
+| 279       | [Perfect Squares](https://leetcode.com/problems/perfect-squares)                       | [Python](./0279-perfect-squares.py)  | Medium     | Dynamic Programming|         |
+| amz       | [Amazon Warehouse Distribution](#amz)                                                | [Python](./amz-warehouse-distribution.py) | --        | Dynamic Programming|      |
+
+**[Day 46 - Dynamic Programming Part 8](Daily%20Algo%20Insights/Day46%20-%20Dynamic%20Programming-Part8.md)**
+
+| Question# | Title                                                                                     | Solution                             | Difficulty | Topics            | Notes |
+|-----------|-------------------------------------------------------------------------------------------|--------------------------------------|------------|-------------------|-------|
+| 139       | [Word Break](https://leetcode.com/problems/word-break)                                    | [Python](./0139-word-break.py)       | Medium     | Dynamic Programming|       |
+| 56        | [Carrying Ore Resources](https://kamacoder.com/problempage.php?pid=1066)                   | [Python](./0056-carrying-ore-resources.py) | --        | Dynamic Programming|       |
+| 146       | [LRU Cache](https://leetcode.com/problems/lru-cache)                                      | [Python](./0146-lru-cache.py)        | Medium     | Design             |       |
