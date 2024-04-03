@@ -254,7 +254,7 @@
 
 
 
-**[Day 33 - Greedy Part 3](Daily%20Algo%20Insights/Day34%20-%20Greedy-Part3.md)**
+**[Day 33 - Greedy Part 3](./Daily%20Algo%20Insights/Day33%20-%20Greedy-Part3.md)**
 
 | Question# | Title                                                                                                           | Solution                                       | Difficulty | Topics | Notes |
 |-----------|-----------------------------------------------------------------------------------------------------------------|------------------------------------------------|------------|--------|-------|
