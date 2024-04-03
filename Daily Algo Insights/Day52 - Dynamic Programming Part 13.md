@@ -161,7 +161,7 @@ O(n), due to the dp array which scales linearly with the size of the input list 
 <br>
 
 
-<h2 id = ""718><a href="https://leetcode.com/problems/maximum-length-of-repeated-subarray">718. Maximum Length of Repeated Subarray</a></h2><h3>Medium</h3><p>Given two integer arrays <code>nums1</code> and <code>nums2</code>, return <em>the maximum length of a subarray that appears in <strong>both</strong> arrays</em>.</p>
+<h2 id = "718"><a href="https://leetcode.com/problems/maximum-length-of-repeated-subarray">718. Maximum Length of Repeated Subarray</a></h2><h3>Medium</h3><p>Given two integer arrays <code>nums1</code> and <code>nums2</code>, return <em>the maximum length of a subarray that appears in <strong>both</strong> arrays</em>.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
