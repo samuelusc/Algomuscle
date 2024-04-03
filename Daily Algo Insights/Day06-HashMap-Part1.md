@@ -2,10 +2,10 @@
 
 
 ## Contents
-* **[xx](#242)**
-* **[xx](#349)**
-* **[xx](#202)**
-* **[xx](#1)**
+* **[242. Valid Anagram](#242)**
+* **[349. Intersection of Two Arrays](#349)**
+* **[202. Happy Number](#202)**
+* **[1. Two Sum](#1)**
 
 
 <br>
