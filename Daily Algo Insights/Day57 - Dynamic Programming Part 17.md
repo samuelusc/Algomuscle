@@ -2,8 +2,8 @@
 
 
 ## Contents
-* **[xx](#647)**
-* **[xx](#516)**
+* **[647. Palindromic Substrings](#647)**
+* **[516. Longest Palindromic Subsequence](#516)**
 
 
 <br>
