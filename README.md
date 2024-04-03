@@ -213,7 +213,7 @@
 | 131       | [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning)               | [Python](./0131-palindrome-partitioning)    | Medium     | Backtracking |       |
 
 
-**[Day 27  - Backtracking Part 4](Daily%20Algo%20Insights/Day28%20-%20Backtracking-Part4.md)**
+**[Day 27 - Backtracking Part 4](Daily%20Algo%20Insights/Day28%20-%20Backtracking-Part4.md)**
 
 | Question# | Title                                                                                     | Solution                                  | Difficulty | Topics       | Notes |
 |-----------|-------------------------------------------------------------------------------------------|-------------------------------------------|------------|--------------|-------|
@@ -223,7 +223,7 @@
 
 
 
-**[Day 29](Daily%20Algo%20Insights/Day29%20-%20Backtracking-Part5.md)**
+**[Day 29 - Backtracking Part 5](Daily%20Algo%20Insights/Day29%20-%20Backtracking-Part5.md)**
 
 | Question# | Title                                                                                     | Solution                                   | Difficulty | Topics       | Notes |
 |-----------|-------------------------------------------------------------------------------------------|--------------------------------------------|------------|--------------|-------|
@@ -233,7 +233,7 @@
 
 
 
-**[Day 31](Daily%20Algo%20Insights/Day31%20-%20Greedy-Part1.md)**
+**[Day 31 - Greedy Part 1](Daily%20Algo%20Insights/Day31%20-%20Greedy-Part1.md)**
 
 | Question# | Title                                                                                          | Solution                                | Difficulty | Topics       | Notes |
 |-----------|------------------------------------------------------------------------------------------------|-----------------------------------------|------------|--------------|-------|
@@ -243,7 +243,7 @@
 
 
 
-**[Day 32](Daily%20Algo%20Insights/Day32%20-%20Greedy-Part2.md)**
+**[Day 32 - Greedy Part 2](Daily%20Algo%20Insights/Day32%20-%20Greedy-Part2.md)**
 
 | Question# | Title                                                                                                           | Solution                                       | Difficulty | Topics | Notes |
 |-----------|-----------------------------------------------------------------------------------------------------------------|------------------------------------------------|------------|--------|-------|
@@ -254,7 +254,7 @@
 
 
 
-**[Day 34](Daily%20Algo%20Insights/Day34%20-%20Greedy-Part3.md)**
+**[Day 33 - Greedy Part 3](Daily%20Algo%20Insights/Day34%20-%20Greedy-Part3.md)**
 
 | Question# | Title                                                                                                           | Solution                                       | Difficulty | Topics | Notes |
 |-----------|-----------------------------------------------------------------------------------------------------------------|------------------------------------------------|------------|--------|-------|
@@ -263,7 +263,7 @@
 | 135       | [Candy](https://leetcode.com/problems/candy)                                                                    | [Python](./0135-candy)                            | Hard       | Greedy |       |
 
 
-**[Day 35](Daily%20Algo%20Insights/Day35%20-%20Greedy-Part4.md)**
+**[Day 35 - Greedy Part 1](Daily%20Algo%20Insights/Day35%20-%20Greedy-Part4.md)**
 
 | Question# | Title                                                                                                           | Solution                                       | Difficulty | Topics | Notes |
 |-----------|-----------------------------------------------------------------------------------------------------------------|------------------------------------------------|------------|--------|-------|
@@ -273,7 +273,7 @@
 | 9         | [Palindrome Number](https://leetcode.com/problems/palindrome-number)                                          | [Python](./0009-palindrome-number)             | Easy       | Greedy |       |
 
 
-**[Day 36](Daily%20Algo%20Insights/Day36%20-%20Greedy-Part5.md)**
+**[Day 36 - Greedy Part 1](Daily%20Algo%20Insights/Day36%20-%20Greedy-Part5.md)**
 
 | Question# | Title                                                                                             | Solution                               | Difficulty | Topics | Notes |
 |-----------|---------------------------------------------------------------------------------------------------|----------------------------------------|------------|--------|-------|
