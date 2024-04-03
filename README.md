@@ -322,3 +322,29 @@
 |-----------|----------------------------------------------------------------------------------------------|--------------------------------------|------------|-------------------|--------------------|
 | 46        | [携带研究材料-2D/1D](https://kamacoder.com/problempage.php?pid=1046)                          | [Python](./0046-携带研究材料-2D1D.py) | --         | Dynamic Programming|  |
 | 416       | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum)         | [Python](./0416-partition-equal-subset-sum.py) | Medium     | Dynamic Programming| |
+
+**[Day 43](Daily%20Algo%20Insights/Day42%20-%20Dynamic%20Programming-Part5.md)**
+
+| Question# | Title                                                                                        | Solution                             | Difficulty | Topics            | Notes              |
+|-----------|----------------------------------------------------------------------------------------------|--------------------------------------|------------|-------------------|--------------------|
+| 1049      | [Last Stone Weight II](https://leetcode.com/problems/last-stone-weight-ii)                   | [Python](./1049-last-stone-weight-ii.py) | Medium     | Dynamic Programming| |
+| 494       | [Target Sum](https://leetcode.com/problems/target-sum)                                       | [Python](./0494-target-sum.py)       | Medium     | Dynamic Programming| |
+| 474       | [Ones and Zeroes](https://leetcode.com/problems/ones-and-zeroes)                             | [Python](./0474-ones-and-zeroes.py)  | Medium     | Dynamic Programming| |
+
+**[Day 44](Daily%20Algo%20Insights/Day44%20-%20Dynamic%20Programming-Part6.md)**
+
+| Question# | Title                                                                                      | Solution                                  | Difficulty | Topics            | Notes                          |
+|-----------|--------------------------------------------------------------------------------------------|-------------------------------------------|------------|-------------------|--------------------------------|
+| 518       | [Coin Change II](https://leetcode.com/problems/coin-change-ii)                             | [Python](./0518-coin-change-ii.py)        | Medium     | Dynamic Programming|   |
+| 377       | [Combination Sum IV](https://leetcode.com/problems/combination-sum-iv)                     | [Python](./0377-combination-sum-iv.py)    | Medium     | Dynamic Programming|   |
+
+
+**[Day 45](Daily%20Algo%20Insights/Day45%20-%20Dynamic%20Programming-Part7.md)**
+
+| Question# | Title                                                                                  | Solution                             | Difficulty | Topics            | Notes                          |
+|-----------|----------------------------------------------------------------------------------------|--------------------------------------|------------|-------------------|--------------------------------|
+| 70        | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs)                       | [Python](./0070-climbing-stairs.py)  | Easy       | Dynamic Programming| O(n) Time, O(n) Space; O(n) Time, O(1) Space |
+| 57        | [Advanced Climbing Stairs](https://kamacoder.com/problempage.php?pid=1067)             | [Python](./0057-advanced-climbing-stairs.py) | --        | Dynamic Programming| O(n*m) Time, O(n) Space        |
+| 322       | [Coin Change](https://leetcode.com/problems/coin-change)                               | [Python](./0322-coin-change.py)      | Medium     | Dynamic Programming| O(S*n) Time, O(S) Space        |
+| 279       | [Perfect Squares](https://leetcode.com/problems/perfect-squares)                       | [Python](./0279-perfect-squares.py)  | Medium     | Dynamic Programming| O(n*m) Time, O(n) Space        |
+| amz       | [Amazon Warehouse Distribution](#amz)                                                | [Python](./amz-warehouse-distribution.py) | --        | Dynamic Programming| O(nlogn) Time, O(n) Space      |
