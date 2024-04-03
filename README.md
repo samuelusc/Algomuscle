@@ -4,7 +4,6 @@
 
 Here's the Contents section for your daily progress log from Day 1 to Day 60:
 
-## Contents
 - **[Day 1 - Arrays Part 1](./Daily%20Algo%20Insights/Day01-Arrays-Part1.md)**
 - **[Day 2 - Arrays Part 2](./Daily%20Algo%20Insights/Day02-Arrays-Part2.md)**
 - **[Day 3 - LinkedList Part 1](./Daily%20Algo%20Insights/Day03-LinkedList-Part1.md)**
