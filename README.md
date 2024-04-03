@@ -204,7 +204,7 @@
 | 216       | [Combination Sum III](https://leetcode.com/problems/combination-sum-iii)                  | [Python](./0216-combination-sum-iii)       | Medium     | Backtracking        |       |
 | 17        | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number) | [Python](./0017-letter-combinations-of-a-phone-number) | Medium     | Backtracking        |       |
 
-**[Day 26 - Backtracking Part 3](Daily%20Algo%20Insights/Day27%20-%20Backtracking-Part3.md)**
+**[Day 26 - Backtracking Part 3](Daily%20Algo%20Insights/Day26%20-%20Backtracking-Part3.md)**
 
 | Question# | Title                                                                                         | Solution                                    | Difficulty | Topics       | Notes |
 |-----------|------------------------------------------------------------------------------------------------|---------------------------------------------|------------|--------------|-------|
@@ -213,7 +213,7 @@
 | 131       | [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning)               | [Python](./0131-palindrome-partitioning)    | Medium     | Backtracking |       |
 
 
-**[Day 27 - Backtracking Part 4](Daily%20Algo%20Insights/Day28%20-%20Backtracking-Part4.md)**
+**[Day 27 - Backtracking Part 4](Daily%20Algo%20Insights/Day27%20-%20Backtracking-Part4.md)**
 
 | Question# | Title                                                                                     | Solution                                  | Difficulty | Topics       | Notes |
 |-----------|-------------------------------------------------------------------------------------------|-------------------------------------------|------------|--------------|-------|
