@@ -294,5 +294,3 @@ O(n), as the size of the dp array scales linearly with the size of the input lis
 ![Dividing Line](https://github.com/samuelusc/Algomuscle/blob/main/assets/CatDividing.png)
 <br>
 
-
-xxxx
