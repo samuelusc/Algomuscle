@@ -307,3 +307,18 @@
 |-----------|---------------------------------------------------------------------------------------------|--------------------------------------|------------|--------------|---------|
 | 62        | [Unique Paths](https://leetcode.com/problems/unique-paths)                                  | [Python](./0062-unique-paths)        | Medium     | Dynamic Programming | review and consider space save      |
 | 63        | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii)                            | [Python](./0063-unique-paths-ii)     | Medium     | Dynamic Programming |       |
+
+**[Day 40](Daily%20Algo%20Insights/Day40%20-%20Dynamic%20Programming-Part3.md)**
+
+| Question# | Title                                                                                       | Solution                             | Difficulty | Topics            | Notes   |
+|-----------|---------------------------------------------------------------------------------------------|--------------------------------------|------------|-------------------|---------|
+| 343       | [Integer Break](https://leetcode.com/problems/integer-break)                                | [Python](./0343-integer-break)       | Medium     | Dynamic Programming|  |
+| 96        | [Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees)      | [Python](./0096-unique-binary-search-trees) | Medium | Dynamic Programming ||
+
+
+**[Day 41](Daily%20Algo%20Insights/Day41%20-%20Dynamic%20Programming-Part4.md)**
+
+| Question# | Title                                                                                        | Solution                             | Difficulty | Topics            | Notes              |
+|-----------|----------------------------------------------------------------------------------------------|--------------------------------------|------------|-------------------|--------------------|
+| 46        | [携带研究材料-2D/1D](https://kamacoder.com/problempage.php?pid=1046)                          | [Python](./0046-携带研究材料-2D1D.py) | --         | Dynamic Programming|  |
+| 416       | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum)         | [Python](./0416-partition-equal-subset-sum.py) | Medium     | Dynamic Programming| |
