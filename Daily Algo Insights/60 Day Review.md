@@ -18,54 +18,56 @@
 
 ## MY Day1 to Day60
 
-- **[Day 1 - Arrays Part 1](./Daily%20Algo%20Insights/Day01-Arrays-Part1.md)**
-- **[Day 2 - Arrays Part 2](./Daily%20Algo%20Insights/Day02-Arrays-Part2.md)**
-- **[Day 3 - LinkedList Part 1](./Daily%20Algo%20Insights/Day03-LinkedList-Part1.md)**
-- **[Day 4 - LinkedList Part 2](./Daily%20Algo%20Insights/Day04-LinkedList-Part2.md)**
-- **[Day 6 - HashMap-Part1](./Daily%20Algo%20Insights/Day06-HashMap-Part1.md)**
-- **[Day 7 - HashMap-Part2](./Daily%20Algo%20Insights/Day07-HashMap-Part2.md)**
-- **[Day 8 - String Part 1](./Daily%20Algo%20Insights/Day08-String-Part1.md)**
-- **[Day 9 - String Part 2](./Daily%20Algo%20Insights/Day09-String-Part2.md)**
-- **[Day 10 - Stack and Queue Part 1](./Daily%20Algo%20Insights/Day10-Stack%20and%20Queue-Part1.md)**
-- **[Day 11 - Stack and Queue Part 2](./Daily%20Algo%20Insights/Day11-Stack%20and%20Queue-Part2.md)**
-- **[Day 13 - Stack and Queue Part 3](./Daily%20Algo%20Insights/Day13-Stack%20and%20Queue-Part3.md)**
-- **[Day 14 - Binary Tree Part 1](./Daily%20Algo%20Insights/Day14-Binary%20Tree-Part1.md)**
-- **[Day 15 - Binary Tree Part 2](Daily%20Algo%20Insights/Day15-Binary%20Tree-Part2.md)**
-- **[Day 16 - Binary Tree Part 3](Daily%20Algo%20Insights/Day16-Binary%20Tree-Part3.md)**
-- **[Day 17 - Binary Tree Part 4](Daily%20Algo%20Insights/Day17-Binary%20Tree-Part4.md)**
-- **[Day 18 - Binary Tree Part 5](Daily%20Algo%20Insights/Day18-Binary%20Tree-Part5.md)**
-- **[Day 19 - Binary Tree Part 6](Daily%20Algo%20Insights/Day19-Binary%20Tree-Part6.md)**
-- **[Day 20 - Binary Tree Part 7](Daily%20Algo%20Insights/Day20%20-%20Binary%20Tree-Part7.md)**
-- **[Day 22 - Binary Tree Part 8](Daily%20Algo%20Insights/Day22%20-%20Binary%20Tree-Part8.md)**
-- **[Day 23 - Binary Tree Part 9](Daily%20Algo%20Insights/Day23%20-%20Binary%20Tree-Part9.md)**
-- **[Day 24 - Backtracking Part 1](Daily%20Algo%20Insights/Day24%20-%20Backtracking-Part1.md)**
-- **[Day 25 - Backtracking Part 2](Daily%20Algo%20Insights/Day25%20-%20Backtracking-Part2.md)**
-- **[Day 26 - Backtracking Part 3](Daily%20Algo%20Insights/Day26%20-%20Backtracking-Part3.md)**
-- **[Day 27 - Backtracking Part 4](Daily%20Algo%20Insights/Day27%20-%20Backtracking-Part4.md)**
-- **[Day 29 - Backtracking Part 5](Daily%20Algo%20Insights/Day29%20-%20Backtracking-Part5.md)**
-- **[Day 31 - Greedy Part 1](Daily%20Algo%20Insights/Day31%20-%20Greedy-Part1.md)**
-- **[Day 32 - Greedy Part 2](Daily%20Algo%20Insights/Day32%20-%20Greedy-Part2.md)**
-- **[Day 33 - Greedy Part 3](./Daily%20Algo%20Insights/Day33%20-%20Greedy-Part3.md)**
-- **[Day 34 - Greedy Part 4](Daily%20Algo%20Insights/Day34%20-%20Greedy-Part4.md)**
-- **[Day 36 - Greedy Part 5](Daily%20Algo%20Insights/Day36%20-%20Greedy-Part5.md)**
-- **[Day 37 - Greedy Part 6](Daily%20Algo%20Insights/Day37%20-%20Greedy-Part6.md)**
-- **[Day 38 - Dynamic Programming Part 1](Daily%20Algo%20Insights/Day38%20-%20Dynamic%20Programming-Part1.md)**
-- **[Day 39 - Dynamic Programming Part 2](Daily%20Algo%20Insights/Day39%20-%20Dynamic%20Programming-Part2.md)**
-- **[Day 40 - Dynamic Programming Part 3](Daily%20Algo%20Insights/Day40%20-%20Dynamic%20Programming-Part3.md)**
-- **[Day 41 - Dynamic Programming Part 4](Daily%20Algo%20Insights/Day41%20-%20Dynamic%20Programming-Part4.md)**
-- **[Day 43 - Dynamic Programming Part 5](Daily%20Algo%20Insights/Day43%20-%20Dynamic%20Programming%20Part%205.md)**
-- **[Day 44 - Dynamic Programming Part 6](Daily%20Algo%20Insights/Day44%20-%20Dynamic%20Programming-Part6.md)**
-- **[Day 45 - Dynamic Programming Part 7](Daily%20Algo%20Insights/Day45%20-%20Dynamic%20Programming%20Part%207.md)**
-- **[Day 46 - Dynamic Programming Part 8](Daily%20Algo%20Insights/Day46%20-%20Dynamic%20Programming-Part8.md)**
-- **[Day 47 - Dynamic Programming Part 9](Daily%20Algo%20Insights/Day47%20-%20Dynamic%20Programming-Part9.md)**
-- **[Day 48 - Dynamic Programming Part 10](Daily%20Algo%20Insights/Day48%20-%20Dynamic%20Programming%20Part%2010.md)**
-- **[Day 50 - Dynamic Programming Part 11](./Daily%20Algo%20Insights/Day50%20-%20Dynamic%20Programming%20Part%2011.md)**
-- **[Day 51 - Dynamic Programming Part 12](./Daily%20Algo%20Insights/Day51%20-%20Dynamic%20Programming%20Part%2012.md)**
-- **[Day 52 - Dynamic Programming Part 13](./Daily%20Algo%20Insights/Day52%20-%20Dynamic%20Programming%20Part%2013.md)**
-- **[Day 53 - Dynamic Programming Part 14](./Daily%20Algo%20Insights/Day53%20-%20Dynamic%20Programming%20Part%2014.md)**
-- **[Day 54 - Dynamic Programming Part 15](./Daily%20Algo%20Insights/Day54%20-%20Dynamic%20Programming%20Part%2015.md)**
-- **[Day 55 - Dynamic Programming Part 16](./Daily%20Algo%20Insights/Day55%20-%20Dynamic%20Programming%20Part%2016.md)**
-- **[Day 57 - Dynamic Programming Part 17](./Daily%20Algo%20Insights/Day57%20-%20%20Dynamic%20Programming%20Part%2017.md)**
-- **[Day 58 - Monotonic Stack Part 1](./Daily%20Algo%20Insights/Day58%20-%20Monotonic%20Stack%20Part%201.md)**
-- **[Day 59 - Monotonic Stack Part 2](./Daily%20Algo%20Insights/Day59%20-%20Monotonic%20Stack%20Part%202.md)**
-- **[Day 60 - Monotonic Stack Part 3](./Daily%20Algo%20Insights/Day60%20-%20Monotonic%20Stack%20Part%203.md)**
+
+1. **[Day 1 - Arrays Part 1](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day01-Arrays-Part1.md)**
+2. **[Day 2 - Arrays Part 2](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day02-Arrays-Part2.md)**
+3. **[Day 3 - LinkedList Part 1](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day03-LinkedList-Part1.md)**
+4. **[Day 4 - LinkedList Part 2](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day04-LinkedList-Part2.md)**
+5. **[Day 6 - HashMap-Part1](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day06-HashMap-Part1.md)**
+6. **[Day 7 - HashMap-Part2](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day07-HashMap-Part2.md)**
+7. **[Day 8 - String Part 1](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day08-String-Part1.md)**
+8. **[Day 9 - String Part 2](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day09-String-Part2.md)**
+9. **[Day 10 - Stack and Queue Part 1](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day10-Stack%20and%20Queue-Part1.md)**
+10. **[Day 11 - Stack and Queue Part 2](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day11-Stack%20and%20Queue-Part2.md)**
+11. **[Day 13 - Stack and Queue Part 3](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day13-Stack%20and%20Queue-Part3.md)**
+12. **[Day 14 - Binary Tree Part 1](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day14-Binary%20Tree-Part1.md)**
+13. **[Day 15 - Binary Tree Part 2](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day15-Binary%20Tree-Part2.md)**
+14. **[Day 16 - Binary Tree Part 3](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day16-Binary%20Tree-Part3.md)**
+15. **[Day 17 - Binary Tree Part 4](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day17-Binary%20Tree-Part4.md)**
+16. **[Day 18 - Binary Tree Part 5](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day18-Binary%20Tree-Part5.md)**
+17. **[Day 19 - Binary Tree Part 6](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day19-Binary%20Tree-Part6.md)**
+18. **[Day 20 - Binary Tree Part 7](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day20%20-%20Binary%20Tree-Part7.md)**
+20. **[Day 22 - Binary Tree Part 8](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day22%20-%20Binary%20Tree-Part8.md)**
+21. **[Day 23 - Binary Tree Part 9](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day23%20-%20Binary%20Tree-Part9.md)**
+22. **[Day 24 - Backtracking Part 1](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day24%20-%20Backtracking-Part1.md)**
+23. **[Day 25 - Backtracking Part 2](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day25%20-%20Backtracking-Part2.md)**
+24. **[Day 26 - Backtracking Part 3](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day26%20-%20Backtracking-Part3.md)**
+25. **[Day 27 - Backtracking Part 4](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day27%20-%20Backtracking-Part4.md)**
+26. **[Day 29 - Backtracking Part 5](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day29%20-%20Backtracking-Part5.md)**
+27. **[Day 31 - Greedy Part 1](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day31%20-%20Greedy-Part1.md)**
+28. **[Day 32 - Greedy Part 2](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day32%20-%20Greedy-Part2.md)**
+29. **[Day 33 - Greedy Part 3](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day33%20-%20Greedy-Part3.md)**
+30. **[Day 34 - Greedy Part 4](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day34%20-%20Greedy-Part4.md)**
+31. **[Day 36 - Greedy Part 5](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day36%20-%20Greedy-Part5.md)**
+32. **[Day 37 - Greedy Part 6](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day37%20-%20Greedy-Part6.md)**
+33. **[Day 38 - Dynamic Programming Part 1](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day38%20-%20Dynamic%20Programming-Part1.md)**
+34. **[Day 39 - Dynamic Programming Part 2](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day39%20-%20Dynamic%20Programming-Part2.md)**
+35. **[Day 40 - Dynamic Programming Part 3](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day40%20-%20Dynamic%20Programming-Part3.md)**
+36. **[Day 41 - Dynamic Programming Part 4](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day41%20-%20Dynamic%20Programming-Part4.md)**
+37. **[Day 43 - Dynamic Programming Part 5](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day43%20-%20Dynamic%20Programming%20Part%205.md)**
+39. **[Day 44 - Dynamic Programming Part 6](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day44%20-%20Dynamic%20Programming-Part6.md)**
+40. **[Day 45 - Dynamic Programming Part 7](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day45%20-%20Dynamic%20Programming%20Part%207.md)**
+41. **[Day 46 - Dynamic Programming Part 8](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day46%20-%20Dynamic%20Programming-Part8.md)**
+42. **[Day 47 - Dynamic Programming Part 9](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day47%20-%20Dynamic%20Programming-Part9.md)**
+43. **[Day 48 - Dynamic Programming Part 10](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day48%20-%20Dynamic%20Programming%20Part%2010.md)**
+44. **[Day 50 - Dynamic Programming Part 11](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day50%20-%20Dynamic%20Programming%20Part%2011.md)**
+45. **[Day 51 - Dynamic Programming Part 12](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day51%20-%20Dynamic%20Programming%20Part%2012.md)**
+46. **[Day 52 - Dynamic Programming Part 13](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day52%20-%20Dynamic%20Programming%20Part%2013.md)**
+47. **[Day 53 - Dynamic Programming Part 14](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day53%20-%20Dynamic%20Programming%20Part%2014.md)**
+48. **[Day 54 - Dynamic Programming Part 15](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day54%20-%20Dynamic%20Programming%20Part%2015.md)**
+49. **[Day 55 - Dynamic Programming Part 16](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day55%20-%20Dynamic%20Programming%20Part%2016.md)**
+50. **[Day 57 - Dynamic Programming Part 17](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day57%20-%20%20Dynamic%20Programming%20Part%2017.md)**
+51. **[Day 58 - Monotonic Stack Part 1](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day58%20-%20Monotonic%20Stack%20Part%201.md)**
+52. **[Day 59 - Monotonic Stack Part 2](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day59%20-%20Monotonic%20Stack%20Part%202.md)**
+53. **[Day 60 - Monotonic Stack Part 3](https://github.com/samuelusc/Algomuscle/blob/main/Daily%20Algo%20Insights/Day60%20-%20Monotonic%20Stack%20Part%203.md)**
+
