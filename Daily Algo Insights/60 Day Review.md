@@ -16,8 +16,7 @@
 ![my 60 days](https://github.com/samuelusc/Algomuscle/blob/main/assets/Day60s/60DayReview.webp)
 
 
-## Day1 - Day60
-
+## MY Day1 to Day60
 
 - **[Day 1 - Arrays Part 1](./Daily%20Algo%20Insights/Day01-Arrays-Part1.md)**
 - **[Day 2 - Arrays Part 2](./Daily%20Algo%20Insights/Day02-Arrays-Part2.md)**
