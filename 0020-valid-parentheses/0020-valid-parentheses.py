@@ -11,10 +11,9 @@ class Solution:
             elif char == "{":
                 stack.append("}")
 
+            elif not stack or char != stack[-1]:
+                return False
             else:
-                if stack and char == stack[-1]:
-                    stack.pop()
-                else:
-                    return False
+                stack.pop()
         
-        return len(stack)== 0  
+        return not stack
