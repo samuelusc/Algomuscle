@@ -1,21 +1,20 @@
 from collections import deque
 class Solution:
     def maxSlidingWindow(self, nums: List[int], k: int) -> List[int]:
-        q = deque()
-        res = []
+        queue = deque()
+        res = [] 
 
-        for i, cur in enumerate (nums):
+        for i in range(len(nums)):
+
+            while queue and nums[i] >= nums[queue[-1]]:
+                queue.pop()
+
+            queue.append(i)
+
+            if queue[0] <= i - k:
+                queue.popleft()
             
-            while q and cur >= nums[q[-1]]:
-                q.pop()
-
-            q.append(i)
-
-            if q[0] == i -k:
-                q.popleft()
-
-            
-            if i >= k - 1:
-                res.append(nums[q[0]])
-
+            if i + 1 -k >= 0:
+                res.append(nums[queue[0]])
+        
         return res
