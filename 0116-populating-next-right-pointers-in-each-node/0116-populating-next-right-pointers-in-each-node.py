@@ -30,5 +30,5 @@ class Solution:
                     que.append(cur.left)
                 if cur.right:
                     que.append(cur.right)
-        
+            cur.next = None
         return root
