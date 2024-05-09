@@ -649,7 +649,7 @@ class Solution:
                     queue.append(cur_node.right)
             #最后一个节点设置的下一节点设置为None
             #cur_node在for外仍指向对列最后一个元素
-            cur_node.next = None
+            # cur_node.next = None ( 默认节点的next就是None）
         
         return root
             
@@ -763,7 +763,7 @@ class Solution:
                 if cur_node.right:
                     queue.append(cur_node.right)
 
-            cur_node.next = None
+
         
         return root
 
