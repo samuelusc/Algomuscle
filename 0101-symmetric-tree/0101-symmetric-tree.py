@@ -6,28 +6,18 @@
 #         self.right = right
 class Solution:
     def isSymmetric(self, root: Optional[TreeNode]) -> bool:
-        # implement stack 
         if not root:
             return True
-        stack = []
-        stack.append(root.left)
-        stack.append(root.right)
 
-        while stack:
-            node_right = stack.pop()
-            node_left = stack.pop()
+        def _isMirror(node_1, node_2):
+            
+            if not node_1 and not node_2:
+                return True
 
-            # 如果两个节点为空，继续循环查看stack其他节点
-            if not node_left and not node_right:
-                continue
-            # 终止条件，任一为空或不等
-            if not node_left or not node_right or node_left.val != node_right.val:
+            if not node_1 or not node_2 or node_1.val != node_2.val:
                 return False
-            #将子节点按对称顺序入栈
-            stack.append(node_left.left)
-            stack.append(node_right.right)
-            stack.append(node_left.right)
-            stack.append(node_right.left)
-        #栈空并且没有非对称，返回True
-        return True
 
+            
+            return _isMirror(node_1.left, node_2.right) and _isMirror(node_1.right, node_2.left)
+        
+        return _isMirror(root.left, root.right)
