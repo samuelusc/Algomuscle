@@ -14,14 +14,17 @@ class MinStack:
             self.min_stack.pop()
 
         
-
     def top(self) -> int:
         if self.stack:
             return self.stack[-1]
+        else:
+            raise IndexError("Attempt to access top from an empty stack")
 
     def getMin(self) -> int:
         if self.stack:
             return self.min_stack[-1]
+        else:
+            raise IndexError("Attempt to access top from an  empty stack")
 
 
 # Your MinStack object will be instantiated and called as such:
