@@ -6,35 +6,22 @@
 #         self.right = right
 class Solution:
     def sumOfLeftLeaves(self, root: Optional[TreeNode]) -> int:
-        # Initialize the result variable to store the sum of left leaves
-        res = 0
-
-        # If the root is None (empty tree), return the result (which is 0)
-        if not root:
-            return res
-
-        # Initialize a stack with the root node for iterative traversal
-        stack = [root]
-
-        # Perform iterative traversal using the stack
-        while stack:
-            # Pop a node from the stack
-            node = stack.pop()
-
-            # Check if the left child exists and is a leaf node
-            if node.left and not node.left.left and not node.left.right:
-                # Add the value of the left leaf node to the result
-                res += node.left.val
-
-            # If the left child exists, push it onto the stack for further traversal
-            if node.left:
-                stack.append(node.left)
-            
-            # If the right child exists, push it onto the stack for further traversal
-            if node.right:
-                stack.append(node.right)
-
-        # Return the final result which is the sum of all left leaf nodes
-        return res
-
         
+        return self.postOrder(root)
+
+    
+    def postOrder(self, node: TreeNode) -> int:
+        if not node:
+            return 0
+        
+        if not node.left and not node.right:
+            return 0
+        
+        leftNums = self.postOrder(node.left)
+
+        if node.left and not node.left.left and not node.left.right:
+            leftNums = node.left.val
+        
+        rightNums = self.postOrder(node.right)
+
+        return leftNums + rightNums
