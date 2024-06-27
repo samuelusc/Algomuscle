@@ -5,7 +5,6 @@ class Solution:
         for fast in nums:
             if fast != val:
                 nums[slow] = fast
-            
                 slow += 1
-        
+    
         return slow
