@@ -6,22 +6,21 @@
 
 class Solution:
     def detectCycle(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        fast = head
-        slow = head
-        
+        fast = slow = head
 
         while fast and fast.next:
             fast = fast.next.next
             slow = slow.next
 
             if fast == slow:
-                crossPoint = fast
-                startPoint = head
+                start_move = head
+                intersect_move = fast
 
-                while crossPoint != startPoint:
-                    crossPoint = crossPoint.next
-                    startPoint = startPoint.next
+                while start_move != intersect_move:
+                    start_move = start_move.next
+                    intersect_move = intersect_move.next
                 
-                return startPoint 
-        
-        return None
+                return start_move
+
+        return  None
+            
