@@ -28,7 +28,7 @@ class Solution:
                 if node.right:
                     queue.append(node.right)
             
-            avg = sum(level) // len(level)
+            avg = sum(level) / len(level)
             res.append(avg)
 
         return res
