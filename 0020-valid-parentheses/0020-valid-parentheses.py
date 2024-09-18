@@ -1,14 +1,13 @@
 class Solution:
     def isValid(self, s: str) -> bool:
-        hashmap = {")": "(", "}":"{", "]":"["}
+        hashset = {"()","[]","{}"}
         stack = []
+        
         for char in s:
-            if char not in hashmap:
+            if char in "{[(":
                 stack.append(char)
-
-            elif not stack or hashmap[char]!= stack[-1]:
-                return False
-            else:
-                stack.pop()
-        return not stack
             
+            elif not stack or stack.pop() + char not in hashset:
+                return False
+        
+        return not stack
