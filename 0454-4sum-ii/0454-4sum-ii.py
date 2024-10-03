@@ -4,15 +4,12 @@ class Solution:
 
         for a in nums1:
             for b in nums2:
-                hashmap[a+b] = hashmap.get(a+b,0)+1
+                hashmap[a+b]= hashmap.get(a+b,0)+1
         
- 
-
         count = 0
-
         for c in nums3:
             for d in nums4:
                 target = -(c+d)
-                count += hashmap.get(target, 0)
-        
-        return count
+                count += hashmap.get(target,0) 
+
+        return count 
