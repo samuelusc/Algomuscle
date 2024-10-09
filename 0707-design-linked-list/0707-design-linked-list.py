@@ -6,41 +6,43 @@ class MyLinkedList:
 
     def get(self, index: int) -> int:
         if index >= self.size:
-            return
-        cur = self.dummy.next
+            return -1
+
+        
+        cur = self.dummy
         for i in range(index):
             cur = cur.next
-
-        return cur.val
+        
+        return cur.next.val
 
     def addAtHead(self, val: int) -> None:
-        self.addAtIndex(0, val)
+        return self.addAtIndex(0, val)
 
     def addAtTail(self, val: int) -> None:
-        self.addAtIndex(self.size, val)
+        return self.addAtIndex(self.size, val)
 
     def addAtIndex(self, index: int, val: int) -> None:
         if index > self.size:
-            return
-        pre = self.dummy
+            return 
+        
+        cur = self.dummy
         for i in range(index):
-            pre = pre.next
+            cur = cur.next
         node = ListNode(val)
-        node.next = pre.next
-        pre.next = node
+        node.next = cur.next
+        cur.next = node
         self.size += 1
-
-
 
     def deleteAtIndex(self, index: int) -> None:
         if index >= self.size:
             return
         
-        pre = self.dummy
+        cur = self.dummy
+
         for i in range(index):
-            pre = pre.next
+            cur = cur.next
         
-        pre.next = pre.next.next
+        cur.next = cur.next.next
         self.size -= 1
 
 
