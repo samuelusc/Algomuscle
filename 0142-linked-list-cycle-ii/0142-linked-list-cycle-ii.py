@@ -6,6 +6,9 @@
 
 class Solution:
     def detectCycle(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        if not head:
+            return 
+        
         fast = slow = head
 
         while fast and fast.next:
@@ -13,14 +16,13 @@ class Solution:
             slow = slow.next
 
             if fast == slow:
-                start_move = head
-                intersect_move = fast
+                slow = head
+                while fast != slow:
+                    fast = fast.next
+                    slow = slow.next
 
-                while start_move != intersect_move:
-                    start_move = start_move.next
-                    intersect_move = intersect_move.next
-                
-                return start_move
+                return slow
+        
+        return None
 
-        return  None
-            
+        
