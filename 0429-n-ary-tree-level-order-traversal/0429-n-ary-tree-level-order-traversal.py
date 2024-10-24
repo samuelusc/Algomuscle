@@ -1,33 +1,31 @@
 """
 # Definition for a Node.
 class Node:
-    def __init__(self, val=None, children=None):
+    def __init__(self, val: Optional[int] = None, children: Optional[List['Node']] = None):
         self.val = val
         self.children = children
 """
-from collections import deque
+
 class Solution:
     def levelOrder(self, root: 'Node') -> List[List[int]]:
-        res = []
+        from collections import deque
         if not root:
-            return res
-        
-        queue = deque([root])
+            return []
+        res = []
+        dq = deque([root])
 
-        while queue:
+        while dq:
             level = []
-            size = len(queue)
-
+            size = len(dq)
+            
             for i in range(size):
-                node = queue.popleft()
-                
-
+                node = dq.popleft()
                 level.append(node.val)
 
                 for child in node.children:
-                    queue.append(child)
-
+                    if child:
+                        dq.append(child)
+            
             res.append(level)
         
         return res
-                
