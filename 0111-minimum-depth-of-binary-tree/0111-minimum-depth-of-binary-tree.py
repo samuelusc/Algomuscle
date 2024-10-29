@@ -9,12 +9,12 @@ class Solution:
         if not root:
             return 0
         
-        leftH = self.minDepth(root.left)
-        rightH = self.minDepth(root.right)
+        leftHeight = self.minDepth(root.left)
+        rightHeight = self.minDepth(root.right)
 
-        if not root.left and root.right:
-            return 1 + rightH
-        if root.left and not root.right:
-            return 1 + leftH
-        
-        return 1 + min(leftH, rightH)
+        if leftHeight and not rightHeight:
+            return 1 + leftHeight
+        if not leftHeight and rightHeight:
+            return 1 + rightHeight
+
+        return 1 + min(leftHeight, rightHeight)
