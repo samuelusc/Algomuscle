@@ -15,14 +15,14 @@ class Solution:
 
             subTree = left + "," + right + "," + str(node.val)
 
-            freq = hashmap.get(subTree, 0) + 1
-            hashmap[subTree] = freq
-
-            if freq == 2:
+            fre = hashmap.get(subTree, 0) + 1
+            hashmap[subTree] = fre
+            if fre == 2:
                 res.append(node)
-
+            
             return subTree
-        res = []
+        
         hashmap = {}
+        res = []
         serialize(root)
         return res
