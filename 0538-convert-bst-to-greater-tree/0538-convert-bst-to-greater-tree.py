@@ -7,14 +7,14 @@
 class Solution:
     def convertBST(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
         self.pre = 0
-        
-        def dfs(node):
+        def rightTraverse(node):
             if not node:
                 return
-
-            dfs(node.right)
+            
+            rightTraverse(node.right)
             node.val += self.pre
             self.pre = node.val
-            dfs(node.left)
-        dfs(root)
+            rightTraverse(node.left)
+
+        rightTraverse(root)
         return root
